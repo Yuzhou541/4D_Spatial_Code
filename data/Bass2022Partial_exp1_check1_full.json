@@ -1,0 +1,3313 @@
+{
+  "sample": {
+    "example_id": "Bass2022Partial_exp1_check1_full",
+    "study": "Bass2022Partial",
+    "experiment": "exp1",
+    "title": "check1_full: Where does the GRAY CANNONBALL end up?",
+    "file_name": "check1_full.mp4",
+    "role": "check_trial",
+    "condition_id": "check1_full",
+    "is_mirror": false,
+    "trial_ids": [
+      "check1_gray_end"
+    ]
+  },
+  "media": {
+    "kind": "video",
+    "path": "media/Bass2022Partial_exp1_check1_full.mp4",
+    "file_name": "check1_full.mp4"
+  },
+  "mask_base": "media/Bass2022Partial_exp1_check1_full_masks",
+  "code": {
+    "sample_id": "Bass2022Partial_exp1_check1_full",
+    "study": "Bass2022Partial",
+    "experiment": "exp1",
+    "trial": "check1_gray_end",
+    "video_path": "Bass2022Partial/exp1/assets/check1_full.mp4",
+    "parse_mode": "dynamic_2d",
+    "parse_mode_reason": "Bass2022Partial is a 2D dynamic cartoon stimulus; 3D lifting is forbidden.",
+    "code_source": "model_parsed",
+    "metadata": {
+      "fps": 50.0,
+      "num_frames": 168,
+      "duration_sec": 3.36,
+      "original_resolution": [
+        1000,
+        510
+      ],
+      "resolution": [
+        512,
+        261
+      ],
+      "resize_max_size": 512,
+      "sampled_frame_indices": [
+        0,
+        11,
+        22,
+        33,
+        45,
+        56,
+        67,
+        78,
+        89,
+        100,
+        111,
+        122,
+        134,
+        145,
+        156,
+        167
+      ],
+      "media_kind": "video",
+      "available_gt": {
+        "rgb_video": true,
+        "object_identity": true,
+        "bbox_2d": false,
+        "mask": false,
+        "trajectory_2d": false,
+        "trajectory_3d": false,
+        "depth": false,
+        "camera": false,
+        "physical_scene_parameters": true,
+        "human_judgments": false
+      },
+      "models": {
+        "semantic_prompt_source": "qwen2.5-vl-real",
+        "sam31": "sam3.1-real"
+      },
+      "source_metadata": {
+        "symbolic_gt_usage": "metadata_diagnostics_only",
+        "no_gt_used_for_masks_bboxes_centers_tracks": true
+      },
+      "bass": {
+        "role": "check_trial",
+        "file_name": "check1_full.mp4",
+        "condition_id": "check1_full",
+        "is_mirror": false,
+        "attached_trials": [
+          {
+            "trial_id": "check1_gray_end",
+            "query_tag": "check1_gray_end",
+            "query_family": "unknown",
+            "prompt": "Where does the GRAY CANNONBALL end up?",
+            "type": "multi-choice",
+            "human_mean": null,
+            "slider_config": null,
+            "symbolic_scene": {
+              "video_url": "assets/check1_full.mp4",
+              "is_mirror": false,
+              "type": "comprehension_check",
+              "description": "cannonball hits pinkball; pinkball lands on grass (not in hole)",
+              "cannonball_pos": [
+                175,
+                365
+              ],
+              "cannonball_vel": [
+                375,
+                240
+              ],
+              "pinkball_pos": [
+                530,
+                465
+              ],
+              "hole_span": [
+                465,
+                535
+              ],
+              "runtime": 3.3,
+              "physics_params": {
+                "world_dims": [
+                  1000,
+                  510
+                ],
+                "gravity": 350,
+                "cannonball_radius": 20,
+                "pinkball_radius": 23,
+                "ground_height": 100,
+                "grass_height": 20,
+                "default_friction": 0.4,
+                "default_ball_elasticity": 0.5,
+                "default_ground_elasticity": 0.55,
+                "default_framerate": 50,
+                "default_timestep": 0.01,
+                "hole_span": [
+                  550,
+                  670
+                ],
+                "colors": {
+                  "cannonball": "#939294",
+                  "pinkball": "#D382A3",
+                  "sky": "#D2E2FF",
+                  "grass": "#629044",
+                  "dirt": "#715E22"
+                }
+              }
+            },
+            "symbolic_query": {
+              "prompt": "Where does the GRAY CANNONBALL end up?",
+              "type": "multi-choice",
+              "tag": "check1_gray_end",
+              "option": [
+                "On the grass",
+                "In the hole"
+              ],
+              "randomize_order": false,
+              "required": true,
+              "answer": 0
+            }
+          }
+        ],
+        "attached_instructions": [],
+        "symbolic_scene": {
+          "video_url": "assets/check1_full.mp4",
+          "is_mirror": false,
+          "type": "comprehension_check",
+          "description": "cannonball hits pinkball; pinkball lands on grass (not in hole)",
+          "cannonball_pos": [
+            175,
+            365
+          ],
+          "cannonball_vel": [
+            375,
+            240
+          ],
+          "pinkball_pos": [
+            530,
+            465
+          ],
+          "hole_span": [
+            465,
+            535
+          ],
+          "runtime": 3.3,
+          "physics_params": {
+            "world_dims": [
+              1000,
+              510
+            ],
+            "gravity": 350,
+            "cannonball_radius": 20,
+            "pinkball_radius": 23,
+            "ground_height": 100,
+            "grass_height": 20,
+            "default_friction": 0.4,
+            "default_ball_elasticity": 0.5,
+            "default_ground_elasticity": 0.55,
+            "default_framerate": 50,
+            "default_timestep": 0.01,
+            "hole_span": [
+              550,
+              670
+            ],
+            "colors": {
+              "cannonball": "#939294",
+              "pinkball": "#D382A3",
+              "sky": "#D2E2FF",
+              "grass": "#629044",
+              "dirt": "#715E22"
+            }
+          }
+        },
+        "world_physics": {
+          "world_dims": [
+            1000,
+            510
+          ],
+          "gravity": 350,
+          "cannonball_radius": 20,
+          "pinkball_radius": 23,
+          "ground_height": 100,
+          "grass_height": 20,
+          "default_friction": 0.4,
+          "default_ball_elasticity": 0.5,
+          "default_ground_elasticity": 0.55,
+          "default_framerate": 50,
+          "default_timestep": 0.01,
+          "hole_span": [
+            550,
+            670
+          ],
+          "colors": {
+            "cannonball": "#939294",
+            "pinkball": "#D382A3",
+            "sky": "#D2E2FF",
+            "grass": "#629044",
+            "dirt": "#715E22"
+          }
+        },
+        "expected_objects": [
+          {
+            "object_id": "gray_cannonball",
+            "label": "gray cannonball",
+            "semantic_role": "moving_projectile",
+            "expected_color_hex": "#939294"
+          },
+          {
+            "object_id": "pink_sphere",
+            "label": "pink sphere",
+            "semantic_role": "target_sphere",
+            "expected_color_hex": "#D382A3"
+          }
+        ]
+      },
+      "raw_qwen_objects": [
+        {
+          "object_id": "obj_001",
+          "label": "gray_cannonball",
+          "rough_bbox": [
+            18.0,
+            97.0,
+            30.0,
+            109.0
+          ],
+          "semantic_role": "dynamic_object",
+          "confidence": 1.0,
+          "source": "qwen2.5-vl-real"
+        },
+        {
+          "object_id": "obj_002",
+          "label": "pink_sphere",
+          "rough_bbox": [
+            284.0,
+            12.0,
+            302.0,
+            30.0
+          ],
+          "semantic_role": "dynamic_object",
+          "confidence": 1.0,
+          "source": "qwen2.5-vl-real"
+        }
+      ]
+    },
+    "objects": [
+      {
+        "object_id": "gray_cannonball",
+        "label": "gray cannonball",
+        "role": "moving_projectile",
+        "color": "#939294",
+        "confidence": 0.814466,
+        "identity_source": "qwen2.5-vl-real",
+        "rough_bbox": [
+          18.0,
+          97.0,
+          30.0,
+          109.0
+        ]
+      },
+      {
+        "object_id": "pink_sphere",
+        "label": "pink sphere",
+        "role": "target_sphere",
+        "color": "#D382A3",
+        "confidence": 0.960635,
+        "identity_source": "qwen2.5-vl-real",
+        "rough_bbox": [
+          284.0,
+          12.0,
+          302.0,
+          30.0
+        ]
+      }
+    ],
+    "direct_fields": {
+      "bbox_2d_sequence": {
+        "gray_cannonball": [
+          {
+            "frame_index": 0,
+            "timestamp_sec": 0.0,
+            "bbox_2d": [
+              73.0,
+              56.0,
+              105.0,
+              89.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 1,
+            "timestamp_sec": 0.22,
+            "bbox_2d": [
+              110.0,
+              36.0,
+              143.0,
+              69.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 2,
+            "timestamp_sec": 0.44,
+            "bbox_2d": [
+              151.0,
+              22.0,
+              184.0,
+              54.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 3,
+            "timestamp_sec": 0.66,
+            "bbox_2d": [
+              195.0,
+              14.0,
+              227.0,
+              48.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 4,
+            "timestamp_sec": 0.9,
+            "bbox_2d": [
+              242.0,
+              17.0,
+              273.0,
+              51.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 5,
+            "timestamp_sec": 1.12,
+            "bbox_2d": [
+              284.0,
+              28.0,
+              316.0,
+              64.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 6,
+            "timestamp_sec": 1.34,
+            "bbox_2d": [
+              325.0,
+              48.0,
+              358.0,
+              84.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 7,
+            "timestamp_sec": 1.56,
+            "bbox_2d": [
+              366.0,
+              79.0,
+              400.0,
+              113.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 8,
+            "timestamp_sec": 1.78,
+            "bbox_2d": [
+              410.0,
+              116.0,
+              443.0,
+              150.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 9,
+            "timestamp_sec": 2.0,
+            "bbox_2d": [
+              453.0,
+              163.0,
+              484.0,
+              195.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 10,
+            "timestamp_sec": 2.22,
+            "bbox_2d": [
+              487.0,
+              178.0,
+              512.0,
+              209.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 11,
+            "timestamp_sec": 2.44,
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 12,
+            "timestamp_sec": 2.68,
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 13,
+            "timestamp_sec": 2.9,
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 14,
+            "timestamp_sec": 3.12,
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 15,
+            "timestamp_sec": 3.34,
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "source": "sam3.1-real"
+          }
+        ],
+        "pink_sphere": [
+          {
+            "frame_index": 0,
+            "timestamp_sec": 0.0,
+            "bbox_2d": [
+              253.0,
+              4.0,
+              289.0,
+              42.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 1,
+            "timestamp_sec": 0.22,
+            "bbox_2d": [
+              252.0,
+              8.0,
+              289.0,
+              45.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 2,
+            "timestamp_sec": 0.44,
+            "bbox_2d": [
+              253.0,
+              19.0,
+              288.0,
+              57.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 3,
+            "timestamp_sec": 0.66,
+            "bbox_2d": [
+              253.0,
+              41.0,
+              287.0,
+              76.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 4,
+            "timestamp_sec": 0.9,
+            "bbox_2d": [
+              252.0,
+              73.0,
+              289.0,
+              109.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 5,
+            "timestamp_sec": 1.12,
+            "bbox_2d": [
+              252.0,
+              112.0,
+              288.0,
+              147.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 6,
+            "timestamp_sec": 1.34,
+            "bbox_2d": [
+              253.0,
+              160.0,
+              287.0,
+              194.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 7,
+            "timestamp_sec": 1.56,
+            "bbox_2d": [
+              245.0,
+              178.0,
+              279.0,
+              210.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 8,
+            "timestamp_sec": 1.78,
+            "bbox_2d": [
+              233.0,
+              174.0,
+              266.0,
+              207.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 9,
+            "timestamp_sec": 2.0,
+            "bbox_2d": [
+              222.0,
+              179.0,
+              254.0,
+              212.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 10,
+            "timestamp_sec": 2.22,
+            "bbox_2d": [
+              209.0,
+              180.0,
+              243.0,
+              213.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 11,
+            "timestamp_sec": 2.44,
+            "bbox_2d": [
+              198.0,
+              180.0,
+              230.0,
+              211.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 12,
+            "timestamp_sec": 2.68,
+            "bbox_2d": [
+              187.0,
+              180.0,
+              218.0,
+              212.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 13,
+            "timestamp_sec": 2.9,
+            "bbox_2d": [
+              173.0,
+              180.0,
+              206.0,
+              212.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 14,
+            "timestamp_sec": 3.12,
+            "bbox_2d": [
+              164.0,
+              179.0,
+              195.0,
+              211.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 15,
+            "timestamp_sec": 3.34,
+            "bbox_2d": [
+              152.0,
+              181.0,
+              183.0,
+              212.0
+            ],
+            "source": "sam3.1-real"
+          }
+        ]
+      },
+      "mask_sequence": {
+        "gray_cannonball": [
+          {
+            "frame_index": 0,
+            "timestamp_sec": 0.0,
+            "mask_ref": "gray_cannonball_mask_t000",
+            "bbox_2d": [
+              73.0,
+              56.0,
+              105.0,
+              89.0
+            ],
+            "area": 920,
+            "tracking_points": [
+              {
+                "point_id": "gray_cannonball_p1",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  89.0,
+                  72.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_cannonball_p2",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  85.0,
+                  72.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_cannonball_p3",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  93.0,
+                  72.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 1,
+            "timestamp_sec": 0.22,
+            "mask_ref": "gray_cannonball_mask_t001",
+            "bbox_2d": [
+              110.0,
+              36.0,
+              143.0,
+              69.0
+            ],
+            "area": 906,
+            "tracking_points": [
+              {
+                "point_id": "gray_cannonball_p1",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  126.0,
+                  51.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_cannonball_p2",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  122.0,
+                  51.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_cannonball_p3",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  131.0,
+                  51.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 2,
+            "timestamp_sec": 0.44,
+            "mask_ref": "gray_cannonball_mask_t002",
+            "bbox_2d": [
+              151.0,
+              22.0,
+              184.0,
+              54.0
+            ],
+            "area": 869,
+            "tracking_points": [
+              {
+                "point_id": "gray_cannonball_p1",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  168.0,
+                  37.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_cannonball_p2",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  164.0,
+                  37.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_cannonball_p3",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  172.0,
+                  37.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 3,
+            "timestamp_sec": 0.66,
+            "mask_ref": "gray_cannonball_mask_t003",
+            "bbox_2d": [
+              195.0,
+              14.0,
+              227.0,
+              48.0
+            ],
+            "area": 881,
+            "tracking_points": [
+              {
+                "point_id": "gray_cannonball_p1",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  210.0,
+                  31.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_cannonball_p2",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  206.0,
+                  30.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_cannonball_p3",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  214.0,
+                  30.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 4,
+            "timestamp_sec": 0.9,
+            "mask_ref": "gray_cannonball_mask_t004",
+            "bbox_2d": [
+              242.0,
+              17.0,
+              273.0,
+              51.0
+            ],
+            "area": 913,
+            "tracking_points": [
+              {
+                "point_id": "gray_cannonball_p1",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  257.0,
+                  33.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_cannonball_p2",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  253.0,
+                  33.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_cannonball_p3",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  261.0,
+                  33.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 5,
+            "timestamp_sec": 1.12,
+            "mask_ref": "gray_cannonball_mask_t005",
+            "bbox_2d": [
+              284.0,
+              28.0,
+              316.0,
+              64.0
+            ],
+            "area": 976,
+            "tracking_points": [
+              {
+                "point_id": "gray_cannonball_p1",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  300.0,
+                  45.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_cannonball_p2",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  295.0,
+                  45.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_cannonball_p3",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  304.0,
+                  45.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 6,
+            "timestamp_sec": 1.34,
+            "mask_ref": "gray_cannonball_mask_t006",
+            "bbox_2d": [
+              325.0,
+              48.0,
+              358.0,
+              84.0
+            ],
+            "area": 938,
+            "tracking_points": [
+              {
+                "point_id": "gray_cannonball_p1",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  341.0,
+                  65.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_cannonball_p2",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  337.0,
+                  65.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_cannonball_p3",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  346.0,
+                  65.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 7,
+            "timestamp_sec": 1.56,
+            "mask_ref": "gray_cannonball_mask_t007",
+            "bbox_2d": [
+              366.0,
+              79.0,
+              400.0,
+              113.0
+            ],
+            "area": 940,
+            "tracking_points": [
+              {
+                "point_id": "gray_cannonball_p1",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  383.0,
+                  95.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_cannonball_p2",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  379.0,
+                  94.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_cannonball_p3",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  388.0,
+                  94.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 8,
+            "timestamp_sec": 1.78,
+            "mask_ref": "gray_cannonball_mask_t008",
+            "bbox_2d": [
+              410.0,
+              116.0,
+              443.0,
+              150.0
+            ],
+            "area": 957,
+            "tracking_points": [
+              {
+                "point_id": "gray_cannonball_p1",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  427.0,
+                  133.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_cannonball_p2",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  422.0,
+                  133.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_cannonball_p3",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  431.0,
+                  133.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 9,
+            "timestamp_sec": 2.0,
+            "mask_ref": "gray_cannonball_mask_t009",
+            "bbox_2d": [
+              453.0,
+              163.0,
+              484.0,
+              195.0
+            ],
+            "area": 810,
+            "tracking_points": [
+              {
+                "point_id": "gray_cannonball_p1",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  468.0,
+                  179.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_cannonball_p2",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  464.0,
+                  179.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_cannonball_p3",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  472.0,
+                  179.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 10,
+            "timestamp_sec": 2.22,
+            "mask_ref": "gray_cannonball_mask_t010",
+            "bbox_2d": [
+              487.0,
+              178.0,
+              512.0,
+              209.0
+            ],
+            "area": 637,
+            "tracking_points": [
+              {
+                "point_id": "gray_cannonball_p1",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  499.0,
+                  193.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_cannonball_p2",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  496.0,
+                  193.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_cannonball_p3",
+                "object_id": "gray_cannonball",
+                "uv": [
+                  502.0,
+                  193.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 11,
+            "timestamp_sec": 2.44,
+            "mask_ref": "gray_cannonball_mask_t011",
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "area": 0,
+            "tracking_points": [],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 12,
+            "timestamp_sec": 2.68,
+            "mask_ref": "gray_cannonball_mask_t012",
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "area": 0,
+            "tracking_points": [],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 13,
+            "timestamp_sec": 2.9,
+            "mask_ref": "gray_cannonball_mask_t013",
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "area": 0,
+            "tracking_points": [],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 14,
+            "timestamp_sec": 3.12,
+            "mask_ref": "gray_cannonball_mask_t014",
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "area": 0,
+            "tracking_points": [],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 15,
+            "timestamp_sec": 3.34,
+            "mask_ref": "gray_cannonball_mask_t015",
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "area": 0,
+            "tracking_points": [],
+            "source": "sam3.1-real"
+          }
+        ],
+        "pink_sphere": [
+          {
+            "frame_index": 0,
+            "timestamp_sec": 0.0,
+            "mask_ref": "pink_sphere_mask_t000",
+            "bbox_2d": [
+              253.0,
+              4.0,
+              289.0,
+              42.0
+            ],
+            "area": 1098,
+            "tracking_points": [
+              {
+                "point_id": "pink_sphere_p1",
+                "object_id": "pink_sphere",
+                "uv": [
+                  270.0,
+                  23.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p2",
+                "object_id": "pink_sphere",
+                "uv": [
+                  265.0,
+                  22.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p3",
+                "object_id": "pink_sphere",
+                "uv": [
+                  274.0,
+                  22.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 1,
+            "timestamp_sec": 0.22,
+            "mask_ref": "pink_sphere_mask_t001",
+            "bbox_2d": [
+              252.0,
+              8.0,
+              289.0,
+              45.0
+            ],
+            "area": 1111,
+            "tracking_points": [
+              {
+                "point_id": "pink_sphere_p1",
+                "object_id": "pink_sphere",
+                "uv": [
+                  270.0,
+                  26.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p2",
+                "object_id": "pink_sphere",
+                "uv": [
+                  265.0,
+                  26.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p3",
+                "object_id": "pink_sphere",
+                "uv": [
+                  274.0,
+                  26.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 2,
+            "timestamp_sec": 0.44,
+            "mask_ref": "pink_sphere_mask_t002",
+            "bbox_2d": [
+              253.0,
+              19.0,
+              288.0,
+              57.0
+            ],
+            "area": 1089,
+            "tracking_points": [
+              {
+                "point_id": "pink_sphere_p1",
+                "object_id": "pink_sphere",
+                "uv": [
+                  270.0,
+                  38.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p2",
+                "object_id": "pink_sphere",
+                "uv": [
+                  266.0,
+                  37.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p3",
+                "object_id": "pink_sphere",
+                "uv": [
+                  275.0,
+                  37.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 3,
+            "timestamp_sec": 0.66,
+            "mask_ref": "pink_sphere_mask_t003",
+            "bbox_2d": [
+              253.0,
+              41.0,
+              287.0,
+              76.0
+            ],
+            "area": 1020,
+            "tracking_points": [
+              {
+                "point_id": "pink_sphere_p1",
+                "object_id": "pink_sphere",
+                "uv": [
+                  270.0,
+                  58.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p2",
+                "object_id": "pink_sphere",
+                "uv": [
+                  266.0,
+                  58.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p3",
+                "object_id": "pink_sphere",
+                "uv": [
+                  275.0,
+                  58.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 4,
+            "timestamp_sec": 0.9,
+            "mask_ref": "pink_sphere_mask_t004",
+            "bbox_2d": [
+              252.0,
+              73.0,
+              289.0,
+              109.0
+            ],
+            "area": 1075,
+            "tracking_points": [
+              {
+                "point_id": "pink_sphere_p1",
+                "object_id": "pink_sphere",
+                "uv": [
+                  270.0,
+                  90.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p2",
+                "object_id": "pink_sphere",
+                "uv": [
+                  266.0,
+                  90.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p3",
+                "object_id": "pink_sphere",
+                "uv": [
+                  275.0,
+                  90.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 5,
+            "timestamp_sec": 1.12,
+            "mask_ref": "pink_sphere_mask_t005",
+            "bbox_2d": [
+              252.0,
+              112.0,
+              288.0,
+              147.0
+            ],
+            "area": 1070,
+            "tracking_points": [
+              {
+                "point_id": "pink_sphere_p1",
+                "object_id": "pink_sphere",
+                "uv": [
+                  270.0,
+                  129.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p2",
+                "object_id": "pink_sphere",
+                "uv": [
+                  265.0,
+                  129.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p3",
+                "object_id": "pink_sphere",
+                "uv": [
+                  274.0,
+                  129.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 6,
+            "timestamp_sec": 1.34,
+            "mask_ref": "pink_sphere_mask_t006",
+            "bbox_2d": [
+              253.0,
+              160.0,
+              287.0,
+              194.0
+            ],
+            "area": 974,
+            "tracking_points": [
+              {
+                "point_id": "pink_sphere_p1",
+                "object_id": "pink_sphere",
+                "uv": [
+                  270.0,
+                  176.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p2",
+                "object_id": "pink_sphere",
+                "uv": [
+                  266.0,
+                  176.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p3",
+                "object_id": "pink_sphere",
+                "uv": [
+                  274.0,
+                  176.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 7,
+            "timestamp_sec": 1.56,
+            "mask_ref": "pink_sphere_mask_t007",
+            "bbox_2d": [
+              245.0,
+              178.0,
+              279.0,
+              210.0
+            ],
+            "area": 892,
+            "tracking_points": [
+              {
+                "point_id": "pink_sphere_p1",
+                "object_id": "pink_sphere",
+                "uv": [
+                  262.0,
+                  193.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p2",
+                "object_id": "pink_sphere",
+                "uv": [
+                  258.0,
+                  193.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p3",
+                "object_id": "pink_sphere",
+                "uv": [
+                  266.0,
+                  193.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 8,
+            "timestamp_sec": 1.78,
+            "mask_ref": "pink_sphere_mask_t008",
+            "bbox_2d": [
+              233.0,
+              174.0,
+              266.0,
+              207.0
+            ],
+            "area": 931,
+            "tracking_points": [
+              {
+                "point_id": "pink_sphere_p1",
+                "object_id": "pink_sphere",
+                "uv": [
+                  249.0,
+                  190.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p2",
+                "object_id": "pink_sphere",
+                "uv": [
+                  245.0,
+                  190.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p3",
+                "object_id": "pink_sphere",
+                "uv": [
+                  253.0,
+                  190.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 9,
+            "timestamp_sec": 2.0,
+            "mask_ref": "pink_sphere_mask_t009",
+            "bbox_2d": [
+              222.0,
+              179.0,
+              254.0,
+              212.0
+            ],
+            "area": 862,
+            "tracking_points": [
+              {
+                "point_id": "pink_sphere_p1",
+                "object_id": "pink_sphere",
+                "uv": [
+                  238.0,
+                  195.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p2",
+                "object_id": "pink_sphere",
+                "uv": [
+                  234.0,
+                  195.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p3",
+                "object_id": "pink_sphere",
+                "uv": [
+                  242.0,
+                  195.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 10,
+            "timestamp_sec": 2.22,
+            "mask_ref": "pink_sphere_mask_t010",
+            "bbox_2d": [
+              209.0,
+              180.0,
+              243.0,
+              213.0
+            ],
+            "area": 920,
+            "tracking_points": [
+              {
+                "point_id": "pink_sphere_p1",
+                "object_id": "pink_sphere",
+                "uv": [
+                  226.0,
+                  196.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p2",
+                "object_id": "pink_sphere",
+                "uv": [
+                  221.0,
+                  196.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p3",
+                "object_id": "pink_sphere",
+                "uv": [
+                  231.0,
+                  196.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 11,
+            "timestamp_sec": 2.44,
+            "mask_ref": "pink_sphere_mask_t011",
+            "bbox_2d": [
+              198.0,
+              180.0,
+              230.0,
+              211.0
+            ],
+            "area": 818,
+            "tracking_points": [
+              {
+                "point_id": "pink_sphere_p1",
+                "object_id": "pink_sphere",
+                "uv": [
+                  214.0,
+                  196.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p2",
+                "object_id": "pink_sphere",
+                "uv": [
+                  209.0,
+                  196.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p3",
+                "object_id": "pink_sphere",
+                "uv": [
+                  218.0,
+                  196.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 12,
+            "timestamp_sec": 2.68,
+            "mask_ref": "pink_sphere_mask_t012",
+            "bbox_2d": [
+              187.0,
+              180.0,
+              218.0,
+              212.0
+            ],
+            "area": 840,
+            "tracking_points": [
+              {
+                "point_id": "pink_sphere_p1",
+                "object_id": "pink_sphere",
+                "uv": [
+                  201.0,
+                  196.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p2",
+                "object_id": "pink_sphere",
+                "uv": [
+                  198.0,
+                  196.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p3",
+                "object_id": "pink_sphere",
+                "uv": [
+                  205.0,
+                  196.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 13,
+            "timestamp_sec": 2.9,
+            "mask_ref": "pink_sphere_mask_t013",
+            "bbox_2d": [
+              173.0,
+              180.0,
+              206.0,
+              212.0
+            ],
+            "area": 833,
+            "tracking_points": [
+              {
+                "point_id": "pink_sphere_p1",
+                "object_id": "pink_sphere",
+                "uv": [
+                  190.0,
+                  196.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p2",
+                "object_id": "pink_sphere",
+                "uv": [
+                  186.0,
+                  196.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p3",
+                "object_id": "pink_sphere",
+                "uv": [
+                  194.0,
+                  196.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 14,
+            "timestamp_sec": 3.12,
+            "mask_ref": "pink_sphere_mask_t014",
+            "bbox_2d": [
+              164.0,
+              179.0,
+              195.0,
+              211.0
+            ],
+            "area": 835,
+            "tracking_points": [
+              {
+                "point_id": "pink_sphere_p1",
+                "object_id": "pink_sphere",
+                "uv": [
+                  179.0,
+                  195.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p2",
+                "object_id": "pink_sphere",
+                "uv": [
+                  175.0,
+                  196.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p3",
+                "object_id": "pink_sphere",
+                "uv": [
+                  183.0,
+                  196.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 15,
+            "timestamp_sec": 3.34,
+            "mask_ref": "pink_sphere_mask_t015",
+            "bbox_2d": [
+              152.0,
+              181.0,
+              183.0,
+              212.0
+            ],
+            "area": 823,
+            "tracking_points": [
+              {
+                "point_id": "pink_sphere_p1",
+                "object_id": "pink_sphere",
+                "uv": [
+                  167.0,
+                  196.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p2",
+                "object_id": "pink_sphere",
+                "uv": [
+                  163.0,
+                  196.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "pink_sphere_p3",
+                "object_id": "pink_sphere",
+                "uv": [
+                  171.0,
+                  196.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real"
+          }
+        ]
+      },
+      "mask_available": true,
+      "point_tracks_2d": {
+        "gray_cannonball": [
+          {
+            "tracklet_id": "trk_gray_cannonball_p1",
+            "object_id": "gray_cannonball",
+            "point_id": "gray_cannonball_p1",
+            "uv_sequence": [
+              [
+                89.0,
+                72.0
+              ],
+              [
+                126.0,
+                51.0
+              ],
+              [
+                168.0,
+                37.0
+              ],
+              [
+                210.0,
+                31.0
+              ],
+              [
+                257.0,
+                33.0
+              ],
+              [
+                300.0,
+                45.0
+              ],
+              [
+                341.0,
+                65.0
+              ],
+              [
+                383.0,
+                95.0
+              ],
+              [
+                427.0,
+                133.0
+              ],
+              [
+                468.0,
+                179.0
+              ],
+              [
+                499.0,
+                193.0
+              ]
+            ],
+            "visibility": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "confidence": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source": "sam31_mask_owned_interior_points"
+          },
+          {
+            "tracklet_id": "trk_gray_cannonball_p2",
+            "object_id": "gray_cannonball",
+            "point_id": "gray_cannonball_p2",
+            "uv_sequence": [
+              [
+                85.0,
+                72.0
+              ],
+              [
+                122.0,
+                51.0
+              ],
+              [
+                164.0,
+                37.0
+              ],
+              [
+                206.0,
+                30.0
+              ],
+              [
+                253.0,
+                33.0
+              ],
+              [
+                295.0,
+                45.0
+              ],
+              [
+                337.0,
+                65.0
+              ],
+              [
+                379.0,
+                94.0
+              ],
+              [
+                422.0,
+                133.0
+              ],
+              [
+                464.0,
+                179.0
+              ],
+              [
+                496.0,
+                193.0
+              ]
+            ],
+            "visibility": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "confidence": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source": "sam31_mask_owned_interior_points"
+          },
+          {
+            "tracklet_id": "trk_gray_cannonball_p3",
+            "object_id": "gray_cannonball",
+            "point_id": "gray_cannonball_p3",
+            "uv_sequence": [
+              [
+                93.0,
+                72.0
+              ],
+              [
+                131.0,
+                51.0
+              ],
+              [
+                172.0,
+                37.0
+              ],
+              [
+                214.0,
+                30.0
+              ],
+              [
+                261.0,
+                33.0
+              ],
+              [
+                304.0,
+                45.0
+              ],
+              [
+                346.0,
+                65.0
+              ],
+              [
+                388.0,
+                94.0
+              ],
+              [
+                431.0,
+                133.0
+              ],
+              [
+                472.0,
+                179.0
+              ],
+              [
+                502.0,
+                193.0
+              ]
+            ],
+            "visibility": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "confidence": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source": "sam31_mask_owned_interior_points"
+          }
+        ],
+        "pink_sphere": [
+          {
+            "tracklet_id": "trk_pink_sphere_p1",
+            "object_id": "pink_sphere",
+            "point_id": "pink_sphere_p1",
+            "uv_sequence": [
+              [
+                270.0,
+                23.0
+              ],
+              [
+                270.0,
+                26.0
+              ],
+              [
+                270.0,
+                38.0
+              ],
+              [
+                270.0,
+                58.0
+              ],
+              [
+                270.0,
+                90.0
+              ],
+              [
+                270.0,
+                129.0
+              ],
+              [
+                270.0,
+                176.0
+              ],
+              [
+                262.0,
+                193.0
+              ],
+              [
+                249.0,
+                190.0
+              ],
+              [
+                238.0,
+                195.0
+              ],
+              [
+                226.0,
+                196.0
+              ],
+              [
+                214.0,
+                196.0
+              ],
+              [
+                201.0,
+                196.0
+              ],
+              [
+                190.0,
+                196.0
+              ],
+              [
+                179.0,
+                195.0
+              ],
+              [
+                167.0,
+                196.0
+              ]
+            ],
+            "visibility": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "confidence": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source": "sam31_mask_owned_interior_points"
+          },
+          {
+            "tracklet_id": "trk_pink_sphere_p2",
+            "object_id": "pink_sphere",
+            "point_id": "pink_sphere_p2",
+            "uv_sequence": [
+              [
+                265.0,
+                22.0
+              ],
+              [
+                265.0,
+                26.0
+              ],
+              [
+                266.0,
+                37.0
+              ],
+              [
+                266.0,
+                58.0
+              ],
+              [
+                266.0,
+                90.0
+              ],
+              [
+                265.0,
+                129.0
+              ],
+              [
+                266.0,
+                176.0
+              ],
+              [
+                258.0,
+                193.0
+              ],
+              [
+                245.0,
+                190.0
+              ],
+              [
+                234.0,
+                195.0
+              ],
+              [
+                221.0,
+                196.0
+              ],
+              [
+                209.0,
+                196.0
+              ],
+              [
+                198.0,
+                196.0
+              ],
+              [
+                186.0,
+                196.0
+              ],
+              [
+                175.0,
+                196.0
+              ],
+              [
+                163.0,
+                196.0
+              ]
+            ],
+            "visibility": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "confidence": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source": "sam31_mask_owned_interior_points"
+          },
+          {
+            "tracklet_id": "trk_pink_sphere_p3",
+            "object_id": "pink_sphere",
+            "point_id": "pink_sphere_p3",
+            "uv_sequence": [
+              [
+                274.0,
+                22.0
+              ],
+              [
+                274.0,
+                26.0
+              ],
+              [
+                275.0,
+                37.0
+              ],
+              [
+                275.0,
+                58.0
+              ],
+              [
+                275.0,
+                90.0
+              ],
+              [
+                274.0,
+                129.0
+              ],
+              [
+                274.0,
+                176.0
+              ],
+              [
+                266.0,
+                193.0
+              ],
+              [
+                253.0,
+                190.0
+              ],
+              [
+                242.0,
+                195.0
+              ],
+              [
+                231.0,
+                196.0
+              ],
+              [
+                218.0,
+                196.0
+              ],
+              [
+                205.0,
+                196.0
+              ],
+              [
+                194.0,
+                196.0
+              ],
+              [
+                183.0,
+                196.0
+              ],
+              [
+                171.0,
+                196.0
+              ]
+            ],
+            "visibility": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "confidence": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source": "sam31_mask_owned_interior_points"
+          }
+        ]
+      },
+      "field_sources": {
+        "identity": "qwen2.5-vl-real",
+        "bbox_2d_sequence": "sam3.1-real",
+        "mask_sequence": "sam3.1-real",
+        "point_tracks_2d": "sam31_mask_owned_interior_points"
+      }
+    },
+    "computed_fields": {
+      "center_2d_trajectory": {
+        "gray_cannonball": [
+          {
+            "frame_index": 0,
+            "timestamp_sec": 0.0,
+            "uv": [
+              89.041304,
+              72.215217
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 1,
+            "timestamp_sec": 0.22,
+            "uv": [
+              126.310155,
+              51.210817
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 2,
+            "timestamp_sec": 0.44,
+            "uv": [
+              167.795167,
+              37.342923
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 3,
+            "timestamp_sec": 0.66,
+            "uv": [
+              210.333712,
+              30.525539
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 4,
+            "timestamp_sec": 0.9,
+            "uv": [
+              257.314348,
+              32.952903
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 5,
+            "timestamp_sec": 1.12,
+            "uv": [
+              299.602459,
+              45.115779
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 6,
+            "timestamp_sec": 1.34,
+            "uv": [
+              341.473348,
+              64.904051
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 7,
+            "timestamp_sec": 1.56,
+            "uv": [
+              383.418085,
+              94.724468
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 8,
+            "timestamp_sec": 1.78,
+            "uv": [
+              426.681296,
+              132.635319
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 9,
+            "timestamp_sec": 2.0,
+            "uv": [
+              468.161728,
+              179.006173
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 10,
+            "timestamp_sec": 2.22,
+            "uv": [
+              499.070644,
+              192.974882
+            ],
+            "source": "sam31_mask_centroid"
+          }
+        ],
+        "pink_sphere": [
+          {
+            "frame_index": 0,
+            "timestamp_sec": 0.0,
+            "uv": [
+              269.816029,
+              22.500911
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 1,
+            "timestamp_sec": 0.22,
+            "uv": [
+              269.936994,
+              26.229523
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 2,
+            "timestamp_sec": 0.44,
+            "uv": [
+              270.068871,
+              37.572084
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 3,
+            "timestamp_sec": 0.66,
+            "uv": [
+              270.163725,
+              58.121569
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 4,
+            "timestamp_sec": 0.9,
+            "uv": [
+              270.327442,
+              90.07907
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 5,
+            "timestamp_sec": 1.12,
+            "uv": [
+              269.753271,
+              129.071028
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 6,
+            "timestamp_sec": 1.34,
+            "uv": [
+              270.037988,
+              176.029774
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 7,
+            "timestamp_sec": 1.56,
+            "uv": [
+              261.910314,
+              192.863229
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 8,
+            "timestamp_sec": 1.78,
+            "uv": [
+              249.039742,
+              189.771214
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 9,
+            "timestamp_sec": 2.0,
+            "uv": [
+              237.697216,
+              194.951276
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 10,
+            "timestamp_sec": 2.22,
+            "uv": [
+              225.936957,
+              195.636957
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 11,
+            "timestamp_sec": 2.44,
+            "uv": [
+              213.537897,
+              196.00489
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 12,
+            "timestamp_sec": 2.68,
+            "uv": [
+              201.467857,
+              195.661905
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 13,
+            "timestamp_sec": 2.9,
+            "uv": [
+              190.318127,
+              195.830732
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 14,
+            "timestamp_sec": 3.12,
+            "uv": [
+              179.105389,
+              195.492216
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 15,
+            "timestamp_sec": 3.34,
+            "uv": [
+              166.759417,
+              196.215067
+            ],
+            "source": "sam31_mask_centroid"
+          }
+        ]
+      },
+      "velocity_2d": {
+        "gray_cannonball": [
+          {
+            "frame_index": 1,
+            "duv_dt": [
+              169.403868,
+              -95.474545
+            ],
+            "speed_px_per_sec": 194.455803,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 2,
+            "duv_dt": [
+              188.568236,
+              -63.035882
+            ],
+            "speed_px_per_sec": 198.825306,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 3,
+            "duv_dt": [
+              193.357023,
+              -30.988109
+            ],
+            "speed_px_per_sec": 195.824414,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 4,
+            "duv_dt": [
+              195.75265,
+              10.114017
+            ],
+            "speed_px_per_sec": 196.013758,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 5,
+            "duv_dt": [
+              192.218686,
+              55.2858
+            ],
+            "speed_px_per_sec": 200.011357,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 6,
+            "duv_dt": [
+              190.322223,
+              89.946691
+            ],
+            "speed_px_per_sec": 210.506427,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 7,
+            "duv_dt": [
+              190.657895,
+              135.54735
+            ],
+            "speed_px_per_sec": 233.930582,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 8,
+            "duv_dt": [
+              196.650959,
+              172.32205
+            ],
+            "speed_px_per_sec": 261.469862,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 9,
+            "duv_dt": [
+              188.547418,
+              210.776609
+            ],
+            "speed_px_per_sec": 282.801888,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 10,
+            "duv_dt": [
+              140.495073,
+              63.494132
+            ],
+            "speed_px_per_sec": 154.176426,
+            "source": "finite_difference_center_2d"
+          }
+        ],
+        "pink_sphere": [
+          {
+            "frame_index": 1,
+            "duv_dt": [
+              0.549841,
+              16.948236
+            ],
+            "speed_px_per_sec": 16.957153,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 2,
+            "duv_dt": [
+              0.599441,
+              51.557095
+            ],
+            "speed_px_per_sec": 51.56058,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 3,
+            "duv_dt": [
+              0.431155,
+              93.40675
+            ],
+            "speed_px_per_sec": 93.407745,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 4,
+            "duv_dt": [
+              0.682154,
+              133.156254
+            ],
+            "speed_px_per_sec": 133.158001,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 5,
+            "duv_dt": [
+              -2.609868,
+              177.236173
+            ],
+            "speed_px_per_sec": 177.255387,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 6,
+            "duv_dt": [
+              1.294168,
+              213.448845
+            ],
+            "speed_px_per_sec": 213.452769,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 7,
+            "duv_dt": [
+              -36.943973,
+              76.515705
+            ],
+            "speed_px_per_sec": 84.967701,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 8,
+            "duv_dt": [
+              -58.5026,
+              -14.054614
+            ],
+            "speed_px_per_sec": 60.167154,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 9,
+            "duv_dt": [
+              -51.556936,
+              23.545736
+            ],
+            "speed_px_per_sec": 56.679091,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 10,
+            "duv_dt": [
+              -53.455723,
+              3.116732
+            ],
+            "speed_px_per_sec": 53.546506,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 11,
+            "duv_dt": [
+              -56.359364,
+              1.672423
+            ],
+            "speed_px_per_sec": 56.384172,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 12,
+            "duv_dt": [
+              -50.291833,
+              -1.429104
+            ],
+            "speed_px_per_sec": 50.312134,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 13,
+            "duv_dt": [
+              -50.680591,
+              0.767395
+            ],
+            "speed_px_per_sec": 50.6864,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 14,
+            "duv_dt": [
+              -50.966991,
+              -1.538709
+            ],
+            "speed_px_per_sec": 50.990213,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 15,
+            "duv_dt": [
+              -56.118055,
+              3.285686
+            ],
+            "speed_px_per_sec": 56.21416,
+            "source": "finite_difference_center_2d"
+          }
+        ]
+      },
+      "acceleration_2d": {
+        "gray_cannonball": [
+          {
+            "frame_index": 2,
+            "duv_dt2": [
+              19.164368,
+              32.438663
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 3,
+            "duv_dt2": [
+              4.788787,
+              32.047773
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 4,
+            "duv_dt2": [
+              2.395627,
+              41.102126
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 5,
+            "duv_dt2": [
+              -3.533964,
+              45.171783
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 6,
+            "duv_dt2": [
+              -1.896463,
+              34.660891
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 7,
+            "duv_dt2": [
+              0.335672,
+              45.600659
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 8,
+            "duv_dt2": [
+              5.993064,
+              36.7747
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 9,
+            "duv_dt2": [
+              -8.103541,
+              38.454559
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 10,
+            "duv_dt2": [
+              -48.052345,
+              -147.282477
+            ],
+            "source": "finite_difference_velocity_2d"
+          }
+        ],
+        "pink_sphere": [
+          {
+            "frame_index": 2,
+            "duv_dt2": [
+              0.0496,
+              34.608859
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 3,
+            "duv_dt2": [
+              -0.168286,
+              41.849655
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 4,
+            "duv_dt2": [
+              0.250999,
+              39.749504
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 5,
+            "duv_dt2": [
+              -3.292022,
+              44.079919
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 6,
+            "duv_dt2": [
+              3.904036,
+              36.212672
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 7,
+            "duv_dt2": [
+              -38.238141,
+              -136.93314
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 8,
+            "duv_dt2": [
+              -21.558627,
+              -90.570319
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 9,
+            "duv_dt2": [
+              6.945664,
+              37.60035
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 10,
+            "duv_dt2": [
+              -1.898787,
+              -20.429004
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 11,
+            "duv_dt2": [
+              -2.903641,
+              -1.444309
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 12,
+            "duv_dt2": [
+              6.067531,
+              -3.101527
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 13,
+            "duv_dt2": [
+              -0.388758,
+              2.196499
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 14,
+            "duv_dt2": [
+              -0.2864,
+              -2.306104
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 15,
+            "duv_dt2": [
+              -5.151064,
+              4.824395
+            ],
+            "source": "finite_difference_velocity_2d"
+          }
+        ]
+      },
+      "visibility": {
+        "gray_cannonball": [
+          {
+            "frame_index": 0,
+            "score": 1.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 1,
+            "score": 1.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 2,
+            "score": 1.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 3,
+            "score": 1.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 4,
+            "score": 1.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 5,
+            "score": 1.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 6,
+            "score": 1.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 7,
+            "score": 1.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 8,
+            "score": 1.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 9,
+            "score": 1.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 10,
+            "score": 1.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 11,
+            "score": 0.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 12,
+            "score": 0.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 13,
+            "score": 0.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 14,
+            "score": 0.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 15,
+            "score": 0.0,
+            "source": "sam31_mask_area"
+          }
+        ],
+        "pink_sphere": [
+          {
+            "frame_index": 0,
+            "score": 1.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 1,
+            "score": 1.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 2,
+            "score": 1.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 3,
+            "score": 1.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 4,
+            "score": 1.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 5,
+            "score": 1.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 6,
+            "score": 1.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 7,
+            "score": 1.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 8,
+            "score": 1.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 9,
+            "score": 1.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 10,
+            "score": 1.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 11,
+            "score": 1.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 12,
+            "score": 1.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 13,
+            "score": 1.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 14,
+            "score": 1.0,
+            "source": "sam31_mask_area"
+          },
+          {
+            "frame_index": 15,
+            "score": 1.0,
+            "source": "sam31_mask_area"
+          }
+        ]
+      },
+      "field_sources": {
+        "center_2d_trajectory": "sam31_mask_centroid",
+        "velocity_2d": "finite_difference_center_2d",
+        "acceleration_2d": "finite_difference_velocity_2d",
+        "visibility": "sam31_mask_area"
+      }
+    },
+    "relations": [
+      {
+        "subject": "gray_cannonball",
+        "object": "pink_sphere",
+        "relation": "separating",
+        "evidence": {
+          "distance_start_px": 187.486035,
+          "distance_end_px": 273.14666,
+          "trend": "separating",
+          "relative_velocity_projection": -85.660624
+        },
+        "source": "computed_from_sam31_2d_trajectories"
+      }
+    ],
+    "events": []
+  }
+}
