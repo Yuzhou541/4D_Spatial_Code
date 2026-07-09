@@ -122,7 +122,8 @@
     const maskRow = recordForFrame(code.direct_fields.mask_sequence[objectId], state.frame);
     const centerRows = code.computed_fields.center_2d_trajectory[objectId] || [];
     const center = recordForFrame(centerRows, state.frame);
-    const color = objectId === 'pink_sphere' ? '#d382a3' : '#939294';
+    const objectRecord = (code.objects || []).find((obj) => obj.object_id === objectId) || {};
+    const color = objectRecord.color || fallbackColor(objectId);
     drawMask(maskRow, color);
     drawRainbowTrail(centerRows, color);
     if (maskRow && Array.isArray(maskRow.bbox_2d)) drawBBox(maskRow.bbox_2d, color, objectId === state.selectedObject);
@@ -302,16 +303,33 @@
   }
 
   function gtPayload() {
+    const bass = code.metadata.bass || null;
+    if (bass) {
+      return {
+        dataset: 'Bass2022Partial',
+        role: bass.role,
+        file_name: bass.file_name,
+        condition_id: bass.condition_id,
+        is_mirror: bass.is_mirror,
+        expected_objects: bass.expected_objects,
+        symbolic_scene: bass.symbolic_scene,
+        world_physics: bass.world_physics,
+        attached_trials: bass.attached_trials,
+        attached_instructions: bass.attached_instructions
+      };
+    }
+    const beller = code.metadata.beller || {};
     return {
-      role: code.metadata.bass.role,
-      file_name: code.metadata.bass.file_name,
-      condition_id: code.metadata.bass.condition_id,
-      is_mirror: code.metadata.bass.is_mirror,
-      expected_objects: code.metadata.bass.expected_objects,
-      symbolic_scene: code.metadata.bass.symbolic_scene,
-      world_physics: code.metadata.bass.world_physics,
-      attached_trials: code.metadata.bass.attached_trials,
-      attached_instructions: code.metadata.bass.attached_instructions
+      dataset: 'Beller2020Language',
+      role: beller.role,
+      file_name: beller.file_name,
+      condition_id: beller.condition_id,
+      expected_objects: beller.expected_objects,
+      symbolic_scene: beller.symbolic_scene,
+      world_physics: beller.world_physics,
+      attached_trials: beller.attached_trials,
+      attached_instructions: beller.attached_instructions,
+      config_metadata: beller.config_metadata
     };
   }
 
@@ -337,6 +355,12 @@
 
   function trackingColor(index) {
     const colors = ['#06b6d4', '#d946ef', '#84cc16'];
+    return colors[index % colors.length];
+  }
+
+  function fallbackColor(objectId) {
+    const colors = ['#22c55e', '#71717a', '#0ea5e9', '#a16207', '#db2777'];
+    const index = Math.max(0, objectIds.indexOf(objectId));
     return colors[index % colors.length];
   }
 
