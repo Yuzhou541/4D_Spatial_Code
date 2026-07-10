@@ -52,3 +52,16 @@ mark { background: rgba(250, 204, 21, .32); color: inherit; border-radius: 4px; 
   .card-grid, .sample-card, .detail-grid { grid-template-columns: 1fr; }
   .metrics { grid-template-columns: 1fr; }
 }
+
+/* Grouped multi-study Pages index. */
+.site-header .muted { max-width: 980px; }
+.study-list { display: grid; gap: 28px; padding: 24px clamp(16px, 4vw, 44px) 44px; }
+.study-section { display: grid; gap: 12px; min-width: 0; }
+.study-heading-row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.study-heading { font-size: 22px; }
+.study-count { margin: 0; color: var(--muted); }
+.study-section .card-grid { padding: 0; }
+.thumb-link img { width: 100%; height: 100%; object-fit: contain; display: block; background: #101820; }
+@media (max-width: 640px) {
+  .study-heading-row { align-items: flex-start; flex-direction: column; gap: 2px; }
+}

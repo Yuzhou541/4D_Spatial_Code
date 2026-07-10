@@ -1,0 +1,5997 @@
+{
+  "sample": {
+    "example_id": "Stephan2021Counterfactual_exp3_Stephan2021Counterfactual_exp3_assets_green_delayed",
+    "study": "Stephan2021Counterfactual",
+    "slug": "stephan2021_counterfactual",
+    "experiment": "exp3",
+    "title": "green_delayed: As you have seen, both the green and the blue player failed to hit the grey marble in this round. So, the team didn't score a point. Which p",
+    "file_name": "green_delayed.mp4",
+    "role": "trial",
+    "media_kind": "video",
+    "trial_ids": [
+      "blame_top_blue_first_blame_first",
+      "blame_top_blue_first_diff_first"
+    ],
+    "instruction_ids": []
+  },
+  "media": {
+    "kind": "video",
+    "path": "media/Stephan2021Counterfactual_exp3_Stephan2021Counterfactual_exp3_assets_green_delayed.mp4",
+    "file_name": "green_delayed.mp4",
+    "mime": "video/mp4",
+    "transcoded_for_browser": false,
+    "poster": "media/Stephan2021Counterfactual_exp3_Stephan2021Counterfactual_exp3_assets_green_delayed_poster.png"
+  },
+  "mask_base": "media/Stephan2021Counterfactual_exp3_Stephan2021Counterfactual_exp3_assets_green_delayed_masks",
+  "code": {
+    "sample_id": "Stephan2021Counterfactual_exp3_Stephan2021Counterfactual_exp3_assets_green_delayed",
+    "study": "Stephan2021Counterfactual",
+    "experiment": "exp3",
+    "trial": "blame_top_blue_first_blame_first,blame_top_blue_first_diff_first",
+    "video_path": "Stephan2021Counterfactual/exp3/assets/green_delayed.mp4",
+    "parse_mode": "dynamic_2d",
+    "parse_mode_reason": "Requested 2D physics subset pass; 3D lifting is forbidden for this run.",
+    "code_source": "model_parsed",
+    "metadata": {
+      "fps": 60.0,
+      "num_frames": 835,
+      "duration_sec": 13.916666666666666,
+      "original_resolution": [
+        796,
+        598
+      ],
+      "resolution": [
+        512,
+        385
+      ],
+      "resize_max_size": 512,
+      "sampled_frame_indices": [
+        0,
+        56,
+        111,
+        167,
+        222,
+        278,
+        334,
+        389,
+        445,
+        500,
+        556,
+        612,
+        667,
+        723,
+        778,
+        834
+      ],
+      "media_kind": "video",
+      "playback_rate": 0.35,
+      "available_gt": {
+        "rgb_video": true,
+        "object_identity": false,
+        "bbox_2d": false,
+        "mask": false,
+        "trajectory_2d": false,
+        "trajectory_3d": false,
+        "depth": false,
+        "camera": false,
+        "symbolic_scene": false,
+        "human_judgments": true
+      },
+      "models": {
+        "semantic_prompt_source": "qwen2.5-vl-real",
+        "sam31": "sam3.1-real"
+      },
+      "source_metadata": {
+        "symbolic_gt_usage": "metadata_diagnostics_only",
+        "no_gt_used_for_masks_bboxes_centers_tracks": true,
+        "rejected_primary_sam_objects": [],
+        "prompt_diagnostics_usage": "sam_prompt_boxes_only_not_primary_masks",
+        "sam_mask_pixel_policy": "sam31_output_component_near_prompt_only"
+      },
+      "readme_task_contract": {
+        "source": "readme_manifest_symbolic_contract",
+        "summary": "Marble omission clips; marbles are dynamic, gate/wall/barrier is context.",
+        "visibility_policy": {
+          "default": "expected_visible_until_gate_exit_or_field_exit",
+          "minimum_visible_ratio": 0.2,
+          "allow_expected_invisibility": true
+        }
+      },
+      "stephan2021_counterfactual": {
+        "role": "trial",
+        "file_name": "green_delayed.mp4",
+        "media_kind": "video",
+        "trial_ids": [
+          "blame_top_blue_first_blame_first",
+          "blame_top_blue_first_diff_first"
+        ],
+        "instruction_ids": [],
+        "attached_trials": [
+          {
+            "id": "blame_top_blue_first_blame_first",
+            "queries": [
+              {
+                "prompt": "As you have seen, both the green and the blue player failed to hit the grey marble in this round. So, the team didn't score a point.<br><br>Which player is more to blame that the grey marble did not go through the gate?",
+                "type": "single-slider",
+                "tag": "blame",
+                "slider_config": {
+                  "min": -50,
+                  "max": 50,
+                  "default_value": 0,
+                  "labels": [
+                    {
+                      "value": -50,
+                      "label": "Definitely the blue player"
+                    },
+                    {
+                      "value": 50,
+                      "label": "Definitely the green player"
+                    }
+                  ],
+                  "show_label_values": true
+                },
+                "required": true
+              }
+            ],
+            "prompt": "As you have seen, both the green and the blue player failed to hit the grey marble in this round. So, the team didn't score a point.<br><br>Which player is more to blame that the grey marble did not go through the gate?",
+            "media_file": "green_delayed.mp4",
+            "human_mean": {
+              "blame": -15.0
+            },
+            "symbolic_scene": {
+              "trial_id": "blame_top_blue_first_blame_first",
+              "stimulus_video": "assets/green_delayed.mp4",
+              "scene": {
+                "stimulus_type": "task_three_ball",
+                "query_type": "blame",
+                "barrier_variant": "top",
+                "first_ball_color": "blue",
+                "question_order": "blame",
+                "description": "Three-ball scene with horizontal barrier at top. Blue ball arrives first. Query: blame.",
+                "world": {
+                  "WIDTH": 800,
+                  "ball1": {
+                    "position": [
+                      780,
+                      60
+                    ],
+                    "velocity": [
+                      -3.5,
+                      0.83
+                    ],
+                    "delay": 0,
+                    "color": "green",
+                    "label": "top ball"
+                  },
+                  "ball2": {
+                    "position": [
+                      80,
+                      300
+                    ],
+                    "velocity": [
+                      0,
+                      0
+                    ],
+                    "delay": 0,
+                    "color": "unknown",
+                    "label": "middle/gate ball"
+                  },
+                  "ball3": {
+                    "position": [
+                      780,
+                      540
+                    ],
+                    "velocity": [
+                      -3.5,
+                      -1.5
+                    ],
+                    "delay": 200,
+                    "color": "blue",
+                    "label": "bottom ball"
+                  },
+                  "horizontal_barrier": {
+                    "positionX": 800,
+                    "positionY": 155,
+                    "halfwidth": 410.2564102564103,
+                    "halfheight": 10,
+                    "name": "horizontalWall"
+                  }
+                },
+                "world_physics": {
+                  "full_length": 800,
+                  "full_height": 600,
+                  "marble_size": 60,
+                  "speed": 200,
+                  "step_size": 0.02,
+                  "time_max": 15,
+                  "velocity_noise": 0.05,
+                  "wall_thickness": 20,
+                  "exit_portion": 0.3333333333333333,
+                  "exit_position": [
+                    10,
+                    300
+                  ],
+                  "default_walls": [
+                    {
+                      "name": "top_wall",
+                      "position": [
+                        400,
+                        590
+                      ],
+                      "length": 800,
+                      "height": 20
+                    },
+                    {
+                      "name": "bottom_wall",
+                      "position": [
+                        400,
+                        10
+                      ],
+                      "length": 800,
+                      "height": 20
+                    },
+                    {
+                      "name": "top_left_wall",
+                      "position": [
+                        10,
+                        500
+                      ],
+                      "length": 20,
+                      "height": 100
+                    },
+                    {
+                      "name": "bottom_left_wall",
+                      "position": [
+                        10,
+                        100
+                      ],
+                      "length": 20,
+                      "height": 100
+                    },
+                    {
+                      "name": "exit",
+                      "position": [
+                        10,
+                        300
+                      ],
+                      "length": 20,
+                      "height": 200
+                    }
+                  ]
+                },
+                "active_barrier": "top barrier - blocks top (green) ball from hitting E",
+                "scene_image": "barrier_top.png",
+                "video": "green_delayed.mp4"
+              },
+              "query": [
+                {
+                  "prompt": "As you have seen, both the green and the blue player failed to hit the grey marble in this round. So, the team didn't score a point.<br><br>Which player is more to blame that the grey marble did not go through the gate?",
+                  "type": "single-slider",
+                  "tag": "blame",
+                  "slider_config": {
+                    "min": -50,
+                    "max": 50,
+                    "default_value": 0,
+                    "labels": [
+                      {
+                        "value": -50,
+                        "label": "Definitely the blue player"
+                      },
+                      {
+                        "value": 50,
+                        "label": "Definitely the green player"
+                      }
+                    ],
+                    "show_label_values": true
+                  },
+                  "required": true
+                }
+              ]
+            }
+          },
+          {
+            "id": "blame_top_blue_first_diff_first",
+            "queries": [
+              {
+                "prompt": "As you have seen, both the green and the blue player failed to hit the grey marble in this round. So, the team didn't score a point.<br><br>Which player is more to blame that the grey marble did not go through the gate?",
+                "type": "single-slider",
+                "tag": "blame",
+                "slider_config": {
+                  "min": -50,
+                  "max": 50,
+                  "default_value": 0,
+                  "labels": [
+                    {
+                      "value": -50,
+                      "label": "Definitely the blue player"
+                    },
+                    {
+                      "value": 50,
+                      "label": "Definitely the green player"
+                    }
+                  ],
+                  "show_label_values": true
+                },
+                "required": true
+              }
+            ],
+            "prompt": "As you have seen, both the green and the blue player failed to hit the grey marble in this round. So, the team didn't score a point.<br><br>Which player is more to blame that the grey marble did not go through the gate?",
+            "media_file": "green_delayed.mp4",
+            "human_mean": {
+              "blame": -17.153846153846153
+            },
+            "symbolic_scene": {
+              "trial_id": "blame_top_blue_first_diff_first",
+              "stimulus_video": "assets/green_delayed.mp4",
+              "scene": {
+                "stimulus_type": "task_three_ball",
+                "query_type": "blame",
+                "barrier_variant": "top",
+                "first_ball_color": "blue",
+                "question_order": "diff",
+                "description": "Three-ball scene with horizontal barrier at top. Blue ball arrives first. Query: blame.",
+                "world": {
+                  "WIDTH": 800,
+                  "ball1": {
+                    "position": [
+                      780,
+                      60
+                    ],
+                    "velocity": [
+                      -3.5,
+                      0.83
+                    ],
+                    "delay": 0,
+                    "color": "green",
+                    "label": "top ball"
+                  },
+                  "ball2": {
+                    "position": [
+                      80,
+                      300
+                    ],
+                    "velocity": [
+                      0,
+                      0
+                    ],
+                    "delay": 0,
+                    "color": "unknown",
+                    "label": "middle/gate ball"
+                  },
+                  "ball3": {
+                    "position": [
+                      780,
+                      540
+                    ],
+                    "velocity": [
+                      -3.5,
+                      -1.5
+                    ],
+                    "delay": 200,
+                    "color": "blue",
+                    "label": "bottom ball"
+                  },
+                  "horizontal_barrier": {
+                    "positionX": 800,
+                    "positionY": 155,
+                    "halfwidth": 410.2564102564103,
+                    "halfheight": 10,
+                    "name": "horizontalWall"
+                  }
+                },
+                "world_physics": {
+                  "full_length": 800,
+                  "full_height": 600,
+                  "marble_size": 60,
+                  "speed": 200,
+                  "step_size": 0.02,
+                  "time_max": 15,
+                  "velocity_noise": 0.05,
+                  "wall_thickness": 20,
+                  "exit_portion": 0.3333333333333333,
+                  "exit_position": [
+                    10,
+                    300
+                  ],
+                  "default_walls": [
+                    {
+                      "name": "top_wall",
+                      "position": [
+                        400,
+                        590
+                      ],
+                      "length": 800,
+                      "height": 20
+                    },
+                    {
+                      "name": "bottom_wall",
+                      "position": [
+                        400,
+                        10
+                      ],
+                      "length": 800,
+                      "height": 20
+                    },
+                    {
+                      "name": "top_left_wall",
+                      "position": [
+                        10,
+                        500
+                      ],
+                      "length": 20,
+                      "height": 100
+                    },
+                    {
+                      "name": "bottom_left_wall",
+                      "position": [
+                        10,
+                        100
+                      ],
+                      "length": 20,
+                      "height": 100
+                    },
+                    {
+                      "name": "exit",
+                      "position": [
+                        10,
+                        300
+                      ],
+                      "length": 20,
+                      "height": 200
+                    }
+                  ]
+                },
+                "active_barrier": "top barrier - blocks top (green) ball from hitting E",
+                "scene_image": "barrier_top.png",
+                "video": "green_delayed.mp4"
+              },
+              "query": [
+                {
+                  "prompt": "As you have seen, both the green and the blue player failed to hit the grey marble in this round. So, the team didn't score a point.<br><br>Which player is more to blame that the grey marble did not go through the gate?",
+                  "type": "single-slider",
+                  "tag": "blame",
+                  "slider_config": {
+                    "min": -50,
+                    "max": 50,
+                    "default_value": 0,
+                    "labels": [
+                      {
+                        "value": -50,
+                        "label": "Definitely the blue player"
+                      },
+                      {
+                        "value": 50,
+                        "label": "Definitely the green player"
+                      }
+                    ],
+                    "show_label_values": true
+                  },
+                  "required": true
+                }
+              ]
+            }
+          }
+        ],
+        "attached_instructions": [],
+        "symbolic_scene": {},
+        "context_objects": [
+          {
+            "object_id": "barrier",
+            "label": "barrier",
+            "role": "static_context"
+          }
+        ],
+        "expected_dynamic_objects": [
+          {
+            "object_id": "gray_marble",
+            "label": "gray marble",
+            "semantic_role": "target_marble",
+            "expected_rgb": [
+              158,
+              158,
+              158
+            ],
+            "expected_color_hex": "#9e9e9e",
+            "aliases": [
+              "gray marble",
+              "grey marble"
+            ],
+            "prompt_strategy": "contract_color_motion",
+            "required": true,
+            "allow_expected_invisibility": true
+          },
+          {
+            "object_id": "blue_player",
+            "label": "blue player marble",
+            "semantic_role": "player_marble",
+            "expected_rgb": [
+              63,
+              76,
+              225
+            ],
+            "expected_color_hex": "#3f4ce1",
+            "aliases": [
+              "blue player",
+              "blue marble"
+            ],
+            "prompt_strategy": "contract_color_motion",
+            "required": true,
+            "allow_expected_invisibility": true
+          },
+          {
+            "object_id": "green_player",
+            "label": "green player marble",
+            "semantic_role": "player_marble",
+            "expected_rgb": [
+              91,
+              239,
+              72
+            ],
+            "expected_color_hex": "#5bef48",
+            "aliases": [
+              "green player",
+              "green marble"
+            ],
+            "prompt_strategy": "contract_color_motion",
+            "required": true,
+            "allow_expected_invisibility": true
+          }
+        ],
+        "active_dynamic_objects": [
+          {
+            "object_id": "gray_marble",
+            "label": "gray marble",
+            "semantic_role": "target_marble",
+            "expected_rgb": [
+              158,
+              158,
+              158
+            ],
+            "expected_color_hex": "#9e9e9e",
+            "aliases": [
+              "gray marble",
+              "grey marble"
+            ],
+            "prompt_strategy": "contract_color_motion",
+            "required": true,
+            "allow_expected_invisibility": true
+          },
+          {
+            "object_id": "blue_player",
+            "label": "blue player marble",
+            "semantic_role": "player_marble",
+            "expected_rgb": [
+              63,
+              76,
+              225
+            ],
+            "expected_color_hex": "#3f4ce1",
+            "aliases": [
+              "blue player",
+              "blue marble"
+            ],
+            "prompt_strategy": "contract_color_motion",
+            "required": true,
+            "allow_expected_invisibility": true
+          },
+          {
+            "object_id": "green_player",
+            "label": "green player marble",
+            "semantic_role": "player_marble",
+            "expected_rgb": [
+              91,
+              239,
+              72
+            ],
+            "expected_color_hex": "#5bef48",
+            "aliases": [
+              "green player",
+              "green marble"
+            ],
+            "prompt_strategy": "contract_color_motion",
+            "required": true,
+            "allow_expected_invisibility": true
+          }
+        ],
+        "config_metadata": {
+          "experimentName": "A counterfactual simulation model of causation by omission (Exp 3)",
+          "taskType": [
+            "Causal Judgment",
+            "Responsibility Attribution"
+          ],
+          "responseType": [
+            "single-slider"
+          ],
+          "description": "You will watch a short video clip of a marble game involving two players. After watching the clip, you will answer questions about what you observed.",
+          "stimuli_count": 16
+        }
+      },
+      "raw_qwen_objects": [
+        {
+          "object_id": "obj_001",
+          "label": "grey_marble",
+          "rough_bbox": [
+            27.0,
+            176.0,
+            70.0,
+            219.0
+          ],
+          "semantic_role": "target_marble",
+          "confidence": 1.0,
+          "source": "qwen2.5-vl-real"
+        },
+        {
+          "object_id": "obj_002",
+          "label": "blue_player",
+          "rough_bbox": [
+            464.0,
+            334.0,
+            500.0,
+            377.0
+          ],
+          "semantic_role": "player_marble",
+          "confidence": 1.0,
+          "source": "qwen2.5-vl-real"
+        },
+        {
+          "object_id": "obj_003",
+          "label": "green_player",
+          "rough_bbox": [
+            474.0,
+            18.0,
+            508.0,
+            51.0
+          ],
+          "semantic_role": "player_marble",
+          "confidence": 1.0,
+          "source": "qwen2.5-vl-real"
+        }
+      ],
+      "sam_prompt_diagnostics": {
+        "gray_marble": [
+          {
+            "frame_index": 0,
+            "status": "sam31_mask_written",
+            "mask_area": 1786,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              25.0,
+              166.0,
+              76.0,
+              218.0
+            ],
+            "component_bbox_2d": [
+              37.0,
+              178.0,
+              64.0,
+              206.0
+            ],
+            "inner_bbox_2d": [
+              41.725,
+              182.9,
+              59.275,
+              201.1
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              49.943661971830984,
+              190.88732394366198
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 213
+          },
+          {
+            "frame_index": 1,
+            "status": "sam31_mask_written",
+            "mask_area": 1820,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              25.0,
+              166.0,
+              76.0,
+              218.0
+            ],
+            "component_bbox_2d": [
+              37.0,
+              178.0,
+              64.0,
+              206.0
+            ],
+            "inner_bbox_2d": [
+              41.725,
+              182.9,
+              59.275,
+              201.1
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              49.943661971830984,
+              190.88732394366198
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 213
+          },
+          {
+            "frame_index": 2,
+            "status": "sam31_mask_written",
+            "mask_area": 1853,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              25.0,
+              166.0,
+              76.0,
+              218.0
+            ],
+            "component_bbox_2d": [
+              37.0,
+              178.0,
+              64.0,
+              206.0
+            ],
+            "inner_bbox_2d": [
+              41.725,
+              182.9,
+              59.275,
+              201.1
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              49.943661971830984,
+              190.88732394366198
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 213
+          },
+          {
+            "frame_index": 3,
+            "status": "sam31_mask_written",
+            "mask_area": 1819,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              25.0,
+              166.0,
+              76.0,
+              218.0
+            ],
+            "component_bbox_2d": [
+              37.0,
+              178.0,
+              64.0,
+              206.0
+            ],
+            "inner_bbox_2d": [
+              41.725,
+              182.9,
+              59.275,
+              201.1
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              49.943661971830984,
+              190.88732394366198
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 213
+          },
+          {
+            "frame_index": 4,
+            "status": "sam31_mask_written",
+            "mask_area": 1643,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              25.0,
+              166.0,
+              76.0,
+              218.0
+            ],
+            "component_bbox_2d": [
+              37.0,
+              178.0,
+              64.0,
+              206.0
+            ],
+            "inner_bbox_2d": [
+              41.725,
+              182.9,
+              59.275,
+              201.1
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              49.943661971830984,
+              190.88732394366198
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 213
+          },
+          {
+            "frame_index": 5,
+            "status": "sam31_mask_written",
+            "mask_area": 1662,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              25.0,
+              166.0,
+              77.0,
+              218.0
+            ],
+            "component_bbox_2d": [
+              37.0,
+              178.0,
+              65.0,
+              206.0
+            ],
+            "inner_bbox_2d": [
+              41.9,
+              182.9,
+              60.1,
+              201.1
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              50.02739726027397,
+              191.30593607305937
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 219
+          },
+          {
+            "frame_index": 6,
+            "status": "sam31_mask_written",
+            "mask_area": 1662,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              25.0,
+              166.0,
+              77.0,
+              218.0
+            ],
+            "component_bbox_2d": [
+              37.0,
+              178.0,
+              65.0,
+              206.0
+            ],
+            "inner_bbox_2d": [
+              41.9,
+              182.9,
+              60.1,
+              201.1
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              50.02739726027397,
+              191.30593607305937
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 219
+          },
+          {
+            "frame_index": 7,
+            "status": "sam31_mask_written",
+            "mask_area": 1662,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              25.0,
+              166.0,
+              77.0,
+              218.0
+            ],
+            "component_bbox_2d": [
+              37.0,
+              178.0,
+              65.0,
+              206.0
+            ],
+            "inner_bbox_2d": [
+              41.9,
+              182.9,
+              60.1,
+              201.1
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              50.02739726027397,
+              191.30593607305937
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 219
+          },
+          {
+            "frame_index": 8,
+            "status": "sam31_mask_written",
+            "mask_area": 1669,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              25.0,
+              166.0,
+              77.0,
+              218.0
+            ],
+            "component_bbox_2d": [
+              37.0,
+              178.0,
+              65.0,
+              206.0
+            ],
+            "inner_bbox_2d": [
+              41.9,
+              182.9,
+              60.1,
+              201.1
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              50.02739726027397,
+              191.30593607305937
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 219
+          },
+          {
+            "frame_index": 9,
+            "status": "sam31_mask_written",
+            "mask_area": 1727,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              25.0,
+              166.0,
+              76.0,
+              218.0
+            ],
+            "component_bbox_2d": [
+              37.0,
+              178.0,
+              64.0,
+              206.0
+            ],
+            "inner_bbox_2d": [
+              41.725,
+              182.9,
+              59.275,
+              201.1
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              50.01801801801802,
+              191.15765765765767
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 222
+          },
+          {
+            "frame_index": 10,
+            "status": "sam31_mask_written",
+            "mask_area": 1656,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              25.0,
+              166.0,
+              76.0,
+              218.0
+            ],
+            "component_bbox_2d": [
+              37.0,
+              178.0,
+              64.0,
+              206.0
+            ],
+            "inner_bbox_2d": [
+              41.725,
+              182.9,
+              59.275,
+              201.1
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              50.01801801801802,
+              191.15765765765767
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 222
+          },
+          {
+            "frame_index": 11,
+            "status": "sam31_mask_written",
+            "mask_area": 1556,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              25.0,
+              166.0,
+              76.0,
+              218.0
+            ],
+            "component_bbox_2d": [
+              37.0,
+              178.0,
+              64.0,
+              206.0
+            ],
+            "inner_bbox_2d": [
+              41.725,
+              182.9,
+              59.275,
+              201.1
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              50.01801801801802,
+              191.15765765765767
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 222
+          },
+          {
+            "frame_index": 12,
+            "status": "sam31_mask_written",
+            "mask_area": 1633,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              25.0,
+              166.0,
+              76.0,
+              218.0
+            ],
+            "component_bbox_2d": [
+              37.0,
+              178.0,
+              64.0,
+              206.0
+            ],
+            "inner_bbox_2d": [
+              41.725,
+              182.9,
+              59.275,
+              201.1
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              50.01801801801802,
+              191.15765765765767
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 222
+          },
+          {
+            "frame_index": 13,
+            "status": "sam31_mask_written",
+            "mask_area": 1633,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              25.0,
+              166.0,
+              76.0,
+              218.0
+            ],
+            "component_bbox_2d": [
+              37.0,
+              178.0,
+              64.0,
+              206.0
+            ],
+            "inner_bbox_2d": [
+              41.725,
+              182.9,
+              59.275,
+              201.1
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              50.01801801801802,
+              191.15765765765767
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 222
+          },
+          {
+            "frame_index": 14,
+            "status": "sam31_mask_written",
+            "mask_area": 1656,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              25.0,
+              166.0,
+              76.0,
+              218.0
+            ],
+            "component_bbox_2d": [
+              37.0,
+              178.0,
+              64.0,
+              206.0
+            ],
+            "inner_bbox_2d": [
+              41.725,
+              182.9,
+              59.275,
+              201.1
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              50.11363636363637,
+              191.34545454545454
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 220
+          },
+          {
+            "frame_index": 15,
+            "status": "sam31_mask_written",
+            "mask_area": 1656,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              25.0,
+              166.0,
+              76.0,
+              218.0
+            ],
+            "component_bbox_2d": [
+              37.0,
+              178.0,
+              64.0,
+              206.0
+            ],
+            "inner_bbox_2d": [
+              41.725,
+              182.9,
+              59.275,
+              201.1
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              50.11363636363637,
+              191.34545454545454
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 220
+          }
+        ],
+        "blue_player": [
+          {
+            "frame_index": 0,
+            "status": "sam31_mask_written",
+            "mask_area": 558,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              471.0,
+              319.0,
+              512.0,
+              370.0
+            ],
+            "component_bbox_2d": [
+              479.0,
+              327.0,
+              512.0,
+              362.0
+            ],
+            "inner_bbox_2d": [
+              484.775,
+              333.125,
+              506.225,
+              355.875
+            ],
+            "sam_box_prompt_strategy": "boundary_inner_plus_component",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              494.4640287769784,
+              344.37410071942446
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 28.0,
+            "color_component_area": 278
+          },
+          {
+            "frame_index": 1,
+            "status": "sam31_mask_written",
+            "mask_area": 2148,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              345.0,
+              289.0,
+              396.0,
+              341.0
+            ],
+            "component_bbox_2d": [
+              353.0,
+              297.0,
+              388.0,
+              333.0
+            ],
+            "inner_bbox_2d": [
+              359.125,
+              303.3,
+              381.875,
+              326.7
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              369.91089108910893,
+              314.1089108910891
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 28.0,
+            "color_component_area": 303
+          },
+          {
+            "frame_index": 2,
+            "status": "sam31_mask_written",
+            "mask_area": 2242,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              219.0,
+              259.0,
+              270.0,
+              311.0
+            ],
+            "component_bbox_2d": [
+              227.0,
+              267.0,
+              262.0,
+              303.0
+            ],
+            "inner_bbox_2d": [
+              233.125,
+              273.3,
+              255.875,
+              296.7
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              243.07920792079207,
+              284.029702970297
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 28.0,
+            "color_component_area": 303
+          },
+          {
+            "frame_index": 3,
+            "status": "sam31_mask_written",
+            "mask_area": 1954,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              102.0,
+              231.0,
+              152.0,
+              283.0
+            ],
+            "component_bbox_2d": [
+              110.0,
+              239.0,
+              144.0,
+              275.0
+            ],
+            "inner_bbox_2d": [
+              115.95,
+              245.3,
+              138.05,
+              268.7
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              126.4635761589404,
+              256.43046357615896
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 28.0,
+            "color_component_area": 302
+          },
+          {
+            "frame_index": 4,
+            "status": "sam31_mask_written",
+            "mask_area": 446,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              0.0,
+              202.0,
+              27.0,
+              253.0
+            ],
+            "component_bbox_2d": [
+              0.0,
+              210.0,
+              19.0,
+              245.0
+            ],
+            "inner_bbox_2d": [
+              3.325,
+              216.125,
+              15.675,
+              238.875
+            ],
+            "sam_box_prompt_strategy": "boundary_inner_plus_component",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              10.677631578947368,
+              226.94736842105263
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 28.0,
+            "color_component_area": 152
+          },
+          {
+            "frame_index": 5,
+            "status": "not_expected_visible",
+            "reason": "not_expected_visible",
+            "mask_area": 0
+          },
+          {
+            "frame_index": 6,
+            "status": "not_expected_visible",
+            "reason": "not_expected_visible",
+            "mask_area": 0
+          },
+          {
+            "frame_index": 7,
+            "status": "not_expected_visible",
+            "reason": "not_expected_visible",
+            "mask_area": 0
+          },
+          {
+            "frame_index": 8,
+            "status": "not_expected_visible",
+            "reason": "not_expected_visible",
+            "mask_area": 0
+          },
+          {
+            "frame_index": 9,
+            "status": "not_expected_visible",
+            "reason": "not_expected_visible",
+            "mask_area": 0
+          },
+          {
+            "frame_index": 10,
+            "status": "not_expected_visible",
+            "reason": "not_expected_visible",
+            "mask_area": 0
+          },
+          {
+            "frame_index": 11,
+            "status": "not_expected_visible",
+            "reason": "not_expected_visible",
+            "mask_area": 0
+          },
+          {
+            "frame_index": 12,
+            "status": "not_expected_visible",
+            "reason": "not_expected_visible",
+            "mask_area": 0
+          },
+          {
+            "frame_index": 13,
+            "status": "not_expected_visible",
+            "reason": "not_expected_visible",
+            "mask_area": 0
+          },
+          {
+            "frame_index": 14,
+            "status": "not_expected_visible",
+            "reason": "not_expected_visible",
+            "mask_area": 0
+          },
+          {
+            "frame_index": 15,
+            "status": "not_expected_visible",
+            "reason": "not_expected_visible",
+            "mask_area": 0
+          }
+        ],
+        "green_player": [
+          {
+            "frame_index": 0,
+            "status": "sam31_mask_written",
+            "mask_area": 581,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              474.0,
+              11.0,
+              512.0,
+              63.0
+            ],
+            "component_bbox_2d": [
+              482.0,
+              19.0,
+              512.0,
+              55.0
+            ],
+            "inner_bbox_2d": [
+              487.25,
+              25.299999999999997,
+              506.75,
+              48.7
+            ],
+            "sam_box_prompt_strategy": "boundary_inner_plus_component",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              495.2330097087379,
+              35.63592233009709
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 28.0,
+            "color_component_area": 206
+          },
+          {
+            "frame_index": 1,
+            "status": "sam31_mask_written",
+            "mask_area": 624,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              474.0,
+              11.0,
+              512.0,
+              63.0
+            ],
+            "component_bbox_2d": [
+              482.0,
+              19.0,
+              512.0,
+              55.0
+            ],
+            "inner_bbox_2d": [
+              487.25,
+              25.299999999999997,
+              506.75,
+              48.7
+            ],
+            "sam_box_prompt_strategy": "boundary_inner_plus_component",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              495.1835748792271,
+              35.66183574879227
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 28.0,
+            "color_component_area": 207
+          },
+          {
+            "frame_index": 2,
+            "status": "sam31_mask_written",
+            "mask_area": 638,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              474.0,
+              11.0,
+              512.0,
+              63.0
+            ],
+            "component_bbox_2d": [
+              482.0,
+              19.0,
+              512.0,
+              55.0
+            ],
+            "inner_bbox_2d": [
+              487.25,
+              25.299999999999997,
+              506.75,
+              48.7
+            ],
+            "sam_box_prompt_strategy": "boundary_inner_plus_component",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              495.18446601941747,
+              35.5873786407767
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 28.0,
+            "color_component_area": 206
+          },
+          {
+            "frame_index": 3,
+            "status": "sam31_mask_written",
+            "mask_area": 616,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              474.0,
+              11.0,
+              512.0,
+              63.0
+            ],
+            "component_bbox_2d": [
+              482.0,
+              19.0,
+              512.0,
+              55.0
+            ],
+            "inner_bbox_2d": [
+              487.25,
+              25.299999999999997,
+              506.75,
+              48.7
+            ],
+            "sam_box_prompt_strategy": "boundary_inner_plus_component",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              495.1372549019608,
+              35.720588235294116
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 28.0,
+            "color_component_area": 204
+          },
+          {
+            "frame_index": 4,
+            "status": "sam31_mask_written",
+            "mask_area": 597,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              474.0,
+              11.0,
+              512.0,
+              63.0
+            ],
+            "component_bbox_2d": [
+              482.0,
+              19.0,
+              512.0,
+              55.0
+            ],
+            "inner_bbox_2d": [
+              487.25,
+              25.299999999999997,
+              506.75,
+              48.7
+            ],
+            "sam_box_prompt_strategy": "boundary_inner_plus_component",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              495.18446601941747,
+              35.5873786407767
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 28.0,
+            "color_component_area": 206
+          },
+          {
+            "frame_index": 5,
+            "status": "sam31_mask_written",
+            "mask_area": 522,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              474.0,
+              11.0,
+              512.0,
+              62.0
+            ],
+            "component_bbox_2d": [
+              482.0,
+              19.0,
+              512.0,
+              54.0
+            ],
+            "inner_bbox_2d": [
+              487.25,
+              25.125,
+              506.75,
+              47.875
+            ],
+            "sam_box_prompt_strategy": "boundary_inner_plus_component",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              494.7549019607843,
+              34.8235294117647
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 28.0,
+            "color_component_area": 204
+          },
+          {
+            "frame_index": 6,
+            "status": "sam31_mask_written",
+            "mask_area": 522,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              474.0,
+              11.0,
+              512.0,
+              62.0
+            ],
+            "component_bbox_2d": [
+              482.0,
+              19.0,
+              512.0,
+              54.0
+            ],
+            "inner_bbox_2d": [
+              487.25,
+              25.125,
+              506.75,
+              47.875
+            ],
+            "sam_box_prompt_strategy": "boundary_inner_plus_component",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              494.7549019607843,
+              34.8235294117647
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 28.0,
+            "color_component_area": 204
+          },
+          {
+            "frame_index": 7,
+            "status": "sam31_mask_written",
+            "mask_area": 527,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              474.0,
+              11.0,
+              512.0,
+              62.0
+            ],
+            "component_bbox_2d": [
+              482.0,
+              19.0,
+              512.0,
+              54.0
+            ],
+            "inner_bbox_2d": [
+              487.25,
+              25.125,
+              506.75,
+              47.875
+            ],
+            "sam_box_prompt_strategy": "boundary_inner_plus_component",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              494.7549019607843,
+              34.8235294117647
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 28.0,
+            "color_component_area": 204
+          },
+          {
+            "frame_index": 8,
+            "status": "sam31_mask_written",
+            "mask_area": 1573,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              366.0,
+              35.0,
+              418.0,
+              87.0
+            ],
+            "component_bbox_2d": [
+              374.0,
+              43.0,
+              410.0,
+              79.0
+            ],
+            "inner_bbox_2d": [
+              380.3,
+              49.3,
+              403.7,
+              72.7
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              391.3367697594502,
+              60.07216494845361
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 28.0,
+            "color_component_area": 291
+          },
+          {
+            "frame_index": 9,
+            "status": "sam31_mask_written",
+            "mask_area": 1653,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              245.0,
+              26.0,
+              297.0,
+              78.0
+            ],
+            "component_bbox_2d": [
+              253.0,
+              34.0,
+              289.0,
+              70.0
+            ],
+            "inner_bbox_2d": [
+              259.3,
+              40.3,
+              282.7,
+              63.7
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              269.8996282527881,
+              50.58364312267658
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 28.0,
+            "color_component_area": 269
+          },
+          {
+            "frame_index": 10,
+            "status": "sam31_mask_written",
+            "mask_area": 1825,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              118.0,
+              80.0,
+              171.0,
+              131.0
+            ],
+            "component_bbox_2d": [
+              126.0,
+              88.0,
+              163.0,
+              123.0
+            ],
+            "inner_bbox_2d": [
+              132.475,
+              94.125,
+              156.525,
+              116.875
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              142.57823129251702,
+              103.73469387755102
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 28.0,
+            "color_component_area": 294
+          },
+          {
+            "frame_index": 11,
+            "status": "sam31_mask_written",
+            "mask_area": 993,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              0.0,
+              134.0,
+              45.0,
+              186.0
+            ],
+            "component_bbox_2d": [
+              1.0,
+              142.0,
+              37.0,
+              178.0
+            ],
+            "inner_bbox_2d": [
+              7.299999999999999,
+              148.3,
+              30.700000000000003,
+              171.7
+            ],
+            "sam_box_prompt_strategy": "boundary_inner_plus_component",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              18.110320284697508,
+              158.9644128113879
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 28.0,
+            "color_component_area": 281
+          },
+          {
+            "frame_index": 12,
+            "status": "not_expected_visible",
+            "reason": "not_expected_visible",
+            "mask_area": 0
+          },
+          {
+            "frame_index": 13,
+            "status": "not_expected_visible",
+            "reason": "not_expected_visible",
+            "mask_area": 0
+          },
+          {
+            "frame_index": 14,
+            "status": "not_expected_visible",
+            "reason": "not_expected_visible",
+            "mask_area": 0
+          },
+          {
+            "frame_index": 15,
+            "status": "not_expected_visible",
+            "reason": "not_expected_visible",
+            "mask_area": 0
+          }
+        ]
+      }
+    },
+    "objects": [
+      {
+        "object_id": "gray_marble",
+        "label": "gray marble",
+        "role": "target_marble",
+        "color": "#9e9e9e",
+        "expected_color": "#9e9e9e",
+        "confidence": 0.895135,
+        "identity_source": "qwen2.5-vl-real_plus_study_contract",
+        "rough_bbox": [
+          25.0,
+          166.0,
+          76.0,
+          218.0
+        ],
+        "contract_required": true,
+        "allow_expected_invisibility": true
+      },
+      {
+        "object_id": "blue_player",
+        "label": "blue player marble",
+        "role": "player_marble",
+        "color": "#3f4ce1",
+        "expected_color": "#3f4ce1",
+        "confidence": 0.569911,
+        "identity_source": "qwen2.5-vl-real_plus_study_contract",
+        "rough_bbox": [
+          471.0,
+          319.0,
+          511.0,
+          370.0
+        ],
+        "contract_required": true,
+        "allow_expected_invisibility": true
+      },
+      {
+        "object_id": "green_player",
+        "label": "green player marble",
+        "role": "player_marble",
+        "color": "#5bef48",
+        "expected_color": "#5bef48",
+        "confidence": 0.77646,
+        "identity_source": "qwen2.5-vl-real_plus_study_contract",
+        "rough_bbox": [
+          474.0,
+          11.0,
+          511.0,
+          63.0
+        ],
+        "contract_required": true,
+        "allow_expected_invisibility": true
+      }
+    ],
+    "direct_fields": {
+      "bbox_2d_sequence": {
+        "gray_marble": [
+          {
+            "frame_index": 0,
+            "timestamp_sec": 0.0,
+            "bbox_2d": [
+              29.0,
+              167.0,
+              72.0,
+              216.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 1,
+            "timestamp_sec": 0.933333,
+            "bbox_2d": [
+              28.0,
+              167.0,
+              72.0,
+              216.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 2,
+            "timestamp_sec": 1.85,
+            "bbox_2d": [
+              28.0,
+              167.0,
+              73.0,
+              216.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 3,
+            "timestamp_sec": 2.783333,
+            "bbox_2d": [
+              29.0,
+              167.0,
+              72.0,
+              216.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 4,
+            "timestamp_sec": 3.7,
+            "bbox_2d": [
+              29.0,
+              167.0,
+              71.0,
+              215.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 5,
+            "timestamp_sec": 4.633333,
+            "bbox_2d": [
+              29.0,
+              167.0,
+              73.0,
+              216.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 6,
+            "timestamp_sec": 5.566667,
+            "bbox_2d": [
+              29.0,
+              167.0,
+              73.0,
+              216.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 7,
+            "timestamp_sec": 6.483333,
+            "bbox_2d": [
+              29.0,
+              167.0,
+              73.0,
+              216.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 8,
+            "timestamp_sec": 7.416667,
+            "bbox_2d": [
+              29.0,
+              167.0,
+              73.0,
+              216.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 9,
+            "timestamp_sec": 8.333333,
+            "bbox_2d": [
+              29.0,
+              167.0,
+              72.0,
+              216.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 10,
+            "timestamp_sec": 9.266667,
+            "bbox_2d": [
+              28.0,
+              167.0,
+              72.0,
+              216.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 11,
+            "timestamp_sec": 10.2,
+            "bbox_2d": [
+              30.0,
+              171.0,
+              72.0,
+              216.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 12,
+            "timestamp_sec": 11.116667,
+            "bbox_2d": [
+              29.0,
+              167.0,
+              71.0,
+              215.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 13,
+            "timestamp_sec": 12.05,
+            "bbox_2d": [
+              29.0,
+              167.0,
+              71.0,
+              215.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 14,
+            "timestamp_sec": 12.966667,
+            "bbox_2d": [
+              29.0,
+              167.0,
+              72.0,
+              215.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 15,
+            "timestamp_sec": 13.9,
+            "bbox_2d": [
+              29.0,
+              167.0,
+              72.0,
+              215.0
+            ],
+            "source": "sam3.1-real"
+          }
+        ],
+        "blue_player": [
+          {
+            "frame_index": 0,
+            "timestamp_sec": 0.0,
+            "bbox_2d": [
+              483.0,
+              330.0,
+              508.0,
+              358.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 1,
+            "timestamp_sec": 0.933333,
+            "bbox_2d": [
+              343.0,
+              285.0,
+              396.0,
+              340.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 2,
+            "timestamp_sec": 1.85,
+            "bbox_2d": [
+              219.0,
+              258.0,
+              267.0,
+              312.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 3,
+            "timestamp_sec": 2.783333,
+            "bbox_2d": [
+              104.0,
+              231.0,
+              148.0,
+              282.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 4,
+            "timestamp_sec": 3.7,
+            "bbox_2d": [
+              0.0,
+              212.0,
+              18.0,
+              243.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 5,
+            "timestamp_sec": 4.633333,
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 6,
+            "timestamp_sec": 5.566667,
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 7,
+            "timestamp_sec": 6.483333,
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 8,
+            "timestamp_sec": 7.416667,
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 9,
+            "timestamp_sec": 8.333333,
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 10,
+            "timestamp_sec": 9.266667,
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 11,
+            "timestamp_sec": 10.2,
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 12,
+            "timestamp_sec": 11.116667,
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 13,
+            "timestamp_sec": 12.05,
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 14,
+            "timestamp_sec": 12.966667,
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 15,
+            "timestamp_sec": 13.9,
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "source": "sam3.1-real"
+          }
+        ],
+        "green_player": [
+          {
+            "frame_index": 0,
+            "timestamp_sec": 0.0,
+            "bbox_2d": [
+              485.0,
+              22.0,
+              508.0,
+              53.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 1,
+            "timestamp_sec": 0.933333,
+            "bbox_2d": [
+              485.0,
+              22.0,
+              510.0,
+              53.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 2,
+            "timestamp_sec": 1.85,
+            "bbox_2d": [
+              485.0,
+              22.0,
+              510.0,
+              53.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 3,
+            "timestamp_sec": 2.783333,
+            "bbox_2d": [
+              485.0,
+              22.0,
+              509.0,
+              53.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 4,
+            "timestamp_sec": 3.7,
+            "bbox_2d": [
+              485.0,
+              22.0,
+              509.0,
+              53.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 5,
+            "timestamp_sec": 4.633333,
+            "bbox_2d": [
+              485.0,
+              23.0,
+              509.0,
+              51.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 6,
+            "timestamp_sec": 5.566667,
+            "bbox_2d": [
+              485.0,
+              23.0,
+              509.0,
+              51.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 7,
+            "timestamp_sec": 6.483333,
+            "bbox_2d": [
+              485.0,
+              23.0,
+              509.0,
+              51.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 8,
+            "timestamp_sec": 7.416667,
+            "bbox_2d": [
+              370.0,
+              39.0,
+              414.0,
+              83.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 9,
+            "timestamp_sec": 8.333333,
+            "bbox_2d": [
+              248.0,
+              30.0,
+              292.0,
+              74.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 10,
+            "timestamp_sec": 9.266667,
+            "bbox_2d": [
+              119.0,
+              83.0,
+              167.0,
+              128.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 11,
+            "timestamp_sec": 10.2,
+            "bbox_2d": [
+              2.0,
+              143.0,
+              37.0,
+              178.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 12,
+            "timestamp_sec": 11.116667,
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 13,
+            "timestamp_sec": 12.05,
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 14,
+            "timestamp_sec": 12.966667,
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 15,
+            "timestamp_sec": 13.9,
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "source": "sam3.1-real"
+          }
+        ]
+      },
+      "mask_sequence": {
+        "gray_marble": [
+          {
+            "frame_index": 0,
+            "timestamp_sec": 0.0,
+            "mask_ref": "gray_marble_mask_t000",
+            "bbox_2d": [
+              29.0,
+              167.0,
+              72.0,
+              216.0
+            ],
+            "area": 1786,
+            "tracking_points": [
+              {
+                "point_id": "gray_marble_p1",
+                "object_id": "gray_marble",
+                "uv": [
+                  49.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p2",
+                "object_id": "gray_marble",
+                "uv": [
+                  44.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p3",
+                "object_id": "gray_marble",
+                "uv": [
+                  57.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 1,
+            "timestamp_sec": 0.933333,
+            "mask_ref": "gray_marble_mask_t001",
+            "bbox_2d": [
+              28.0,
+              167.0,
+              72.0,
+              216.0
+            ],
+            "area": 1820,
+            "tracking_points": [
+              {
+                "point_id": "gray_marble_p1",
+                "object_id": "gray_marble",
+                "uv": [
+                  49.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p2",
+                "object_id": "gray_marble",
+                "uv": [
+                  44.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p3",
+                "object_id": "gray_marble",
+                "uv": [
+                  56.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 2,
+            "timestamp_sec": 1.85,
+            "mask_ref": "gray_marble_mask_t002",
+            "bbox_2d": [
+              28.0,
+              167.0,
+              73.0,
+              216.0
+            ],
+            "area": 1853,
+            "tracking_points": [
+              {
+                "point_id": "gray_marble_p1",
+                "object_id": "gray_marble",
+                "uv": [
+                  49.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p2",
+                "object_id": "gray_marble",
+                "uv": [
+                  44.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p3",
+                "object_id": "gray_marble",
+                "uv": [
+                  57.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 3,
+            "timestamp_sec": 2.783333,
+            "mask_ref": "gray_marble_mask_t003",
+            "bbox_2d": [
+              29.0,
+              167.0,
+              72.0,
+              216.0
+            ],
+            "area": 1819,
+            "tracking_points": [
+              {
+                "point_id": "gray_marble_p1",
+                "object_id": "gray_marble",
+                "uv": [
+                  50.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p2",
+                "object_id": "gray_marble",
+                "uv": [
+                  45.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p3",
+                "object_id": "gray_marble",
+                "uv": [
+                  56.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 4,
+            "timestamp_sec": 3.7,
+            "mask_ref": "gray_marble_mask_t004",
+            "bbox_2d": [
+              29.0,
+              167.0,
+              71.0,
+              215.0
+            ],
+            "area": 1643,
+            "tracking_points": [
+              {
+                "point_id": "gray_marble_p1",
+                "object_id": "gray_marble",
+                "uv": [
+                  49.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p2",
+                "object_id": "gray_marble",
+                "uv": [
+                  45.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p3",
+                "object_id": "gray_marble",
+                "uv": [
+                  56.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 5,
+            "timestamp_sec": 4.633333,
+            "mask_ref": "gray_marble_mask_t005",
+            "bbox_2d": [
+              29.0,
+              167.0,
+              73.0,
+              216.0
+            ],
+            "area": 1662,
+            "tracking_points": [
+              {
+                "point_id": "gray_marble_p1",
+                "object_id": "gray_marble",
+                "uv": [
+                  48.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p2",
+                "object_id": "gray_marble",
+                "uv": [
+                  44.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p3",
+                "object_id": "gray_marble",
+                "uv": [
+                  58.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 6,
+            "timestamp_sec": 5.566667,
+            "mask_ref": "gray_marble_mask_t006",
+            "bbox_2d": [
+              29.0,
+              167.0,
+              73.0,
+              216.0
+            ],
+            "area": 1662,
+            "tracking_points": [
+              {
+                "point_id": "gray_marble_p1",
+                "object_id": "gray_marble",
+                "uv": [
+                  48.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p2",
+                "object_id": "gray_marble",
+                "uv": [
+                  44.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p3",
+                "object_id": "gray_marble",
+                "uv": [
+                  58.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 7,
+            "timestamp_sec": 6.483333,
+            "mask_ref": "gray_marble_mask_t007",
+            "bbox_2d": [
+              29.0,
+              167.0,
+              73.0,
+              216.0
+            ],
+            "area": 1662,
+            "tracking_points": [
+              {
+                "point_id": "gray_marble_p1",
+                "object_id": "gray_marble",
+                "uv": [
+                  48.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p2",
+                "object_id": "gray_marble",
+                "uv": [
+                  44.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p3",
+                "object_id": "gray_marble",
+                "uv": [
+                  58.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 8,
+            "timestamp_sec": 7.416667,
+            "mask_ref": "gray_marble_mask_t008",
+            "bbox_2d": [
+              29.0,
+              167.0,
+              73.0,
+              216.0
+            ],
+            "area": 1669,
+            "tracking_points": [
+              {
+                "point_id": "gray_marble_p1",
+                "object_id": "gray_marble",
+                "uv": [
+                  48.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p2",
+                "object_id": "gray_marble",
+                "uv": [
+                  44.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p3",
+                "object_id": "gray_marble",
+                "uv": [
+                  58.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 9,
+            "timestamp_sec": 8.333333,
+            "mask_ref": "gray_marble_mask_t009",
+            "bbox_2d": [
+              29.0,
+              167.0,
+              72.0,
+              216.0
+            ],
+            "area": 1727,
+            "tracking_points": [
+              {
+                "point_id": "gray_marble_p1",
+                "object_id": "gray_marble",
+                "uv": [
+                  50.0,
+                  193.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p2",
+                "object_id": "gray_marble",
+                "uv": [
+                  44.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p3",
+                "object_id": "gray_marble",
+                "uv": [
+                  57.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 10,
+            "timestamp_sec": 9.266667,
+            "mask_ref": "gray_marble_mask_t010",
+            "bbox_2d": [
+              28.0,
+              167.0,
+              72.0,
+              216.0
+            ],
+            "area": 1656,
+            "tracking_points": [
+              {
+                "point_id": "gray_marble_p1",
+                "object_id": "gray_marble",
+                "uv": [
+                  49.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p2",
+                "object_id": "gray_marble",
+                "uv": [
+                  44.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p3",
+                "object_id": "gray_marble",
+                "uv": [
+                  57.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 11,
+            "timestamp_sec": 10.2,
+            "mask_ref": "gray_marble_mask_t011",
+            "bbox_2d": [
+              30.0,
+              171.0,
+              72.0,
+              216.0
+            ],
+            "area": 1556,
+            "tracking_points": [
+              {
+                "point_id": "gray_marble_p1",
+                "object_id": "gray_marble",
+                "uv": [
+                  51.0,
+                  194.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p2",
+                "object_id": "gray_marble",
+                "uv": [
+                  45.0,
+                  194.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p3",
+                "object_id": "gray_marble",
+                "uv": [
+                  56.0,
+                  194.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 12,
+            "timestamp_sec": 11.116667,
+            "mask_ref": "gray_marble_mask_t012",
+            "bbox_2d": [
+              29.0,
+              167.0,
+              71.0,
+              215.0
+            ],
+            "area": 1633,
+            "tracking_points": [
+              {
+                "point_id": "gray_marble_p1",
+                "object_id": "gray_marble",
+                "uv": [
+                  49.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p2",
+                "object_id": "gray_marble",
+                "uv": [
+                  44.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p3",
+                "object_id": "gray_marble",
+                "uv": [
+                  56.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 13,
+            "timestamp_sec": 12.05,
+            "mask_ref": "gray_marble_mask_t013",
+            "bbox_2d": [
+              29.0,
+              167.0,
+              71.0,
+              215.0
+            ],
+            "area": 1633,
+            "tracking_points": [
+              {
+                "point_id": "gray_marble_p1",
+                "object_id": "gray_marble",
+                "uv": [
+                  49.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p2",
+                "object_id": "gray_marble",
+                "uv": [
+                  44.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p3",
+                "object_id": "gray_marble",
+                "uv": [
+                  56.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 14,
+            "timestamp_sec": 12.966667,
+            "mask_ref": "gray_marble_mask_t014",
+            "bbox_2d": [
+              29.0,
+              167.0,
+              72.0,
+              215.0
+            ],
+            "area": 1656,
+            "tracking_points": [
+              {
+                "point_id": "gray_marble_p1",
+                "object_id": "gray_marble",
+                "uv": [
+                  50.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p2",
+                "object_id": "gray_marble",
+                "uv": [
+                  44.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p3",
+                "object_id": "gray_marble",
+                "uv": [
+                  57.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 15,
+            "timestamp_sec": 13.9,
+            "mask_ref": "gray_marble_mask_t015",
+            "bbox_2d": [
+              29.0,
+              167.0,
+              72.0,
+              215.0
+            ],
+            "area": 1656,
+            "tracking_points": [
+              {
+                "point_id": "gray_marble_p1",
+                "object_id": "gray_marble",
+                "uv": [
+                  50.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p2",
+                "object_id": "gray_marble",
+                "uv": [
+                  44.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "gray_marble_p3",
+                "object_id": "gray_marble",
+                "uv": [
+                  57.0,
+                  192.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          }
+        ],
+        "blue_player": [
+          {
+            "frame_index": 0,
+            "timestamp_sec": 0.0,
+            "mask_ref": "blue_player_mask_t000",
+            "bbox_2d": [
+              483.0,
+              330.0,
+              508.0,
+              358.0
+            ],
+            "area": 558,
+            "tracking_points": [
+              {
+                "point_id": "blue_player_p1",
+                "object_id": "blue_player",
+                "uv": [
+                  495.0,
+                  343.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "blue_player_p2",
+                "object_id": "blue_player",
+                "uv": [
+                  492.0,
+                  344.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "blue_player_p3",
+                "object_id": "blue_player",
+                "uv": [
+                  498.0,
+                  344.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 1,
+            "timestamp_sec": 0.933333,
+            "mask_ref": "blue_player_mask_t001",
+            "bbox_2d": [
+              343.0,
+              285.0,
+              396.0,
+              340.0
+            ],
+            "area": 2148,
+            "tracking_points": [
+              {
+                "point_id": "blue_player_p1",
+                "object_id": "blue_player",
+                "uv": [
+                  369.0,
+                  312.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "blue_player_p2",
+                "object_id": "blue_player",
+                "uv": [
+                  361.0,
+                  310.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "blue_player_p3",
+                "object_id": "blue_player",
+                "uv": [
+                  377.0,
+                  310.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 2,
+            "timestamp_sec": 1.85,
+            "mask_ref": "blue_player_mask_t002",
+            "bbox_2d": [
+              219.0,
+              258.0,
+              267.0,
+              312.0
+            ],
+            "area": 2242,
+            "tracking_points": [
+              {
+                "point_id": "blue_player_p1",
+                "object_id": "blue_player",
+                "uv": [
+                  243.0,
+                  285.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "blue_player_p2",
+                "object_id": "blue_player",
+                "uv": [
+                  237.0,
+                  285.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "blue_player_p3",
+                "object_id": "blue_player",
+                "uv": [
+                  250.0,
+                  285.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 3,
+            "timestamp_sec": 2.783333,
+            "mask_ref": "blue_player_mask_t003",
+            "bbox_2d": [
+              104.0,
+              231.0,
+              148.0,
+              282.0
+            ],
+            "area": 1954,
+            "tracking_points": [
+              {
+                "point_id": "blue_player_p1",
+                "object_id": "blue_player",
+                "uv": [
+                  126.0,
+                  256.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "blue_player_p2",
+                "object_id": "blue_player",
+                "uv": [
+                  121.0,
+                  256.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "blue_player_p3",
+                "object_id": "blue_player",
+                "uv": [
+                  132.0,
+                  256.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 4,
+            "timestamp_sec": 3.7,
+            "mask_ref": "blue_player_mask_t004",
+            "bbox_2d": [
+              0.0,
+              212.0,
+              18.0,
+              243.0
+            ],
+            "area": 446,
+            "tracking_points": [
+              {
+                "point_id": "blue_player_p1",
+                "object_id": "blue_player",
+                "uv": [
+                  8.0,
+                  227.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "blue_player_p2",
+                "object_id": "blue_player",
+                "uv": [
+                  6.0,
+                  227.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "blue_player_p3",
+                "object_id": "blue_player",
+                "uv": [
+                  10.0,
+                  227.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 5,
+            "timestamp_sec": 4.633333,
+            "mask_ref": "blue_player_mask_t005",
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "area": 0,
+            "tracking_points": [],
+            "source": "sam3.1-real",
+            "visibility_state": "not_expected_visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 6,
+            "timestamp_sec": 5.566667,
+            "mask_ref": "blue_player_mask_t006",
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "area": 0,
+            "tracking_points": [],
+            "source": "sam3.1-real",
+            "visibility_state": "not_expected_visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 7,
+            "timestamp_sec": 6.483333,
+            "mask_ref": "blue_player_mask_t007",
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "area": 0,
+            "tracking_points": [],
+            "source": "sam3.1-real",
+            "visibility_state": "not_expected_visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 8,
+            "timestamp_sec": 7.416667,
+            "mask_ref": "blue_player_mask_t008",
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "area": 0,
+            "tracking_points": [],
+            "source": "sam3.1-real",
+            "visibility_state": "not_expected_visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 9,
+            "timestamp_sec": 8.333333,
+            "mask_ref": "blue_player_mask_t009",
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "area": 0,
+            "tracking_points": [],
+            "source": "sam3.1-real",
+            "visibility_state": "not_expected_visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 10,
+            "timestamp_sec": 9.266667,
+            "mask_ref": "blue_player_mask_t010",
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "area": 0,
+            "tracking_points": [],
+            "source": "sam3.1-real",
+            "visibility_state": "not_expected_visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 11,
+            "timestamp_sec": 10.2,
+            "mask_ref": "blue_player_mask_t011",
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "area": 0,
+            "tracking_points": [],
+            "source": "sam3.1-real",
+            "visibility_state": "not_expected_visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 12,
+            "timestamp_sec": 11.116667,
+            "mask_ref": "blue_player_mask_t012",
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "area": 0,
+            "tracking_points": [],
+            "source": "sam3.1-real",
+            "visibility_state": "not_expected_visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 13,
+            "timestamp_sec": 12.05,
+            "mask_ref": "blue_player_mask_t013",
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "area": 0,
+            "tracking_points": [],
+            "source": "sam3.1-real",
+            "visibility_state": "not_expected_visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 14,
+            "timestamp_sec": 12.966667,
+            "mask_ref": "blue_player_mask_t014",
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "area": 0,
+            "tracking_points": [],
+            "source": "sam3.1-real",
+            "visibility_state": "not_expected_visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 15,
+            "timestamp_sec": 13.9,
+            "mask_ref": "blue_player_mask_t015",
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "area": 0,
+            "tracking_points": [],
+            "source": "sam3.1-real",
+            "visibility_state": "not_expected_visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          }
+        ],
+        "green_player": [
+          {
+            "frame_index": 0,
+            "timestamp_sec": 0.0,
+            "mask_ref": "green_player_mask_t000",
+            "bbox_2d": [
+              485.0,
+              22.0,
+              508.0,
+              53.0
+            ],
+            "area": 581,
+            "tracking_points": [
+              {
+                "point_id": "green_player_p1",
+                "object_id": "green_player",
+                "uv": [
+                  496.0,
+                  37.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "green_player_p2",
+                "object_id": "green_player",
+                "uv": [
+                  493.0,
+                  38.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "green_player_p3",
+                "object_id": "green_player",
+                "uv": [
+                  499.0,
+                  38.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 1,
+            "timestamp_sec": 0.933333,
+            "mask_ref": "green_player_mask_t001",
+            "bbox_2d": [
+              485.0,
+              22.0,
+              510.0,
+              53.0
+            ],
+            "area": 624,
+            "tracking_points": [
+              {
+                "point_id": "green_player_p1",
+                "object_id": "green_player",
+                "uv": [
+                  497.0,
+                  37.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "green_player_p2",
+                "object_id": "green_player",
+                "uv": [
+                  494.0,
+                  38.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "green_player_p3",
+                "object_id": "green_player",
+                "uv": [
+                  500.0,
+                  38.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 2,
+            "timestamp_sec": 1.85,
+            "mask_ref": "green_player_mask_t002",
+            "bbox_2d": [
+              485.0,
+              22.0,
+              510.0,
+              53.0
+            ],
+            "area": 638,
+            "tracking_points": [
+              {
+                "point_id": "green_player_p1",
+                "object_id": "green_player",
+                "uv": [
+                  497.0,
+                  37.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "green_player_p2",
+                "object_id": "green_player",
+                "uv": [
+                  494.0,
+                  38.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "green_player_p3",
+                "object_id": "green_player",
+                "uv": [
+                  500.0,
+                  38.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 3,
+            "timestamp_sec": 2.783333,
+            "mask_ref": "green_player_mask_t003",
+            "bbox_2d": [
+              485.0,
+              22.0,
+              509.0,
+              53.0
+            ],
+            "area": 616,
+            "tracking_points": [
+              {
+                "point_id": "green_player_p1",
+                "object_id": "green_player",
+                "uv": [
+                  497.0,
+                  37.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "green_player_p2",
+                "object_id": "green_player",
+                "uv": [
+                  493.0,
+                  37.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "green_player_p3",
+                "object_id": "green_player",
+                "uv": [
+                  500.0,
+                  37.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 4,
+            "timestamp_sec": 3.7,
+            "mask_ref": "green_player_mask_t004",
+            "bbox_2d": [
+              485.0,
+              22.0,
+              509.0,
+              53.0
+            ],
+            "area": 597,
+            "tracking_points": [
+              {
+                "point_id": "green_player_p1",
+                "object_id": "green_player",
+                "uv": [
+                  496.0,
+                  37.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "green_player_p2",
+                "object_id": "green_player",
+                "uv": [
+                  493.0,
+                  37.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "green_player_p3",
+                "object_id": "green_player",
+                "uv": [
+                  499.0,
+                  37.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 5,
+            "timestamp_sec": 4.633333,
+            "mask_ref": "green_player_mask_t005",
+            "bbox_2d": [
+              485.0,
+              23.0,
+              509.0,
+              51.0
+            ],
+            "area": 522,
+            "tracking_points": [
+              {
+                "point_id": "green_player_p1",
+                "object_id": "green_player",
+                "uv": [
+                  496.0,
+                  37.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "green_player_p2",
+                "object_id": "green_player",
+                "uv": [
+                  493.0,
+                  37.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "green_player_p3",
+                "object_id": "green_player",
+                "uv": [
+                  499.0,
+                  37.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 6,
+            "timestamp_sec": 5.566667,
+            "mask_ref": "green_player_mask_t006",
+            "bbox_2d": [
+              485.0,
+              23.0,
+              509.0,
+              51.0
+            ],
+            "area": 522,
+            "tracking_points": [
+              {
+                "point_id": "green_player_p1",
+                "object_id": "green_player",
+                "uv": [
+                  496.0,
+                  37.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "green_player_p2",
+                "object_id": "green_player",
+                "uv": [
+                  493.0,
+                  37.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "green_player_p3",
+                "object_id": "green_player",
+                "uv": [
+                  499.0,
+                  37.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 7,
+            "timestamp_sec": 6.483333,
+            "mask_ref": "green_player_mask_t007",
+            "bbox_2d": [
+              485.0,
+              23.0,
+              509.0,
+              51.0
+            ],
+            "area": 527,
+            "tracking_points": [
+              {
+                "point_id": "green_player_p1",
+                "object_id": "green_player",
+                "uv": [
+                  496.0,
+                  37.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "green_player_p2",
+                "object_id": "green_player",
+                "uv": [
+                  493.0,
+                  37.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "green_player_p3",
+                "object_id": "green_player",
+                "uv": [
+                  499.0,
+                  37.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 8,
+            "timestamp_sec": 7.416667,
+            "mask_ref": "green_player_mask_t008",
+            "bbox_2d": [
+              370.0,
+              39.0,
+              414.0,
+              83.0
+            ],
+            "area": 1573,
+            "tracking_points": [
+              {
+                "point_id": "green_player_p1",
+                "object_id": "green_player",
+                "uv": [
+                  391.0,
+                  60.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "green_player_p2",
+                "object_id": "green_player",
+                "uv": [
+                  385.0,
+                  60.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "green_player_p3",
+                "object_id": "green_player",
+                "uv": [
+                  396.0,
+                  60.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 9,
+            "timestamp_sec": 8.333333,
+            "mask_ref": "green_player_mask_t009",
+            "bbox_2d": [
+              248.0,
+              30.0,
+              292.0,
+              74.0
+            ],
+            "area": 1653,
+            "tracking_points": [
+              {
+                "point_id": "green_player_p1",
+                "object_id": "green_player",
+                "uv": [
+                  270.0,
+                  51.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "green_player_p2",
+                "object_id": "green_player",
+                "uv": [
+                  264.0,
+                  52.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "green_player_p3",
+                "object_id": "green_player",
+                "uv": [
+                  275.0,
+                  52.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 10,
+            "timestamp_sec": 9.266667,
+            "mask_ref": "green_player_mask_t010",
+            "bbox_2d": [
+              119.0,
+              83.0,
+              167.0,
+              128.0
+            ],
+            "area": 1825,
+            "tracking_points": [
+              {
+                "point_id": "green_player_p1",
+                "object_id": "green_player",
+                "uv": [
+                  143.0,
+                  105.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "green_player_p2",
+                "object_id": "green_player",
+                "uv": [
+                  137.0,
+                  105.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "green_player_p3",
+                "object_id": "green_player",
+                "uv": [
+                  149.0,
+                  105.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 11,
+            "timestamp_sec": 10.2,
+            "mask_ref": "green_player_mask_t011",
+            "bbox_2d": [
+              2.0,
+              143.0,
+              37.0,
+              178.0
+            ],
+            "area": 993,
+            "tracking_points": [
+              {
+                "point_id": "green_player_p1",
+                "object_id": "green_player",
+                "uv": [
+                  18.0,
+                  160.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "green_player_p2",
+                "object_id": "green_player",
+                "uv": [
+                  14.0,
+                  160.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "green_player_p3",
+                "object_id": "green_player",
+                "uv": [
+                  23.0,
+                  160.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 12,
+            "timestamp_sec": 11.116667,
+            "mask_ref": "green_player_mask_t012",
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "area": 0,
+            "tracking_points": [],
+            "source": "sam3.1-real",
+            "visibility_state": "not_expected_visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 13,
+            "timestamp_sec": 12.05,
+            "mask_ref": "green_player_mask_t013",
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "area": 0,
+            "tracking_points": [],
+            "source": "sam3.1-real",
+            "visibility_state": "not_expected_visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 14,
+            "timestamp_sec": 12.966667,
+            "mask_ref": "green_player_mask_t014",
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "area": 0,
+            "tracking_points": [],
+            "source": "sam3.1-real",
+            "visibility_state": "not_expected_visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 15,
+            "timestamp_sec": 13.9,
+            "mask_ref": "green_player_mask_t015",
+            "bbox_2d": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "area": 0,
+            "tracking_points": [],
+            "source": "sam3.1-real",
+            "visibility_state": "not_expected_visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          }
+        ]
+      },
+      "mask_available": true,
+      "point_tracks_2d": {
+        "gray_marble": [
+          {
+            "tracklet_id": "trk_gray_marble_p1",
+            "object_id": "gray_marble",
+            "point_id": "gray_marble_p1",
+            "uv_sequence": [
+              [
+                49.0,
+                192.0
+              ],
+              [
+                49.0,
+                192.0
+              ],
+              [
+                49.0,
+                192.0
+              ],
+              [
+                50.0,
+                192.0
+              ],
+              [
+                49.0,
+                192.0
+              ],
+              [
+                48.0,
+                192.0
+              ],
+              [
+                48.0,
+                192.0
+              ],
+              [
+                48.0,
+                192.0
+              ],
+              [
+                48.0,
+                192.0
+              ],
+              [
+                50.0,
+                193.0
+              ],
+              [
+                49.0,
+                192.0
+              ],
+              [
+                51.0,
+                194.0
+              ],
+              [
+                49.0,
+                192.0
+              ],
+              [
+                49.0,
+                192.0
+              ],
+              [
+                50.0,
+                192.0
+              ],
+              [
+                50.0,
+                192.0
+              ]
+            ],
+            "visibility": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "confidence": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source": "sam31_mask_owned_interior_points"
+          },
+          {
+            "tracklet_id": "trk_gray_marble_p2",
+            "object_id": "gray_marble",
+            "point_id": "gray_marble_p2",
+            "uv_sequence": [
+              [
+                44.0,
+                192.0
+              ],
+              [
+                44.0,
+                192.0
+              ],
+              [
+                44.0,
+                192.0
+              ],
+              [
+                45.0,
+                192.0
+              ],
+              [
+                45.0,
+                192.0
+              ],
+              [
+                44.0,
+                192.0
+              ],
+              [
+                44.0,
+                192.0
+              ],
+              [
+                44.0,
+                192.0
+              ],
+              [
+                44.0,
+                192.0
+              ],
+              [
+                44.0,
+                192.0
+              ],
+              [
+                44.0,
+                192.0
+              ],
+              [
+                45.0,
+                194.0
+              ],
+              [
+                44.0,
+                192.0
+              ],
+              [
+                44.0,
+                192.0
+              ],
+              [
+                44.0,
+                192.0
+              ],
+              [
+                44.0,
+                192.0
+              ]
+            ],
+            "visibility": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "confidence": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source": "sam31_mask_owned_interior_points"
+          },
+          {
+            "tracklet_id": "trk_gray_marble_p3",
+            "object_id": "gray_marble",
+            "point_id": "gray_marble_p3",
+            "uv_sequence": [
+              [
+                57.0,
+                192.0
+              ],
+              [
+                56.0,
+                192.0
+              ],
+              [
+                57.0,
+                192.0
+              ],
+              [
+                56.0,
+                192.0
+              ],
+              [
+                56.0,
+                192.0
+              ],
+              [
+                58.0,
+                192.0
+              ],
+              [
+                58.0,
+                192.0
+              ],
+              [
+                58.0,
+                192.0
+              ],
+              [
+                58.0,
+                192.0
+              ],
+              [
+                57.0,
+                192.0
+              ],
+              [
+                57.0,
+                192.0
+              ],
+              [
+                56.0,
+                194.0
+              ],
+              [
+                56.0,
+                192.0
+              ],
+              [
+                56.0,
+                192.0
+              ],
+              [
+                57.0,
+                192.0
+              ],
+              [
+                57.0,
+                192.0
+              ]
+            ],
+            "visibility": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "confidence": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source": "sam31_mask_owned_interior_points"
+          }
+        ],
+        "blue_player": [
+          {
+            "tracklet_id": "trk_blue_player_p1",
+            "object_id": "blue_player",
+            "point_id": "blue_player_p1",
+            "uv_sequence": [
+              [
+                495.0,
+                343.0
+              ],
+              [
+                369.0,
+                312.0
+              ],
+              [
+                243.0,
+                285.0
+              ],
+              [
+                126.0,
+                256.0
+              ],
+              [
+                8.0,
+                227.0
+              ]
+            ],
+            "visibility": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "confidence": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source": "sam31_mask_owned_interior_points"
+          },
+          {
+            "tracklet_id": "trk_blue_player_p2",
+            "object_id": "blue_player",
+            "point_id": "blue_player_p2",
+            "uv_sequence": [
+              [
+                492.0,
+                344.0
+              ],
+              [
+                361.0,
+                310.0
+              ],
+              [
+                237.0,
+                285.0
+              ],
+              [
+                121.0,
+                256.0
+              ],
+              [
+                6.0,
+                227.0
+              ]
+            ],
+            "visibility": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "confidence": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source": "sam31_mask_owned_interior_points"
+          },
+          {
+            "tracklet_id": "trk_blue_player_p3",
+            "object_id": "blue_player",
+            "point_id": "blue_player_p3",
+            "uv_sequence": [
+              [
+                498.0,
+                344.0
+              ],
+              [
+                377.0,
+                310.0
+              ],
+              [
+                250.0,
+                285.0
+              ],
+              [
+                132.0,
+                256.0
+              ],
+              [
+                10.0,
+                227.0
+              ]
+            ],
+            "visibility": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "confidence": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source": "sam31_mask_owned_interior_points"
+          }
+        ],
+        "green_player": [
+          {
+            "tracklet_id": "trk_green_player_p1",
+            "object_id": "green_player",
+            "point_id": "green_player_p1",
+            "uv_sequence": [
+              [
+                496.0,
+                37.0
+              ],
+              [
+                497.0,
+                37.0
+              ],
+              [
+                497.0,
+                37.0
+              ],
+              [
+                497.0,
+                37.0
+              ],
+              [
+                496.0,
+                37.0
+              ],
+              [
+                496.0,
+                37.0
+              ],
+              [
+                496.0,
+                37.0
+              ],
+              [
+                496.0,
+                37.0
+              ],
+              [
+                391.0,
+                60.0
+              ],
+              [
+                270.0,
+                51.0
+              ],
+              [
+                143.0,
+                105.0
+              ],
+              [
+                18.0,
+                160.0
+              ]
+            ],
+            "visibility": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "confidence": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source": "sam31_mask_owned_interior_points"
+          },
+          {
+            "tracklet_id": "trk_green_player_p2",
+            "object_id": "green_player",
+            "point_id": "green_player_p2",
+            "uv_sequence": [
+              [
+                493.0,
+                38.0
+              ],
+              [
+                494.0,
+                38.0
+              ],
+              [
+                494.0,
+                38.0
+              ],
+              [
+                493.0,
+                37.0
+              ],
+              [
+                493.0,
+                37.0
+              ],
+              [
+                493.0,
+                37.0
+              ],
+              [
+                493.0,
+                37.0
+              ],
+              [
+                493.0,
+                37.0
+              ],
+              [
+                385.0,
+                60.0
+              ],
+              [
+                264.0,
+                52.0
+              ],
+              [
+                137.0,
+                105.0
+              ],
+              [
+                14.0,
+                160.0
+              ]
+            ],
+            "visibility": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "confidence": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source": "sam31_mask_owned_interior_points"
+          },
+          {
+            "tracklet_id": "trk_green_player_p3",
+            "object_id": "green_player",
+            "point_id": "green_player_p3",
+            "uv_sequence": [
+              [
+                499.0,
+                38.0
+              ],
+              [
+                500.0,
+                38.0
+              ],
+              [
+                500.0,
+                38.0
+              ],
+              [
+                500.0,
+                37.0
+              ],
+              [
+                499.0,
+                37.0
+              ],
+              [
+                499.0,
+                37.0
+              ],
+              [
+                499.0,
+                37.0
+              ],
+              [
+                499.0,
+                37.0
+              ],
+              [
+                396.0,
+                60.0
+              ],
+              [
+                275.0,
+                52.0
+              ],
+              [
+                149.0,
+                105.0
+              ],
+              [
+                23.0,
+                160.0
+              ]
+            ],
+            "visibility": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "confidence": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source": "sam31_mask_owned_interior_points"
+          }
+        ]
+      },
+      "field_sources": {
+        "identity": "qwen2.5-vl-real",
+        "bbox_2d_sequence": "sam3.1-real",
+        "mask_sequence": "sam3.1-real",
+        "point_tracks_2d": "sam31_mask_owned_interior_points"
+      }
+    },
+    "computed_fields": {
+      "center_2d_trajectory": {
+        "gray_marble": [
+          {
+            "frame_index": 0,
+            "timestamp_sec": 0.0,
+            "uv": [
+              50.270997,
+              191.701008
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 1,
+            "timestamp_sec": 0.933333,
+            "uv": [
+              50.095055,
+              191.813736
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 2,
+            "timestamp_sec": 1.85,
+            "uv": [
+              50.204533,
+              191.689692
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 3,
+            "timestamp_sec": 2.783333,
+            "uv": [
+              50.342496,
+              191.695437
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 4,
+            "timestamp_sec": 3.7,
+            "uv": [
+              50.487523,
+              191.639075
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 5,
+            "timestamp_sec": 4.633333,
+            "uv": [
+              50.657641,
+              191.648616
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 6,
+            "timestamp_sec": 5.566667,
+            "uv": [
+              50.657641,
+              191.648616
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 7,
+            "timestamp_sec": 6.483333,
+            "uv": [
+              50.681107,
+              191.661853
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 8,
+            "timestamp_sec": 7.416667,
+            "uv": [
+              50.710006,
+              191.781905
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 9,
+            "timestamp_sec": 8.333333,
+            "uv": [
+              50.231616,
+              191.784598
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 10,
+            "timestamp_sec": 9.266667,
+            "uv": [
+              50.21256,
+              191.951691
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 11,
+            "timestamp_sec": 10.2,
+            "uv": [
+              50.691517,
+              193.769923
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 12,
+            "timestamp_sec": 11.116667,
+            "uv": [
+              50.18616,
+              191.710349
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 13,
+            "timestamp_sec": 12.05,
+            "uv": [
+              50.18616,
+              191.710349
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 14,
+            "timestamp_sec": 12.966667,
+            "uv": [
+              50.509058,
+              191.717995
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 15,
+            "timestamp_sec": 13.9,
+            "uv": [
+              50.509058,
+              191.717995
+            ],
+            "source": "sam31_mask_centroid"
+          }
+        ],
+        "blue_player": [
+          {
+            "frame_index": 0,
+            "timestamp_sec": 0.0,
+            "uv": [
+              495.166667,
+              343.356631
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 1,
+            "timestamp_sec": 0.933333,
+            "uv": [
+              368.753724,
+              312.145717
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 2,
+            "timestamp_sec": 1.85,
+            "uv": [
+              243.043265,
+              285.076717
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 3,
+            "timestamp_sec": 2.783333,
+            "uv": [
+              126.208291,
+              256.206755
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 4,
+            "timestamp_sec": 3.7,
+            "uv": [
+              8.186099,
+              227.060538
+            ],
+            "source": "sam31_mask_centroid"
+          }
+        ],
+        "green_player": [
+          {
+            "frame_index": 0,
+            "timestamp_sec": 0.0,
+            "uv": [
+              495.826162,
+              37.349398
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 1,
+            "timestamp_sec": 0.933333,
+            "uv": [
+              496.564103,
+              37.362179
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 2,
+            "timestamp_sec": 1.85,
+            "uv": [
+              496.69279,
+              37.485893
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 3,
+            "timestamp_sec": 2.783333,
+            "uv": [
+              496.527597,
+              37.288961
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 4,
+            "timestamp_sec": 3.7,
+            "uv": [
+              496.40201,
+              37.207705
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 5,
+            "timestamp_sec": 4.633333,
+            "uv": [
+              496.363985,
+              36.62069
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 6,
+            "timestamp_sec": 5.566667,
+            "uv": [
+              496.363985,
+              36.62069
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 7,
+            "timestamp_sec": 6.483333,
+            "uv": [
+              496.339658,
+              36.620493
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 8,
+            "timestamp_sec": 7.416667,
+            "uv": [
+              390.883026,
+              60.094088
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 9,
+            "timestamp_sec": 8.333333,
+            "uv": [
+              269.814277,
+              51.452511
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 10,
+            "timestamp_sec": 9.266667,
+            "uv": [
+              143.42137,
+              104.8
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 11,
+            "timestamp_sec": 10.2,
+            "uv": [
+              18.421954,
+              159.824773
+            ],
+            "source": "sam31_mask_centroid"
+          }
+        ]
+      },
+      "velocity_2d": {
+        "gray_marble": [
+          {
+            "frame_index": 1,
+            "duv_dt": [
+              -0.188509,
+              0.12078
+            ],
+            "speed_px_per_sec": 0.223883,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 2,
+            "duv_dt": [
+              0.119431,
+              -0.135321
+            ],
+            "speed_px_per_sec": 0.180486,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 3,
+            "duv_dt": [
+              0.147818,
+              0.006155
+            ],
+            "speed_px_per_sec": 0.147946,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 4,
+            "duv_dt": [
+              0.158211,
+              -0.061486
+            ],
+            "speed_px_per_sec": 0.169739,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 5,
+            "duv_dt": [
+              0.182269,
+              0.010223
+            ],
+            "speed_px_per_sec": 0.182556,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 6,
+            "duv_dt": [
+              0.0,
+              0.0
+            ],
+            "speed_px_per_sec": 0.0,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 7,
+            "duv_dt": [
+              0.025599,
+              0.01444
+            ],
+            "speed_px_per_sec": 0.029391,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 8,
+            "duv_dt": [
+              0.030963,
+              0.128627
+            ],
+            "speed_px_per_sec": 0.132301,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 9,
+            "duv_dt": [
+              -0.52188,
+              0.002938
+            ],
+            "speed_px_per_sec": 0.521889,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 10,
+            "duv_dt": [
+              -0.020417,
+              0.179028
+            ],
+            "speed_px_per_sec": 0.180189,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 11,
+            "duv_dt": [
+              0.513168,
+              1.948106
+            ],
+            "speed_px_per_sec": 2.014562,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 12,
+            "duv_dt": [
+              -0.551298,
+              -2.246807
+            ],
+            "speed_px_per_sec": 2.313455,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 13,
+            "duv_dt": [
+              0.0,
+              0.0
+            ],
+            "speed_px_per_sec": 0.0,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 14,
+            "duv_dt": [
+              0.352252,
+              0.008341
+            ],
+            "speed_px_per_sec": 0.352351,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 15,
+            "duv_dt": [
+              0.0,
+              0.0
+            ],
+            "speed_px_per_sec": 0.0,
+            "source": "finite_difference_center_2d"
+          }
+        ],
+        "blue_player": [
+          {
+            "frame_index": 1,
+            "duv_dt": [
+              -135.442487,
+              -33.440277
+            ],
+            "speed_px_per_sec": 139.509568,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 2,
+            "duv_dt": [
+              -137.138633,
+              -29.529807
+            ],
+            "speed_px_per_sec": 140.281909,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 3,
+            "duv_dt": [
+              -125.180374,
+              -30.932113
+            ],
+            "speed_px_per_sec": 128.945421,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 4,
+            "duv_dt": [
+              -128.751435,
+              -31.795862
+            ],
+            "speed_px_per_sec": 132.619414,
+            "source": "finite_difference_center_2d"
+          }
+        ],
+        "green_player": [
+          {
+            "frame_index": 1,
+            "duv_dt": [
+              0.790651,
+              0.013694
+            ],
+            "speed_px_per_sec": 0.79077,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 2,
+            "duv_dt": [
+              0.140386,
+              0.134961
+            ],
+            "speed_px_per_sec": 0.194737,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 3,
+            "duv_dt": [
+              -0.176993,
+              -0.210999
+            ],
+            "speed_px_per_sec": 0.275403,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 4,
+            "duv_dt": [
+              -0.137004,
+              -0.088643
+            ],
+            "speed_px_per_sec": 0.16318,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 5,
+            "duv_dt": [
+              -0.040741,
+              -0.628945
+            ],
+            "speed_px_per_sec": 0.630263,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 6,
+            "duv_dt": [
+              0.0,
+              0.0
+            ],
+            "speed_px_per_sec": 0.0,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 7,
+            "duv_dt": [
+              -0.026539,
+              -0.000215
+            ],
+            "speed_px_per_sec": 0.026539,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 8,
+            "duv_dt": [
+              -112.989168,
+              25.150262
+            ],
+            "speed_px_per_sec": 115.754429,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 9,
+            "duv_dt": [
+              -132.075095,
+              -9.427182
+            ],
+            "speed_px_per_sec": 132.411112,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 10,
+            "duv_dt": [
+              -135.420875,
+              57.157983
+            ],
+            "speed_px_per_sec": 146.98928,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 11,
+            "duv_dt": [
+              -133.927994,
+              58.955135
+            ],
+            "speed_px_per_sec": 146.329817,
+            "source": "finite_difference_center_2d"
+          }
+        ]
+      },
+      "acceleration_2d": {
+        "gray_marble": [
+          {
+            "frame_index": 2,
+            "duv_dt2": [
+              0.30794,
+              -0.256101
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 3,
+            "duv_dt2": [
+              0.028387,
+              0.141476
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 4,
+            "duv_dt2": [
+              0.010393,
+              -0.067641
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 5,
+            "duv_dt2": [
+              0.024058,
+              0.071709
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 6,
+            "duv_dt2": [
+              -0.182269,
+              -0.010223
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 7,
+            "duv_dt2": [
+              0.025599,
+              0.01444
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 8,
+            "duv_dt2": [
+              0.005364,
+              0.114187
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 9,
+            "duv_dt2": [
+              -0.552843,
+              -0.125689
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 10,
+            "duv_dt2": [
+              0.501463,
+              0.17609
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 11,
+            "duv_dt2": [
+              0.533585,
+              1.769078
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 12,
+            "duv_dt2": [
+              -1.064466,
+              -4.194913
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 13,
+            "duv_dt2": [
+              0.551298,
+              2.246807
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 14,
+            "duv_dt2": [
+              0.352252,
+              0.008341
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 15,
+            "duv_dt2": [
+              -0.352252,
+              -0.008341
+            ],
+            "source": "finite_difference_velocity_2d"
+          }
+        ],
+        "blue_player": [
+          {
+            "frame_index": 2,
+            "duv_dt2": [
+              -1.696146,
+              3.91047
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 3,
+            "duv_dt2": [
+              11.958259,
+              -1.402306
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 4,
+            "duv_dt2": [
+              -3.571061,
+              -0.863749
+            ],
+            "source": "finite_difference_velocity_2d"
+          }
+        ],
+        "green_player": [
+          {
+            "frame_index": 2,
+            "duv_dt2": [
+              -0.650265,
+              0.121267
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 3,
+            "duv_dt2": [
+              -0.317379,
+              -0.34596
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 4,
+            "duv_dt2": [
+              0.039989,
+              0.122356
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 5,
+            "duv_dt2": [
+              0.096263,
+              -0.540302
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 6,
+            "duv_dt2": [
+              0.040741,
+              0.628945
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 7,
+            "duv_dt2": [
+              -0.026539,
+              -0.000215
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 8,
+            "duv_dt2": [
+              -112.962629,
+              25.150477
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 9,
+            "duv_dt2": [
+              -19.085927,
+              -34.577444
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 10,
+            "duv_dt2": [
+              -3.34578,
+              66.585165
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 11,
+            "duv_dt2": [
+              1.492881,
+              1.797152
+            ],
+            "source": "finite_difference_velocity_2d"
+          }
+        ]
+      },
+      "visibility": {
+        "gray_marble": [
+          {
+            "frame_index": 0,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 1,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 2,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 3,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 4,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 5,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 6,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 7,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 8,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 9,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 10,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 11,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 12,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 13,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 14,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 15,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          }
+        ],
+        "blue_player": [
+          {
+            "frame_index": 0,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 1,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 2,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 3,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 4,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 5,
+            "score": 0.0,
+            "source": "sam31_mask_area",
+            "state": "not_expected_visible"
+          },
+          {
+            "frame_index": 6,
+            "score": 0.0,
+            "source": "sam31_mask_area",
+            "state": "not_expected_visible"
+          },
+          {
+            "frame_index": 7,
+            "score": 0.0,
+            "source": "sam31_mask_area",
+            "state": "not_expected_visible"
+          },
+          {
+            "frame_index": 8,
+            "score": 0.0,
+            "source": "sam31_mask_area",
+            "state": "not_expected_visible"
+          },
+          {
+            "frame_index": 9,
+            "score": 0.0,
+            "source": "sam31_mask_area",
+            "state": "not_expected_visible"
+          },
+          {
+            "frame_index": 10,
+            "score": 0.0,
+            "source": "sam31_mask_area",
+            "state": "not_expected_visible"
+          },
+          {
+            "frame_index": 11,
+            "score": 0.0,
+            "source": "sam31_mask_area",
+            "state": "not_expected_visible"
+          },
+          {
+            "frame_index": 12,
+            "score": 0.0,
+            "source": "sam31_mask_area",
+            "state": "not_expected_visible"
+          },
+          {
+            "frame_index": 13,
+            "score": 0.0,
+            "source": "sam31_mask_area",
+            "state": "not_expected_visible"
+          },
+          {
+            "frame_index": 14,
+            "score": 0.0,
+            "source": "sam31_mask_area",
+            "state": "not_expected_visible"
+          },
+          {
+            "frame_index": 15,
+            "score": 0.0,
+            "source": "sam31_mask_area",
+            "state": "not_expected_visible"
+          }
+        ],
+        "green_player": [
+          {
+            "frame_index": 0,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 1,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 2,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 3,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 4,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 5,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 6,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 7,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 8,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 9,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 10,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 11,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 12,
+            "score": 0.0,
+            "source": "sam31_mask_area",
+            "state": "not_expected_visible"
+          },
+          {
+            "frame_index": 13,
+            "score": 0.0,
+            "source": "sam31_mask_area",
+            "state": "not_expected_visible"
+          },
+          {
+            "frame_index": 14,
+            "score": 0.0,
+            "source": "sam31_mask_area",
+            "state": "not_expected_visible"
+          },
+          {
+            "frame_index": 15,
+            "score": 0.0,
+            "source": "sam31_mask_area",
+            "state": "not_expected_visible"
+          }
+        ]
+      },
+      "field_sources": {
+        "center_2d_trajectory": "sam31_mask_centroid",
+        "velocity_2d": "finite_difference_center_2d",
+        "acceleration_2d": "finite_difference_velocity_2d",
+        "visibility": "sam31_mask_area"
+      }
+    },
+    "relations": [
+      {
+        "subject": "blue_player",
+        "object": "gray_marble",
+        "relation": "approaching",
+        "evidence": {
+          "distance_start_px": 470.0336,
+          "distance_end_px": 55.173277,
+          "trend": "approaching",
+          "relative_velocity_projection": 414.860323
+        },
+        "source": "computed_from_sam31_2d_trajectories"
+      },
+      {
+        "subject": "blue_player",
+        "object": "green_player",
+        "relation": "separating",
+        "evidence": {
+          "distance_start_px": 306.007944,
+          "distance_end_px": 523.830959,
+          "trend": "separating",
+          "relative_velocity_projection": -217.823016
+        },
+        "source": "computed_from_sam31_2d_trajectories"
+      },
+      {
+        "subject": "gray_marble",
+        "object": "green_player",
+        "relation": "approaching",
+        "evidence": {
+          "distance_start_px": 471.533482,
+          "distance_end_px": 46.835861,
+          "trend": "approaching",
+          "relative_velocity_projection": 424.697621
+        },
+        "source": "computed_from_sam31_2d_trajectories"
+      }
+    ],
+    "events": []
+  }
+}

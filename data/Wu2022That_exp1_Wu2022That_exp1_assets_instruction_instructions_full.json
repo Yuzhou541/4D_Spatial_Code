@@ -1,0 +1,3102 @@
+{
+  "sample": {
+    "example_id": "Wu2022That_exp1_Wu2022That_exp1_assets_instruction_instructions_full",
+    "study": "Wu2022That",
+    "slug": "wu2022_that",
+    "experiment": "exp1",
+    "title": "instruction_instructions_full: On each step, the player can move up, down, left, right, or stay in place. They cannot move through walls. If they reach the star before tim",
+    "file_name": "instruction_instructions_full.gif",
+    "role": "instruction",
+    "media_kind": "gif",
+    "trial_ids": [],
+    "instruction_ids": [
+      "instruction_04"
+    ]
+  },
+  "media": {
+    "kind": "gif",
+    "path": "media/Wu2022That_exp1_Wu2022That_exp1_assets_instruction_instructions_full.gif",
+    "file_name": "instruction_instructions_full.gif",
+    "mime": "image/gif",
+    "transcoded_for_browser": false,
+    "poster": "media/Wu2022That_exp1_Wu2022That_exp1_assets_instruction_instructions_full_poster.png"
+  },
+  "mask_base": "media/Wu2022That_exp1_Wu2022That_exp1_assets_instruction_instructions_full_masks",
+  "code": {
+    "sample_id": "Wu2022That_exp1_Wu2022That_exp1_assets_instruction_instructions_full",
+    "study": "Wu2022That",
+    "experiment": "exp1",
+    "trial": "",
+    "video_path": "Wu2022That/exp1/assets/instruction_instructions_full.gif",
+    "parse_mode": "dynamic_2d",
+    "parse_mode_reason": "Requested 2D physics subset pass; 3D lifting is forbidden for this run.",
+    "code_source": "model_parsed",
+    "metadata": {
+      "fps": null,
+      "num_frames": 15,
+      "duration_sec": null,
+      "original_resolution": [
+        807,
+        247
+      ],
+      "resolution": [
+        512,
+        157
+      ],
+      "resize_max_size": 512,
+      "sampled_frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "media_kind": "gif",
+      "playback_rate": 0.35,
+      "available_gt": {
+        "rgb_video": true,
+        "object_identity": false,
+        "bbox_2d": false,
+        "mask": false,
+        "trajectory_2d": false,
+        "trajectory_3d": false,
+        "depth": false,
+        "camera": false,
+        "symbolic_scene": true,
+        "human_judgments": false
+      },
+      "models": {
+        "semantic_prompt_source": "qwen2.5-vl-real",
+        "sam31": "sam3.1-real"
+      },
+      "source_metadata": {
+        "symbolic_gt_usage": "metadata_diagnostics_only",
+        "no_gt_used_for_masks_bboxes_centers_tracks": true,
+        "rejected_primary_sam_objects": [],
+        "prompt_diagnostics_usage": "sam_prompt_boxes_only_not_primary_masks",
+        "sam_mask_pixel_policy": "sam31_output_component_near_prompt_only"
+      },
+      "readme_task_contract": {
+        "source": "readme_manifest_symbolic_contract",
+        "summary": "Grid decision replay; purple agent is dynamic, goal/doors/blocked cells are context.",
+        "visibility_policy": {
+          "default": "expected_visible_when_localized",
+          "minimum_visible_ratio": 0.5,
+          "allow_expected_invisibility": false
+        }
+      },
+      "wu2022_that": {
+        "role": "instruction",
+        "file_name": "instruction_instructions_full.gif",
+        "media_kind": "gif",
+        "trial_ids": [],
+        "instruction_ids": [
+          "instruction_04"
+        ],
+        "attached_trials": [],
+        "attached_instructions": [
+          {
+            "id": "instruction_04",
+            "type": "instruction",
+            "text": "<p>On each step, the player can move up, down, left, right, or stay in place. They cannot move through walls. If they reach the star before time runs out, then they win.</p><p>Above, you can watch the player move and see that they won this time! (Please wait to see the animation.)</p>",
+            "media_url": "assets/instruction_instructions_full.gif"
+          }
+        ],
+        "symbolic_scene": {
+          "frames": [
+            {
+              "objects": {
+                "red_start": [
+                  {
+                    "location": [
+                      0,
+                      0
+                    ]
+                  }
+                ],
+                "agent": [
+                  {
+                    "location": [
+                      0,
+                      1
+                    ]
+                  }
+                ],
+                "blocked": [
+                  {
+                    "location": [
+                      2,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      4,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      6,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      8,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      10,
+                      1
+                    ],
+                    "blocking": true
+                  }
+                ],
+                "goal": [
+                  {
+                    "location": [
+                      12,
+                      1
+                    ]
+                  }
+                ],
+                "blue_start": [
+                  {
+                    "location": [
+                      0,
+                      2
+                    ]
+                  }
+                ]
+              },
+              "time_left": "",
+              "outcome": ""
+            },
+            {
+              "objects": {
+                "agent": [
+                  {
+                    "location": [
+                      0,
+                      0
+                    ]
+                  }
+                ],
+                "blocked": [
+                  {
+                    "location": [
+                      1,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      3,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      5,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      7,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      9,
+                      1
+                    ],
+                    "blocking": true
+                  }
+                ],
+                "goal": [
+                  {
+                    "location": [
+                      11,
+                      1
+                    ]
+                  }
+                ],
+                "blue_start": [
+                  {
+                    "location": [
+                      0,
+                      2
+                    ]
+                  }
+                ]
+              },
+              "time_left": "Time left: 10",
+              "outcome": ""
+            },
+            {
+              "objects": {
+                "red_start": [
+                  {
+                    "location": [
+                      0,
+                      0
+                    ]
+                  }
+                ],
+                "agent": [
+                  {
+                    "location": [
+                      2,
+                      0
+                    ]
+                  }
+                ],
+                "blocked": [
+                  {
+                    "location": [
+                      1,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      3,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      5,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      7,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      9,
+                      1
+                    ],
+                    "blocking": true
+                  }
+                ],
+                "goal": [
+                  {
+                    "location": [
+                      11,
+                      1
+                    ]
+                  }
+                ],
+                "blue_start": [
+                  {
+                    "location": [
+                      0,
+                      2
+                    ]
+                  }
+                ]
+              },
+              "time_left": "Time left: 9",
+              "outcome": ""
+            },
+            {
+              "objects": {
+                "red_start": [
+                  {
+                    "location": [
+                      0,
+                      0
+                    ]
+                  }
+                ],
+                "agent": [
+                  {
+                    "location": [
+                      3,
+                      0
+                    ]
+                  }
+                ],
+                "blocked": [
+                  {
+                    "location": [
+                      1,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      3,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      5,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      7,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      9,
+                      1
+                    ],
+                    "blocking": true
+                  }
+                ],
+                "goal": [
+                  {
+                    "location": [
+                      11,
+                      1
+                    ]
+                  }
+                ],
+                "blue_start": [
+                  {
+                    "location": [
+                      0,
+                      2
+                    ]
+                  }
+                ]
+              },
+              "time_left": "Time left: 8",
+              "outcome": ""
+            },
+            {
+              "objects": {
+                "red_start": [
+                  {
+                    "location": [
+                      0,
+                      0
+                    ]
+                  }
+                ],
+                "agent": [
+                  {
+                    "location": [
+                      4,
+                      0
+                    ]
+                  }
+                ],
+                "blocked": [
+                  {
+                    "location": [
+                      1,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      3,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      5,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      7,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      9,
+                      1
+                    ],
+                    "blocking": true
+                  }
+                ],
+                "goal": [
+                  {
+                    "location": [
+                      11,
+                      1
+                    ]
+                  }
+                ],
+                "blue_start": [
+                  {
+                    "location": [
+                      0,
+                      2
+                    ]
+                  }
+                ]
+              },
+              "time_left": "Time left: 7",
+              "outcome": ""
+            },
+            {
+              "objects": {
+                "red_start": [
+                  {
+                    "location": [
+                      0,
+                      0
+                    ]
+                  }
+                ],
+                "agent": [
+                  {
+                    "location": [
+                      5,
+                      0
+                    ]
+                  }
+                ],
+                "blocked": [
+                  {
+                    "location": [
+                      1,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      3,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      5,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      7,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      9,
+                      1
+                    ],
+                    "blocking": true
+                  }
+                ],
+                "goal": [
+                  {
+                    "location": [
+                      11,
+                      1
+                    ]
+                  }
+                ],
+                "blue_start": [
+                  {
+                    "location": [
+                      0,
+                      2
+                    ]
+                  }
+                ]
+              },
+              "time_left": "Time left: 6",
+              "outcome": ""
+            },
+            {
+              "objects": {
+                "red_start": [
+                  {
+                    "location": [
+                      0,
+                      0
+                    ]
+                  }
+                ],
+                "agent": [
+                  {
+                    "location": [
+                      6,
+                      0
+                    ]
+                  }
+                ],
+                "blocked": [
+                  {
+                    "location": [
+                      1,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      3,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      5,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      7,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      9,
+                      1
+                    ],
+                    "blocking": true
+                  }
+                ],
+                "goal": [
+                  {
+                    "location": [
+                      11,
+                      1
+                    ]
+                  }
+                ],
+                "blue_start": [
+                  {
+                    "location": [
+                      0,
+                      2
+                    ]
+                  }
+                ]
+              },
+              "time_left": "Time left: 5",
+              "outcome": ""
+            },
+            {
+              "objects": {
+                "red_start": [
+                  {
+                    "location": [
+                      0,
+                      0
+                    ]
+                  }
+                ],
+                "agent": [
+                  {
+                    "location": [
+                      7,
+                      0
+                    ]
+                  }
+                ],
+                "blocked": [
+                  {
+                    "location": [
+                      1,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      3,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      5,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      7,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      9,
+                      1
+                    ],
+                    "blocking": true
+                  }
+                ],
+                "goal": [
+                  {
+                    "location": [
+                      11,
+                      1
+                    ]
+                  }
+                ],
+                "blue_start": [
+                  {
+                    "location": [
+                      0,
+                      2
+                    ]
+                  }
+                ]
+              },
+              "time_left": "Time left: 4",
+              "outcome": ""
+            },
+            {
+              "objects": {
+                "red_start": [
+                  {
+                    "location": [
+                      0,
+                      0
+                    ]
+                  }
+                ],
+                "blocked": [
+                  {
+                    "location": [
+                      1,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      3,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      5,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      7,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      9,
+                      1
+                    ],
+                    "blocking": true
+                  }
+                ],
+                "agent": [
+                  {
+                    "location": [
+                      11,
+                      1
+                    ]
+                  }
+                ],
+                "blue_start": [
+                  {
+                    "location": [
+                      0,
+                      2
+                    ]
+                  }
+                ]
+              },
+              "time_left": "Time left: 3",
+              "outcome": ""
+            },
+            {
+              "objects": {
+                "red_start": [
+                  {
+                    "location": [
+                      0,
+                      0
+                    ]
+                  }
+                ],
+                "blocked": [
+                  {
+                    "location": [
+                      1,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      3,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      5,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      7,
+                      1
+                    ],
+                    "blocking": true
+                  },
+                  {
+                    "location": [
+                      9,
+                      1
+                    ],
+                    "blocking": true
+                  }
+                ],
+                "agent": [
+                  {
+                    "location": [
+                      11,
+                      1
+                    ]
+                  }
+                ],
+                "blue_start": [
+                  {
+                    "location": [
+                      0,
+                      2
+                    ]
+                  }
+                ]
+              },
+              "time_left": "Time left: 3",
+              "outcome": "WON"
+            }
+          ]
+        },
+        "context_objects": [
+          {
+            "object_id": "goal",
+            "label": "goal",
+            "role": "static_context"
+          },
+          {
+            "object_id": "doors",
+            "label": "doors",
+            "role": "static_context"
+          },
+          {
+            "object_id": "blocked_cells",
+            "label": "blocked cells",
+            "role": "static_context"
+          },
+          {
+            "object_id": "path_options",
+            "label": "path options",
+            "role": "metadata_context"
+          }
+        ],
+        "expected_dynamic_objects": [
+          {
+            "object_id": "agent",
+            "label": "agent",
+            "semantic_role": "decision_agent",
+            "expected_rgb": [
+              150,
+              96,
+              184
+            ],
+            "expected_color_hex": "#9660b8",
+            "aliases": [
+              "purple agent",
+              "agent",
+              "player"
+            ],
+            "prompt_strategy": "contract_color_motion",
+            "required": true
+          }
+        ],
+        "active_dynamic_objects": [
+          {
+            "object_id": "agent",
+            "label": "agent",
+            "semantic_role": "decision_agent",
+            "expected_rgb": [
+              150,
+              96,
+              184
+            ],
+            "expected_color_hex": "#9660b8",
+            "aliases": [
+              "purple agent",
+              "agent",
+              "player"
+            ],
+            "prompt_strategy": "contract_color_motion",
+            "required": true
+          }
+        ],
+        "config_metadata": {
+          "experimentName": "That was close! A counterfactual simulation model of causal judgments about decisions (Exp 1)",
+          "taskType": [
+            "Causal Judgment",
+            "Decision Making",
+            "Counterfactual Reasoning"
+          ],
+          "responseType": [
+            "single-slider"
+          ],
+          "description": "You will view grid scenarios and judge how likely a player would win if they took a specified path, before seeing what actually happened.",
+          "stimuli_count": 19
+        }
+      },
+      "raw_qwen_objects": [
+        {
+          "object_id": "obj_001",
+          "label": "agent",
+          "rough_bbox": [
+            50.0,
+            10.0,
+            80.0,
+            40.0
+          ],
+          "semantic_role": "player",
+          "confidence": 1.0,
+          "source": "qwen2.5-vl-real"
+        },
+        {
+          "object_id": "obj_002",
+          "label": "star",
+          "rough_bbox": [
+            419.0,
+            65.0,
+            449.0,
+            95.0
+          ],
+          "semantic_role": "goal",
+          "confidence": 1.0,
+          "source": "qwen2.5-vl-real"
+        }
+      ],
+      "sam_prompt_diagnostics": {
+        "agent": [
+          {
+            "frame_index": 0,
+            "status": "sam31_mask_written",
+            "mask_area": 421,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              62.0,
+              15.0,
+              94.0,
+              43.0
+            ],
+            "component_bbox_2d": [
+              64.0,
+              17.0,
+              92.0,
+              41.0
+            ],
+            "inner_bbox_2d": [
+              68.9,
+              21.2,
+              87.1,
+              36.8
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              77.24516129032259,
+              31.954838709677418
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 310
+          },
+          {
+            "frame_index": 1,
+            "status": "sam31_mask_written",
+            "mask_area": 421,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              62.0,
+              15.0,
+              94.0,
+              43.0
+            ],
+            "component_bbox_2d": [
+              64.0,
+              17.0,
+              92.0,
+              41.0
+            ],
+            "inner_bbox_2d": [
+              68.9,
+              21.2,
+              87.1,
+              36.8
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              77.24516129032259,
+              31.954838709677418
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 310
+          },
+          {
+            "frame_index": 2,
+            "status": "sam31_mask_written",
+            "mask_area": 421,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              62.0,
+              15.0,
+              94.0,
+              43.0
+            ],
+            "component_bbox_2d": [
+              64.0,
+              17.0,
+              92.0,
+              41.0
+            ],
+            "inner_bbox_2d": [
+              68.9,
+              21.2,
+              87.1,
+              36.8
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              77.24516129032259,
+              31.954838709677418
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 310
+          },
+          {
+            "frame_index": 3,
+            "status": "sam31_mask_written",
+            "mask_area": 421,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              62.0,
+              15.0,
+              94.0,
+              43.0
+            ],
+            "component_bbox_2d": [
+              64.0,
+              17.0,
+              92.0,
+              41.0
+            ],
+            "inner_bbox_2d": [
+              68.9,
+              21.2,
+              87.1,
+              36.8
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              77.24516129032259,
+              31.954838709677418
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 310
+          },
+          {
+            "frame_index": 4,
+            "status": "sam31_mask_written",
+            "mask_area": 683,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              113.0,
+              11.0,
+              145.0,
+              43.0
+            ],
+            "component_bbox_2d": [
+              115.0,
+              13.0,
+              143.0,
+              41.0
+            ],
+            "inner_bbox_2d": [
+              119.9,
+              17.9,
+              138.1,
+              36.1
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              127.8974358974359,
+              29.99145299145299
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 351
+          },
+          {
+            "frame_index": 5,
+            "status": "sam31_mask_written",
+            "mask_area": 679,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              163.0,
+              11.0,
+              196.0,
+              43.0
+            ],
+            "component_bbox_2d": [
+              165.0,
+              13.0,
+              194.0,
+              41.0
+            ],
+            "inner_bbox_2d": [
+              170.075,
+              17.9,
+              188.925,
+              36.1
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              178.37037037037038,
+              30.002849002849004
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 351
+          },
+          {
+            "frame_index": 6,
+            "status": "sam31_mask_written",
+            "mask_area": 678,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              214.0,
+              11.0,
+              246.0,
+              43.0
+            ],
+            "component_bbox_2d": [
+              216.0,
+              13.0,
+              244.0,
+              41.0
+            ],
+            "inner_bbox_2d": [
+              220.9,
+              17.9,
+              239.1,
+              36.1
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              229.201166180758,
+              30.104956268221574
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 343
+          },
+          {
+            "frame_index": 7,
+            "status": "sam31_mask_written",
+            "mask_area": 455,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              265.0,
+              15.0,
+              297.0,
+              43.0
+            ],
+            "component_bbox_2d": [
+              267.0,
+              17.0,
+              295.0,
+              41.0
+            ],
+            "inner_bbox_2d": [
+              271.9,
+              21.2,
+              290.1,
+              36.8
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              280.2451612903226,
+              31.954838709677418
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 310
+          },
+          {
+            "frame_index": 8,
+            "status": "sam31_mask_written",
+            "mask_area": 675,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              316.0,
+              11.0,
+              348.0,
+              43.0
+            ],
+            "component_bbox_2d": [
+              318.0,
+              13.0,
+              346.0,
+              41.0
+            ],
+            "inner_bbox_2d": [
+              322.9,
+              17.9,
+              341.1,
+              36.1
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              330.90084985835693,
+              30.002832861189802
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 353
+          },
+          {
+            "frame_index": 9,
+            "status": "sam31_mask_written",
+            "mask_area": 682,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              366.0,
+              11.0,
+              399.0,
+              43.0
+            ],
+            "component_bbox_2d": [
+              368.0,
+              13.0,
+              397.0,
+              41.0
+            ],
+            "inner_bbox_2d": [
+              373.075,
+              17.9,
+              391.925,
+              36.1
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              381.3703703703704,
+              30.002849002849004
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 351
+          },
+          {
+            "frame_index": 10,
+            "status": "sam31_mask_written",
+            "mask_area": 681,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              366.0,
+              62.0,
+              399.0,
+              94.0
+            ],
+            "component_bbox_2d": [
+              368.0,
+              64.0,
+              397.0,
+              92.0
+            ],
+            "inner_bbox_2d": [
+              373.075,
+              68.9,
+              391.925,
+              87.1
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              381.3903133903134,
+              80.85470085470085
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 351
+          },
+          {
+            "frame_index": 11,
+            "status": "sam31_mask_written",
+            "mask_area": 681,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              366.0,
+              62.0,
+              399.0,
+              94.0
+            ],
+            "component_bbox_2d": [
+              368.0,
+              64.0,
+              397.0,
+              92.0
+            ],
+            "inner_bbox_2d": [
+              373.075,
+              68.9,
+              391.925,
+              87.1
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              381.3903133903134,
+              80.85470085470085
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 351
+          },
+          {
+            "frame_index": 12,
+            "status": "sam31_mask_written",
+            "mask_area": 681,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              366.0,
+              62.0,
+              399.0,
+              94.0
+            ],
+            "component_bbox_2d": [
+              368.0,
+              64.0,
+              397.0,
+              92.0
+            ],
+            "inner_bbox_2d": [
+              373.075,
+              68.9,
+              391.925,
+              87.1
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              381.3903133903134,
+              80.85470085470085
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 351
+          },
+          {
+            "frame_index": 13,
+            "status": "sam31_mask_written",
+            "mask_area": 681,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              366.0,
+              62.0,
+              399.0,
+              94.0
+            ],
+            "component_bbox_2d": [
+              368.0,
+              64.0,
+              397.0,
+              92.0
+            ],
+            "inner_bbox_2d": [
+              373.075,
+              68.9,
+              391.925,
+              87.1
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              381.3903133903134,
+              80.85470085470085
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 351
+          },
+          {
+            "frame_index": 14,
+            "status": "sam31_mask_written",
+            "mask_area": 681,
+            "sam_prompt_source": "contract_per_frame_box",
+            "prompt_bbox_2d": [
+              366.0,
+              62.0,
+              399.0,
+              94.0
+            ],
+            "component_bbox_2d": [
+              368.0,
+              64.0,
+              397.0,
+              92.0
+            ],
+            "inner_bbox_2d": [
+              373.075,
+              68.9,
+              391.925,
+              87.1
+            ],
+            "sam_box_prompt_strategy": "component_plus_padded",
+            "sam_box_prompt_count": 2,
+            "positive_point_2d": [
+              381.3903133903134,
+              80.85470085470085
+            ],
+            "prompt_source": "contract_color_component_prompt",
+            "color_threshold": 18.0,
+            "color_component_area": 351
+          }
+        ]
+      }
+    },
+    "objects": [
+      {
+        "object_id": "agent",
+        "label": "agent",
+        "role": "decision_agent",
+        "color": "#9660b8",
+        "expected_color": "#9660b8",
+        "confidence": 0.980758,
+        "identity_source": "qwen2.5-vl-real",
+        "rough_bbox": [
+          50.0,
+          10.0,
+          80.0,
+          40.0
+        ],
+        "contract_required": true,
+        "allow_expected_invisibility": false
+      }
+    ],
+    "direct_fields": {
+      "bbox_2d_sequence": {
+        "agent": [
+          {
+            "frame_index": 0,
+            "timestamp_sec": 0.0,
+            "bbox_2d": [
+              63.0,
+              16.0,
+              93.0,
+              42.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 1,
+            "timestamp_sec": 1.0,
+            "bbox_2d": [
+              63.0,
+              16.0,
+              93.0,
+              42.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 2,
+            "timestamp_sec": 2.0,
+            "bbox_2d": [
+              63.0,
+              16.0,
+              93.0,
+              42.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 3,
+            "timestamp_sec": 3.0,
+            "bbox_2d": [
+              63.0,
+              16.0,
+              93.0,
+              42.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 4,
+            "timestamp_sec": 4.0,
+            "bbox_2d": [
+              114.0,
+              12.0,
+              144.0,
+              42.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 5,
+            "timestamp_sec": 5.0,
+            "bbox_2d": [
+              165.0,
+              12.0,
+              194.0,
+              42.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 6,
+            "timestamp_sec": 6.0,
+            "bbox_2d": [
+              216.0,
+              12.0,
+              245.0,
+              42.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 7,
+            "timestamp_sec": 7.0,
+            "bbox_2d": [
+              266.0,
+              18.0,
+              295.0,
+              42.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 8,
+            "timestamp_sec": 8.0,
+            "bbox_2d": [
+              317.0,
+              12.0,
+              347.0,
+              42.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 9,
+            "timestamp_sec": 9.0,
+            "bbox_2d": [
+              368.0,
+              12.0,
+              397.0,
+              42.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 10,
+            "timestamp_sec": 10.0,
+            "bbox_2d": [
+              368.0,
+              63.0,
+              397.0,
+              93.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 11,
+            "timestamp_sec": 11.0,
+            "bbox_2d": [
+              368.0,
+              63.0,
+              397.0,
+              93.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 12,
+            "timestamp_sec": 12.0,
+            "bbox_2d": [
+              368.0,
+              63.0,
+              397.0,
+              93.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 13,
+            "timestamp_sec": 13.0,
+            "bbox_2d": [
+              368.0,
+              63.0,
+              397.0,
+              93.0
+            ],
+            "source": "sam3.1-real"
+          },
+          {
+            "frame_index": 14,
+            "timestamp_sec": 14.0,
+            "bbox_2d": [
+              368.0,
+              63.0,
+              397.0,
+              93.0
+            ],
+            "source": "sam3.1-real"
+          }
+        ]
+      },
+      "mask_sequence": {
+        "agent": [
+          {
+            "frame_index": 0,
+            "timestamp_sec": 0.0,
+            "mask_ref": "agent_mask_t000",
+            "bbox_2d": [
+              63.0,
+              16.0,
+              93.0,
+              42.0
+            ],
+            "area": 421,
+            "tracking_points": [
+              {
+                "point_id": "agent_p1",
+                "object_id": "agent",
+                "uv": [
+                  77.0,
+                  31.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p2",
+                "object_id": "agent",
+                "uv": [
+                  71.0,
+                  32.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p3",
+                "object_id": "agent",
+                "uv": [
+                  81.0,
+                  32.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 1,
+            "timestamp_sec": 1.0,
+            "mask_ref": "agent_mask_t001",
+            "bbox_2d": [
+              63.0,
+              16.0,
+              93.0,
+              42.0
+            ],
+            "area": 421,
+            "tracking_points": [
+              {
+                "point_id": "agent_p1",
+                "object_id": "agent",
+                "uv": [
+                  77.0,
+                  31.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p2",
+                "object_id": "agent",
+                "uv": [
+                  71.0,
+                  32.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p3",
+                "object_id": "agent",
+                "uv": [
+                  81.0,
+                  32.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 2,
+            "timestamp_sec": 2.0,
+            "mask_ref": "agent_mask_t002",
+            "bbox_2d": [
+              63.0,
+              16.0,
+              93.0,
+              42.0
+            ],
+            "area": 421,
+            "tracking_points": [
+              {
+                "point_id": "agent_p1",
+                "object_id": "agent",
+                "uv": [
+                  77.0,
+                  31.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p2",
+                "object_id": "agent",
+                "uv": [
+                  71.0,
+                  32.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p3",
+                "object_id": "agent",
+                "uv": [
+                  81.0,
+                  32.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 3,
+            "timestamp_sec": 3.0,
+            "mask_ref": "agent_mask_t003",
+            "bbox_2d": [
+              63.0,
+              16.0,
+              93.0,
+              42.0
+            ],
+            "area": 421,
+            "tracking_points": [
+              {
+                "point_id": "agent_p1",
+                "object_id": "agent",
+                "uv": [
+                  77.0,
+                  31.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p2",
+                "object_id": "agent",
+                "uv": [
+                  71.0,
+                  32.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p3",
+                "object_id": "agent",
+                "uv": [
+                  81.0,
+                  32.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 4,
+            "timestamp_sec": 4.0,
+            "mask_ref": "agent_mask_t004",
+            "bbox_2d": [
+              114.0,
+              12.0,
+              144.0,
+              42.0
+            ],
+            "area": 683,
+            "tracking_points": [
+              {
+                "point_id": "agent_p1",
+                "object_id": "agent",
+                "uv": [
+                  128.0,
+                  27.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p2",
+                "object_id": "agent",
+                "uv": [
+                  125.0,
+                  27.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p3",
+                "object_id": "agent",
+                "uv": [
+                  132.0,
+                  27.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 5,
+            "timestamp_sec": 5.0,
+            "mask_ref": "agent_mask_t005",
+            "bbox_2d": [
+              165.0,
+              12.0,
+              194.0,
+              42.0
+            ],
+            "area": 679,
+            "tracking_points": [
+              {
+                "point_id": "agent_p1",
+                "object_id": "agent",
+                "uv": [
+                  179.0,
+                  27.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p2",
+                "object_id": "agent",
+                "uv": [
+                  176.0,
+                  27.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p3",
+                "object_id": "agent",
+                "uv": [
+                  182.0,
+                  27.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 6,
+            "timestamp_sec": 6.0,
+            "mask_ref": "agent_mask_t006",
+            "bbox_2d": [
+              216.0,
+              12.0,
+              245.0,
+              42.0
+            ],
+            "area": 678,
+            "tracking_points": [
+              {
+                "point_id": "agent_p1",
+                "object_id": "agent",
+                "uv": [
+                  230.0,
+                  27.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p2",
+                "object_id": "agent",
+                "uv": [
+                  226.0,
+                  27.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p3",
+                "object_id": "agent",
+                "uv": [
+                  233.0,
+                  27.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 7,
+            "timestamp_sec": 7.0,
+            "mask_ref": "agent_mask_t007",
+            "bbox_2d": [
+              266.0,
+              18.0,
+              295.0,
+              42.0
+            ],
+            "area": 455,
+            "tracking_points": [
+              {
+                "point_id": "agent_p1",
+                "object_id": "agent",
+                "uv": [
+                  280.0,
+                  30.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p2",
+                "object_id": "agent",
+                "uv": [
+                  276.0,
+                  30.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p3",
+                "object_id": "agent",
+                "uv": [
+                  283.0,
+                  30.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 8,
+            "timestamp_sec": 8.0,
+            "mask_ref": "agent_mask_t008",
+            "bbox_2d": [
+              317.0,
+              12.0,
+              347.0,
+              42.0
+            ],
+            "area": 675,
+            "tracking_points": [
+              {
+                "point_id": "agent_p1",
+                "object_id": "agent",
+                "uv": [
+                  331.0,
+                  27.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p2",
+                "object_id": "agent",
+                "uv": [
+                  328.0,
+                  27.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p3",
+                "object_id": "agent",
+                "uv": [
+                  335.0,
+                  27.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 9,
+            "timestamp_sec": 9.0,
+            "mask_ref": "agent_mask_t009",
+            "bbox_2d": [
+              368.0,
+              12.0,
+              397.0,
+              42.0
+            ],
+            "area": 682,
+            "tracking_points": [
+              {
+                "point_id": "agent_p1",
+                "object_id": "agent",
+                "uv": [
+                  382.0,
+                  27.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p2",
+                "object_id": "agent",
+                "uv": [
+                  379.0,
+                  27.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p3",
+                "object_id": "agent",
+                "uv": [
+                  385.0,
+                  27.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 10,
+            "timestamp_sec": 10.0,
+            "mask_ref": "agent_mask_t010",
+            "bbox_2d": [
+              368.0,
+              63.0,
+              397.0,
+              93.0
+            ],
+            "area": 681,
+            "tracking_points": [
+              {
+                "point_id": "agent_p1",
+                "object_id": "agent",
+                "uv": [
+                  382.0,
+                  78.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p2",
+                "object_id": "agent",
+                "uv": [
+                  379.0,
+                  78.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p3",
+                "object_id": "agent",
+                "uv": [
+                  386.0,
+                  78.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 11,
+            "timestamp_sec": 11.0,
+            "mask_ref": "agent_mask_t011",
+            "bbox_2d": [
+              368.0,
+              63.0,
+              397.0,
+              93.0
+            ],
+            "area": 681,
+            "tracking_points": [
+              {
+                "point_id": "agent_p1",
+                "object_id": "agent",
+                "uv": [
+                  382.0,
+                  78.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p2",
+                "object_id": "agent",
+                "uv": [
+                  379.0,
+                  78.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p3",
+                "object_id": "agent",
+                "uv": [
+                  386.0,
+                  78.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 12,
+            "timestamp_sec": 12.0,
+            "mask_ref": "agent_mask_t012",
+            "bbox_2d": [
+              368.0,
+              63.0,
+              397.0,
+              93.0
+            ],
+            "area": 681,
+            "tracking_points": [
+              {
+                "point_id": "agent_p1",
+                "object_id": "agent",
+                "uv": [
+                  382.0,
+                  78.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p2",
+                "object_id": "agent",
+                "uv": [
+                  379.0,
+                  78.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p3",
+                "object_id": "agent",
+                "uv": [
+                  386.0,
+                  78.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 13,
+            "timestamp_sec": 13.0,
+            "mask_ref": "agent_mask_t013",
+            "bbox_2d": [
+              368.0,
+              63.0,
+              397.0,
+              93.0
+            ],
+            "area": 681,
+            "tracking_points": [
+              {
+                "point_id": "agent_p1",
+                "object_id": "agent",
+                "uv": [
+                  382.0,
+                  78.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p2",
+                "object_id": "agent",
+                "uv": [
+                  379.0,
+                  78.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p3",
+                "object_id": "agent",
+                "uv": [
+                  386.0,
+                  78.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          },
+          {
+            "frame_index": 14,
+            "timestamp_sec": 14.0,
+            "mask_ref": "agent_mask_t014",
+            "bbox_2d": [
+              368.0,
+              63.0,
+              397.0,
+              93.0
+            ],
+            "area": 681,
+            "tracking_points": [
+              {
+                "point_id": "agent_p1",
+                "object_id": "agent",
+                "uv": [
+                  382.0,
+                  78.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p2",
+                "object_id": "agent",
+                "uv": [
+                  379.0,
+                  78.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              },
+              {
+                "point_id": "agent_p3",
+                "object_id": "agent",
+                "uv": [
+                  386.0,
+                  78.0
+                ],
+                "source": "sam31_mask_owned_interior_points"
+              }
+            ],
+            "source": "sam3.1-real",
+            "visibility_state": "visible",
+            "sam_prompt_source": "contract_per_frame_box"
+          }
+        ]
+      },
+      "mask_available": true,
+      "point_tracks_2d": {
+        "agent": [
+          {
+            "tracklet_id": "trk_agent_p1",
+            "object_id": "agent",
+            "point_id": "agent_p1",
+            "uv_sequence": [
+              [
+                77.0,
+                31.0
+              ],
+              [
+                77.0,
+                31.0
+              ],
+              [
+                77.0,
+                31.0
+              ],
+              [
+                77.0,
+                31.0
+              ],
+              [
+                128.0,
+                27.0
+              ],
+              [
+                179.0,
+                27.0
+              ],
+              [
+                230.0,
+                27.0
+              ],
+              [
+                280.0,
+                30.0
+              ],
+              [
+                331.0,
+                27.0
+              ],
+              [
+                382.0,
+                27.0
+              ],
+              [
+                382.0,
+                78.0
+              ],
+              [
+                382.0,
+                78.0
+              ],
+              [
+                382.0,
+                78.0
+              ],
+              [
+                382.0,
+                78.0
+              ],
+              [
+                382.0,
+                78.0
+              ]
+            ],
+            "visibility": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "confidence": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source": "sam31_mask_owned_interior_points"
+          },
+          {
+            "tracklet_id": "trk_agent_p2",
+            "object_id": "agent",
+            "point_id": "agent_p2",
+            "uv_sequence": [
+              [
+                71.0,
+                32.0
+              ],
+              [
+                71.0,
+                32.0
+              ],
+              [
+                71.0,
+                32.0
+              ],
+              [
+                71.0,
+                32.0
+              ],
+              [
+                125.0,
+                27.0
+              ],
+              [
+                176.0,
+                27.0
+              ],
+              [
+                226.0,
+                27.0
+              ],
+              [
+                276.0,
+                30.0
+              ],
+              [
+                328.0,
+                27.0
+              ],
+              [
+                379.0,
+                27.0
+              ],
+              [
+                379.0,
+                78.0
+              ],
+              [
+                379.0,
+                78.0
+              ],
+              [
+                379.0,
+                78.0
+              ],
+              [
+                379.0,
+                78.0
+              ],
+              [
+                379.0,
+                78.0
+              ]
+            ],
+            "visibility": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "confidence": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source": "sam31_mask_owned_interior_points"
+          },
+          {
+            "tracklet_id": "trk_agent_p3",
+            "object_id": "agent",
+            "point_id": "agent_p3",
+            "uv_sequence": [
+              [
+                81.0,
+                32.0
+              ],
+              [
+                81.0,
+                32.0
+              ],
+              [
+                81.0,
+                32.0
+              ],
+              [
+                81.0,
+                32.0
+              ],
+              [
+                132.0,
+                27.0
+              ],
+              [
+                182.0,
+                27.0
+              ],
+              [
+                233.0,
+                27.0
+              ],
+              [
+                283.0,
+                30.0
+              ],
+              [
+                335.0,
+                27.0
+              ],
+              [
+                385.0,
+                27.0
+              ],
+              [
+                386.0,
+                78.0
+              ],
+              [
+                386.0,
+                78.0
+              ],
+              [
+                386.0,
+                78.0
+              ],
+              [
+                386.0,
+                78.0
+              ],
+              [
+                386.0,
+                78.0
+              ]
+            ],
+            "visibility": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "confidence": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "source": "sam31_mask_owned_interior_points"
+          }
+        ]
+      },
+      "field_sources": {
+        "identity": "qwen2.5-vl-real",
+        "bbox_2d_sequence": "sam3.1-real",
+        "mask_sequence": "sam3.1-real",
+        "point_tracks_2d": "sam31_mask_owned_interior_points"
+      }
+    },
+    "computed_fields": {
+      "center_2d_trajectory": {
+        "agent": [
+          {
+            "frame_index": 0,
+            "timestamp_sec": 0.0,
+            "uv": [
+              76.771971,
+              31.225653
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 1,
+            "timestamp_sec": 1.0,
+            "uv": [
+              76.771971,
+              31.225653
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 2,
+            "timestamp_sec": 2.0,
+            "uv": [
+              76.771971,
+              31.225653
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 3,
+            "timestamp_sec": 3.0,
+            "uv": [
+              76.771971,
+              31.225653
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 4,
+            "timestamp_sec": 4.0,
+            "uv": [
+              128.36164,
+              26.654466
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 5,
+            "timestamp_sec": 5.0,
+            "uv": [
+              178.989691,
+              26.693667
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 6,
+            "timestamp_sec": 6.0,
+            "uv": [
+              229.786136,
+              26.725664
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 7,
+            "timestamp_sec": 7.0,
+            "uv": [
+              279.967033,
+              30.131868
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 8,
+            "timestamp_sec": 8.0,
+            "uv": [
+              331.364444,
+              26.699259
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 9,
+            "timestamp_sec": 9.0,
+            "uv": [
+              382.035191,
+              26.709677
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 10,
+            "timestamp_sec": 10.0,
+            "uv": [
+              382.080764,
+              77.687225
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 11,
+            "timestamp_sec": 11.0,
+            "uv": [
+              382.080764,
+              77.687225
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 12,
+            "timestamp_sec": 12.0,
+            "uv": [
+              382.080764,
+              77.687225
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 13,
+            "timestamp_sec": 13.0,
+            "uv": [
+              382.080764,
+              77.687225
+            ],
+            "source": "sam31_mask_centroid"
+          },
+          {
+            "frame_index": 14,
+            "timestamp_sec": 14.0,
+            "uv": [
+              382.080764,
+              77.687225
+            ],
+            "source": "sam31_mask_centroid"
+          }
+        ]
+      },
+      "velocity_2d": {
+        "agent": [
+          {
+            "frame_index": 1,
+            "duv_dt": [
+              0.0,
+              0.0
+            ],
+            "speed_px_per_sec": 0.0,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 2,
+            "duv_dt": [
+              0.0,
+              0.0
+            ],
+            "speed_px_per_sec": 0.0,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 3,
+            "duv_dt": [
+              0.0,
+              0.0
+            ],
+            "speed_px_per_sec": 0.0,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 4,
+            "duv_dt": [
+              51.589669,
+              -4.571187
+            ],
+            "speed_px_per_sec": 51.791792,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 5,
+            "duv_dt": [
+              50.628051,
+              0.039201
+            ],
+            "speed_px_per_sec": 50.628066,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 6,
+            "duv_dt": [
+              50.796445,
+              0.031997
+            ],
+            "speed_px_per_sec": 50.796455,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 7,
+            "duv_dt": [
+              50.180897,
+              3.406204
+            ],
+            "speed_px_per_sec": 50.296368,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 8,
+            "duv_dt": [
+              51.397411,
+              -3.432609
+            ],
+            "speed_px_per_sec": 51.511908,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 9,
+            "duv_dt": [
+              50.670747,
+              0.010418
+            ],
+            "speed_px_per_sec": 50.670748,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 10,
+            "duv_dt": [
+              0.045573,
+              50.977548
+            ],
+            "speed_px_per_sec": 50.977568,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 11,
+            "duv_dt": [
+              0.0,
+              0.0
+            ],
+            "speed_px_per_sec": 0.0,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 12,
+            "duv_dt": [
+              0.0,
+              0.0
+            ],
+            "speed_px_per_sec": 0.0,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 13,
+            "duv_dt": [
+              0.0,
+              0.0
+            ],
+            "speed_px_per_sec": 0.0,
+            "source": "finite_difference_center_2d"
+          },
+          {
+            "frame_index": 14,
+            "duv_dt": [
+              0.0,
+              0.0
+            ],
+            "speed_px_per_sec": 0.0,
+            "source": "finite_difference_center_2d"
+          }
+        ]
+      },
+      "acceleration_2d": {
+        "agent": [
+          {
+            "frame_index": 2,
+            "duv_dt2": [
+              0.0,
+              0.0
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 3,
+            "duv_dt2": [
+              0.0,
+              0.0
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 4,
+            "duv_dt2": [
+              51.589669,
+              -4.571187
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 5,
+            "duv_dt2": [
+              -0.961618,
+              4.610388
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 6,
+            "duv_dt2": [
+              0.168394,
+              -0.007204
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 7,
+            "duv_dt2": [
+              -0.615548,
+              3.374207
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 8,
+            "duv_dt2": [
+              1.216514,
+              -6.838813
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 9,
+            "duv_dt2": [
+              -0.726664,
+              3.443027
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 10,
+            "duv_dt2": [
+              -50.625174,
+              50.96713
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 11,
+            "duv_dt2": [
+              -0.045573,
+              -50.977548
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 12,
+            "duv_dt2": [
+              0.0,
+              0.0
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 13,
+            "duv_dt2": [
+              0.0,
+              0.0
+            ],
+            "source": "finite_difference_velocity_2d"
+          },
+          {
+            "frame_index": 14,
+            "duv_dt2": [
+              0.0,
+              0.0
+            ],
+            "source": "finite_difference_velocity_2d"
+          }
+        ]
+      },
+      "visibility": {
+        "agent": [
+          {
+            "frame_index": 0,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 1,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 2,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 3,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 4,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 5,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 6,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 7,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 8,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 9,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 10,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 11,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 12,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 13,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          },
+          {
+            "frame_index": 14,
+            "score": 1.0,
+            "source": "sam31_mask_area",
+            "state": "visible"
+          }
+        ]
+      },
+      "field_sources": {
+        "center_2d_trajectory": "sam31_mask_centroid",
+        "velocity_2d": "finite_difference_center_2d",
+        "acceleration_2d": "finite_difference_velocity_2d",
+        "visibility": "sam31_mask_area"
+      }
+    },
+    "relations": [],
+    "events": []
+  }
+}

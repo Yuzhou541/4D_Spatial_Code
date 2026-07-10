@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_7</title>
+    <link rel="stylesheet" href="../physics_2d_style.css" />
+  </head>
+  <body data-example-id="Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_7">
+    <header class="detail-header">
+      <a class="back-link" href="../index.html">Back</a>
+      <div>
+        <p class="eyebrow">Gerstenberg2022What</p>
+        <h1 id="pageTitle">Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_7</h1>
+        <p class="muted" id="pageMeta"></p>
+      </div>
+    </header>
+    <main class="detail-grid">
+      <section class="visual-panel">
+        <div class="stage" id="stage">
+          <video id="video" playsinline muted preload="metadata"></video>
+          <img id="gifImage" alt="" />
+          <canvas id="overlay"></canvas>
+        </div>
+        <div class="controls">
+          <button type="button" id="playPause">Play/Pause</button>
+          <button type="button" id="prevFrame">Frame -</button>
+          <button type="button" id="nextFrame">Frame +</button>
+          <input id="timeline" type="range" min="0" max="0" value="0" />
+        </div>
+        <div class="object-list" id="objectList"></div>
+        <div class="point-list" id="pointList"></div>
+      </section>
+      <aside class="code-panel">
+        <div class="metrics">
+          <div><strong>t</strong><span id="frameLabel">0</span></div>
+          <div><strong>Object</strong><span id="objectLabel">all</span></div>
+          <div><strong>Source</strong><span>SAM3.1 + Qwen2.5-VL</span></div>
+        </div>
+        <nav class="tabs">
+          <button type="button" class="tab is-active" data-tab="current">Current Frame</button>
+          <button type="button" class="tab" data-tab="object">Selected Object</button>
+          <button type="button" class="tab" data-tab="gt">Study Metadata</button>
+          <button type="button" class="tab" data-tab="raw">Raw JSON</button>
+        </nav>
+        <div id="codePanels"></div>
+      </aside>
+    </main>
+    <script src="../physics_2d_viewer.js"></script>
+  </body>
+</html>
