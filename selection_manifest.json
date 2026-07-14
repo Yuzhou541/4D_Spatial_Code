@@ -17,7 +17,13 @@
       "media_path": "media/Bass2022Partial_exp1_ex1_full.mp4",
       "poster": null,
       "detail_path": "examples/Bass2022Partial_exp1_ex1_full.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Bass et al. 2022",
+      "research_area": "Physical conjunctions",
+      "display_title": "Cannonball Dynamics",
+      "display_summary": "Track the cannonball and sphere through a two-body ballistic scene.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Bass2022Partial",
@@ -34,7 +40,13 @@
       "media_path": "media/Bass2022Partial_exp1_check2_full.mp4",
       "poster": null,
       "detail_path": "examples/Bass2022Partial_exp1_check2_full.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Bass et al. 2022",
+      "research_area": "Physical conjunctions",
+      "display_title": "Sphere Landing Outcome",
+      "display_summary": "Parse the pink sphere's path and its final support relation.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Bass2022Partial",
@@ -51,7 +63,13 @@
       "media_path": "media/Bass2022Partial_exp1_ex3_full.mp4",
       "poster": null,
       "detail_path": "examples/Bass2022Partial_exp1_ex3_full.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Bass et al. 2022",
+      "research_area": "Physical conjunctions",
+      "display_title": "Off-Screen Motion",
+      "display_summary": "Preserve object identity and trail history as bodies leave the visible frame.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Beller2020Language",
@@ -68,7 +86,13 @@
       "media_path": "media/Beller2020Language_exp1_clip5.mp4",
       "poster": null,
       "detail_path": "examples/Beller2020Language_exp1_clip5.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Beller et al. 2020",
+      "research_area": "Causal language",
+      "display_title": "Causal Language: Scene 05",
+      "display_summary": "Ground language choices in a tracked multi-object collision sequence.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Beller2020Language",
@@ -85,7 +109,13 @@
       "media_path": "media/Beller2020Language_exp1_clip25.mp4",
       "poster": null,
       "detail_path": "examples/Beller2020Language_exp1_clip25.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Beller et al. 2020",
+      "research_area": "Causal language",
+      "display_title": "Causal Language: Scene 25",
+      "display_summary": "Connect observed motion and contact structure to causal descriptions.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Beller2020Language",
@@ -102,7 +132,13 @@
       "media_path": "media/Beller2020Language_exp1_inst_video.mp4",
       "poster": null,
       "detail_path": "examples/Beller2020Language_exp1_inst_video.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Beller et al. 2020",
+      "research_area": "Causal language",
+      "display_title": "Causal Description Tutorial",
+      "display_summary": "Introduce the scene vocabulary through an object-centric demonstration.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Beller2025Multimodal",
@@ -119,7 +155,13 @@
       "media_path": "media/Beller2025Multimodal_exp1_Beller2025Multimodal_exp1_assets_ball_world79.mp4",
       "poster": "media/Beller2025Multimodal_exp1_Beller2025Multimodal_exp1_assets_ball_world79_poster.png",
       "detail_path": "examples/Beller2025Multimodal_exp1_Beller2025Multimodal_exp1_assets_ball_world79.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Beller et al. 2025",
+      "research_area": "Plinko reasoning",
+      "display_title": "Plinko Drop: World 79",
+      "display_summary": "Follow one ball through pegs, collisions, and its terminal region.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Beller2025Multimodal",
@@ -136,7 +178,13 @@
       "media_path": "media/Beller2025Multimodal_exp1_Beller2025Multimodal_exp1_assets_ball_world63.mp4",
       "poster": "media/Beller2025Multimodal_exp1_Beller2025Multimodal_exp1_assets_ball_world63_poster.png",
       "detail_path": "examples/Beller2025Multimodal_exp1_Beller2025Multimodal_exp1_assets_ball_world63.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Beller et al. 2025",
+      "research_area": "Plinko reasoning",
+      "display_title": "Plinko Drop: World 63",
+      "display_summary": "Parse a second stochastic path through the same causal apparatus.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Beller2025Multimodal",
@@ -153,7 +201,13 @@
       "media_path": "media/Beller2025Multimodal_exp2_Beller2025Multimodal_exp2_assets_instruction_videos_world_204_hole_2.mp4",
       "poster": "media/Beller2025Multimodal_exp2_Beller2025Multimodal_exp2_assets_instruction_videos_world_204_hole_2_poster.png",
       "detail_path": "examples/Beller2025Multimodal_exp2_Beller2025Multimodal_exp2_assets_instruction_videos_world_204_hole_2.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Beller et al. 2025",
+      "research_area": "Plinko reasoning",
+      "display_title": "Plinko Geometry: Two-Hole Scene",
+      "display_summary": "Represent obstacles, ball motion, and outcomes in a two-hole configuration.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Gerstenberg2021A_Counterfactual",
@@ -170,7 +224,13 @@
       "media_path": "media/Gerstenberg2021A_Counterfactual_exp1_Gerstenberg2021A_Counterfactual_exp1_assets_study_clip13.mp4",
       "poster": "media/Gerstenberg2021A_Counterfactual_exp1_Gerstenberg2021A_Counterfactual_exp1_assets_study_clip13_poster.png",
       "detail_path": "examples/Gerstenberg2021A_Counterfactual_exp1_Gerstenberg2021A_Counterfactual_exp1_assets_study_clip13.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Gerstenberg et al. 2021",
+      "research_area": "Counterfactual causation",
+      "display_title": "Ball A's Causal Role",
+      "display_summary": "Track interacting balls and encode Ball A's contribution over time.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Gerstenberg2021A_Counterfactual",
@@ -187,7 +247,13 @@
       "media_path": "media/Gerstenberg2021A_Counterfactual_exp2_Gerstenberg2021A_Counterfactual_exp2_assets_experiment1_clip16.mp4",
       "poster": "media/Gerstenberg2021A_Counterfactual_exp2_Gerstenberg2021A_Counterfactual_exp2_assets_experiment1_clip16_poster.png",
       "detail_path": "examples/Gerstenberg2021A_Counterfactual_exp2_Gerstenberg2021A_Counterfactual_exp2_assets_experiment1_clip16.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Gerstenberg et al. 2021",
+      "research_area": "Counterfactual causation",
+      "display_title": "Intervention on Ball A",
+      "display_summary": "Expose contact structure and downstream motion in an intervention scene.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Gerstenberg2021A_Counterfactual",
@@ -204,7 +270,13 @@
       "media_path": "media/Gerstenberg2021A_Counterfactual_exp3_Gerstenberg2021A_Counterfactual_exp3_assets_experiment2_clip30.mp4",
       "poster": "media/Gerstenberg2021A_Counterfactual_exp3_Gerstenberg2021A_Counterfactual_exp3_assets_experiment2_clip30_poster.png",
       "detail_path": "examples/Gerstenberg2021A_Counterfactual_exp3_Gerstenberg2021A_Counterfactual_exp3_assets_experiment2_clip30.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Gerstenberg et al. 2021",
+      "research_area": "Counterfactual causation",
+      "display_title": "Counterfactual Gate Crossing",
+      "display_summary": "Recover the trajectories needed to reason about Ball E without Ball A.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Gerstenberg2022What",
@@ -221,7 +293,13 @@
       "media_path": "media/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_7.mp4",
       "poster": "media/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_7_poster.png",
       "detail_path": "examples/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_7.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Gerstenberg et al. 2022",
+      "research_area": "Event counterfactuals",
+      "display_title": "Counterfactual Count: Scene 07",
+      "display_summary": "Parse observed contacts for event-level counterfactual counting.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Gerstenberg2022What",
@@ -238,7 +316,13 @@
       "media_path": "media/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_8.mp4",
       "poster": "media/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_8_poster.png",
       "detail_path": "examples/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_8.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Gerstenberg et al. 2022",
+      "research_area": "Event counterfactuals",
+      "display_title": "Counterfactual Count: Scene 08",
+      "display_summary": "Structure object motion and contact evidence for a second event sequence.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Gerstenberg2022What",
@@ -255,7 +339,13 @@
       "media_path": "media/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_9.mp4",
       "poster": "media/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_9_poster.png",
       "detail_path": "examples/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_9.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Gerstenberg et al. 2022",
+      "research_area": "Event counterfactuals",
+      "display_title": "Counterfactual Count: Scene 09",
+      "display_summary": "Track the full interaction graph for counterfactual event analysis.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Sosa2021Moral",
@@ -272,7 +362,13 @@
       "media_path": "media/Sosa2021Moral_exp1_Sosa2021Moral_exp1_assets_intro3.mp4",
       "poster": "media/Sosa2021Moral_exp1_Sosa2021Moral_exp1_assets_intro3_poster.png",
       "detail_path": "examples/Sosa2021Moral_exp1_Sosa2021Moral_exp1_assets_intro3.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Sosa et al. 2021",
+      "research_area": "Moral causality",
+      "display_title": "Moral Contrast",
+      "display_summary": "Make agent, victim, and hazard trajectories explicit for moral comparison.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Sosa2021Moral",
@@ -289,7 +385,13 @@
       "media_path": "media/Sosa2021Moral_exp2_Sosa2021Moral_exp2_assets_harm_moving_moving.mp4",
       "poster": "media/Sosa2021Moral_exp2_Sosa2021Moral_exp2_assets_harm_moving_moving_poster.png",
       "detail_path": "examples/Sosa2021Moral_exp2_Sosa2021Moral_exp2_assets_harm_moving_moving.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Sosa et al. 2021",
+      "research_area": "Moral causality",
+      "display_title": "Effort in Harm",
+      "display_summary": "Quantify the blue agent's motion before the harmful outcome.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Sosa2021Moral",
@@ -306,7 +408,13 @@
       "media_path": "media/Sosa2021Moral_exp3_Sosa2021Moral_exp3_assets_video4.mp4",
       "poster": "media/Sosa2021Moral_exp3_Sosa2021Moral_exp3_assets_video4_poster.png",
       "detail_path": "examples/Sosa2021Moral_exp3_Sosa2021Moral_exp3_assets_video4.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Sosa et al. 2021",
+      "research_area": "Moral causality",
+      "display_title": "Responsibility for Collision",
+      "display_summary": "Connect the blue agent's action to the green-red collision event.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Sosa2025Blending",
@@ -323,7 +431,13 @@
       "media_path": "media/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_0.mp4",
       "poster": "media/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_0_poster.png",
       "detail_path": "examples/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_0.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Sosa et al. 2025",
+      "research_area": "Goal prediction",
+      "display_title": "Goal Reachability: Scene 00",
+      "display_summary": "Track the ball and summarize whether its path reaches the goal.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Sosa2025Blending",
@@ -340,7 +454,13 @@
       "media_path": "media/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_2.mp4",
       "poster": "media/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_2_poster.png",
       "detail_path": "examples/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_2.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Sosa et al. 2025",
+      "research_area": "Goal prediction",
+      "display_title": "Goal Reachability: Scene 02",
+      "display_summary": "Preserve the ball trail through a second goal-prediction scene.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Sosa2025Blending",
@@ -357,7 +477,13 @@
       "media_path": "media/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_1.mp4",
       "poster": "media/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_1_poster.png",
       "detail_path": "examples/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_1.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Sosa et al. 2025",
+      "research_area": "Goal prediction",
+      "display_title": "Goal Reachability: Scene 01",
+      "display_summary": "Encode motion, disappearance, and terminal goal evidence over time.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Stephan2021Counterfactual",
@@ -374,7 +500,13 @@
       "media_path": "media/Stephan2021Counterfactual_exp1_Stephan2021Counterfactual_exp1_assets_PrimerClip2_ObservedCausation.mp4",
       "poster": "media/Stephan2021Counterfactual_exp1_Stephan2021Counterfactual_exp1_assets_PrimerClip2_ObservedCausation_poster.png",
       "detail_path": "examples/Stephan2021Counterfactual_exp1_Stephan2021Counterfactual_exp1_assets_PrimerClip2_ObservedCausation.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Stephan et al. 2021",
+      "research_area": "Team causality",
+      "display_title": "Observed Causation: Primer 02",
+      "display_summary": "Encode marble contact and gate crossing in a causal primer.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Stephan2021Counterfactual",
@@ -391,7 +523,13 @@
       "media_path": "media/Stephan2021Counterfactual_exp3_Stephan2021Counterfactual_exp3_assets_green_delayed.mp4",
       "poster": "media/Stephan2021Counterfactual_exp3_Stephan2021Counterfactual_exp3_assets_green_delayed_poster.png",
       "detail_path": "examples/Stephan2021Counterfactual_exp3_Stephan2021Counterfactual_exp3_assets_green_delayed.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Stephan et al. 2021",
+      "research_area": "Team causality",
+      "display_title": "Team Counterfactual",
+      "display_summary": "Track delayed player actions and the team's missed scoring event.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Stephan2021Counterfactual",
@@ -408,7 +546,13 @@
       "media_path": "media/Stephan2021Counterfactual_exp1_Stephan2021Counterfactual_exp1_assets_PrimerClip4_ObservedCausation.mp4",
       "poster": "media/Stephan2021Counterfactual_exp1_Stephan2021Counterfactual_exp1_assets_PrimerClip4_ObservedCausation_poster.png",
       "detail_path": "examples/Stephan2021Counterfactual_exp1_Stephan2021Counterfactual_exp1_assets_PrimerClip4_ObservedCausation.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Stephan et al. 2021",
+      "research_area": "Team causality",
+      "display_title": "Observed Causation: Primer 04",
+      "display_summary": "Resolve the interaction chain leading Marble B through the gate.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Ullman2018Learning",
@@ -425,7 +569,13 @@
       "media_path": "media/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world1_world1_1_h264.mp4",
       "poster": "media/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world1_world1_1_poster.png",
       "detail_path": "examples/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world1_world1_1.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Ullman et al. 2018",
+      "research_area": "Property learning",
+      "display_title": "Mass Learning: World 1-1",
+      "display_summary": "Track colored pucks as evidence for latent physical properties.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Ullman2018Learning",
@@ -442,7 +592,13 @@
       "media_path": "media/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world1_world1_3_h264.mp4",
       "poster": "media/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world1_world1_3_poster.png",
       "detail_path": "examples/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world1_world1_3.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Ullman et al. 2018",
+      "research_area": "Property learning",
+      "display_title": "Mass Learning: World 1-3",
+      "display_summary": "Aggregate multi-object collisions into evidence about blue-object mass.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Ullman2018Learning",
@@ -459,7 +615,13 @@
       "media_path": "media/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world2_world2_2_h264.mp4",
       "poster": "media/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world2_world2_2_poster.png",
       "detail_path": "examples/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world2_world2_2.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Ullman et al. 2018",
+      "research_area": "Property learning",
+      "display_title": "Mass Learning: World 2-2",
+      "display_summary": "Compare trajectories across a second learned-physics environment.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Wu2022That",
@@ -476,7 +638,13 @@
       "media_path": "media/Wu2022That_exp1_Wu2022That_exp1_assets_trials_1_full.gif",
       "poster": "media/Wu2022That_exp1_Wu2022That_exp1_assets_trials_1_full_poster.png",
       "detail_path": "examples/Wu2022That_exp1_Wu2022That_exp1_assets_trials_1_full.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Wu et al. 2022",
+      "research_area": "Gridworld planning",
+      "display_title": "Gridworld Replay: Trial 01",
+      "display_summary": "Represent the agent path, doors, and goal outcome over discrete time.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Wu2022That",
@@ -493,7 +661,13 @@
       "media_path": "media/Wu2022That_exp1_Wu2022That_exp1_assets_trials_2_full.gif",
       "poster": "media/Wu2022That_exp1_Wu2022That_exp1_assets_trials_2_full_poster.png",
       "detail_path": "examples/Wu2022That_exp1_Wu2022That_exp1_assets_trials_2_full.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Wu et al. 2022",
+      "research_area": "Gridworld planning",
+      "display_title": "Gridworld Replay: Trial 02",
+      "display_summary": "Trace a second action sequence through walls and blocked cells.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Wu2022That",
@@ -510,7 +684,13 @@
       "media_path": "media/Wu2022That_exp1_Wu2022That_exp1_assets_instruction_instructions_full.gif",
       "poster": "media/Wu2022That_exp1_Wu2022That_exp1_assets_instruction_instructions_full_poster.png",
       "detail_path": "examples/Wu2022That_exp1_Wu2022That_exp1_assets_instruction_instructions_full.html",
-      "parse_mode": "dynamic_2d"
+      "parse_mode": "dynamic_2d",
+      "study_label": "Wu et al. 2022",
+      "research_area": "Gridworld planning",
+      "display_title": "Gridworld Dynamics Tutorial",
+      "display_summary": "Parse legal moves, walls, and goal-directed motion in the instruction scene.",
+      "dimension": "2d",
+      "dimension_label": "2D dynamics"
     },
     {
       "study": "Smith2019Modeling",
@@ -527,7 +707,13 @@
       "media_path": "media/e_4f3fc98bd33e12d8.mp4",
       "poster": "media/e_4f3fc98bd33e12d8_poster.png",
       "detail_path": "examples/e_4f3fc98bd33e12d8.html",
-      "parse_mode": "dynamic_3d_full"
+      "parse_mode": "dynamic_3d_full",
+      "study_label": "Smith et al. 2019",
+      "research_area": "3D event surprise",
+      "display_title": "Occluded Cube: Control",
+      "display_summary": "Recover calibrated 3D object motion as a cube passes behind a blocker.",
+      "dimension": "3d",
+      "dimension_label": "3D geometry"
     },
     {
       "study": "Smith2019Modeling",
@@ -544,7 +730,13 @@
       "media_path": "media/e_910560807518a408.mp4",
       "poster": "media/e_910560807518a408_poster.png",
       "detail_path": "examples/e_910560807518a408.html",
-      "parse_mode": "dynamic_3d_full"
+      "parse_mode": "dynamic_3d_full",
+      "study_label": "Smith et al. 2019",
+      "research_area": "3D event surprise",
+      "display_title": "Appearing Cone: Control",
+      "display_summary": "Track a cone through a controlled appearance event in 3D.",
+      "dimension": "3d",
+      "dimension_label": "3D geometry"
     },
     {
       "study": "Smith2019Modeling",
@@ -561,7 +753,13 @@
       "media_path": "media/e_61e66f780da3e74e.mp4",
       "poster": "media/e_61e66f780da3e74e_poster.png",
       "detail_path": "examples/e_61e66f780da3e74e.html",
-      "parse_mode": "dynamic_3d_full"
+      "parse_mode": "dynamic_3d_full",
+      "study_label": "Smith et al. 2019",
+      "research_area": "3D event surprise",
+      "display_title": "Visible Discontinuity: Control",
+      "display_summary": "Encode a cube's discontinuous trajectory in calibrated world geometry.",
+      "dimension": "3d",
+      "dimension_label": "3D geometry"
     },
     {
       "study": "Hamrick2016Inferring",
@@ -578,7 +776,13 @@
       "media_path": "media/e_56d3399b8031683f.mp4",
       "poster": "media/e_56d3399b8031683f_poster.png",
       "detail_path": "examples/e_56d3399b8031683f.html",
-      "parse_mode": "dynamic_3d_full"
+      "parse_mode": "dynamic_3d_full",
+      "study_label": "Hamrick et al. 2016",
+      "research_area": "Tower stability",
+      "display_title": "Relative Mass from Towers",
+      "display_summary": "Lift ten blocks into 3D to support color-based mass inference.",
+      "dimension": "3d",
+      "dimension_label": "3D geometry"
     },
     {
       "study": "Hamrick2016Inferring",
@@ -595,7 +799,13 @@
       "media_path": "media/e_cc57e80415d82d04.mp4",
       "poster": "media/e_cc57e80415d82d04_poster.png",
       "detail_path": "examples/e_cc57e80415d82d04.html",
-      "parse_mode": "dynamic_3d_full"
+      "parse_mode": "dynamic_3d_full",
+      "study_label": "Hamrick et al. 2016",
+      "research_area": "Tower stability",
+      "display_title": "Tower Stability Estimate",
+      "display_summary": "Represent a frozen tower's oriented geometry before physical release.",
+      "dimension": "3d",
+      "dimension_label": "3D geometry"
     },
     {
       "study": "Hamrick2016Inferring",
@@ -612,7 +822,13 @@
       "media_path": "media/e_4db287dd58c61688.mp4",
       "poster": "media/e_4db287dd58c61688_poster.png",
       "detail_path": "examples/e_4db287dd58c61688.html",
-      "parse_mode": "dynamic_3d_full"
+      "parse_mode": "dynamic_3d_full",
+      "study_label": "Hamrick et al. 2016",
+      "research_area": "Tower stability",
+      "display_title": "Conditioned Tower Stability",
+      "display_summary": "Combine color-mass context with a full 3D tower state.",
+      "dimension": "3d",
+      "dimension_label": "3D geometry"
     }
   ]
 }

@@ -21,8 +21,8 @@
   let suppressTimeUpdate = false;
   window.__physicsViewer = { data, code, state };
 
-  document.querySelector('#pageTitle').textContent = data.sample.title || exampleId;
-  document.querySelector('#pageMeta').textContent = `${data.sample.experiment} / ${data.sample.role} / ${data.sample.media_kind} / ${(data.sample.trial_ids || data.sample.instruction_ids || []).join(', ') || data.sample.file_name}`;
+  document.querySelector('#pageTitle').textContent = document.body.dataset.displayTitle || data.sample.title || exampleId;
+  document.querySelector('#pageMeta').textContent = document.body.dataset.displaySummary || `${data.sample.experiment} / ${data.sample.role} / ${data.sample.media_kind} / ${(data.sample.trial_ids || data.sample.instruction_ids || []).join(', ') || data.sample.file_name}`;
   if (isGif) {
     video.style.display = 'none';
     gifImage.style.display = 'block';

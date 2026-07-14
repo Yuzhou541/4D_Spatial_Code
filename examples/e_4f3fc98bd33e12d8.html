@@ -1,15 +1,58 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>block_geometric_cube_control-1_human_block_cube_0: How surprising was the event in this video?</title><link rel="stylesheet" href="../assets/styles.css"></head>
-<body><header class="detail-header"><a class="back-link" href="../index.html">Back</a><div><p class="eyebrow">Smith2019Modeling</p><h1>block_geometric_cube_control-1_human_block_cube_0: How surprising was the event in this video?</h1><p class="muted" id="pageMeta"></p></div></header>
-<main class="detail-grid">
-  <section class="visual-panel">
-    <div class="stage" id="stage"><video id="video" controls muted playsinline preload="auto"></video><canvas id="overlay"></canvas></div>
-    <div class="controls"><button id="play" class="icon-button" type="button" title="Play or pause" aria-label="Play or pause">&#9654;</button><button id="prev" class="icon-button" type="button" title="Previous parsed frame" aria-label="Previous parsed frame">&#9664;</button><button id="next" class="icon-button" type="button" title="Next parsed frame" aria-label="Next parsed frame">&#9654;</button><input id="scrubber" type="range" min="0" max="0" value="0" aria-label="Parsed frame"></div>
-    <div class="object-list" id="objectList"></div><div class="point-list" id="pointList"></div>
-  </section>
-  <aside class="code-panel"><div class="metrics"><div><strong>t</strong><span id="metricT">0</span></div><div><strong>Object</strong><span id="metricObject">all</span></div><div><strong>Geometry</strong><span>VGGT-Omega</span></div></div>
-    <nav class="tabs"><button class="tab is-active" data-tab="current">Current Frame</button><button class="tab" data-tab="object">Selected Object</button><button class="tab" data-tab="metadata">Study Metadata</button><button class="tab" data-tab="raw">Raw JSON</button></nav>
-    <div class="code-scroll" id="code"></div>
-  </aside>
-</main><script>window.EXAMPLE_ID="Smith2019Modeling_exp1_Smith2019Modeling_exp1_assets_block_geometric_cube_control-1_human_block_cube_0";window.DATA_KEY="e_4f3fc98bd33e12d8";</script><script src="../assets/viewer.js"></script></body></html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Occluded Cube: Control | Dynamic 4D Spatial Code</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body data-display-title="Occluded Cube: Control" data-display-summary="Recover calibrated 3D object motion as a cube passes behind a blocker." data-geometry="3d">
+    <header class="detail-header">
+      <nav class="detail-nav" aria-label="Project navigation">
+        <a class="detail-brand" href="../index.html"><span class="brand-mark">4D</span><span>Dynamic 4D Spatial Code</span></a>
+        <a class="back-link" href="../index.html#results">&larr; All results</a>
+      </nav>
+      <div class="detail-intro">
+        <div class="detail-copy">
+          <p class="eyebrow">Smith et al. 2019 / 3D geometry</p>
+          <h1 id="pageTitle">Occluded Cube: Control</h1>
+          <p class="detail-summary" id="pageMeta">Recover calibrated 3D object motion as a cube passes behind a blocker.</p>
+        </div>
+        <div class="method-badge"><strong>Inference path</strong>Qwen2.5-VL + SAM3.1 + VGGT-Omega + SpatialTrackerV2</div>
+      </div>
+    </header>
+    <main class="detail-grid">
+      <section class="visual-panel" aria-label="Interactive 3D video result">
+        <div class="stage" id="stage">
+          <video id="video" muted playsinline preload="auto"></video>
+          <canvas id="overlay" aria-label="Masks, tracks, and projected 3D cuboids"></canvas>
+        </div>
+        <div class="controls" aria-label="Playback controls">
+          <button id="play" type="button" title="Play or pause" aria-label="Play or pause">&#9654;</button>
+          <button id="prev" type="button" title="Previous parsed frame" aria-label="Previous parsed frame">&#9664;</button>
+          <button id="next" type="button" title="Next parsed frame" aria-label="Next parsed frame">&#9654;</button>
+          <input id="scrubber" type="range" min="0" max="0" value="0" aria-label="Parsed frame" />
+        </div>
+        <div class="object-list" id="objectList" aria-label="Tracked objects"></div>
+        <div class="point-list" id="pointList" aria-label="Tracking points"></div>
+      </section>
+      <aside class="code-panel" aria-label="Frame-scoped 4D spatial code">
+        <div class="metrics">
+          <div><strong>Frame</strong><span id="metricT">0</span></div>
+          <div><strong>Selection</strong><span id="metricObject">all objects</span></div>
+          <div><strong>Geometry</strong><span>VGGT-Omega</span></div>
+        </div>
+        <nav class="tabs" aria-label="Code views">
+          <button class="tab is-active" data-tab="current" type="button">Current frame</button>
+          <button class="tab" data-tab="object" type="button">Selected object</button>
+          <button class="tab" data-tab="metadata" type="button">Study metadata</button>
+          <button class="tab" data-tab="raw" type="button">Raw JSON</button>
+        </nav>
+        <div class="code-scroll" id="code"></div>
+      </aside>
+    </main>
+    <script>window.EXAMPLE_ID="Smith2019Modeling_exp1_Smith2019Modeling_exp1_assets_block_geometric_cube_control-1_human_block_cube_0";window.DATA_KEY="e_4f3fc98bd33e12d8";</script>
+    <script src="../assets/viewer.js?v=20260714-conference"></script>
+  </body>
+</html>

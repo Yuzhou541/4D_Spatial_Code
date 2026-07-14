@@ -3,49 +3,56 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Beller2025Multimodal_exp1_Beller2025Multimodal_exp1_assets_ball_world63</title>
+    <meta name="theme-color" content="#ffffff" />
+    <title>Plinko Drop: World 63 | Dynamic 4D Spatial Code</title>
     <link rel="stylesheet" href="../physics_2d_style.css" />
   </head>
-  <body data-example-id="Beller2025Multimodal_exp1_Beller2025Multimodal_exp1_assets_ball_world63">
+  <body data-example-id="Beller2025Multimodal_exp1_Beller2025Multimodal_exp1_assets_ball_world63" data-display-title="Plinko Drop: World 63" data-display-summary="Parse a second stochastic path through the same causal apparatus." data-geometry="2d">
     <header class="detail-header">
-      <a class="back-link" href="../index.html">Back</a>
-      <div>
-        <p class="eyebrow">Beller2025Multimodal</p>
-        <h1 id="pageTitle">Beller2025Multimodal_exp1_Beller2025Multimodal_exp1_assets_ball_world63</h1>
-        <p class="muted" id="pageMeta"></p>
+      <nav class="detail-nav" aria-label="Project navigation">
+        <a class="detail-brand" href="../index.html"><span class="brand-mark">4D</span><span>Dynamic 4D Spatial Code</span></a>
+        <a class="back-link" href="../index.html#results">&larr; All results</a>
+      </nav>
+      <div class="detail-intro">
+        <div class="detail-copy">
+          <p class="eyebrow">Beller et al. 2025 / 2D dynamics</p>
+          <h1 id="pageTitle">Plinko Drop: World 63</h1>
+          <p class="detail-summary" id="pageMeta">Parse a second stochastic path through the same causal apparatus.</p>
+        </div>
+        <div class="method-badge"><strong>Inference path</strong>Qwen2.5-VL + SAM3.1</div>
       </div>
     </header>
     <main class="detail-grid">
-      <section class="visual-panel">
+      <section class="visual-panel" aria-label="Interactive video result">
         <div class="stage" id="stage">
-          <video id="video" playsinline muted preload="metadata"></video>
+          <video id="video" muted playsinline preload="metadata"></video>
           <img id="gifImage" alt="" />
-          <canvas id="overlay"></canvas>
+          <canvas id="overlay" aria-label="Object masks, boxes, and trajectories"></canvas>
         </div>
-        <div class="controls">
-          <button type="button" id="playPause">Play/Pause</button>
-          <button type="button" id="prevFrame">Frame -</button>
-          <button type="button" id="nextFrame">Frame +</button>
-          <input id="timeline" type="range" min="0" max="0" value="0" />
+        <div class="controls" aria-label="Playback controls">
+          <button type="button" id="playPause" title="Play or pause" aria-label="Play or pause">&#9654;</button>
+          <button type="button" id="prevFrame" title="Previous parsed frame" aria-label="Previous parsed frame">&#9664;</button>
+          <button type="button" id="nextFrame" title="Next parsed frame" aria-label="Next parsed frame">&#9654;</button>
+          <input id="timeline" type="range" min="0" max="0" value="0" aria-label="Parsed frame" />
         </div>
-        <div class="object-list" id="objectList"></div>
-        <div class="point-list" id="pointList"></div>
+        <div class="object-list" id="objectList" aria-label="Tracked objects"></div>
+        <div class="point-list" id="pointList" aria-label="Tracking points"></div>
       </section>
-      <aside class="code-panel">
+      <aside class="code-panel" aria-label="Frame-scoped 4D spatial code">
         <div class="metrics">
-          <div><strong>t</strong><span id="frameLabel">0</span></div>
-          <div><strong>Object</strong><span id="objectLabel">all</span></div>
-          <div><strong>Source</strong><span>SAM3.1 + Qwen2.5-VL</span></div>
+          <div><strong>Frame</strong><span id="frameLabel">0</span></div>
+          <div><strong>Selection</strong><span id="objectLabel">all objects</span></div>
+          <div><strong>Perception</strong><span>SAM3.1 + Qwen2.5-VL</span></div>
         </div>
-        <nav class="tabs">
-          <button type="button" class="tab is-active" data-tab="current">Current Frame</button>
-          <button type="button" class="tab" data-tab="object">Selected Object</button>
-          <button type="button" class="tab" data-tab="gt">Study Metadata</button>
+        <nav class="tabs" aria-label="Code views">
+          <button type="button" class="tab is-active" data-tab="current">Current frame</button>
+          <button type="button" class="tab" data-tab="object">Selected object</button>
+          <button type="button" class="tab" data-tab="gt">Study metadata</button>
           <button type="button" class="tab" data-tab="raw">Raw JSON</button>
         </nav>
         <div id="codePanels"></div>
       </aside>
     </main>
-    <script src="../physics_2d_viewer.js"></script>
+    <script src="../physics_2d_viewer.js?v=20260714-conference"></script>
   </body>
 </html>

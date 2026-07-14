@@ -3,436 +3,519 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>4D Spatial Code Physics Preview</title>
+    <meta name="description" content="Interactive object-centric 2D and 3D video parsing results from Dynamic 4D Spatial Code." />
+    <meta name="theme-color" content="#0a0e13" />
+    <title>Dynamic 4D Spatial Code | Interactive Research Showcase</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <p class="eyebrow">Physics subset</p>
-      <h1>Dynamic 4D Spatial Code</h1>
-      <p class="muted">36 selected visual examples across 12 physics studies. The 2D path uses Qwen-constrained semantics and SAM3.1 masks; the 3D path adds VGGT-Omega geometry, SpatialTrackerV2 tracklets, and calibrated moving cuboids.</p>
+    <header class="hero" id="project">
+      <img class="hero-media" src="assets/hero-4d-spatial-code.png" alt="" aria-hidden="true" />
+      <div class="hero-shade" aria-hidden="true"></div>
+      <nav class="top-nav" aria-label="Project navigation">
+        <a class="brand" href="#project"><span class="brand-mark">4D</span><span>Dynamic 4D Spatial Code</span></a>
+        <div class="nav-links">
+          <a href="#method">Method</a>
+          <a href="#results">Results</a>
+          <a class="source-link" href="https://github.com/Yuzhou541/4D_Spatial_Code">GitHub</a>
+        </div>
+      </nav>
+      <div class="hero-content">
+        <div class="hero-copy">
+          <p class="hero-label">Interactive research showcase</p>
+          <h1><span>Dynamic 4D</span><span>Spatial Code</span></h1>
+          <p class="hero-tagline">From pixels to object-centric space-time.</p>
+          <p class="hero-description">A unified representation for masks, motion, geometry, camera, and relations across dynamic 2D and 3D scenes.</p>
+          <div class="hero-actions">
+            <a class="primary-action" href="#results">Explore results</a>
+            <a class="secondary-action" href="#method">View architecture</a>
+          </div>
+          <dl class="hero-stats">
+            <div><dt>Studies</dt><dd>12</dd></div>
+            <div><dt>Examples</dt><dd>36</dd></div>
+            <div><dt>Geometry</dt><dd>2D + 3D</dd></div>
+            <div><dt>Outputs</dt><dd>Interactive</dd></div>
+          </dl>
+        </div>
+        <p class="hero-caption">Representation overview / oriented geometry and object-owned trajectories</p>
+      </div>
     </header>
-    <main class="study-list">
-      <section class="study-section">
-        <div class="study-heading-row">
-          <h2 class="study-heading">Bass2022Partial</h2>
-          <p class="study-count">3 examples</p>
+    <main>
+      <section class="method-section" id="method">
+        <div class="section-intro">
+          <div>
+            <p class="section-label">Architecture</p>
+            <h2>One code store, two geometry paths.</h2>
+          </div>
+          <p>Semantic grounding, segmentation, geometry, and tracking remain inspectable at every time step. The representation keeps direct model outputs separate from computed motion and relations.</p>
         </div>
-        <div class="card-grid">
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Bass2022Partial_exp1_ex1_full.html"><video muted playsinline preload="metadata"><source src="media/Bass2022Partial_exp1_ex1_full.mp4" type="video/mp4" /></video></a>
-            <div class="card-body">
-              <p class="eyebrow">Bass2022Partial / exp1 / ex1_full</p>
-              <h2>ex1_full: This is an example of what the scenes look like, and how the objects act. Please press pla</h2>
-              <p class="muted">instruction_example</p>
-              <a class="detail-link" href="examples/Bass2022Partial_exp1_ex1_full.html">Open detail</a>
-            </div>
-          </article>
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Bass2022Partial_exp1_check2_full.html"><video muted playsinline preload="metadata"><source src="media/Bass2022Partial_exp1_check2_full.mp4" type="video/mp4" /></video></a>
-            <div class="card-body">
-              <p class="eyebrow">Bass2022Partial / exp1 / check2_full</p>
-              <h2>check2_full: Where does the PINK SPHERE end up?</h2>
-              <p class="muted">check_trial</p>
-              <a class="detail-link" href="examples/Bass2022Partial_exp1_check2_full.html">Open detail</a>
-            </div>
-          </article>
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Bass2022Partial_exp1_ex3_full.html"><video muted playsinline preload="metadata"><source src="media/Bass2022Partial_exp1_ex3_full.mp4" type="video/mp4" /></video></a>
-            <div class="card-body">
-              <p class="eyebrow">Bass2022Partial / exp1 / ex3_full</p>
-              <h2>ex3_full: Please press play to view. This is another example of a full simulation. If balls go off t</h2>
-              <p class="muted">instruction_example</p>
-              <a class="detail-link" href="examples/Bass2022Partial_exp1_ex3_full.html">Open detail</a>
-            </div>
-          </article>
+        <ol class="pipeline" aria-label="Perception and geometry pipeline">
+          <li><span class="pipeline-index">01</span><strong>Semantic grounding</strong><small>Qwen2.5-VL identifies contract-bound scene objects.</small></li>
+          <li><span class="pipeline-index">02</span><strong>Video segmentation</strong><small>SAM3.1 produces object masks and 2D boxes.</small></li>
+          <li><span class="pipeline-index">03</span><strong>Geometry extraction</strong><small>VGGT-Omega adds depth, point maps, and camera for 3D scenes.</small></li>
+          <li><span class="pipeline-index">04</span><strong>Object tracking</strong><small>Mask-owned points preserve identity and motion through time.</small></li>
+          <li><span class="pipeline-index">05</span><strong>4D code store</strong><small>Direct fields, computed geometry, events, and relations share one schema.</small></li>
+        </ol>
+        <div class="geometry-paths">
+          <article><span class="path-label">2D dynamics</span><p>Object masks, boxes, centers, velocities, visibility, trails, contacts, and events remain in image coordinates.</p></article>
+          <article><span class="path-label">3D geometry</span><p>Mask pixels are lifted with VGGT-Omega, associated with SpatialTrackerV2 tracklets, and serialized as moving oriented cuboids and local SE(3).</p></article>
         </div>
       </section>
-      <section class="study-section">
-        <div class="study-heading-row">
-          <h2 class="study-heading">Beller2020Language</h2>
-          <p class="study-count">3 examples</p>
+      <section class="results-section" id="results">
+        <div class="results-header">
+          <div class="results-heading">
+            <p class="section-label">Interactive results</p>
+            <h2>Inspect the code behind each scene.</h2>
+            <p>Scrub time, select an object or tracking point, and read the synchronized frame-scoped representation beside the video.</p>
+          </div>
+          <div class="result-tabs" role="group" aria-label="Filter examples">
+            <button class="is-active" type="button" data-result-filter="all" aria-pressed="true">All</button>
+            <button type="button" data-result-filter="2d" aria-pressed="false">2D dynamics</button>
+            <button type="button" data-result-filter="3d" aria-pressed="false">3D geometry</button>
+          </div>
         </div>
-        <div class="card-grid">
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Beller2020Language_exp1_clip5.html"><video muted playsinline preload="metadata"><source src="media/Beller2020Language_exp1_clip5.mp4" type="video/mp4" /></video></a>
+        <p class="result-count" id="visibleResultCount">36 interactive results</p>
+        <div class="results-grid">
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Bass2022Partial_exp1_ex1_full.html" aria-label="Open Cannonball Dynamics">
+              <video muted playsinline preload="metadata" aria-label="Cannonball Dynamics"><source src="media/Bass2022Partial_exp1_ex1_full.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Beller2020Language / exp1 / clip5</p>
-              <h2>clip5: Which of the following sentences best describes the clip?</h2>
-              <p class="muted">target_trial</p>
-              <a class="detail-link" href="examples/Beller2020Language_exp1_clip5.html">Open detail</a>
+              <div class="card-meta"><span>Bass et al. 2022</span><span>Physical conjunctions</span></div>
+              <h3>Cannonball Dynamics</h3>
+              <p class="card-summary">Track the cannonball and sphere through a two-body ballistic scene.</p>
+              <a class="card-link" href="examples/Bass2022Partial_exp1_ex1_full.html">Inspect 4D code</a>
             </div>
           </article>
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Beller2020Language_exp1_clip25.html"><video muted playsinline preload="metadata"><source src="media/Beller2020Language_exp1_clip25.mp4" type="video/mp4" /></video></a>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Bass2022Partial_exp1_check2_full.html" aria-label="Open Sphere Landing Outcome">
+              <video muted playsinline preload="metadata" aria-label="Sphere Landing Outcome"><source src="media/Bass2022Partial_exp1_check2_full.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Beller2020Language / exp1 / clip25</p>
-              <h2>clip25: Which of the following sentences best describes the clip?</h2>
-              <p class="muted">target_trial</p>
-              <a class="detail-link" href="examples/Beller2020Language_exp1_clip25.html">Open detail</a>
+              <div class="card-meta"><span>Bass et al. 2022</span><span>Physical conjunctions</span></div>
+              <h3>Sphere Landing Outcome</h3>
+              <p class="card-summary">Parse the pink sphere&#x27;s path and its final support relation.</p>
+              <a class="card-link" href="examples/Bass2022Partial_exp1_check2_full.html">Inspect 4D code</a>
             </div>
           </article>
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Beller2020Language_exp1_inst_video.html"><video muted playsinline preload="metadata"><source src="media/Beller2020Language_exp1_inst_video.mp4" type="video/mp4" /></video></a>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Bass2022Partial_exp1_ex3_full.html" aria-label="Open Off-Screen Motion">
+              <video muted playsinline preload="metadata" aria-label="Off-Screen Motion"><source src="media/Bass2022Partial_exp1_ex3_full.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Beller2020Language / exp1 / inst_video</p>
-              <h2>inst_video: In this experiment, your task is to choose a description that best captures what happened in a video clip. We will show</h2>
-              <p class="muted">instruction_example</p>
-              <a class="detail-link" href="examples/Beller2020Language_exp1_inst_video.html">Open detail</a>
+              <div class="card-meta"><span>Bass et al. 2022</span><span>Physical conjunctions</span></div>
+              <h3>Off-Screen Motion</h3>
+              <p class="card-summary">Preserve object identity and trail history as bodies leave the visible frame.</p>
+              <a class="card-link" href="examples/Bass2022Partial_exp1_ex3_full.html">Inspect 4D code</a>
             </div>
           </article>
-        </div>
-      </section>
-      <section class="study-section">
-        <div class="study-heading-row">
-          <h2 class="study-heading">Beller2025Multimodal</h2>
-          <p class="study-count">3 examples</p>
-        </div>
-        <div class="card-grid">
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Beller2025Multimodal_exp1_Beller2025Multimodal_exp1_assets_ball_world79.html"><video muted playsinline preload="metadata" poster="media/Beller2025Multimodal_exp1_Beller2025Multimodal_exp1_assets_ball_world79_poster.png"><source src="media/Beller2025Multimodal_exp1_Beller2025Multimodal_exp1_assets_ball_world79.mp4" type="video/mp4" /></video></a>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Beller2020Language_exp1_clip5.html" aria-label="Open Causal Language: Scene 05">
+              <video muted playsinline preload="metadata" aria-label="Causal Language: Scene 05"><source src="media/Beller2020Language_exp1_clip5.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Beller2025Multimodal / exp1 / ball_world79</p>
-              <h2>ball_world79: Plinko Machine You will now see a few videos that show you how the Plinko Machine works. Click the play button to see the ball being dropped</h2>
-              <p class="muted">instruction</p>
-              <a class="detail-link" href="examples/Beller2025Multimodal_exp1_Beller2025Multimodal_exp1_assets_ball_world79.html">Open detail</a>
+              <div class="card-meta"><span>Beller et al. 2020</span><span>Causal language</span></div>
+              <h3>Causal Language: Scene 05</h3>
+              <p class="card-summary">Ground language choices in a tracked multi-object collision sequence.</p>
+              <a class="card-link" href="examples/Beller2020Language_exp1_clip5.html">Inspect 4D code</a>
             </div>
           </article>
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Beller2025Multimodal_exp1_Beller2025Multimodal_exp1_assets_ball_world63.html"><video muted playsinline preload="metadata" poster="media/Beller2025Multimodal_exp1_Beller2025Multimodal_exp1_assets_ball_world63_poster.png"><source src="media/Beller2025Multimodal_exp1_Beller2025Multimodal_exp1_assets_ball_world63.mp4" type="video/mp4" /></video></a>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Beller2020Language_exp1_clip25.html" aria-label="Open Causal Language: Scene 25">
+              <video muted playsinline preload="metadata" aria-label="Causal Language: Scene 25"><source src="media/Beller2020Language_exp1_clip25.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Beller2025Multimodal / exp1 / ball_world63</p>
-              <h2>ball_world63: Plinko Machine You will now see a few videos that show you how the Plinko Machine works. Click the play button to see the ball being dropped</h2>
-              <p class="muted">instruction</p>
-              <a class="detail-link" href="examples/Beller2025Multimodal_exp1_Beller2025Multimodal_exp1_assets_ball_world63.html">Open detail</a>
+              <div class="card-meta"><span>Beller et al. 2020</span><span>Causal language</span></div>
+              <h3>Causal Language: Scene 25</h3>
+              <p class="card-summary">Connect observed motion and contact structure to causal descriptions.</p>
+              <a class="card-link" href="examples/Beller2020Language_exp1_clip25.html">Inspect 4D code</a>
             </div>
           </article>
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Beller2025Multimodal_exp2_Beller2025Multimodal_exp2_assets_instruction_videos_world_204_hole_2.html"><video muted playsinline preload="metadata" poster="media/Beller2025Multimodal_exp2_Beller2025Multimodal_exp2_assets_instruction_videos_world_204_hole_2_poster.png"><source src="media/Beller2025Multimodal_exp2_Beller2025Multimodal_exp2_assets_instruction_videos_world_204_hole_2.mp4" type="video/mp4" /></video></a>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Beller2020Language_exp1_inst_video.html" aria-label="Open Causal Description Tutorial">
+              <video muted playsinline preload="metadata" aria-label="Causal Description Tutorial"><source src="media/Beller2020Language_exp1_inst_video.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Beller2025Multimodal / exp2 / world_204_hole_2</p>
-              <h2>world_204_hole_2: In this experiment, we will ask you to make judgments about physical interactions. These interactions take place in a plinko box, a box with</h2>
-              <p class="muted">instruction</p>
-              <a class="detail-link" href="examples/Beller2025Multimodal_exp2_Beller2025Multimodal_exp2_assets_instruction_videos_world_204_hole_2.html">Open detail</a>
+              <div class="card-meta"><span>Beller et al. 2020</span><span>Causal language</span></div>
+              <h3>Causal Description Tutorial</h3>
+              <p class="card-summary">Introduce the scene vocabulary through an object-centric demonstration.</p>
+              <a class="card-link" href="examples/Beller2020Language_exp1_inst_video.html">Inspect 4D code</a>
             </div>
           </article>
-        </div>
-      </section>
-      <section class="study-section">
-        <div class="study-heading-row">
-          <h2 class="study-heading">Gerstenberg2021A_Counterfactual</h2>
-          <p class="study-count">3 examples</p>
-        </div>
-        <div class="card-grid">
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Gerstenberg2021A_Counterfactual_exp1_Gerstenberg2021A_Counterfactual_exp1_assets_study_clip13.html"><video muted playsinline preload="metadata" poster="media/Gerstenberg2021A_Counterfactual_exp1_Gerstenberg2021A_Counterfactual_exp1_assets_study_clip13_poster.png"><source src="media/Gerstenberg2021A_Counterfactual_exp1_Gerstenberg2021A_Counterfactual_exp1_assets_study_clip13.mp4" type="video/mp4" /></video></a>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Beller2025Multimodal_exp1_Beller2025Multimodal_exp1_assets_ball_world79.html" aria-label="Open Plinko Drop: World 79">
+              <video muted playsinline preload="metadata" poster="media/Beller2025Multimodal_exp1_Beller2025Multimodal_exp1_assets_ball_world79_poster.png" aria-label="Plinko Drop: World 79"><source src="media/Beller2025Multimodal_exp1_Beller2025Multimodal_exp1_assets_ball_world79.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Gerstenberg2021A_Counterfactual / exp1 / study_clip13</p>
-              <h2>study_clip13: What role did ball A play?</h2>
-              <p class="muted">trial</p>
-              <a class="detail-link" href="examples/Gerstenberg2021A_Counterfactual_exp1_Gerstenberg2021A_Counterfactual_exp1_assets_study_clip13.html">Open detail</a>
+              <div class="card-meta"><span>Beller et al. 2025</span><span>Plinko reasoning</span></div>
+              <h3>Plinko Drop: World 79</h3>
+              <p class="card-summary">Follow one ball through pegs, collisions, and its terminal region.</p>
+              <a class="card-link" href="examples/Beller2025Multimodal_exp1_Beller2025Multimodal_exp1_assets_ball_world79.html">Inspect 4D code</a>
             </div>
           </article>
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Gerstenberg2021A_Counterfactual_exp2_Gerstenberg2021A_Counterfactual_exp2_assets_experiment1_clip16.html"><video muted playsinline preload="metadata" poster="media/Gerstenberg2021A_Counterfactual_exp2_Gerstenberg2021A_Counterfactual_exp2_assets_experiment1_clip16_poster.png"><source src="media/Gerstenberg2021A_Counterfactual_exp2_Gerstenberg2021A_Counterfactual_exp2_assets_experiment1_clip16.mp4" type="video/mp4" /></video></a>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Beller2025Multimodal_exp1_Beller2025Multimodal_exp1_assets_ball_world63.html" aria-label="Open Plinko Drop: World 63">
+              <video muted playsinline preload="metadata" poster="media/Beller2025Multimodal_exp1_Beller2025Multimodal_exp1_assets_ball_world63_poster.png" aria-label="Plinko Drop: World 63"><source src="media/Beller2025Multimodal_exp1_Beller2025Multimodal_exp1_assets_ball_world63.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Gerstenberg2021A_Counterfactual / exp2 / experiment1_clip16</p>
-              <h2>experiment1_clip16: What role did ball A play?</h2>
-              <p class="muted">trial</p>
-              <a class="detail-link" href="examples/Gerstenberg2021A_Counterfactual_exp2_Gerstenberg2021A_Counterfactual_exp2_assets_experiment1_clip16.html">Open detail</a>
+              <div class="card-meta"><span>Beller et al. 2025</span><span>Plinko reasoning</span></div>
+              <h3>Plinko Drop: World 63</h3>
+              <p class="card-summary">Parse a second stochastic path through the same causal apparatus.</p>
+              <a class="card-link" href="examples/Beller2025Multimodal_exp1_Beller2025Multimodal_exp1_assets_ball_world63.html">Inspect 4D code</a>
             </div>
           </article>
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Gerstenberg2021A_Counterfactual_exp3_Gerstenberg2021A_Counterfactual_exp3_assets_experiment2_clip30.html"><video muted playsinline preload="metadata" poster="media/Gerstenberg2021A_Counterfactual_exp3_Gerstenberg2021A_Counterfactual_exp3_assets_experiment2_clip30_poster.png"><source src="media/Gerstenberg2021A_Counterfactual_exp3_Gerstenberg2021A_Counterfactual_exp3_assets_experiment2_clip30.mp4" type="video/mp4" /></video></a>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Beller2025Multimodal_exp2_Beller2025Multimodal_exp2_assets_instruction_videos_world_204_hole_2.html" aria-label="Open Plinko Geometry: Two-Hole Scene">
+              <video muted playsinline preload="metadata" poster="media/Beller2025Multimodal_exp2_Beller2025Multimodal_exp2_assets_instruction_videos_world_204_hole_2_poster.png" aria-label="Plinko Geometry: Two-Hole Scene"><source src="media/Beller2025Multimodal_exp2_Beller2025Multimodal_exp2_assets_instruction_videos_world_204_hole_2.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Gerstenberg2021A_Counterfactual / exp3 / experiment2_clip30</p>
-              <h2>experiment2_clip30: Would ball E have gone through the gate if ball A had not been present?</h2>
-              <p class="muted">trial</p>
-              <a class="detail-link" href="examples/Gerstenberg2021A_Counterfactual_exp3_Gerstenberg2021A_Counterfactual_exp3_assets_experiment2_clip30.html">Open detail</a>
+              <div class="card-meta"><span>Beller et al. 2025</span><span>Plinko reasoning</span></div>
+              <h3>Plinko Geometry: Two-Hole Scene</h3>
+              <p class="card-summary">Represent obstacles, ball motion, and outcomes in a two-hole configuration.</p>
+              <a class="card-link" href="examples/Beller2025Multimodal_exp2_Beller2025Multimodal_exp2_assets_instruction_videos_world_204_hole_2.html">Inspect 4D code</a>
             </div>
           </article>
-        </div>
-      </section>
-      <section class="study-section">
-        <div class="study-heading-row">
-          <h2 class="study-heading">Gerstenberg2022What</h2>
-          <p class="study-count">3 examples</p>
-        </div>
-        <div class="card-grid">
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_7.html"><video muted playsinline preload="metadata" poster="media/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_7_poster.png"><source src="media/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_7.mp4" type="video/mp4" /></video></a>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Gerstenberg2021A_Counterfactual_exp1_Gerstenberg2021A_Counterfactual_exp1_assets_study_clip13.html" aria-label="Open Ball A&#x27;s Causal Role">
+              <video muted playsinline preload="metadata" poster="media/Gerstenberg2021A_Counterfactual_exp1_Gerstenberg2021A_Counterfactual_exp1_assets_study_clip13_poster.png" aria-label="Ball A&#x27;s Causal Role"><source src="media/Gerstenberg2021A_Counterfactual_exp1_Gerstenberg2021A_Counterfactual_exp1_assets_study_clip13.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Gerstenberg2022What / exp3 / hyp_count_clip_7</p>
-              <h2>hyp_count_clip_7: Watch the full clip.</h2>
-              <p class="muted">trial</p>
-              <a class="detail-link" href="examples/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_7.html">Open detail</a>
+              <div class="card-meta"><span>Gerstenberg et al. 2021</span><span>Counterfactual causation</span></div>
+              <h3>Ball A&#x27;s Causal Role</h3>
+              <p class="card-summary">Track interacting balls and encode Ball A&#x27;s contribution over time.</p>
+              <a class="card-link" href="examples/Gerstenberg2021A_Counterfactual_exp1_Gerstenberg2021A_Counterfactual_exp1_assets_study_clip13.html">Inspect 4D code</a>
             </div>
           </article>
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_8.html"><video muted playsinline preload="metadata" poster="media/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_8_poster.png"><source src="media/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_8.mp4" type="video/mp4" /></video></a>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Gerstenberg2021A_Counterfactual_exp2_Gerstenberg2021A_Counterfactual_exp2_assets_experiment1_clip16.html" aria-label="Open Intervention on Ball A">
+              <video muted playsinline preload="metadata" poster="media/Gerstenberg2021A_Counterfactual_exp2_Gerstenberg2021A_Counterfactual_exp2_assets_experiment1_clip16_poster.png" aria-label="Intervention on Ball A"><source src="media/Gerstenberg2021A_Counterfactual_exp2_Gerstenberg2021A_Counterfactual_exp2_assets_experiment1_clip16.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Gerstenberg2022What / exp3 / hyp_count_clip_8</p>
-              <h2>hyp_count_clip_8: Watch the full clip.</h2>
-              <p class="muted">trial</p>
-              <a class="detail-link" href="examples/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_8.html">Open detail</a>
+              <div class="card-meta"><span>Gerstenberg et al. 2021</span><span>Counterfactual causation</span></div>
+              <h3>Intervention on Ball A</h3>
+              <p class="card-summary">Expose contact structure and downstream motion in an intervention scene.</p>
+              <a class="card-link" href="examples/Gerstenberg2021A_Counterfactual_exp2_Gerstenberg2021A_Counterfactual_exp2_assets_experiment1_clip16.html">Inspect 4D code</a>
             </div>
           </article>
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_9.html"><video muted playsinline preload="metadata" poster="media/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_9_poster.png"><source src="media/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_9.mp4" type="video/mp4" /></video></a>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Gerstenberg2021A_Counterfactual_exp3_Gerstenberg2021A_Counterfactual_exp3_assets_experiment2_clip30.html" aria-label="Open Counterfactual Gate Crossing">
+              <video muted playsinline preload="metadata" poster="media/Gerstenberg2021A_Counterfactual_exp3_Gerstenberg2021A_Counterfactual_exp3_assets_experiment2_clip30_poster.png" aria-label="Counterfactual Gate Crossing"><source src="media/Gerstenberg2021A_Counterfactual_exp3_Gerstenberg2021A_Counterfactual_exp3_assets_experiment2_clip30.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Gerstenberg2022What / exp3 / hyp_count_clip_9</p>
-              <h2>hyp_count_clip_9: Watch the full clip.</h2>
-              <p class="muted">trial</p>
-              <a class="detail-link" href="examples/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_9.html">Open detail</a>
+              <div class="card-meta"><span>Gerstenberg et al. 2021</span><span>Counterfactual causation</span></div>
+              <h3>Counterfactual Gate Crossing</h3>
+              <p class="card-summary">Recover the trajectories needed to reason about Ball E without Ball A.</p>
+              <a class="card-link" href="examples/Gerstenberg2021A_Counterfactual_exp3_Gerstenberg2021A_Counterfactual_exp3_assets_experiment2_clip30.html">Inspect 4D code</a>
             </div>
           </article>
-        </div>
-      </section>
-      <section class="study-section">
-        <div class="study-heading-row">
-          <h2 class="study-heading">Sosa2021Moral</h2>
-          <p class="study-count">3 examples</p>
-        </div>
-        <div class="card-grid">
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Sosa2021Moral_exp1_Sosa2021Moral_exp1_assets_intro3.html"><video muted playsinline preload="metadata" poster="media/Sosa2021Moral_exp1_Sosa2021Moral_exp1_assets_intro3_poster.png"><source src="media/Sosa2021Moral_exp1_Sosa2021Moral_exp1_assets_intro3.mp4" type="video/mp4" /></video></a>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_7.html" aria-label="Open Counterfactual Count: Scene 07">
+              <video muted playsinline preload="metadata" poster="media/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_7_poster.png" aria-label="Counterfactual Count: Scene 07"><source src="media/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_7.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Sosa2021Moral / exp1 / intro3</p>
-              <h2>intro3: In which clip did the Blue&#x27;s action seem worse?</h2>
-              <p class="muted">trial</p>
-              <a class="detail-link" href="examples/Sosa2021Moral_exp1_Sosa2021Moral_exp1_assets_intro3.html">Open detail</a>
+              <div class="card-meta"><span>Gerstenberg et al. 2022</span><span>Event counterfactuals</span></div>
+              <h3>Counterfactual Count: Scene 07</h3>
+              <p class="card-summary">Parse observed contacts for event-level counterfactual counting.</p>
+              <a class="card-link" href="examples/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_7.html">Inspect 4D code</a>
             </div>
           </article>
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Sosa2021Moral_exp2_Sosa2021Moral_exp2_assets_harm_moving_moving.html"><video muted playsinline preload="metadata" poster="media/Sosa2021Moral_exp2_Sosa2021Moral_exp2_assets_harm_moving_moving_poster.png"><source src="media/Sosa2021Moral_exp2_Sosa2021Moral_exp2_assets_harm_moving_moving.mp4" type="video/mp4" /></video></a>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_8.html" aria-label="Open Counterfactual Count: Scene 08">
+              <video muted playsinline preload="metadata" poster="media/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_8_poster.png" aria-label="Counterfactual Count: Scene 08"><source src="media/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_8.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Sosa2021Moral / exp2 / harm_moving_moving</p>
-              <h2>harm_moving_moving: How much effort did Blue exert in this scenario?</h2>
-              <p class="muted">trial</p>
-              <a class="detail-link" href="examples/Sosa2021Moral_exp2_Sosa2021Moral_exp2_assets_harm_moving_moving.html">Open detail</a>
+              <div class="card-meta"><span>Gerstenberg et al. 2022</span><span>Event counterfactuals</span></div>
+              <h3>Counterfactual Count: Scene 08</h3>
+              <p class="card-summary">Structure object motion and contact evidence for a second event sequence.</p>
+              <a class="card-link" href="examples/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_8.html">Inspect 4D code</a>
             </div>
           </article>
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Sosa2021Moral_exp3_Sosa2021Moral_exp3_assets_video4.html"><video muted playsinline preload="metadata" poster="media/Sosa2021Moral_exp3_Sosa2021Moral_exp3_assets_video4_poster.png"><source src="media/Sosa2021Moral_exp3_Sosa2021Moral_exp3_assets_video4.mp4" type="video/mp4" /></video></a>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_9.html" aria-label="Open Counterfactual Count: Scene 09">
+              <video muted playsinline preload="metadata" poster="media/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_9_poster.png" aria-label="Counterfactual Count: Scene 09"><source src="media/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_9.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Sosa2021Moral / exp3 / video4</p>
-              <h2>video4: How responsible was Blue for Green colliding with the Red?</h2>
-              <p class="muted">trial</p>
-              <a class="detail-link" href="examples/Sosa2021Moral_exp3_Sosa2021Moral_exp3_assets_video4.html">Open detail</a>
+              <div class="card-meta"><span>Gerstenberg et al. 2022</span><span>Event counterfactuals</span></div>
+              <h3>Counterfactual Count: Scene 09</h3>
+              <p class="card-summary">Track the full interaction graph for counterfactual event analysis.</p>
+              <a class="card-link" href="examples/Gerstenberg2022What_exp3_Gerstenberg2022What_exp3_assets_full_hyp_count_clip_9.html">Inspect 4D code</a>
             </div>
           </article>
-        </div>
-      </section>
-      <section class="study-section">
-        <div class="study-heading-row">
-          <h2 class="study-heading">Sosa2025Blending</h2>
-          <p class="study-count">3 examples</p>
-        </div>
-        <div class="card-grid">
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_0.html"><video muted playsinline preload="metadata" poster="media/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_0_poster.png"><source src="media/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_0.mp4" type="video/mp4" /></video></a>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Sosa2021Moral_exp1_Sosa2021Moral_exp1_assets_intro3.html" aria-label="Open Moral Contrast">
+              <video muted playsinline preload="metadata" poster="media/Sosa2021Moral_exp1_Sosa2021Moral_exp1_assets_intro3_poster.png" aria-label="Moral Contrast"><source src="media/Sosa2021Moral_exp1_Sosa2021Moral_exp1_assets_intro3.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Sosa2025Blending / exp1 / comp_0</p>
-              <h2>comp_0: Will the ball reach the goal?</h2>
-              <p class="muted">trial</p>
-              <a class="detail-link" href="examples/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_0.html">Open detail</a>
+              <div class="card-meta"><span>Sosa et al. 2021</span><span>Moral causality</span></div>
+              <h3>Moral Contrast</h3>
+              <p class="card-summary">Make agent, victim, and hazard trajectories explicit for moral comparison.</p>
+              <a class="card-link" href="examples/Sosa2021Moral_exp1_Sosa2021Moral_exp1_assets_intro3.html">Inspect 4D code</a>
             </div>
           </article>
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_2.html"><video muted playsinline preload="metadata" poster="media/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_2_poster.png"><source src="media/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_2.mp4" type="video/mp4" /></video></a>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Sosa2021Moral_exp2_Sosa2021Moral_exp2_assets_harm_moving_moving.html" aria-label="Open Effort in Harm">
+              <video muted playsinline preload="metadata" poster="media/Sosa2021Moral_exp2_Sosa2021Moral_exp2_assets_harm_moving_moving_poster.png" aria-label="Effort in Harm"><source src="media/Sosa2021Moral_exp2_Sosa2021Moral_exp2_assets_harm_moving_moving.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Sosa2025Blending / exp1 / comp_2</p>
-              <h2>comp_2: Will the ball reach the goal?</h2>
-              <p class="muted">trial</p>
-              <a class="detail-link" href="examples/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_2.html">Open detail</a>
+              <div class="card-meta"><span>Sosa et al. 2021</span><span>Moral causality</span></div>
+              <h3>Effort in Harm</h3>
+              <p class="card-summary">Quantify the blue agent&#x27;s motion before the harmful outcome.</p>
+              <a class="card-link" href="examples/Sosa2021Moral_exp2_Sosa2021Moral_exp2_assets_harm_moving_moving.html">Inspect 4D code</a>
             </div>
           </article>
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_1.html"><video muted playsinline preload="metadata" poster="media/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_1_poster.png"><source src="media/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_1.mp4" type="video/mp4" /></video></a>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Sosa2021Moral_exp3_Sosa2021Moral_exp3_assets_video4.html" aria-label="Open Responsibility for Collision">
+              <video muted playsinline preload="metadata" poster="media/Sosa2021Moral_exp3_Sosa2021Moral_exp3_assets_video4_poster.png" aria-label="Responsibility for Collision"><source src="media/Sosa2021Moral_exp3_Sosa2021Moral_exp3_assets_video4.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Sosa2025Blending / exp1 / comp_1</p>
-              <h2>comp_1: Will the ball reach the goal?</h2>
-              <p class="muted">trial</p>
-              <a class="detail-link" href="examples/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_1.html">Open detail</a>
+              <div class="card-meta"><span>Sosa et al. 2021</span><span>Moral causality</span></div>
+              <h3>Responsibility for Collision</h3>
+              <p class="card-summary">Connect the blue agent&#x27;s action to the green-red collision event.</p>
+              <a class="card-link" href="examples/Sosa2021Moral_exp3_Sosa2021Moral_exp3_assets_video4.html">Inspect 4D code</a>
             </div>
           </article>
-        </div>
-      </section>
-      <section class="study-section">
-        <div class="study-heading-row">
-          <h2 class="study-heading">Stephan2021Counterfactual</h2>
-          <p class="study-count">3 examples</p>
-        </div>
-        <div class="card-grid">
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Stephan2021Counterfactual_exp1_Stephan2021Counterfactual_exp1_assets_PrimerClip2_ObservedCausation.html"><video muted playsinline preload="metadata" poster="media/Stephan2021Counterfactual_exp1_Stephan2021Counterfactual_exp1_assets_PrimerClip2_ObservedCausation_poster.png"><source src="media/Stephan2021Counterfactual_exp1_Stephan2021Counterfactual_exp1_assets_PrimerClip2_ObservedCausation.mp4" type="video/mp4" /></video></a>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_0.html" aria-label="Open Goal Reachability: Scene 00">
+              <video muted playsinline preload="metadata" poster="media/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_0_poster.png" aria-label="Goal Reachability: Scene 00"><source src="media/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_0.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Stephan2021Counterfactual / exp1 / PrimerClip2_ObservedCausation</p>
-              <h2>PrimerClip2_ObservedCausation: To what extent do you agree with the following statement: Marble B went through the gate, because marble A hit marble B.</h2>
-              <p class="muted">trial</p>
-              <a class="detail-link" href="examples/Stephan2021Counterfactual_exp1_Stephan2021Counterfactual_exp1_assets_PrimerClip2_ObservedCausation.html">Open detail</a>
+              <div class="card-meta"><span>Sosa et al. 2025</span><span>Goal prediction</span></div>
+              <h3>Goal Reachability: Scene 00</h3>
+              <p class="card-summary">Track the ball and summarize whether its path reaches the goal.</p>
+              <a class="card-link" href="examples/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_0.html">Inspect 4D code</a>
             </div>
           </article>
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Stephan2021Counterfactual_exp3_Stephan2021Counterfactual_exp3_assets_green_delayed.html"><video muted playsinline preload="metadata" poster="media/Stephan2021Counterfactual_exp3_Stephan2021Counterfactual_exp3_assets_green_delayed_poster.png"><source src="media/Stephan2021Counterfactual_exp3_Stephan2021Counterfactual_exp3_assets_green_delayed.mp4" type="video/mp4" /></video></a>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_2.html" aria-label="Open Goal Reachability: Scene 02">
+              <video muted playsinline preload="metadata" poster="media/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_2_poster.png" aria-label="Goal Reachability: Scene 02"><source src="media/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_2.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Stephan2021Counterfactual / exp3 / green_delayed</p>
-              <h2>green_delayed: As you have seen, both the green and the blue player failed to hit the grey marble in this round. So, the team didn&#x27;t score a point. Which p</h2>
-              <p class="muted">trial</p>
-              <a class="detail-link" href="examples/Stephan2021Counterfactual_exp3_Stephan2021Counterfactual_exp3_assets_green_delayed.html">Open detail</a>
+              <div class="card-meta"><span>Sosa et al. 2025</span><span>Goal prediction</span></div>
+              <h3>Goal Reachability: Scene 02</h3>
+              <p class="card-summary">Preserve the ball trail through a second goal-prediction scene.</p>
+              <a class="card-link" href="examples/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_2.html">Inspect 4D code</a>
             </div>
           </article>
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Stephan2021Counterfactual_exp1_Stephan2021Counterfactual_exp1_assets_PrimerClip4_ObservedCausation.html"><video muted playsinline preload="metadata" poster="media/Stephan2021Counterfactual_exp1_Stephan2021Counterfactual_exp1_assets_PrimerClip4_ObservedCausation_poster.png"><source src="media/Stephan2021Counterfactual_exp1_Stephan2021Counterfactual_exp1_assets_PrimerClip4_ObservedCausation.mp4" type="video/mp4" /></video></a>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_1.html" aria-label="Open Goal Reachability: Scene 01">
+              <video muted playsinline preload="metadata" poster="media/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_1_poster.png" aria-label="Goal Reachability: Scene 01"><source src="media/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_1.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Stephan2021Counterfactual / exp1 / PrimerClip4_ObservedCausation</p>
-              <h2>PrimerClip4_ObservedCausation: To what extent do you agree with the following statement: Marble B went through the gate, because marble A hit marble B.</h2>
-              <p class="muted">trial</p>
-              <a class="detail-link" href="examples/Stephan2021Counterfactual_exp1_Stephan2021Counterfactual_exp1_assets_PrimerClip4_ObservedCausation.html">Open detail</a>
+              <div class="card-meta"><span>Sosa et al. 2025</span><span>Goal prediction</span></div>
+              <h3>Goal Reachability: Scene 01</h3>
+              <p class="card-summary">Encode motion, disappearance, and terminal goal evidence over time.</p>
+              <a class="card-link" href="examples/Sosa2025Blending_exp1_Sosa2025Blending_exp1_assets_comprehension_comp_1.html">Inspect 4D code</a>
             </div>
           </article>
-        </div>
-      </section>
-      <section class="study-section">
-        <div class="study-heading-row">
-          <h2 class="study-heading">Ullman2018Learning</h2>
-          <p class="study-count">3 examples</p>
-        </div>
-        <div class="card-grid">
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world1_world1_1.html"><video muted playsinline preload="metadata" poster="media/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world1_world1_1_poster.png"><source src="media/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world1_world1_1_h264.mp4" type="video/mp4" /></video></a>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Stephan2021Counterfactual_exp1_Stephan2021Counterfactual_exp1_assets_PrimerClip2_ObservedCausation.html" aria-label="Open Observed Causation: Primer 02">
+              <video muted playsinline preload="metadata" poster="media/Stephan2021Counterfactual_exp1_Stephan2021Counterfactual_exp1_assets_PrimerClip2_ObservedCausation_poster.png" aria-label="Observed Causation: Primer 02"><source src="media/Stephan2021Counterfactual_exp1_Stephan2021Counterfactual_exp1_assets_PrimerClip2_ObservedCausation.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Ullman2018Learning / exp1 / world1_1</p>
-              <h2>world1_1: How massive are blue objects?</h2>
-              <p class="muted">trial</p>
-              <a class="detail-link" href="examples/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world1_world1_1.html">Open detail</a>
+              <div class="card-meta"><span>Stephan et al. 2021</span><span>Team causality</span></div>
+              <h3>Observed Causation: Primer 02</h3>
+              <p class="card-summary">Encode marble contact and gate crossing in a causal primer.</p>
+              <a class="card-link" href="examples/Stephan2021Counterfactual_exp1_Stephan2021Counterfactual_exp1_assets_PrimerClip2_ObservedCausation.html">Inspect 4D code</a>
             </div>
           </article>
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world1_world1_3.html"><video muted playsinline preload="metadata" poster="media/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world1_world1_3_poster.png"><source src="media/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world1_world1_3_h264.mp4" type="video/mp4" /></video></a>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Stephan2021Counterfactual_exp3_Stephan2021Counterfactual_exp3_assets_green_delayed.html" aria-label="Open Team Counterfactual">
+              <video muted playsinline preload="metadata" poster="media/Stephan2021Counterfactual_exp3_Stephan2021Counterfactual_exp3_assets_green_delayed_poster.png" aria-label="Team Counterfactual"><source src="media/Stephan2021Counterfactual_exp3_Stephan2021Counterfactual_exp3_assets_green_delayed.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Ullman2018Learning / exp1 / world1_3</p>
-              <h2>world1_3: How massive are blue objects?</h2>
-              <p class="muted">trial</p>
-              <a class="detail-link" href="examples/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world1_world1_3.html">Open detail</a>
+              <div class="card-meta"><span>Stephan et al. 2021</span><span>Team causality</span></div>
+              <h3>Team Counterfactual</h3>
+              <p class="card-summary">Track delayed player actions and the team&#x27;s missed scoring event.</p>
+              <a class="card-link" href="examples/Stephan2021Counterfactual_exp3_Stephan2021Counterfactual_exp3_assets_green_delayed.html">Inspect 4D code</a>
             </div>
           </article>
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world2_world2_2.html"><video muted playsinline preload="metadata" poster="media/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world2_world2_2_poster.png"><source src="media/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world2_world2_2_h264.mp4" type="video/mp4" /></video></a>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Stephan2021Counterfactual_exp1_Stephan2021Counterfactual_exp1_assets_PrimerClip4_ObservedCausation.html" aria-label="Open Observed Causation: Primer 04">
+              <video muted playsinline preload="metadata" poster="media/Stephan2021Counterfactual_exp1_Stephan2021Counterfactual_exp1_assets_PrimerClip4_ObservedCausation_poster.png" aria-label="Observed Causation: Primer 04"><source src="media/Stephan2021Counterfactual_exp1_Stephan2021Counterfactual_exp1_assets_PrimerClip4_ObservedCausation.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Ullman2018Learning / exp1 / world2_2</p>
-              <h2>world2_2: How massive are blue objects?</h2>
-              <p class="muted">trial</p>
-              <a class="detail-link" href="examples/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world2_world2_2.html">Open detail</a>
+              <div class="card-meta"><span>Stephan et al. 2021</span><span>Team causality</span></div>
+              <h3>Observed Causation: Primer 04</h3>
+              <p class="card-summary">Resolve the interaction chain leading Marble B through the gate.</p>
+              <a class="card-link" href="examples/Stephan2021Counterfactual_exp1_Stephan2021Counterfactual_exp1_assets_PrimerClip4_ObservedCausation.html">Inspect 4D code</a>
             </div>
           </article>
-        </div>
-      </section>
-      <section class="study-section">
-        <div class="study-heading-row">
-          <h2 class="study-heading">Wu2022That</h2>
-          <p class="study-count">3 examples</p>
-        </div>
-        <div class="card-grid">
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Wu2022That_exp1_Wu2022That_exp1_assets_trials_1_full.html"><img src="media/Wu2022That_exp1_Wu2022That_exp1_assets_trials_1_full.gif" alt="" loading="lazy" /></a>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world1_world1_1.html" aria-label="Open Mass Learning: World 1-1">
+              <video muted playsinline preload="metadata" poster="media/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world1_world1_1_poster.png" aria-label="Mass Learning: World 1-1"><source src="media/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world1_world1_1_h264.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Wu2022That / exp1 / trial 1 replay</p>
-              <h2>full: Here is what actually happened. (Please wait to see the animation.)</h2>
-              <p class="muted">instruction</p>
-              <a class="detail-link" href="examples/Wu2022That_exp1_Wu2022That_exp1_assets_trials_1_full.html">Open detail</a>
+              <div class="card-meta"><span>Ullman et al. 2018</span><span>Property learning</span></div>
+              <h3>Mass Learning: World 1-1</h3>
+              <p class="card-summary">Track colored pucks as evidence for latent physical properties.</p>
+              <a class="card-link" href="examples/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world1_world1_1.html">Inspect 4D code</a>
             </div>
           </article>
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Wu2022That_exp1_Wu2022That_exp1_assets_trials_2_full.html"><img src="media/Wu2022That_exp1_Wu2022That_exp1_assets_trials_2_full.gif" alt="" loading="lazy" /></a>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world1_world1_3.html" aria-label="Open Mass Learning: World 1-3">
+              <video muted playsinline preload="metadata" poster="media/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world1_world1_3_poster.png" aria-label="Mass Learning: World 1-3"><source src="media/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world1_world1_3_h264.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Wu2022That / exp1 / trial 2 replay</p>
-              <h2>full: Here is what actually happened. (Please wait to see the animation.)</h2>
-              <p class="muted">instruction</p>
-              <a class="detail-link" href="examples/Wu2022That_exp1_Wu2022That_exp1_assets_trials_2_full.html">Open detail</a>
+              <div class="card-meta"><span>Ullman et al. 2018</span><span>Property learning</span></div>
+              <h3>Mass Learning: World 1-3</h3>
+              <p class="card-summary">Aggregate multi-object collisions into evidence about blue-object mass.</p>
+              <a class="card-link" href="examples/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world1_world1_3.html">Inspect 4D code</a>
             </div>
           </article>
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/Wu2022That_exp1_Wu2022That_exp1_assets_instruction_instructions_full.html"><img src="media/Wu2022That_exp1_Wu2022That_exp1_assets_instruction_instructions_full.gif" alt="" loading="lazy" /></a>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world2_world2_2.html" aria-label="Open Mass Learning: World 2-2">
+              <video muted playsinline preload="metadata" poster="media/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world2_world2_2_poster.png" aria-label="Mass Learning: World 2-2"><source src="media/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world2_world2_2_h264.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Wu2022That / exp1 / instruction_instructions_full</p>
-              <h2>instruction_instructions_full: On each step, the player can move up, down, left, right, or stay in place. They cannot move through walls. If they reach the star before tim</h2>
-              <p class="muted">instruction</p>
-              <a class="detail-link" href="examples/Wu2022That_exp1_Wu2022That_exp1_assets_instruction_instructions_full.html">Open detail</a>
+              <div class="card-meta"><span>Ullman et al. 2018</span><span>Property learning</span></div>
+              <h3>Mass Learning: World 2-2</h3>
+              <p class="card-summary">Compare trajectories across a second learned-physics environment.</p>
+              <a class="card-link" href="examples/Ullman2018Learning_exp1_Ullman2018Learning_exp1_assets_movies_world2_world2_2.html">Inspect 4D code</a>
             </div>
           </article>
-        </div>
-      </section>
-      <section class="study-section">
-        <div class="study-heading-row">
-          <h2 class="study-heading">Smith2019Modeling</h2>
-          <p class="study-count">3 examples</p>
-        </div>
-        <div class="card-grid">
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/e_4f3fc98bd33e12d8.html"><video muted playsinline preload="metadata" poster="media/e_4f3fc98bd33e12d8_poster.png"><source src="media/e_4f3fc98bd33e12d8.mp4" type="video/mp4" /></video></a>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Wu2022That_exp1_Wu2022That_exp1_assets_trials_1_full.html" aria-label="Open Gridworld Replay: Trial 01">
+              <img src="media/Wu2022That_exp1_Wu2022That_exp1_assets_trials_1_full.gif" alt="Gridworld Replay: Trial 01" loading="lazy" />
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Smith2019Modeling / exp1 / block_geometric_cube_control-1_human_block_cube_0</p>
-              <h2>block_geometric_cube_control-1_human_block_cube_0: How surprising was the event in this video?</h2>
-              <p class="muted">3D dynamic video</p>
-              <a class="detail-link" href="examples/e_4f3fc98bd33e12d8.html">Open detail</a>
+              <div class="card-meta"><span>Wu et al. 2022</span><span>Gridworld planning</span></div>
+              <h3>Gridworld Replay: Trial 01</h3>
+              <p class="card-summary">Represent the agent path, doors, and goal outcome over discrete time.</p>
+              <a class="card-link" href="examples/Wu2022That_exp1_Wu2022That_exp1_assets_trials_1_full.html">Inspect 4D code</a>
             </div>
           </article>
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/e_910560807518a408.html"><video muted playsinline preload="metadata" poster="media/e_910560807518a408_poster.png"><source src="media/e_910560807518a408.mp4" type="video/mp4" /></video></a>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Wu2022That_exp1_Wu2022That_exp1_assets_trials_2_full.html" aria-label="Open Gridworld Replay: Trial 02">
+              <img src="media/Wu2022That_exp1_Wu2022That_exp1_assets_trials_2_full.gif" alt="Gridworld Replay: Trial 02" loading="lazy" />
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Smith2019Modeling / exp1 / create_geometric_cone_control-1_human_disappear_cone_0</p>
-              <h2>create_geometric_cone_control-1_human_disappear_cone_0: How surprising was the event in this video?</h2>
-              <p class="muted">3D dynamic video</p>
-              <a class="detail-link" href="examples/e_910560807518a408.html">Open detail</a>
+              <div class="card-meta"><span>Wu et al. 2022</span><span>Gridworld planning</span></div>
+              <h3>Gridworld Replay: Trial 02</h3>
+              <p class="card-summary">Trace a second action sequence through walls and blocked cells.</p>
+              <a class="card-link" href="examples/Wu2022That_exp1_Wu2022That_exp1_assets_trials_2_full.html">Inspect 4D code</a>
             </div>
           </article>
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/e_61e66f780da3e74e.html"><video muted playsinline preload="metadata" poster="media/e_61e66f780da3e74e_poster.png"><source src="media/e_61e66f780da3e74e.mp4" type="video/mp4" /></video></a>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="examples/Wu2022That_exp1_Wu2022That_exp1_assets_instruction_instructions_full.html" aria-label="Open Gridworld Dynamics Tutorial">
+              <img src="media/Wu2022That_exp1_Wu2022That_exp1_assets_instruction_instructions_full.gif" alt="Gridworld Dynamics Tutorial" loading="lazy" />
+              <span class="dimension-badge">2D dynamics</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Smith2019Modeling / exp1 / visible-discontinuous_geometric_cube_control-1_human_discontinuous_cube_3</p>
-              <h2>visible-discontinuous_geometric_cube_control-1_human_discontinuous_cube_3: How surprising was the event in this video?</h2>
-              <p class="muted">3D dynamic video</p>
-              <a class="detail-link" href="examples/e_61e66f780da3e74e.html">Open detail</a>
+              <div class="card-meta"><span>Wu et al. 2022</span><span>Gridworld planning</span></div>
+              <h3>Gridworld Dynamics Tutorial</h3>
+              <p class="card-summary">Parse legal moves, walls, and goal-directed motion in the instruction scene.</p>
+              <a class="card-link" href="examples/Wu2022That_exp1_Wu2022That_exp1_assets_instruction_instructions_full.html">Inspect 4D code</a>
             </div>
           </article>
-        </div>
-      </section>
-      <section class="study-section">
-        <div class="study-heading-row">
-          <h2 class="study-heading">Hamrick2016Inferring</h2>
-          <p class="study-count">3 examples</p>
-        </div>
-        <div class="card-grid">
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/e_56d3399b8031683f.html"><video muted playsinline preload="metadata" poster="media/e_56d3399b8031683f_poster.png"><source src="media/e_56d3399b8031683f.mp4" type="video/mp4" /></video></a>
+          <article class="sample-card" data-dimension="3d">
+            <a class="sample-media" href="examples/e_4f3fc98bd33e12d8.html" aria-label="Open Occluded Cube: Control">
+              <video muted playsinline preload="metadata" poster="media/e_4f3fc98bd33e12d8_poster.png" aria-label="Occluded Cube: Control"><source src="media/e_4f3fc98bd33e12d8.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">3D geometry</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Hamrick2016Inferring / exp1 / tower_01833_1010010011~stimulus</p>
-              <h2>tower_01833_1010010011~stimulus: Which block color is heavier? Color 1: ████ , Color 2: ████</h2>
-              <p class="muted">stimulus</p>
-              <a class="detail-link" href="examples/e_56d3399b8031683f.html">Open detail</a>
+              <div class="card-meta"><span>Smith et al. 2019</span><span>3D event surprise</span></div>
+              <h3>Occluded Cube: Control</h3>
+              <p class="card-summary">Recover calibrated 3D object motion as a cube passes behind a blocker.</p>
+              <a class="card-link" href="examples/e_4f3fc98bd33e12d8.html">Inspect 4D code</a>
             </div>
           </article>
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/e_cc57e80415d82d04.html"><video muted playsinline preload="metadata" poster="media/e_cc57e80415d82d04_poster.png"><source src="media/e_cc57e80415d82d04.mp4" type="video/mp4" /></video></a>
+          <article class="sample-card" data-dimension="3d">
+            <a class="sample-media" href="examples/e_910560807518a408.html" aria-label="Open Appearing Cone: Control">
+              <video muted playsinline preload="metadata" poster="media/e_910560807518a408_poster.png" aria-label="Appearing Cone: Control"><source src="media/e_910560807518a408.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">3D geometry</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Hamrick2016Inferring / exp1 / tower_01023_0000000000~stimulus</p>
-              <h2>tower_01023_0000000000~stimulus: On a 1-7 scale, how likely is the tower to fall when unfrozen?</h2>
-              <p class="muted">stimulus</p>
-              <a class="detail-link" href="examples/e_cc57e80415d82d04.html">Open detail</a>
+              <div class="card-meta"><span>Smith et al. 2019</span><span>3D event surprise</span></div>
+              <h3>Appearing Cone: Control</h3>
+              <p class="card-summary">Track a cone through a controlled appearance event in 3D.</p>
+              <a class="card-link" href="examples/e_910560807518a408.html">Inspect 4D code</a>
             </div>
           </article>
-          <article class="sample-card">
-            <a class="thumb-link" href="examples/e_4db287dd58c61688.html"><video muted playsinline preload="metadata" poster="media/e_4db287dd58c61688_poster.png"><source src="media/e_4db287dd58c61688.mp4" type="video/mp4" /></video></a>
+          <article class="sample-card" data-dimension="3d">
+            <a class="sample-media" href="examples/e_61e66f780da3e74e.html" aria-label="Open Visible Discontinuity: Control">
+              <video muted playsinline preload="metadata" poster="media/e_61e66f780da3e74e_poster.png" aria-label="Visible Discontinuity: Control"><source src="media/e_61e66f780da3e74e.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">3D geometry</span>
+            </a>
             <div class="card-body">
-              <p class="eyebrow">Hamrick2016Inferring / exp3 / tower_00815_0011011001~stimulus</p>
-              <h2>tower_00815_0011011001~stimulus: Red blocks are heavy . Blue blocks are light . On a 1-7 scale, how likely is the tower to fall when unfrozen?</h2>
-              <p class="muted">stimulus</p>
-              <a class="detail-link" href="examples/e_4db287dd58c61688.html">Open detail</a>
+              <div class="card-meta"><span>Smith et al. 2019</span><span>3D event surprise</span></div>
+              <h3>Visible Discontinuity: Control</h3>
+              <p class="card-summary">Encode a cube&#x27;s discontinuous trajectory in calibrated world geometry.</p>
+              <a class="card-link" href="examples/e_61e66f780da3e74e.html">Inspect 4D code</a>
+            </div>
+          </article>
+          <article class="sample-card" data-dimension="3d">
+            <a class="sample-media" href="examples/e_56d3399b8031683f.html" aria-label="Open Relative Mass from Towers">
+              <video muted playsinline preload="metadata" poster="media/e_56d3399b8031683f_poster.png" aria-label="Relative Mass from Towers"><source src="media/e_56d3399b8031683f.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">3D geometry</span>
+            </a>
+            <div class="card-body">
+              <div class="card-meta"><span>Hamrick et al. 2016</span><span>Tower stability</span></div>
+              <h3>Relative Mass from Towers</h3>
+              <p class="card-summary">Lift ten blocks into 3D to support color-based mass inference.</p>
+              <a class="card-link" href="examples/e_56d3399b8031683f.html">Inspect 4D code</a>
+            </div>
+          </article>
+          <article class="sample-card" data-dimension="3d">
+            <a class="sample-media" href="examples/e_cc57e80415d82d04.html" aria-label="Open Tower Stability Estimate">
+              <video muted playsinline preload="metadata" poster="media/e_cc57e80415d82d04_poster.png" aria-label="Tower Stability Estimate"><source src="media/e_cc57e80415d82d04.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">3D geometry</span>
+            </a>
+            <div class="card-body">
+              <div class="card-meta"><span>Hamrick et al. 2016</span><span>Tower stability</span></div>
+              <h3>Tower Stability Estimate</h3>
+              <p class="card-summary">Represent a frozen tower&#x27;s oriented geometry before physical release.</p>
+              <a class="card-link" href="examples/e_cc57e80415d82d04.html">Inspect 4D code</a>
+            </div>
+          </article>
+          <article class="sample-card" data-dimension="3d">
+            <a class="sample-media" href="examples/e_4db287dd58c61688.html" aria-label="Open Conditioned Tower Stability">
+              <video muted playsinline preload="metadata" poster="media/e_4db287dd58c61688_poster.png" aria-label="Conditioned Tower Stability"><source src="media/e_4db287dd58c61688.mp4" type="video/mp4" /></video>
+              <span class="dimension-badge">3D geometry</span>
+            </a>
+            <div class="card-body">
+              <div class="card-meta"><span>Hamrick et al. 2016</span><span>Tower stability</span></div>
+              <h3>Conditioned Tower Stability</h3>
+              <p class="card-summary">Combine color-mass context with a full 3D tower state.</p>
+              <a class="card-link" href="examples/e_4db287dd58c61688.html">Inspect 4D code</a>
             </div>
           </article>
         </div>
       </section>
     </main>
+    <footer class="site-footer">
+      <strong>Dynamic 4D Spatial Code</strong>
+      <span>Object-centric video representations for physical reasoning.</span>
+      <a href="https://github.com/Yuzhou541/4D_Spatial_Code">Source on GitHub</a>
+    </footer>
+    <script src="showcase.js"></script>
   </body>
 </html>
