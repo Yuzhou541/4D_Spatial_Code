@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Local research dashboard for 4D Spatial Code quality, tool use, and Physics reasoning evaluation."
+    >
+    <title>4D Spatial Code Evaluation</title>
+    <link rel="stylesheet" href="assets/styles.css?v=20260715">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="app-header">
+      <a class="brand" href="#overview" aria-label="4D Spatial Code Evaluation overview">
+        <span class="brand-mark" aria-hidden="true">4D</span>
+        <span>Spatial Code Evaluation</span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="#overview" data-route="overview">Overview</a>
+        <a href="#representation" data-route="representation">Representation</a>
+        <a href="#studies" data-route="studies">Studies</a>
+        <a href="#diagnostics" data-route="diagnostics">Diagnostics</a>
+      </nav>
+      <div class="header-meta" aria-label="Evaluation condition">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span>predicted code + Qwen tools</span>
+      </div>
+    </header>
+    <main id="main-content" tabindex="-1">
+      <div class="loading-state" role="status">Loading accepted evaluation artifacts...</div>
+    </main>
+    <div id="error-overlay" class="error-overlay" hidden role="alert"></div>
+    <script src="assets/viewer.js?v=20260715"></script>
+    <script src="assets/app.js?v=20260715"></script>
+  </body>
+</html>

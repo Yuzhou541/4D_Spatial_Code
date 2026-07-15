@@ -1,0 +1,983 @@
+{
+  "study": "ullman2018_learning",
+  "title": "Ullman2018Learning",
+  "description": "Repeated puck interactions reveal hidden mass, roughness, interaction, and global-force rules across worlds.",
+  "reasoning": "Latent physical-rule learning",
+  "summary": {
+    "study": "ullman2018_learning",
+    "question_count": 780,
+    "scored_count": 780,
+    "answer_types": [
+      "categorical"
+    ],
+    "normalized_accuracy": 0.16923076923076924,
+    "mean_llm_confidence": 0.2810673267723036,
+    "mean_4d_confidence": 0.7785301333333333,
+    "mean_code_quality": 0.9907795333333334,
+    "mean_gt_quality": 0.8,
+    "quality_coverage": 0.75,
+    "code_count": 60
+  },
+  "selected_sample": {
+    "code_id": "code_13bd51fa1eb200d38b08",
+    "qa_id": "qa_0dc1d9937f883585b6af",
+    "data_path": "data/samples/code_13bd51fa1eb200d38b08.json",
+    "selection_basis": "target_available_nearest_study_medians_then_tool_diversity"
+  },
+  "selected_question": {
+    "qa_id": "qa_0dc1d9937f883585b6af",
+    "prompt": "How do yellow and yellow objects interact?",
+    "answer_type": "categorical",
+    "options": [
+      "Attract",
+      "Repel",
+      "None",
+      "Can't tell from movie"
+    ],
+    "slider": null,
+    "target": {
+      "availability": "available",
+      "source": "objective",
+      "objective": 1,
+      "human_mean": null,
+      "human_values": [],
+      "unavailable_reason": null
+    },
+    "ground_truth_display": "1: Repel",
+    "answer": {
+      "answer_index": 3,
+      "answer_text": "Can't tell from movie",
+      "raw_answer_confidence": 0.031217355281114578,
+      "calibrated_answer_confidence": 0.17876584602373977,
+      "calibration_status": "out_of_fold_temperature_scaled"
+    },
+    "answer_display": "3: Can't tell from movie",
+    "likelihood": {
+      "candidate_values": [
+        "Attract",
+        "Repel",
+        "None",
+        "Can't tell from movie"
+      ],
+      "candidate_codes": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "logits": [
+        22.5,
+        26.5,
+        27.125,
+        24.125
+      ],
+      "probabilities": [
+        0.006147,
+        0.335618,
+        0.627017,
+        0.031217
+      ],
+      "method": "single_token_conditional_candidate_likelihood",
+      "prompt_token_count": 1427,
+      "selected_probability": 0.031217,
+      "selected_index": 3,
+      "calibrated_probabilities": [
+        0.119084,
+        0.323703,
+        0.378447,
+        0.178766
+      ],
+      "temperature": 4.0
+    },
+    "score": 0.0,
+    "code_ids": [
+      "code_13bd51fa1eb200d38b08"
+    ],
+    "used_code_ids": [
+      "code_13bd51fa1eb200d38b08"
+    ],
+    "code_confidence": {
+      "qa_id": "qa_0dc1d9937f883585b6af",
+      "score": 0.75,
+      "status": "measured",
+      "required_groups": [
+        "identity",
+        "trajectory",
+        "motion",
+        "relations"
+      ],
+      "group_scores": {
+        "identity": 0.75,
+        "trajectory": 0.952895,
+        "motion": 0.9673833333333334,
+        "relations": 1.0
+      },
+      "coverage": 1.0,
+      "evidence_code_ids": [
+        "code_13bd51fa1eb200d38b08"
+      ]
+    },
+    "code_quality": [
+      {
+        "code_id": "code_13bd51fa1eb200d38b08",
+        "scene_id": "scene_13bd51fa1eb200d38b08",
+        "study": "ullman2018_learning",
+        "parse_mode": "dynamic_2d",
+        "metrics": [
+          {
+            "name": "identity_count_agreement",
+            "status": "measured",
+            "value": 0.75,
+            "units": "jaccard",
+            "normalized_quality": 0.75,
+            "evidence_ids": [
+              "scene_13bd51fa1eb200d38b08:identity",
+              "eval:code_13bd51fa1eb200d38b08:expected_objects"
+            ],
+            "comparison_target": "README/manifest object contract",
+            "reason": null
+          },
+          {
+            "name": "temporal_mask_coverage",
+            "status": "measured",
+            "value": 1.0,
+            "units": "fraction",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_13bd51fa1eb200d38b08:objects:mask"
+            ],
+            "comparison_target": "sampled-frame coverage",
+            "reason": null
+          },
+          {
+            "name": "mean_sam_score",
+            "status": "measured",
+            "value": 0.9673833333333334,
+            "units": "probability",
+            "normalized_quality": 0.9673833333333334,
+            "evidence_ids": [
+              "scene_13bd51fa1eb200d38b08:sam_summary"
+            ],
+            "comparison_target": "SAM3.1 source confidence",
+            "reason": null
+          },
+          {
+            "name": "duplicate_bbox_frame_pairs",
+            "status": "measured",
+            "value": 0,
+            "units": "count",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_13bd51fa1eb200d38b08:objects:bbox_2d"
+            ],
+            "comparison_target": "pairwise IoU <= 0.85 for distinct object IDs",
+            "reason": null
+          },
+          {
+            "name": "tracking_owner_mismatch_count",
+            "status": "measured",
+            "value": 0,
+            "units": "count",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_13bd51fa1eb200d38b08:objects:tracklets"
+            ],
+            "comparison_target": "tracklet/object ownership invariant",
+            "reason": null
+          },
+          {
+            "name": "primary_source_failure_count",
+            "status": "measured",
+            "value": 0,
+            "units": "count",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_13bd51fa1eb200d38b08:objects:provenance"
+            ],
+            "comparison_target": "mask and bbox source must be sam3.1-real",
+            "reason": null
+          },
+          {
+            "name": "symbolic_center_2d_error_px",
+            "status": "unsupported",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "eval:code_13bd51fa1eb200d38b08:symbolic_scene"
+            ],
+            "comparison_target": "frame-aligned symbolic center trajectory",
+            "reason": "source symbolic metadata does not expose frame-aligned 2D trajectories"
+          },
+          {
+            "name": "symbolic_relation_event_agreement",
+            "status": "unsupported",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "eval:code_13bd51fa1eb200d38b08:symbolic_scene"
+            ],
+            "comparison_target": "explicit symbolic relation/event labels",
+            "reason": "source symbolic metadata has no explicit relation/event labels"
+          },
+          {
+            "name": "mean_3d_reprojection_iou",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_13bd51fa1eb200d38b08"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "camera_roundtrip_error_px",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_13bd51fa1eb200d38b08"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "minimum_lifted_mask_point_support",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_13bd51fa1eb200d38b08"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "mean_kabsch_residual",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_13bd51fa1eb200d38b08"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "hamrick_sim3_center_error",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_13bd51fa1eb200d38b08"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "hamrick_sim3_size_error",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_13bd51fa1eb200d38b08"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "hamrick_sim3_orientation_error_deg",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_13bd51fa1eb200d38b08"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          }
+        ],
+        "gt_quality_score": 0.75,
+        "internal_consistency_score": 0.9934766666666667,
+        "quality_coverage": 0.75,
+        "evidence_group_scores": {
+          "identity": 0.75,
+          "mask": 0.9673833333333334,
+          "trajectory": 0.952895,
+          "motion": 0.9673833333333334,
+          "visibility": 0.9673833333333334,
+          "relations": 1.0,
+          "events": 0.0,
+          "geometry_3d": 0.0,
+          "rigidity": 0.0,
+          "camera": 0.0
+        },
+        "unsupported_metrics": [
+          "symbolic_center_2d_error_px",
+          "symbolic_relation_event_agreement"
+        ]
+      }
+    ],
+    "evidence_path": [
+      {
+        "order": 1,
+        "tool": "get_objects",
+        "arguments": {
+          "scene_id": "scene_13bd51fa1eb200d38b08"
+        },
+        "duplicate": false,
+        "availability": "available",
+        "source": [
+          "qwen2.5-vl-real_plus_study_contract"
+        ],
+        "units": null,
+        "frame_range": null,
+        "evidence_ids": [
+          "ev_6ca294fc87e51939"
+        ],
+        "confidence": {
+          "score": 0.901447,
+          "status": "measured",
+          "basis": "minimum confidence across required evidence fields",
+          "evidence_ids": [
+            "ev_6ca294fc87e51939"
+          ]
+        },
+        "data": {
+          "scene_id": "scene_13bd51fa1eb200d38b08",
+          "object_count": 3,
+          "object_groups": [
+            {
+              "object_ids": "<list:1>",
+              "label": "blue puck",
+              "role": "dynamic_puck",
+              "confidence": 0.901447
+            },
+            {
+              "object_ids": "<list:1>",
+              "label": "red puck 1",
+              "role": "dynamic_puck",
+              "confidence": 0.912558
+            },
+            {
+              "object_ids": "<list:1>",
+              "label": "red puck 2",
+              "role": "dynamic_puck",
+              "confidence": 0.912069
+            }
+          ]
+        },
+        "unavailable_reason": null
+      },
+      {
+        "order": 2,
+        "tool": "get_contact",
+        "arguments": {
+          "scene_id": "scene_13bd51fa1eb200d38b08",
+          "obj1": "red_puck_1",
+          "obj2": "red_puck_2"
+        },
+        "duplicate": false,
+        "availability": "unavailable",
+        "source": [
+          "computed_events",
+          "mixed:computed_from_sam31_2d_trajectories,computed_relations"
+        ],
+        "units": null,
+        "frame_range": [
+          0,
+          15
+        ],
+        "evidence_ids": [
+          "ev_ff60c52109dd53a3"
+        ],
+        "confidence": {
+          "score": null,
+          "status": "unavailable",
+          "basis": "events was not produced for this scene/object",
+          "evidence_ids": [
+            "ev_ff60c52109dd53a3"
+          ]
+        },
+        "data": {},
+        "unavailable_reason": "events was not produced for this scene/object"
+      },
+      {
+        "order": 3,
+        "tool": "get_relation",
+        "arguments": {
+          "scene_id": "scene_13bd51fa1eb200d38b08",
+          "obj1": "red_puck_1",
+          "obj2": "red_puck_2"
+        },
+        "duplicate": false,
+        "availability": "available",
+        "source": [
+          "mixed:computed_from_sam31_2d_trajectories,computed_relations"
+        ],
+        "units": null,
+        "frame_range": [
+          0,
+          15
+        ],
+        "evidence_ids": [
+          "ev_97efbbf14e761fdc"
+        ],
+        "confidence": {
+          "score": null,
+          "status": "uncalibrated",
+          "basis": "required evidence is present but uncalibrated",
+          "evidence_ids": [
+            "ev_97efbbf14e761fdc"
+          ]
+        },
+        "data": {
+          "scene_id": "scene_13bd51fa1eb200d38b08",
+          "obj1": "red_puck_1",
+          "obj2": "red_puck_2",
+          "relations": [
+            {
+              "relation": "separating",
+              "subject": "red_puck_1",
+              "object": "red_puck_2",
+              "evidence": "<dict:4>",
+              "source": "computed_from_sam31_2d_trajectories"
+            }
+          ]
+        },
+        "unavailable_reason": null
+      },
+      {
+        "order": 4,
+        "tool": "get_distance_trend",
+        "arguments": {
+          "scene_id": "scene_13bd51fa1eb200d38b08",
+          "obj1": "red_puck_1",
+          "obj2": "red_puck_2",
+          "frame_range": [
+            0,
+            15
+          ]
+        },
+        "duplicate": false,
+        "availability": "available",
+        "source": [
+          "sam31_mask_centroid"
+        ],
+        "units": "source_pixels",
+        "frame_range": [
+          0,
+          15
+        ],
+        "evidence_ids": [
+          "ev_f99d362d357da095"
+        ],
+        "confidence": {
+          "score": 0.974139,
+          "status": "measured",
+          "basis": "minimum confidence across required evidence fields",
+          "evidence_ids": [
+            "ev_f99d362d357da095"
+          ]
+        },
+        "data": {
+          "scene_id": "scene_13bd51fa1eb200d38b08",
+          "obj1": "red_puck_1",
+          "obj2": "red_puck_2",
+          "trend": "increasing",
+          "dimension": "2d",
+          "start_distance": 276.528316,
+          "end_distance": 344.375331,
+          "samples": {
+            "count": 10,
+            "first": {
+              "frame": 0,
+              "distance": 276.52831640857266
+            },
+            "last": {
+              "frame": 15,
+              "distance": 344.37533067411374
+            }
+          }
+        },
+        "unavailable_reason": null
+      }
+    ],
+    "trace_audit": {
+      "duplicate_calls": 0,
+      "invalid_calls": 0,
+      "malformed_calls": 0
+    }
+  },
+  "quality_statistics": {
+    "internal": {
+      "count": 60,
+      "mean": 0.9907795333333334,
+      "min": 0.9770561333333333,
+      "q1": 0.9873667583333333,
+      "median": 0.9934814833333334,
+      "q3": 0.9941517333333334,
+      "max": 0.9952332
+    },
+    "gt": {
+      "count": 60,
+      "mean": 0.8,
+      "min": 0.5,
+      "q1": 0.75,
+      "median": 0.75,
+      "q3": 0.8125,
+      "max": 1.0
+    },
+    "coverage": {
+      "count": 60,
+      "mean": 0.75,
+      "min": 0.75,
+      "q1": 0.75,
+      "median": 0.75,
+      "q3": 0.75,
+      "max": 0.75
+    },
+    "source_failure_count": 0,
+    "metric_status": {
+      "camera_roundtrip_error_px": {
+        "not_applicable": 60
+      },
+      "duplicate_bbox_frame_pairs": {
+        "measured": 60
+      },
+      "hamrick_sim3_center_error": {
+        "not_applicable": 60
+      },
+      "hamrick_sim3_orientation_error_deg": {
+        "not_applicable": 60
+      },
+      "hamrick_sim3_size_error": {
+        "not_applicable": 60
+      },
+      "identity_count_agreement": {
+        "measured": 60
+      },
+      "mean_3d_reprojection_iou": {
+        "not_applicable": 60
+      },
+      "mean_kabsch_residual": {
+        "not_applicable": 60
+      },
+      "mean_sam_score": {
+        "measured": 60
+      },
+      "minimum_lifted_mask_point_support": {
+        "not_applicable": 60
+      },
+      "primary_source_failure_count": {
+        "measured": 60
+      },
+      "symbolic_center_2d_error_px": {
+        "unsupported": 60
+      },
+      "symbolic_relation_event_agreement": {
+        "unsupported": 60
+      },
+      "temporal_mask_coverage": {
+        "measured": 60
+      },
+      "tracking_owner_mismatch_count": {
+        "measured": 60
+      }
+    }
+  },
+  "confidence_statistics": {
+    "code": {
+      "count": 780,
+      "mean": 0.7785301333333333,
+      "min": 0.5,
+      "q1": 0.75,
+      "median": 0.75,
+      "q3": 0.771857,
+      "max": 0.968263
+    },
+    "llm": {
+      "count": 780,
+      "mean": 0.2810673267723036,
+      "min": 0.05377675107777793,
+      "q1": 0.15989004590515196,
+      "median": 0.23117344491117206,
+      "q3": 0.35668817653794427,
+      "max": 0.8177084555822339
+    }
+  },
+  "tool_statistics": {
+    "total_calls": 3088,
+    "duplicate_calls": 92,
+    "invalid_calls": 55,
+    "malformed_calls": 1,
+    "available_results": 2639,
+    "unavailable_results": 449,
+    "unique_used_codes": 60,
+    "by_tool": [
+      {
+        "tool": "get_objects",
+        "call_count": 554,
+        "question_count": 541,
+        "question_coverage": 0.6935897435897436
+      },
+      {
+        "tool": "get_relation",
+        "call_count": 445,
+        "question_count": 355,
+        "question_coverage": 0.4551282051282051
+      },
+      {
+        "tool": "get_mask_summary",
+        "call_count": 432,
+        "question_count": 202,
+        "question_coverage": 0.258974358974359
+      },
+      {
+        "tool": "get_contact",
+        "call_count": 335,
+        "question_count": 315,
+        "question_coverage": 0.40384615384615385
+      },
+      {
+        "tool": "get_distance_trend",
+        "call_count": 324,
+        "question_count": 272,
+        "question_coverage": 0.3487179487179487
+      },
+      {
+        "tool": "get_position",
+        "call_count": 310,
+        "question_count": 206,
+        "question_coverage": 0.2641025641025641
+      },
+      {
+        "tool": "get_bbox_2d",
+        "call_count": 219,
+        "question_count": 193,
+        "question_coverage": 0.24743589743589745
+      },
+      {
+        "tool": "get_distance",
+        "call_count": 161,
+        "question_count": 131,
+        "question_coverage": 0.16794871794871793
+      },
+      {
+        "tool": "get_field_availability",
+        "call_count": 152,
+        "question_count": 148,
+        "question_coverage": 0.18974358974358974
+      },
+      {
+        "tool": "get_relative_direction",
+        "call_count": 135,
+        "question_count": 127,
+        "question_coverage": 0.16282051282051282
+      },
+      {
+        "tool": "get_motion_summary",
+        "call_count": 14,
+        "question_count": 11,
+        "question_coverage": 0.014102564102564103
+      },
+      {
+        "tool": "get_trajectory",
+        "call_count": 5,
+        "question_count": 5,
+        "question_coverage": 0.00641025641025641
+      },
+      {
+        "tool": "get_velocity_2d",
+        "call_count": 1,
+        "question_count": 1,
+        "question_coverage": 0.001282051282051282
+      },
+      {
+        "tool": "get_acceleration_2d",
+        "call_count": 1,
+        "question_count": 1,
+        "question_coverage": 0.001282051282051282
+      }
+    ],
+    "evidence_groups": {
+      "identity": 0.8,
+      "motion": 0.9519501222222222,
+      "relations": 1.0,
+      "trajectory": 0.9356783833333333
+    }
+  },
+  "correlations": {
+    "code_confidence_vs_score": {
+      "status": "measured",
+      "count": 780,
+      "pearson": 0.016054448683802763,
+      "spearman": 0.008038230121623163
+    },
+    "llm_confidence_vs_score": {
+      "status": "measured",
+      "count": 780,
+      "pearson": 0.41893867698984744,
+      "spearman": 0.4109432103680217
+    },
+    "code_quality_vs_score": {
+      "status": "measured",
+      "count": 780,
+      "pearson": 0.00939742501014132,
+      "spearman": -0.013228178111440073
+    },
+    "code_quality_vs_code_confidence": {
+      "status": "measured",
+      "count": 780,
+      "pearson": -0.0358038960091019,
+      "spearman": -0.013506276592907054
+    }
+  },
+  "human_reference": {
+    "status": "objective_rule_ground_truth",
+    "noise_ceilings": [],
+    "human_target_question_count": 0,
+    "individual_response_count": 0,
+    "objective_human_task_score": null
+  },
+  "condition_metrics": [
+    {
+      "study": "ullman2018_learning",
+      "condition": "predicted_code_oracle_tools",
+      "answer_type": "categorical",
+      "qa_count": 780,
+      "objective_categorical_accuracy": 0.34487179487179487,
+      "human_modal_accuracy": null,
+      "human_brier_score": null,
+      "human_nll": null,
+      "normalized_task_score": 0.34487179487179487,
+      "scored_count": 780
+    },
+    {
+      "study": "ullman2018_learning",
+      "condition": "predicted_code_qwen_tools",
+      "answer_type": "categorical",
+      "qa_count": 780,
+      "objective_categorical_accuracy": 0.16923076923076924,
+      "human_modal_accuracy": null,
+      "human_brier_score": null,
+      "human_nll": null,
+      "normalized_task_score": 0.16923076923076924,
+      "scored_count": 780
+    },
+    {
+      "study": "ullman2018_learning",
+      "condition": "question_only",
+      "answer_type": "categorical",
+      "qa_count": 780,
+      "objective_categorical_accuracy": 0.046153846153846156,
+      "human_modal_accuracy": null,
+      "human_brier_score": null,
+      "human_nll": null,
+      "normalized_task_score": 0.046153846153846156,
+      "scored_count": 780
+    }
+  ],
+  "calibration": [
+    {
+      "study": "ullman2018_learning",
+      "condition": "predicted_code_oracle_tools",
+      "answer_type": "categorical",
+      "status": "calibrated",
+      "eligible_count": 780,
+      "temperatures": {
+        "0": 4.0,
+        "1": 4.0,
+        "2": 4.0,
+        "3": 4.0,
+        "4": 4.0
+      }
+    },
+    {
+      "study": "ullman2018_learning",
+      "condition": "predicted_code_qwen_tools",
+      "answer_type": "categorical",
+      "status": "calibrated",
+      "eligible_count": 780,
+      "temperatures": {
+        "0": 4.0,
+        "1": 4.0,
+        "2": 4.0,
+        "3": 4.0,
+        "4": 4.0
+      }
+    },
+    {
+      "study": "ullman2018_learning",
+      "condition": "question_only",
+      "answer_type": "categorical",
+      "status": "calibrated",
+      "eligible_count": 780,
+      "temperatures": {
+        "0": 4.0,
+        "1": 4.0,
+        "2": 4.0,
+        "3": 4.0,
+        "4": 4.0
+      }
+    }
+  ],
+  "bottleneck": {
+    "study": "ullman2018_learning",
+    "question_count": 780,
+    "condition_coverage": {
+      "question_only": 1.0,
+      "predicted_code_qwen_tools": 1.0,
+      "predicted_code_oracle_tools": 1.0,
+      "oracle_code_oracle_tools": 0.0
+    },
+    "condition_mean_task_score": {
+      "question_only": 0.046153846153846156,
+      "predicted_code_qwen_tools": 0.16923076923076924,
+      "predicted_code_oracle_tools": 0.34487179487179487,
+      "oracle_code_oracle_tools": null
+    },
+    "human_or_objective_ceiling": 1.0,
+    "routing_tool_use_gap": {
+      "status": "measured",
+      "paired_count": 780,
+      "mean_gap": 0.17564102564102563,
+      "ci95": [
+        0.17564102564102563,
+        0.17564102564102563
+      ]
+    },
+    "code_quality_gap": {
+      "status": "insufficient_coverage",
+      "paired_count": 0,
+      "mean_gap": null,
+      "ci95": null
+    },
+    "reasoning_task_model_gap": {
+      "status": "insufficient_coverage",
+      "paired_count": 0,
+      "mean_gap": null,
+      "ci95": null
+    },
+    "attribution": {
+      "label": "routing_or_tool_use",
+      "reason": "largest significant controlled gap"
+    }
+  },
+  "formulas": [
+    {
+      "name": "Categorical task score",
+      "formula": "1[predicted = objective or human-modal target]",
+      "detail": "Exact agreement with an objective answer, or with the modal human answer when the target is a response distribution."
+    },
+    {
+      "name": "Slider task score",
+      "formula": "max(0, 1 - |prediction - target| / (maximum - minimum))",
+      "detail": "Range-normalized absolute-error score; raw MAE and RMSE remain available per study."
+    },
+    {
+      "name": "Multi-select task score",
+      "formula": "2 * precision * recall / (precision + recall)",
+      "detail": "Set F1 over selected option indices."
+    },
+    {
+      "name": "Identity quality",
+      "formula": "|predicted IDs intersection expected IDs| / |predicted IDs union expected IDs|",
+      "detail": "Jaccard agreement against the README and manifest object contract."
+    },
+    {
+      "name": "Temporal mask coverage",
+      "formula": "mean_objects(visible sampled frames / sampled frames)",
+      "detail": "Measures sustained mask support rather than frame-zero detection."
+    },
+    {
+      "name": "Symbolic center quality",
+      "formula": "1 / (1 + mean Euclidean pixel error / 10)",
+      "detail": "Applied only when independent, frame-aligned symbolic center trajectories exist."
+    },
+    {
+      "name": "Relation and event quality",
+      "formula": "|predicted labels intersection target labels| / |predicted labels union target labels|",
+      "detail": "Label-set Jaccard agreement, applied only when independent symbolic relation or event labels exist."
+    },
+    {
+      "name": "Camera quality",
+      "formula": "max(0, 1 - roundtrip error pixels / 1.5)",
+      "detail": "Projection and unprojection must agree within the 1.5-pixel acceptance scale."
+    },
+    {
+      "name": "Lifted point support",
+      "formula": "min(1, minimum valid mask points / 50)",
+      "detail": "Requires geometry to be supported by SAM-mask pixels lifted through VGGT-Omega."
+    },
+    {
+      "name": "Kabsch rigidity quality",
+      "formula": "max(0, 1 - normalized residual / 0.15)",
+      "detail": "Scores accepted local SE(3) estimates against the rigid-consistency residual threshold."
+    },
+    {
+      "name": "Hamrick Sim(3) center quality",
+      "formula": "max(0, 1 - aligned center error / 0.10)",
+      "detail": "Prediction geometry is aligned to hidden tower geometry for evaluation only; GT never repairs the code."
+    },
+    {
+      "name": "Hamrick Sim(3) size quality",
+      "formula": "max(0, 1 - aligned relative size error / 0.25)",
+      "detail": "Uses the accepted 0.25 relative-size error scale after diagnostic Sim(3) alignment."
+    },
+    {
+      "name": "Hamrick Sim(3) orientation quality",
+      "formula": "max(0, 1 - aligned orientation error degrees / 30)",
+      "detail": "Uses the accepted 30-degree orientation error scale after diagnostic Sim(3) alignment."
+    },
+    {
+      "name": "Internal 4D quality",
+      "formula": "mean(measured applicable internal normalized metrics)",
+      "detail": "GT-referenced metrics are excluded; unsupported or not-applicable metrics remain null."
+    },
+    {
+      "name": "GT quality",
+      "formula": "mean(measured applicable GT-referenced normalized metrics)",
+      "detail": "Reported separately from internal consistency and only where an independent comparison target exists."
+    },
+    {
+      "name": "Quality coverage",
+      "formula": "measured applicable metrics / applicable metrics",
+      "detail": "Prevents a high score over a small measurable subset from being mistaken for complete evaluation."
+    },
+    {
+      "name": "4D-code confidence",
+      "formula": "C_code(q) = min over required evidence-group scores",
+      "detail": "Each evidence group is also minimized across every code required by the question; missing evidence is zero."
+    },
+    {
+      "name": "LLM answer confidence",
+      "formula": "p_i = exp(z_i / T) / sum_j exp(z_j / T)",
+      "detail": "The selected answer likelihood uses five-fold out-of-fold temperature scaling when calibration is supported."
+    },
+    {
+      "name": "Human slider reliability",
+      "formula": "r_SB = 2r / (1 + r)",
+      "detail": "Spearman-Brown corrected split-half reliability over 200 deterministic response splits."
+    },
+    {
+      "name": "Human categorical reliability",
+      "formula": "mean(split-half modal agreement)",
+      "detail": "Agreement of modal categorical responses across 200 deterministic participant splits."
+    },
+    {
+      "name": "Routing gap",
+      "formula": "oracle-tool task score - native-tool task score",
+      "detail": "The 95% interval uses 1,000 grouped bootstrap resamples by experiment."
+    }
+  ]
+}

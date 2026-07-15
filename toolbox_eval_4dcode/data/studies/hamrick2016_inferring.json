@@ -1,0 +1,1037 @@
+{
+  "study": "hamrick2016_inferring",
+  "title": "Hamrick2016Inferring",
+  "description": "Frozen multiview towers and physics feedback support predictions of collapse and inference of hidden block masses.",
+  "reasoning": "3D stability and latent mass inference",
+  "summary": {
+    "study": "hamrick2016_inferring",
+    "question_count": 45,
+    "scored_count": 45,
+    "answer_types": [
+      "categorical",
+      "slider"
+    ],
+    "normalized_accuracy": 0.6210600153582609,
+    "mean_llm_confidence": 0.08450513635069322,
+    "mean_4d_confidence": 0.4104101863875048,
+    "mean_code_quality": 0.7848285156769718,
+    "mean_gt_quality": 1.0,
+    "quality_coverage": 0.625,
+    "code_count": 12
+  },
+  "selected_sample": {
+    "code_id": "code_1658c9d1c9526575db7f",
+    "qa_id": "qa_086c6156e95d148a3370",
+    "data_path": "data/samples/code_1658c9d1c9526575db7f.json",
+    "selection_basis": "target_available_nearest_study_medians_then_tool_diversity"
+  },
+  "selected_question": {
+    "qa_id": "qa_086c6156e95d148a3370",
+    "prompt": "On a 1-7 scale, how likely is the tower to fall when unfrozen?",
+    "answer_type": "slider",
+    "options": [],
+    "slider": {
+      "minimum": 1.0,
+      "maximum": 7.0
+    },
+    "target": {
+      "availability": "available",
+      "source": "human",
+      "objective": null,
+      "human_mean": 1.5,
+      "human_values": [
+        2.0,
+        1.0,
+        1.0,
+        3.0,
+        2.0,
+        1.0,
+        1.0,
+        1.0,
+        2.0,
+        1.0
+      ],
+      "unavailable_reason": null
+    },
+    "ground_truth_display": "1.5",
+    "answer": {
+      "value": 3.0,
+      "raw_answer_confidence": 1.0083856523124268e-06,
+      "calibrated_answer_confidence": 0.009770500715728362,
+      "calibration_status": "out_of_fold_temperature_scaled"
+    },
+    "answer_display": "3",
+    "likelihood": {
+      "candidate_values": {
+        "count": 21,
+        "first": "1",
+        "last": "7"
+      },
+      "candidate_codes": {
+        "count": 21,
+        "first": "A",
+        "last": "U"
+      },
+      "logits": {
+        "count": 21,
+        "first": 18.125,
+        "last": 29.625
+      },
+      "probabilities": {
+        "count": 21,
+        "first": 0.0,
+        "last": 0.005616
+      },
+      "method": "single_token_conditional_candidate_likelihood",
+      "prompt_token_count": 1407,
+      "bin_values": {
+        "count": 21,
+        "first": 1.0,
+        "last": 7.0
+      },
+      "selected_probability": 1e-06,
+      "selected_index": 7,
+      "calibrated_probabilities": {
+        "count": 21,
+        "first": 0.004762,
+        "last": 0.084404
+      }
+    },
+    "score": 0.75,
+    "code_ids": [
+      "code_1658c9d1c9526575db7f"
+    ],
+    "used_code_ids": [
+      "code_1658c9d1c9526575db7f"
+    ],
+    "code_confidence": {
+      "qa_id": "qa_086c6156e95d148a3370",
+      "score": 0.4166666666666667,
+      "status": "measured",
+      "required_groups": [
+        "identity",
+        "trajectory",
+        "motion",
+        "geometry_3d",
+        "rigidity"
+      ],
+      "group_scores": {
+        "identity": 1.0,
+        "trajectory": 0.4166666666666667,
+        "motion": 0.4166666666666667,
+        "geometry_3d": 0.6149692999999999,
+        "rigidity": 0.4486929962546816
+      },
+      "coverage": 1.0,
+      "evidence_code_ids": [
+        "code_1658c9d1c9526575db7f"
+      ]
+    },
+    "code_quality": [
+      {
+        "code_id": "code_1658c9d1c9526575db7f",
+        "scene_id": "scene_1658c9d1c9526575db7f",
+        "study": "hamrick2016_inferring",
+        "parse_mode": "dynamic_3d_full",
+        "metrics": [
+          {
+            "name": "identity_count_agreement",
+            "status": "measured",
+            "value": 1.0,
+            "units": "jaccard",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_1658c9d1c9526575db7f:identity",
+              "eval:code_1658c9d1c9526575db7f:expected_objects"
+            ],
+            "comparison_target": "README/manifest object contract",
+            "reason": null
+          },
+          {
+            "name": "temporal_mask_coverage",
+            "status": "measured",
+            "value": 0.8083333333333333,
+            "units": "fraction",
+            "normalized_quality": 0.8083333333333333,
+            "evidence_ids": [
+              "scene_1658c9d1c9526575db7f:objects:mask"
+            ],
+            "comparison_target": "sampled-frame coverage",
+            "reason": null
+          },
+          {
+            "name": "mean_sam_score",
+            "status": "measured",
+            "value": 0.7261097510655721,
+            "units": "probability",
+            "normalized_quality": 0.7261097510655721,
+            "evidence_ids": [
+              "scene_1658c9d1c9526575db7f:sam_summary"
+            ],
+            "comparison_target": "SAM3.1 source confidence",
+            "reason": null
+          },
+          {
+            "name": "duplicate_bbox_frame_pairs",
+            "status": "measured",
+            "value": 0,
+            "units": "count",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_1658c9d1c9526575db7f:objects:bbox_2d"
+            ],
+            "comparison_target": "pairwise IoU <= 0.85 for distinct object IDs",
+            "reason": null
+          },
+          {
+            "name": "tracking_owner_mismatch_count",
+            "status": "measured",
+            "value": 121,
+            "units": "count",
+            "normalized_quality": 0.0,
+            "evidence_ids": [
+              "scene_1658c9d1c9526575db7f:objects:tracklets"
+            ],
+            "comparison_target": "tracklet/object ownership invariant",
+            "reason": null
+          },
+          {
+            "name": "primary_source_failure_count",
+            "status": "measured",
+            "value": 0,
+            "units": "count",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_1658c9d1c9526575db7f:objects:provenance"
+            ],
+            "comparison_target": "mask and bbox source must be sam3.1-real",
+            "reason": null
+          },
+          {
+            "name": "symbolic_center_2d_error_px",
+            "status": "unsupported",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "eval:code_1658c9d1c9526575db7f:symbolic_scene"
+            ],
+            "comparison_target": "frame-aligned symbolic center trajectory",
+            "reason": "source symbolic metadata does not expose frame-aligned 2D trajectories"
+          },
+          {
+            "name": "symbolic_relation_event_agreement",
+            "status": "unsupported",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "eval:code_1658c9d1c9526575db7f:symbolic_scene"
+            ],
+            "comparison_target": "explicit symbolic relation/event labels",
+            "reason": "source symbolic metadata has no explicit relation/event labels"
+          },
+          {
+            "name": "mean_3d_reprojection_iou",
+            "status": "measured",
+            "value": 0.6149692999999999,
+            "units": "iou",
+            "normalized_quality": 0.6149692999999999,
+            "evidence_ids": [
+              "scene_1658c9d1c9526575db7f:geometry_diagnostics:size_estimation"
+            ],
+            "comparison_target": "projected oriented bbox versus SAM region",
+            "reason": null
+          },
+          {
+            "name": "camera_roundtrip_error_px",
+            "status": "unsupported",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_1658c9d1c9526575db7f:geometry_diagnostics"
+            ],
+            "comparison_target": "projection/unprojection error <= 1.5 px",
+            "reason": "camera round-trip value is absent from accepted diagnostics"
+          },
+          {
+            "name": "minimum_lifted_mask_point_support",
+            "status": "measured",
+            "value": 167.0,
+            "units": "points",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_1658c9d1c9526575db7f:objects:bbox_3d"
+            ],
+            "comparison_target": "at least 50 valid lifted SAM-mask pixels",
+            "reason": null
+          },
+          {
+            "name": "mean_kabsch_residual",
+            "status": "measured",
+            "value": 0.08269605056179775,
+            "units": "normalized_residual",
+            "normalized_quality": 0.4486929962546816,
+            "evidence_ids": [
+              "scene_1658c9d1c9526575db7f:objects:local_se3"
+            ],
+            "comparison_target": "normalized residual <= 0.15",
+            "reason": null
+          },
+          {
+            "name": "bbox3d_source_failure_count",
+            "status": "measured",
+            "value": 0,
+            "units": "count",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_1658c9d1c9526575db7f:objects:bbox_3d"
+            ],
+            "comparison_target": "source exactly sam31_mask_pixels_plus_vggt_omega",
+            "reason": null
+          },
+          {
+            "name": "hamrick_sim3_center_error",
+            "status": "unsupported",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "eval:code_1658c9d1c9526575db7f:hamrick_symbolic_diagnostics"
+            ],
+            "comparison_target": "post-parse Sim(3)-aligned symbolic tower geometry",
+            "reason": "accepted Hamrick diagnostics report Sim(3) comparison as unavailable"
+          },
+          {
+            "name": "hamrick_sim3_size_error",
+            "status": "unsupported",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "eval:code_1658c9d1c9526575db7f:hamrick_symbolic_diagnostics"
+            ],
+            "comparison_target": "post-parse Sim(3)-aligned symbolic tower geometry",
+            "reason": "accepted Hamrick diagnostics report Sim(3) comparison as unavailable"
+          },
+          {
+            "name": "hamrick_sim3_orientation_error_deg",
+            "status": "unsupported",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "eval:code_1658c9d1c9526575db7f:hamrick_symbolic_diagnostics"
+            ],
+            "comparison_target": "post-parse Sim(3)-aligned symbolic tower geometry",
+            "reason": "accepted Hamrick diagnostics report Sim(3) comparison as unavailable"
+          }
+        ],
+        "gt_quality_score": 1.0,
+        "internal_consistency_score": 0.6997631725816984,
+        "quality_coverage": 0.625,
+        "evidence_group_scores": {
+          "identity": 1.0,
+          "mask": 0.7261097510655721,
+          "trajectory": 0.4166666666666667,
+          "motion": 0.4166666666666667,
+          "visibility": 0.4166666666666667,
+          "relations": 0.0,
+          "events": 1.0,
+          "geometry_3d": 0.6149692999999999,
+          "rigidity": 0.4486929962546816,
+          "camera": 0.0
+        },
+        "unsupported_metrics": [
+          "symbolic_center_2d_error_px",
+          "symbolic_relation_event_agreement",
+          "camera_roundtrip_error_px",
+          "hamrick_sim3_center_error",
+          "hamrick_sim3_size_error",
+          "hamrick_sim3_orientation_error_deg"
+        ]
+      }
+    ],
+    "evidence_path": [
+      {
+        "order": 1,
+        "tool": "get_objects",
+        "arguments": {
+          "scene_id": "scene_1658c9d1c9526575db7f"
+        },
+        "duplicate": false,
+        "availability": "available",
+        "source": [
+          "qwen2.5-vl-real_plus_study_contract"
+        ],
+        "units": null,
+        "frame_range": null,
+        "evidence_ids": [
+          "ev_9f04ac7ca6438f23"
+        ],
+        "confidence": {
+          "score": 1.0,
+          "status": "measured",
+          "basis": "minimum confidence across required evidence fields",
+          "evidence_ids": [
+            "ev_9f04ac7ca6438f23"
+          ]
+        },
+        "data": {
+          "scene_id": "scene_1658c9d1c9526575db7f",
+          "object_count": 10,
+          "object_groups": [
+            {
+              "object_ids": "<list:10>",
+              "label": "tower block",
+              "role": "rigid_tower_block",
+              "confidence": 1.0
+            }
+          ]
+        },
+        "unavailable_reason": null
+      },
+      {
+        "order": 2,
+        "tool": "get_rigidity",
+        "arguments": {
+          "scene_id": "scene_1658c9d1c9526575db7f",
+          "obj": "block_01"
+        },
+        "duplicate": false,
+        "availability": "available",
+        "source": [
+          "mixed:spatialtrackerv2_kabsch,spatialtrackerv2_kabsch_inlier_residual"
+        ],
+        "units": "normalized_residual",
+        "frame_range": null,
+        "evidence_ids": [
+          "ev_e230e8ebca15fba3"
+        ],
+        "confidence": {
+          "score": null,
+          "status": "uncalibrated",
+          "basis": "required evidence is present but uncalibrated",
+          "evidence_ids": [
+            "ev_e230e8ebca15fba3"
+          ]
+        },
+        "data": {
+          "scene_id": "scene_1658c9d1c9526575db7f",
+          "object_id": "block_01",
+          "residual": {
+            "minimum": 0.083342,
+            "maximum": 0.083342,
+            "mean": 0.083342
+          },
+          "records": [
+            {
+              "value": 0.083342,
+              "source": "spatialtrackerv2_kabsch"
+            }
+          ]
+        },
+        "unavailable_reason": null
+      },
+      {
+        "order": 3,
+        "tool": "get_rigidity",
+        "arguments": {
+          "scene_id": "scene_1658c9d1c9526575db7f",
+          "obj": "block_02"
+        },
+        "duplicate": false,
+        "availability": "available",
+        "source": [
+          "mixed:spatialtrackerv2_kabsch,spatialtrackerv2_kabsch_inlier_residual"
+        ],
+        "units": "normalized_residual",
+        "frame_range": null,
+        "evidence_ids": [
+          "ev_66c7733857c0e7ed"
+        ],
+        "confidence": {
+          "score": null,
+          "status": "uncalibrated",
+          "basis": "required evidence is present but uncalibrated",
+          "evidence_ids": [
+            "ev_66c7733857c0e7ed"
+          ]
+        },
+        "data": {
+          "scene_id": "scene_1658c9d1c9526575db7f",
+          "object_id": "block_02",
+          "residual": {
+            "minimum": 0.097405,
+            "maximum": 0.097405,
+            "mean": 0.097405
+          },
+          "records": [
+            {
+              "value": 0.097405,
+              "source": "spatialtrackerv2_kabsch"
+            }
+          ]
+        },
+        "unavailable_reason": null
+      },
+      {
+        "order": 4,
+        "tool": "get_rigidity",
+        "arguments": {
+          "scene_id": "scene_1658c9d1c9526575db7f",
+          "obj": "block_03"
+        },
+        "duplicate": false,
+        "availability": "available",
+        "source": [
+          "mixed:spatialtrackerv2_kabsch,spatialtrackerv2_kabsch_inlier_residual"
+        ],
+        "units": "normalized_residual",
+        "frame_range": null,
+        "evidence_ids": [
+          "ev_6015f3a8922b7b04"
+        ],
+        "confidence": {
+          "score": null,
+          "status": "uncalibrated",
+          "basis": "required evidence is present but uncalibrated",
+          "evidence_ids": [
+            "ev_6015f3a8922b7b04"
+          ]
+        },
+        "data": {
+          "scene_id": "scene_1658c9d1c9526575db7f",
+          "object_id": "block_03",
+          "residual": {
+            "minimum": 0.09124,
+            "maximum": 0.09124,
+            "mean": 0.09124
+          },
+          "records": [
+            {
+              "value": 0.09124,
+              "source": "spatialtrackerv2_kabsch"
+            }
+          ]
+        },
+        "unavailable_reason": null
+      }
+    ],
+    "trace_audit": {
+      "duplicate_calls": 0,
+      "invalid_calls": 0,
+      "malformed_calls": 0
+    }
+  },
+  "quality_statistics": {
+    "internal": {
+      "count": 12,
+      "mean": 0.7848285156769718,
+      "min": 0.6954649418838669,
+      "q1": 0.7117087086613283,
+      "median": 0.7481336756454819,
+      "q3": 0.8894129236270594,
+      "max": 0.9380270325660436
+    },
+    "gt": {
+      "count": 12,
+      "mean": 1.0,
+      "min": 1.0,
+      "q1": 1.0,
+      "median": 1.0,
+      "q3": 1.0,
+      "max": 1.0
+    },
+    "coverage": {
+      "count": 12,
+      "mean": 0.625,
+      "min": 0.625,
+      "q1": 0.625,
+      "median": 0.625,
+      "q3": 0.625,
+      "max": 0.625
+    },
+    "source_failure_count": 0,
+    "metric_status": {
+      "bbox3d_source_failure_count": {
+        "measured": 12
+      },
+      "camera_roundtrip_error_px": {
+        "unsupported": 12
+      },
+      "duplicate_bbox_frame_pairs": {
+        "measured": 12
+      },
+      "hamrick_sim3_center_error": {
+        "unsupported": 12
+      },
+      "hamrick_sim3_orientation_error_deg": {
+        "unsupported": 12
+      },
+      "hamrick_sim3_size_error": {
+        "unsupported": 12
+      },
+      "identity_count_agreement": {
+        "measured": 12
+      },
+      "mean_3d_reprojection_iou": {
+        "measured": 12
+      },
+      "mean_kabsch_residual": {
+        "measured": 12
+      },
+      "mean_sam_score": {
+        "measured": 12
+      },
+      "minimum_lifted_mask_point_support": {
+        "measured": 12
+      },
+      "primary_source_failure_count": {
+        "measured": 12
+      },
+      "symbolic_center_2d_error_px": {
+        "unsupported": 12
+      },
+      "symbolic_relation_event_agreement": {
+        "unsupported": 12
+      },
+      "temporal_mask_coverage": {
+        "measured": 12
+      },
+      "tracking_owner_mismatch_count": {
+        "measured": 12
+      }
+    }
+  },
+  "confidence_statistics": {
+    "code": {
+      "count": 45,
+      "mean": 0.4104101863875048,
+      "min": 0.0,
+      "q1": 0.4166666666666667,
+      "median": 0.4166666666666667,
+      "q3": 0.42871795158286774,
+      "max": 0.5625
+    },
+    "llm": {
+      "count": 45,
+      "mean": 0.08450513635069322,
+      "min": 0.007577240467071533,
+      "q1": 0.01038977799163012,
+      "median": 0.0179303222798434,
+      "q3": 0.06168695222883362,
+      "max": 0.9924227595329285
+    }
+  },
+  "tool_statistics": {
+    "total_calls": 180,
+    "duplicate_calls": 6,
+    "invalid_calls": 0,
+    "malformed_calls": 0,
+    "available_results": 172,
+    "unavailable_results": 8,
+    "unique_used_codes": 7,
+    "by_tool": [
+      {
+        "tool": "get_rigidity",
+        "call_count": 87,
+        "question_count": 29,
+        "question_coverage": 0.6444444444444445
+      },
+      {
+        "tool": "get_objects",
+        "call_count": 45,
+        "question_count": 45,
+        "question_coverage": 1.0
+      },
+      {
+        "tool": "get_distance",
+        "call_count": 15,
+        "question_count": 6,
+        "question_coverage": 0.13333333333333333
+      },
+      {
+        "tool": "get_field_availability",
+        "call_count": 12,
+        "question_count": 12,
+        "question_coverage": 0.26666666666666666
+      },
+      {
+        "tool": "get_bbox_2d",
+        "call_count": 10,
+        "question_count": 9,
+        "question_coverage": 0.2
+      },
+      {
+        "tool": "get_mask_summary",
+        "call_count": 7,
+        "question_count": 7,
+        "question_coverage": 0.15555555555555556
+      },
+      {
+        "tool": "get_position",
+        "call_count": 3,
+        "question_count": 3,
+        "question_coverage": 0.06666666666666667
+      },
+      {
+        "tool": "get_distance_trend",
+        "call_count": 1,
+        "question_count": 1,
+        "question_coverage": 0.022222222222222223
+      }
+    ],
+    "evidence_groups": {
+      "geometry_3d": 0.6324743444444445,
+      "identity": 1.0,
+      "motion": 0.4351851851851852,
+      "rigidity": 0.43706124658055895,
+      "trajectory": 0.4351851851851852
+    }
+  },
+  "correlations": {
+    "code_confidence_vs_score": {
+      "status": "measured",
+      "count": 45,
+      "pearson": 0.061934594668585224,
+      "spearman": -0.005470243441137417
+    },
+    "llm_confidence_vs_score": {
+      "status": "measured",
+      "count": 45,
+      "pearson": 0.13474227818517612,
+      "spearman": -0.4784617674919288
+    },
+    "code_quality_vs_score": {
+      "status": "measured",
+      "count": 45,
+      "pearson": -0.011685358977076874,
+      "spearman": 0.20743004583986516
+    },
+    "code_quality_vs_code_confidence": {
+      "status": "measured",
+      "count": 45,
+      "pearson": -0.24991690454156393,
+      "spearman": 0.4475622064871462
+    }
+  },
+  "human_reference": {
+    "status": "measured_reliability",
+    "noise_ceilings": [
+      {
+        "study": "hamrick2016_inferring",
+        "answer_type": "categorical",
+        "status": "measured",
+        "item_count": 4,
+        "noise_ceiling": 0.6749999999999999,
+        "method": "split_half_modal_agreement",
+        "repeats": 200
+      },
+      {
+        "study": "hamrick2016_inferring",
+        "answer_type": "slider",
+        "status": "measured",
+        "item_count": 41,
+        "noise_ceiling": 0.7253054040060776,
+        "method": "split_half_spearman_brown",
+        "repeats": 200
+      }
+    ],
+    "human_target_question_count": 45,
+    "individual_response_count": 696,
+    "objective_human_task_score": null
+  },
+  "condition_metrics": [
+    {
+      "study": "hamrick2016_inferring",
+      "condition": "predicted_code_oracle_tools",
+      "answer_type": "categorical",
+      "qa_count": 4,
+      "objective_categorical_accuracy": null,
+      "human_modal_accuracy": 1.0,
+      "human_brier_score": 0.18895671482651888,
+      "human_nll": 0.674846615863919,
+      "normalized_task_score": 1.0,
+      "scored_count": 4
+    },
+    {
+      "study": "hamrick2016_inferring",
+      "condition": "predicted_code_oracle_tools",
+      "answer_type": "slider",
+      "qa_count": 41,
+      "slider_mae": 2.373507215933403,
+      "slider_rmse": 2.5689890964014372,
+      "slider_pearson": -0.49667770004100786,
+      "slider_spearman": -0.22351799678650977,
+      "normalized_task_score": 0.6044154640110995,
+      "scored_count": 41
+    },
+    {
+      "study": "hamrick2016_inferring",
+      "condition": "predicted_code_qwen_tools",
+      "answer_type": "categorical",
+      "qa_count": 4,
+      "objective_categorical_accuracy": null,
+      "human_modal_accuracy": 0.5,
+      "human_brier_score": 0.1571625897496064,
+      "human_nll": 1.0070368984883682,
+      "normalized_task_score": 0.5,
+      "scored_count": 4
+    },
+    {
+      "study": "hamrick2016_inferring",
+      "condition": "predicted_code_qwen_tools",
+      "answer_type": "slider",
+      "qa_count": 41,
+      "slider_mae": 2.2027755086163303,
+      "slider_rmse": 2.691001424747607,
+      "slider_pearson": -0.3211905945948188,
+      "slider_spearman": -0.33859847975035673,
+      "normalized_task_score": 0.632870748563945,
+      "scored_count": 41
+    },
+    {
+      "study": "hamrick2016_inferring",
+      "condition": "question_only",
+      "answer_type": "categorical",
+      "qa_count": 4,
+      "objective_categorical_accuracy": null,
+      "human_modal_accuracy": 0.0,
+      "human_brier_score": 0.1430413739550865,
+      "human_nll": 0.5740769526674827,
+      "normalized_task_score": 0.0,
+      "scored_count": 4
+    },
+    {
+      "study": "hamrick2016_inferring",
+      "condition": "question_only",
+      "answer_type": "slider",
+      "qa_count": 41,
+      "slider_mae": 1.507653557396818,
+      "slider_rmse": 1.6286042039878443,
+      "slider_pearson": 0.1510321785797909,
+      "slider_spearman": -0.016120173084292092,
+      "normalized_task_score": 0.7487244071005303,
+      "scored_count": 41
+    }
+  ],
+  "calibration": [
+    {
+      "study": "hamrick2016_inferring",
+      "condition": "predicted_code_oracle_tools",
+      "answer_type": "categorical",
+      "status": "insufficient_data",
+      "eligible_count": 4,
+      "temperatures": {}
+    },
+    {
+      "study": "hamrick2016_inferring",
+      "condition": "predicted_code_oracle_tools",
+      "answer_type": "slider",
+      "status": "calibrated",
+      "eligible_count": 41,
+      "temperatures": {
+        "0": 4.0,
+        "1": 4.0,
+        "2": 4.0,
+        "3": 4.0,
+        "4": 4.0
+      }
+    },
+    {
+      "study": "hamrick2016_inferring",
+      "condition": "predicted_code_qwen_tools",
+      "answer_type": "categorical",
+      "status": "insufficient_data",
+      "eligible_count": 4,
+      "temperatures": {}
+    },
+    {
+      "study": "hamrick2016_inferring",
+      "condition": "predicted_code_qwen_tools",
+      "answer_type": "slider",
+      "status": "calibrated",
+      "eligible_count": 41,
+      "temperatures": {
+        "0": 4.0,
+        "1": 4.0,
+        "2": 4.0,
+        "3": 4.0,
+        "4": 4.0
+      }
+    },
+    {
+      "study": "hamrick2016_inferring",
+      "condition": "question_only",
+      "answer_type": "categorical",
+      "status": "insufficient_data",
+      "eligible_count": 4,
+      "temperatures": {}
+    },
+    {
+      "study": "hamrick2016_inferring",
+      "condition": "question_only",
+      "answer_type": "slider",
+      "status": "calibrated",
+      "eligible_count": 41,
+      "temperatures": {
+        "0": 4.0,
+        "1": 4.0,
+        "2": 4.0,
+        "3": 4.0,
+        "4": 4.0
+      }
+    }
+  ],
+  "bottleneck": {
+    "study": "hamrick2016_inferring",
+    "question_count": 45,
+    "condition_coverage": {
+      "question_only": 1.0,
+      "predicted_code_qwen_tools": 1.0,
+      "predicted_code_oracle_tools": 1.0,
+      "oracle_code_oracle_tools": 0.0
+    },
+    "condition_mean_task_score": {
+      "question_only": 0.6821711264693721,
+      "predicted_code_qwen_tools": 0.6210600153582609,
+      "predicted_code_oracle_tools": 0.6395785338767794,
+      "oracle_code_oracle_tools": null
+    },
+    "human_or_objective_ceiling": 0.7001527020030387,
+    "routing_tool_use_gap": {
+      "status": "measured",
+      "paired_count": 45,
+      "mean_gap": 0.018518518518518517,
+      "ci95": [
+        -0.1,
+        0.4
+      ]
+    },
+    "code_quality_gap": {
+      "status": "insufficient_coverage",
+      "paired_count": 0,
+      "mean_gap": null,
+      "ci95": null
+    },
+    "reasoning_task_model_gap": {
+      "status": "insufficient_coverage",
+      "paired_count": 0,
+      "mean_gap": null,
+      "ci95": null
+    },
+    "attribution": {
+      "label": "insufficient_diagnostic_coverage",
+      "reason": "one or more controlled comparisons lack paired evidence"
+    }
+  },
+  "formulas": [
+    {
+      "name": "Categorical task score",
+      "formula": "1[predicted = objective or human-modal target]",
+      "detail": "Exact agreement with an objective answer, or with the modal human answer when the target is a response distribution."
+    },
+    {
+      "name": "Slider task score",
+      "formula": "max(0, 1 - |prediction - target| / (maximum - minimum))",
+      "detail": "Range-normalized absolute-error score; raw MAE and RMSE remain available per study."
+    },
+    {
+      "name": "Multi-select task score",
+      "formula": "2 * precision * recall / (precision + recall)",
+      "detail": "Set F1 over selected option indices."
+    },
+    {
+      "name": "Identity quality",
+      "formula": "|predicted IDs intersection expected IDs| / |predicted IDs union expected IDs|",
+      "detail": "Jaccard agreement against the README and manifest object contract."
+    },
+    {
+      "name": "Temporal mask coverage",
+      "formula": "mean_objects(visible sampled frames / sampled frames)",
+      "detail": "Measures sustained mask support rather than frame-zero detection."
+    },
+    {
+      "name": "Symbolic center quality",
+      "formula": "1 / (1 + mean Euclidean pixel error / 10)",
+      "detail": "Applied only when independent, frame-aligned symbolic center trajectories exist."
+    },
+    {
+      "name": "Relation and event quality",
+      "formula": "|predicted labels intersection target labels| / |predicted labels union target labels|",
+      "detail": "Label-set Jaccard agreement, applied only when independent symbolic relation or event labels exist."
+    },
+    {
+      "name": "Camera quality",
+      "formula": "max(0, 1 - roundtrip error pixels / 1.5)",
+      "detail": "Projection and unprojection must agree within the 1.5-pixel acceptance scale."
+    },
+    {
+      "name": "Lifted point support",
+      "formula": "min(1, minimum valid mask points / 50)",
+      "detail": "Requires geometry to be supported by SAM-mask pixels lifted through VGGT-Omega."
+    },
+    {
+      "name": "Kabsch rigidity quality",
+      "formula": "max(0, 1 - normalized residual / 0.15)",
+      "detail": "Scores accepted local SE(3) estimates against the rigid-consistency residual threshold."
+    },
+    {
+      "name": "Hamrick Sim(3) center quality",
+      "formula": "max(0, 1 - aligned center error / 0.10)",
+      "detail": "Prediction geometry is aligned to hidden tower geometry for evaluation only; GT never repairs the code."
+    },
+    {
+      "name": "Hamrick Sim(3) size quality",
+      "formula": "max(0, 1 - aligned relative size error / 0.25)",
+      "detail": "Uses the accepted 0.25 relative-size error scale after diagnostic Sim(3) alignment."
+    },
+    {
+      "name": "Hamrick Sim(3) orientation quality",
+      "formula": "max(0, 1 - aligned orientation error degrees / 30)",
+      "detail": "Uses the accepted 30-degree orientation error scale after diagnostic Sim(3) alignment."
+    },
+    {
+      "name": "Internal 4D quality",
+      "formula": "mean(measured applicable internal normalized metrics)",
+      "detail": "GT-referenced metrics are excluded; unsupported or not-applicable metrics remain null."
+    },
+    {
+      "name": "GT quality",
+      "formula": "mean(measured applicable GT-referenced normalized metrics)",
+      "detail": "Reported separately from internal consistency and only where an independent comparison target exists."
+    },
+    {
+      "name": "Quality coverage",
+      "formula": "measured applicable metrics / applicable metrics",
+      "detail": "Prevents a high score over a small measurable subset from being mistaken for complete evaluation."
+    },
+    {
+      "name": "4D-code confidence",
+      "formula": "C_code(q) = min over required evidence-group scores",
+      "detail": "Each evidence group is also minimized across every code required by the question; missing evidence is zero."
+    },
+    {
+      "name": "LLM answer confidence",
+      "formula": "p_i = exp(z_i / T) / sum_j exp(z_j / T)",
+      "detail": "The selected answer likelihood uses five-fold out-of-fold temperature scaling when calibration is supported."
+    },
+    {
+      "name": "Human slider reliability",
+      "formula": "r_SB = 2r / (1 + r)",
+      "detail": "Spearman-Brown corrected split-half reliability over 200 deterministic response splits."
+    },
+    {
+      "name": "Human categorical reliability",
+      "formula": "mean(split-half modal agreement)",
+      "detail": "Agreement of modal categorical responses across 200 deterministic participant splits."
+    },
+    {
+      "name": "Routing gap",
+      "formula": "oracle-tool task score - native-tool task score",
+      "detail": "The 95% interval uses 1,000 grouped bootstrap resamples by experiment."
+    }
+  ]
+}

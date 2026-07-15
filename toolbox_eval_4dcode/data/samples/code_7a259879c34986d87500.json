@@ -1,0 +1,4808 @@
+{
+  "code": {
+    "schema_name": "trajectory_grounded_4d_spatial_code",
+    "schema_version": "1.0.0",
+    "code_id": "code_7a259879c34986d87500",
+    "sample_id": "Bass2022Partial_exp1_clip_8_5",
+    "study": "bass2022_partial",
+    "experiment": "exp1",
+    "scenes": [
+      {
+        "scene_id": "scene_7a259879c34986d87500",
+        "sample_id": "Bass2022Partial_exp1_clip_8_5",
+        "study": "bass2022_partial",
+        "experiment": "exp1",
+        "parse_mode": "dynamic_2d",
+        "media_path": "Bass2022Partial/exp1/assets/clip_8_5.mp4",
+        "timebase": {
+          "fps": 50.0,
+          "duration_sec": 0.64,
+          "source_frame_count": 32,
+          "sampled_frames": [
+            {
+              "sampled_index": 0,
+              "source_frame_index": 0,
+              "timestamp_sec": 0.0
+            },
+            {
+              "sampled_index": 1,
+              "source_frame_index": 2,
+              "timestamp_sec": 0.04
+            },
+            {
+              "sampled_index": 2,
+              "source_frame_index": 4,
+              "timestamp_sec": 0.08
+            },
+            {
+              "sampled_index": 3,
+              "source_frame_index": 6,
+              "timestamp_sec": 0.12
+            },
+            {
+              "sampled_index": 4,
+              "source_frame_index": 8,
+              "timestamp_sec": 0.16
+            },
+            {
+              "sampled_index": 5,
+              "source_frame_index": 10,
+              "timestamp_sec": 0.2
+            },
+            {
+              "sampled_index": 6,
+              "source_frame_index": 12,
+              "timestamp_sec": 0.24
+            },
+            {
+              "sampled_index": 7,
+              "source_frame_index": 14,
+              "timestamp_sec": 0.28
+            },
+            {
+              "sampled_index": 8,
+              "source_frame_index": 17,
+              "timestamp_sec": 0.34
+            },
+            {
+              "sampled_index": 9,
+              "source_frame_index": 19,
+              "timestamp_sec": 0.38
+            },
+            {
+              "sampled_index": 10,
+              "source_frame_index": 21,
+              "timestamp_sec": 0.42
+            },
+            {
+              "sampled_index": 11,
+              "source_frame_index": 23,
+              "timestamp_sec": 0.46
+            },
+            {
+              "sampled_index": 12,
+              "source_frame_index": 25,
+              "timestamp_sec": 0.5
+            },
+            {
+              "sampled_index": 13,
+              "source_frame_index": 27,
+              "timestamp_sec": 0.54
+            },
+            {
+              "sampled_index": 14,
+              "source_frame_index": 29,
+              "timestamp_sec": 0.58
+            },
+            {
+              "sampled_index": 15,
+              "source_frame_index": 31,
+              "timestamp_sec": 0.62
+            }
+          ]
+        },
+        "objects": [
+          {
+            "object_id": "gray_cannonball",
+            "label": "gray cannonball",
+            "role": "moving_projectile",
+            "identity_source": "qwen2.5-vl-real",
+            "identity_confidence": {
+              "score": 0.956433,
+              "status": "measured",
+              "basis": "qwen semantic identity confidence",
+              "evidence_ids": [
+                "scene_7a259879c34986d87500:gray_cannonball:identity"
+              ]
+            },
+            "direct_fields": {
+              "bbox_2d": {
+                "availability": "available",
+                "source": "sam3.1-real",
+                "units": "source_pixels",
+                "frame_range": [
+                  0,
+                  15
+                ],
+                "records": [
+                  {
+                    "frame_index": 0,
+                    "timestamp_sec": 0.0,
+                    "bbox_2d": [
+                      158.0,
+                      131.0,
+                      189.0,
+                      165.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 1,
+                    "timestamp_sec": 0.04,
+                    "bbox_2d": [
+                      161.0,
+                      129.0,
+                      193.0,
+                      163.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 2,
+                    "timestamp_sec": 0.08,
+                    "bbox_2d": [
+                      170.0,
+                      126.0,
+                      202.0,
+                      160.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 3,
+                    "timestamp_sec": 0.12,
+                    "bbox_2d": [
+                      178.0,
+                      123.0,
+                      211.0,
+                      156.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 4,
+                    "timestamp_sec": 0.16,
+                    "bbox_2d": [
+                      187.0,
+                      119.0,
+                      220.0,
+                      154.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 5,
+                    "timestamp_sec": 0.2,
+                    "bbox_2d": [
+                      195.0,
+                      117.0,
+                      230.0,
+                      151.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 6,
+                    "timestamp_sec": 0.24,
+                    "bbox_2d": [
+                      205.0,
+                      115.0,
+                      238.0,
+                      149.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 7,
+                    "timestamp_sec": 0.28,
+                    "bbox_2d": [
+                      214.0,
+                      113.0,
+                      247.0,
+                      147.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 8,
+                    "timestamp_sec": 0.34,
+                    "bbox_2d": [
+                      228.0,
+                      110.0,
+                      260.0,
+                      145.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 9,
+                    "timestamp_sec": 0.38,
+                    "bbox_2d": [
+                      236.0,
+                      109.0,
+                      269.0,
+                      144.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 10,
+                    "timestamp_sec": 0.42,
+                    "bbox_2d": [
+                      244.0,
+                      109.0,
+                      279.0,
+                      142.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 11,
+                    "timestamp_sec": 0.46,
+                    "bbox_2d": [
+                      254.0,
+                      106.0,
+                      288.0,
+                      142.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 12,
+                    "timestamp_sec": 0.5,
+                    "bbox_2d": [
+                      264.0,
+                      107.0,
+                      296.0,
+                      142.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 13,
+                    "timestamp_sec": 0.54,
+                    "bbox_2d": [
+                      272.0,
+                      108.0,
+                      305.0,
+                      142.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 14,
+                    "timestamp_sec": 0.58,
+                    "bbox_2d": [
+                      281.0,
+                      108.0,
+                      315.0,
+                      141.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 15,
+                    "timestamp_sec": 0.62,
+                    "bbox_2d": [
+                      291.0,
+                      108.0,
+                      323.0,
+                      143.0
+                    ],
+                    "source": "sam3.1-real"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:gray_cannonball:bbox_2d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "uncalibrated",
+                  "basis": "field is present but source confidence is unavailable",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:gray_cannonball:bbox_2d"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "mask": {
+                "availability": "available",
+                "source": "sam3.1-real",
+                "units": "source_pixels",
+                "frame_range": [
+                  0,
+                  15
+                ],
+                "records": [
+                  {
+                    "frame_index": 0,
+                    "timestamp_sec": 0.0,
+                    "mask_ref": "gray_cannonball_mask_t000",
+                    "bbox_2d": [
+                      158.0,
+                      131.0,
+                      189.0,
+                      165.0
+                    ],
+                    "area": 877,
+                    "tracking_points": [
+                      {
+                        "point_id": "gray_cannonball_p1",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          173.0,
+                          147.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p2",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          169.0,
+                          147.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p3",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          177.0,
+                          147.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 1,
+                    "timestamp_sec": 0.04,
+                    "mask_ref": "gray_cannonball_mask_t001",
+                    "bbox_2d": [
+                      161.0,
+                      129.0,
+                      193.0,
+                      163.0
+                    ],
+                    "area": 875,
+                    "tracking_points": [
+                      {
+                        "point_id": "gray_cannonball_p1",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          177.0,
+                          145.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p2",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          173.0,
+                          145.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p3",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          181.0,
+                          145.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 2,
+                    "timestamp_sec": 0.08,
+                    "mask_ref": "gray_cannonball_mask_t002",
+                    "bbox_2d": [
+                      170.0,
+                      126.0,
+                      202.0,
+                      160.0
+                    ],
+                    "area": 937,
+                    "tracking_points": [
+                      {
+                        "point_id": "gray_cannonball_p1",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          185.0,
+                          142.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p2",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          181.0,
+                          142.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p3",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          189.0,
+                          142.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 3,
+                    "timestamp_sec": 0.12,
+                    "mask_ref": "gray_cannonball_mask_t003",
+                    "bbox_2d": [
+                      178.0,
+                      123.0,
+                      211.0,
+                      156.0
+                    ],
+                    "area": 932,
+                    "tracking_points": [
+                      {
+                        "point_id": "gray_cannonball_p1",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          194.0,
+                          139.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p2",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          190.0,
+                          139.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p3",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          199.0,
+                          139.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 4,
+                    "timestamp_sec": 0.16,
+                    "mask_ref": "gray_cannonball_mask_t004",
+                    "bbox_2d": [
+                      187.0,
+                      119.0,
+                      220.0,
+                      154.0
+                    ],
+                    "area": 965,
+                    "tracking_points": [
+                      {
+                        "point_id": "gray_cannonball_p1",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          203.0,
+                          136.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p2",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          199.0,
+                          136.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p3",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          207.0,
+                          136.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 5,
+                    "timestamp_sec": 0.2,
+                    "mask_ref": "gray_cannonball_mask_t005",
+                    "bbox_2d": [
+                      195.0,
+                      117.0,
+                      230.0,
+                      151.0
+                    ],
+                    "area": 945,
+                    "tracking_points": [
+                      {
+                        "point_id": "gray_cannonball_p1",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          213.0,
+                          133.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p2",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          209.0,
+                          134.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p3",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          217.0,
+                          134.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 6,
+                    "timestamp_sec": 0.24,
+                    "mask_ref": "gray_cannonball_mask_t006",
+                    "bbox_2d": [
+                      205.0,
+                      115.0,
+                      238.0,
+                      149.0
+                    ],
+                    "area": 927,
+                    "tracking_points": [
+                      {
+                        "point_id": "gray_cannonball_p1",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          221.0,
+                          131.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p2",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          217.0,
+                          131.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p3",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          226.0,
+                          131.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 7,
+                    "timestamp_sec": 0.28,
+                    "mask_ref": "gray_cannonball_mask_t007",
+                    "bbox_2d": [
+                      214.0,
+                      113.0,
+                      247.0,
+                      147.0
+                    ],
+                    "area": 945,
+                    "tracking_points": [
+                      {
+                        "point_id": "gray_cannonball_p1",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          231.0,
+                          130.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p2",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          227.0,
+                          130.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p3",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          235.0,
+                          130.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 8,
+                    "timestamp_sec": 0.34,
+                    "mask_ref": "gray_cannonball_mask_t008",
+                    "bbox_2d": [
+                      228.0,
+                      110.0,
+                      260.0,
+                      145.0
+                    ],
+                    "area": 973,
+                    "tracking_points": [
+                      {
+                        "point_id": "gray_cannonball_p1",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          243.0,
+                          127.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p2",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          239.0,
+                          127.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p3",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          248.0,
+                          127.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 9,
+                    "timestamp_sec": 0.38,
+                    "mask_ref": "gray_cannonball_mask_t009",
+                    "bbox_2d": [
+                      236.0,
+                      109.0,
+                      269.0,
+                      144.0
+                    ],
+                    "area": 968,
+                    "tracking_points": [
+                      {
+                        "point_id": "gray_cannonball_p1",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          252.0,
+                          126.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p2",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          248.0,
+                          126.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p3",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          257.0,
+                          126.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 10,
+                    "timestamp_sec": 0.42,
+                    "mask_ref": "gray_cannonball_mask_t010",
+                    "bbox_2d": [
+                      244.0,
+                      109.0,
+                      279.0,
+                      142.0
+                    ],
+                    "area": 982,
+                    "tracking_points": [
+                      {
+                        "point_id": "gray_cannonball_p1",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          261.0,
+                          125.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p2",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          257.0,
+                          125.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p3",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          266.0,
+                          125.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 11,
+                    "timestamp_sec": 0.46,
+                    "mask_ref": "gray_cannonball_mask_t011",
+                    "bbox_2d": [
+                      254.0,
+                      106.0,
+                      288.0,
+                      142.0
+                    ],
+                    "area": 981,
+                    "tracking_points": [
+                      {
+                        "point_id": "gray_cannonball_p1",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          271.0,
+                          124.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p2",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          266.0,
+                          124.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p3",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          275.0,
+                          124.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 12,
+                    "timestamp_sec": 0.5,
+                    "mask_ref": "gray_cannonball_mask_t012",
+                    "bbox_2d": [
+                      264.0,
+                      107.0,
+                      296.0,
+                      142.0
+                    ],
+                    "area": 960,
+                    "tracking_points": [
+                      {
+                        "point_id": "gray_cannonball_p1",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          279.0,
+                          124.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p2",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          275.0,
+                          124.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p3",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          283.0,
+                          124.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 13,
+                    "timestamp_sec": 0.54,
+                    "mask_ref": "gray_cannonball_mask_t013",
+                    "bbox_2d": [
+                      272.0,
+                      108.0,
+                      305.0,
+                      142.0
+                    ],
+                    "area": 939,
+                    "tracking_points": [
+                      {
+                        "point_id": "gray_cannonball_p1",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          289.0,
+                          124.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p2",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          284.0,
+                          124.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p3",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          293.0,
+                          124.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 14,
+                    "timestamp_sec": 0.58,
+                    "mask_ref": "gray_cannonball_mask_t014",
+                    "bbox_2d": [
+                      281.0,
+                      108.0,
+                      315.0,
+                      141.0
+                    ],
+                    "area": 957,
+                    "tracking_points": [
+                      {
+                        "point_id": "gray_cannonball_p1",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          298.0,
+                          124.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p2",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          293.0,
+                          124.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p3",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          302.0,
+                          124.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 15,
+                    "timestamp_sec": 0.62,
+                    "mask_ref": "gray_cannonball_mask_t015",
+                    "bbox_2d": [
+                      291.0,
+                      108.0,
+                      323.0,
+                      143.0
+                    ],
+                    "area": 955,
+                    "tracking_points": [
+                      {
+                        "point_id": "gray_cannonball_p1",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          307.0,
+                          125.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p2",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          302.0,
+                          125.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "gray_cannonball_p3",
+                        "object_id": "gray_cannonball",
+                        "uv": [
+                          311.0,
+                          125.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:gray_cannonball:mask"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "uncalibrated",
+                  "basis": "field is present but source confidence is unavailable",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:gray_cannonball:mask"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "point_tracks_2d": {
+                "availability": "available",
+                "source": "sam31_mask_owned_interior_points",
+                "units": "source_pixels",
+                "frame_range": null,
+                "records": [
+                  {
+                    "tracklet_id": "trk_gray_cannonball_p1",
+                    "object_id": "gray_cannonball",
+                    "point_id": "gray_cannonball_p1",
+                    "uv_sequence": [
+                      [
+                        173.0,
+                        147.0
+                      ],
+                      [
+                        177.0,
+                        145.0
+                      ],
+                      [
+                        185.0,
+                        142.0
+                      ],
+                      [
+                        194.0,
+                        139.0
+                      ],
+                      [
+                        203.0,
+                        136.0
+                      ],
+                      [
+                        213.0,
+                        133.0
+                      ],
+                      [
+                        221.0,
+                        131.0
+                      ],
+                      [
+                        231.0,
+                        130.0
+                      ],
+                      [
+                        243.0,
+                        127.0
+                      ],
+                      [
+                        252.0,
+                        126.0
+                      ],
+                      [
+                        261.0,
+                        125.0
+                      ],
+                      [
+                        271.0,
+                        124.0
+                      ],
+                      [
+                        279.0,
+                        124.0
+                      ],
+                      [
+                        289.0,
+                        124.0
+                      ],
+                      [
+                        298.0,
+                        124.0
+                      ],
+                      [
+                        307.0,
+                        125.0
+                      ]
+                    ],
+                    "visibility": [
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "confidence": [
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0
+                    ],
+                    "source": "sam31_mask_owned_interior_points"
+                  },
+                  {
+                    "tracklet_id": "trk_gray_cannonball_p2",
+                    "object_id": "gray_cannonball",
+                    "point_id": "gray_cannonball_p2",
+                    "uv_sequence": [
+                      [
+                        169.0,
+                        147.0
+                      ],
+                      [
+                        173.0,
+                        145.0
+                      ],
+                      [
+                        181.0,
+                        142.0
+                      ],
+                      [
+                        190.0,
+                        139.0
+                      ],
+                      [
+                        199.0,
+                        136.0
+                      ],
+                      [
+                        209.0,
+                        134.0
+                      ],
+                      [
+                        217.0,
+                        131.0
+                      ],
+                      [
+                        227.0,
+                        130.0
+                      ],
+                      [
+                        239.0,
+                        127.0
+                      ],
+                      [
+                        248.0,
+                        126.0
+                      ],
+                      [
+                        257.0,
+                        125.0
+                      ],
+                      [
+                        266.0,
+                        124.0
+                      ],
+                      [
+                        275.0,
+                        124.0
+                      ],
+                      [
+                        284.0,
+                        124.0
+                      ],
+                      [
+                        293.0,
+                        124.0
+                      ],
+                      [
+                        302.0,
+                        125.0
+                      ]
+                    ],
+                    "visibility": [
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "confidence": [
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0
+                    ],
+                    "source": "sam31_mask_owned_interior_points"
+                  },
+                  {
+                    "tracklet_id": "trk_gray_cannonball_p3",
+                    "object_id": "gray_cannonball",
+                    "point_id": "gray_cannonball_p3",
+                    "uv_sequence": [
+                      [
+                        177.0,
+                        147.0
+                      ],
+                      [
+                        181.0,
+                        145.0
+                      ],
+                      [
+                        189.0,
+                        142.0
+                      ],
+                      [
+                        199.0,
+                        139.0
+                      ],
+                      [
+                        207.0,
+                        136.0
+                      ],
+                      [
+                        217.0,
+                        134.0
+                      ],
+                      [
+                        226.0,
+                        131.0
+                      ],
+                      [
+                        235.0,
+                        130.0
+                      ],
+                      [
+                        248.0,
+                        127.0
+                      ],
+                      [
+                        257.0,
+                        126.0
+                      ],
+                      [
+                        266.0,
+                        125.0
+                      ],
+                      [
+                        275.0,
+                        124.0
+                      ],
+                      [
+                        283.0,
+                        124.0
+                      ],
+                      [
+                        293.0,
+                        124.0
+                      ],
+                      [
+                        302.0,
+                        124.0
+                      ],
+                      [
+                        311.0,
+                        125.0
+                      ]
+                    ],
+                    "visibility": [
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "confidence": [
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0
+                    ],
+                    "source": "sam31_mask_owned_interior_points"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:gray_cannonball:point_tracks_2d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "uncalibrated",
+                  "basis": "field is present but source confidence is unavailable",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:gray_cannonball:point_tracks_2d"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "raw_tracklets": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units_and_source_pixels",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:gray_cannonball:raw_tracklets"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:gray_cannonball:raw_tracklets"
+                  ]
+                },
+                "unavailable_reason": "raw_tracklets was not produced for this scene/object"
+              },
+              "accepted_tracklets": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units_and_source_pixels",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:gray_cannonball:accepted_tracklets"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:gray_cannonball:accepted_tracklets"
+                  ]
+                },
+                "unavailable_reason": "accepted_tracklets was not produced for this scene/object"
+              }
+            },
+            "computed_fields": {
+              "center_2d": {
+                "availability": "available",
+                "source": "sam31_mask_centroid",
+                "units": "source_pixels",
+                "frame_range": [
+                  0,
+                  15
+                ],
+                "records": [
+                  {
+                    "frame_index": 0,
+                    "timestamp_sec": 0.0,
+                    "uv": [
+                      172.72862,
+                      147.255416
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 1,
+                    "timestamp_sec": 0.04,
+                    "uv": [
+                      177.076571,
+                      145.230857
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 2,
+                    "timestamp_sec": 0.08,
+                    "uv": [
+                      184.93063,
+                      142.276414
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 3,
+                    "timestamp_sec": 0.12,
+                    "uv": [
+                      194.369099,
+                      139.084764
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 4,
+                    "timestamp_sec": 0.16,
+                    "uv": [
+                      202.907772,
+                      135.973057
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 5,
+                    "timestamp_sec": 0.2,
+                    "uv": [
+                      212.820106,
+                      133.435979
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 6,
+                    "timestamp_sec": 0.24,
+                    "uv": [
+                      221.499461,
+                      131.422869
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 7,
+                    "timestamp_sec": 0.28,
+                    "uv": [
+                      230.666667,
+                      129.503704
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 8,
+                    "timestamp_sec": 0.34,
+                    "uv": [
+                      243.371017,
+                      126.952724
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 9,
+                    "timestamp_sec": 0.38,
+                    "uv": [
+                      252.446281,
+                      125.833678
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 10,
+                    "timestamp_sec": 0.42,
+                    "uv": [
+                      261.083503,
+                      124.948065
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 11,
+                    "timestamp_sec": 0.46,
+                    "uv": [
+                      270.649337,
+                      123.767584
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 12,
+                    "timestamp_sec": 0.5,
+                    "uv": [
+                      279.307292,
+                      124.307292
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 13,
+                    "timestamp_sec": 0.54,
+                    "uv": [
+                      288.642173,
+                      124.089457
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 14,
+                    "timestamp_sec": 0.58,
+                    "uv": [
+                      297.724138,
+                      123.882968
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 15,
+                    "timestamp_sec": 0.62,
+                    "uv": [
+                      306.571728,
+                      124.554974
+                    ],
+                    "source": "sam31_mask_centroid"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:gray_cannonball:center_2d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "uncalibrated",
+                  "basis": "field is present but source confidence is unavailable",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:gray_cannonball:center_2d"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "velocity_2d": {
+                "availability": "available",
+                "source": "finite_difference_center_2d",
+                "units": "source_pixels_per_second",
+                "frame_range": [
+                  1,
+                  15
+                ],
+                "records": [
+                  {
+                    "frame_index": 1,
+                    "duv_dt": [
+                      108.698775,
+                      -50.613975
+                    ],
+                    "speed_px_per_sec": 119.904955,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 2,
+                    "duv_dt": [
+                      196.351475,
+                      -73.861075
+                    ],
+                    "speed_px_per_sec": 209.78408,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 3,
+                    "duv_dt": [
+                      235.961725,
+                      -79.79125
+                    ],
+                    "speed_px_per_sec": 249.087493,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 4,
+                    "duv_dt": [
+                      213.466825,
+                      -77.792675
+                    ],
+                    "speed_px_per_sec": 227.19988,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 5,
+                    "duv_dt": [
+                      247.80835,
+                      -63.42695
+                    ],
+                    "speed_px_per_sec": 255.796709,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 6,
+                    "duv_dt": [
+                      216.983875,
+                      -50.32775
+                    ],
+                    "speed_px_per_sec": 222.743989,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 7,
+                    "duv_dt": [
+                      229.18015,
+                      -47.979125
+                    ],
+                    "speed_px_per_sec": 234.148537,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 8,
+                    "duv_dt": [
+                      211.739167,
+                      -42.516333
+                    ],
+                    "speed_px_per_sec": 215.965537,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 9,
+                    "duv_dt": [
+                      226.8816,
+                      -27.97615
+                    ],
+                    "speed_px_per_sec": 228.599924,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 10,
+                    "duv_dt": [
+                      215.93055,
+                      -22.140325
+                    ],
+                    "speed_px_per_sec": 217.062656,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 11,
+                    "duv_dt": [
+                      239.14585,
+                      -29.512025
+                    ],
+                    "speed_px_per_sec": 240.959949,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 12,
+                    "duv_dt": [
+                      216.448875,
+                      13.4927
+                    ],
+                    "speed_px_per_sec": 216.869012,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 13,
+                    "duv_dt": [
+                      233.372025,
+                      -5.445875
+                    ],
+                    "speed_px_per_sec": 233.435558,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 14,
+                    "duv_dt": [
+                      227.049125,
+                      -5.162225
+                    ],
+                    "speed_px_per_sec": 227.107802,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 15,
+                    "duv_dt": [
+                      221.18975,
+                      16.80015
+                    ],
+                    "speed_px_per_sec": 221.826848,
+                    "source": "finite_difference_center_2d"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:gray_cannonball:velocity_2d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "uncalibrated",
+                  "basis": "field is present but source confidence is unavailable",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:gray_cannonball:velocity_2d"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "acceleration_2d": {
+                "availability": "available",
+                "source": "finite_difference_velocity_2d",
+                "units": "source_pixels_per_second_squared",
+                "frame_range": [
+                  2,
+                  15
+                ],
+                "records": [
+                  {
+                    "frame_index": 2,
+                    "duv_dt2": [
+                      87.6527,
+                      -23.2471
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 3,
+                    "duv_dt2": [
+                      39.61025,
+                      -5.930175
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 4,
+                    "duv_dt2": [
+                      -22.4949,
+                      1.998575
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 5,
+                    "duv_dt2": [
+                      34.341525,
+                      14.365725
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 6,
+                    "duv_dt2": [
+                      -30.824475,
+                      13.0992
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 7,
+                    "duv_dt2": [
+                      12.196275,
+                      2.348625
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 8,
+                    "duv_dt2": [
+                      -17.440983,
+                      5.462792
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 9,
+                    "duv_dt2": [
+                      15.142433,
+                      14.540183
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 10,
+                    "duv_dt2": [
+                      -10.95105,
+                      5.835825
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 11,
+                    "duv_dt2": [
+                      23.2153,
+                      -7.3717
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 12,
+                    "duv_dt2": [
+                      -22.696975,
+                      43.004725
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 13,
+                    "duv_dt2": [
+                      16.92315,
+                      -18.938575
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 14,
+                    "duv_dt2": [
+                      -6.3229,
+                      0.28365
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 15,
+                    "duv_dt2": [
+                      -5.859375,
+                      21.962375
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:gray_cannonball:acceleration_2d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "uncalibrated",
+                  "basis": "field is present but source confidence is unavailable",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:gray_cannonball:acceleration_2d"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "visibility": {
+                "availability": "available",
+                "source": "sam31_mask_area",
+                "units": "probability",
+                "frame_range": [
+                  0,
+                  15
+                ],
+                "records": [
+                  {
+                    "frame_index": 0,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 1,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 2,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 3,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 4,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 5,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 6,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 7,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 8,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 9,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 10,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 11,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 12,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 13,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 14,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 15,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:gray_cannonball:visibility"
+                ],
+                "confidence": {
+                  "score": 1.0,
+                  "status": "measured",
+                  "basis": "mean source-model confidence",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:gray_cannonball:visibility"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "point_cloud": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:gray_cannonball:point_cloud"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:gray_cannonball:point_cloud"
+                  ]
+                },
+                "unavailable_reason": "point_cloud was not produced for this scene/object"
+              },
+              "center_3d": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:gray_cannonball:center_3d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:gray_cannonball:center_3d"
+                  ]
+                },
+                "unavailable_reason": "center_3d was not produced for this scene/object"
+              },
+              "velocity_3d": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units_per_second",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:gray_cannonball:velocity_3d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:gray_cannonball:velocity_3d"
+                  ]
+                },
+                "unavailable_reason": "velocity_3d was not produced for this scene/object"
+              },
+              "bbox_3d": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:gray_cannonball:bbox_3d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:gray_cannonball:bbox_3d"
+                  ]
+                },
+                "unavailable_reason": "bbox_3d was not produced for this scene/object"
+              },
+              "size_3d": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:gray_cannonball:size_3d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:gray_cannonball:size_3d"
+                  ]
+                },
+                "unavailable_reason": "size_3d was not produced for this scene/object"
+              },
+              "local_se3": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:gray_cannonball:local_se3"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:gray_cannonball:local_se3"
+                  ]
+                },
+                "unavailable_reason": "local_se3 was not produced for this scene/object"
+              },
+              "rigidity": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "normalized_residual",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:gray_cannonball:rigidity"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:gray_cannonball:rigidity"
+                  ]
+                },
+                "unavailable_reason": "rigidity was not produced for this scene/object"
+              }
+            }
+          },
+          {
+            "object_id": "pink_sphere",
+            "label": "pink sphere",
+            "role": "target_sphere",
+            "identity_source": "qwen2.5-vl-real",
+            "identity_confidence": {
+              "score": 0.964148,
+              "status": "measured",
+              "basis": "qwen semantic identity confidence",
+              "evidence_ids": [
+                "scene_7a259879c34986d87500:pink_sphere:identity"
+              ]
+            },
+            "direct_fields": {
+              "bbox_2d": {
+                "availability": "available",
+                "source": "sam3.1-real",
+                "units": "source_pixels",
+                "frame_range": [
+                  0,
+                  15
+                ],
+                "records": [
+                  {
+                    "frame_index": 0,
+                    "timestamp_sec": 0.0,
+                    "bbox_2d": [
+                      355.0,
+                      16.0,
+                      391.0,
+                      53.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 1,
+                    "timestamp_sec": 0.04,
+                    "bbox_2d": [
+                      355.0,
+                      17.0,
+                      391.0,
+                      53.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 2,
+                    "timestamp_sec": 0.08,
+                    "bbox_2d": [
+                      355.0,
+                      17.0,
+                      391.0,
+                      53.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 3,
+                    "timestamp_sec": 0.12,
+                    "bbox_2d": [
+                      355.0,
+                      18.0,
+                      391.0,
+                      55.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 4,
+                    "timestamp_sec": 0.16,
+                    "bbox_2d": [
+                      355.0,
+                      19.0,
+                      391.0,
+                      56.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 5,
+                    "timestamp_sec": 0.2,
+                    "bbox_2d": [
+                      355.0,
+                      19.0,
+                      390.0,
+                      56.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 6,
+                    "timestamp_sec": 0.24,
+                    "bbox_2d": [
+                      355.0,
+                      22.0,
+                      390.0,
+                      57.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 7,
+                    "timestamp_sec": 0.28,
+                    "bbox_2d": [
+                      356.0,
+                      23.0,
+                      391.0,
+                      60.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 8,
+                    "timestamp_sec": 0.34,
+                    "bbox_2d": [
+                      355.0,
+                      25.0,
+                      391.0,
+                      62.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 9,
+                    "timestamp_sec": 0.38,
+                    "bbox_2d": [
+                      355.0,
+                      28.0,
+                      391.0,
+                      64.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 10,
+                    "timestamp_sec": 0.42,
+                    "bbox_2d": [
+                      354.0,
+                      30.0,
+                      391.0,
+                      68.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 11,
+                    "timestamp_sec": 0.46,
+                    "bbox_2d": [
+                      356.0,
+                      33.0,
+                      391.0,
+                      70.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 12,
+                    "timestamp_sec": 0.5,
+                    "bbox_2d": [
+                      356.0,
+                      36.0,
+                      390.0,
+                      73.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 13,
+                    "timestamp_sec": 0.54,
+                    "bbox_2d": [
+                      354.0,
+                      39.0,
+                      390.0,
+                      78.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 14,
+                    "timestamp_sec": 0.58,
+                    "bbox_2d": [
+                      355.0,
+                      44.0,
+                      391.0,
+                      80.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 15,
+                    "timestamp_sec": 0.62,
+                    "bbox_2d": [
+                      355.0,
+                      48.0,
+                      391.0,
+                      85.0
+                    ],
+                    "source": "sam3.1-real"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:pink_sphere:bbox_2d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "uncalibrated",
+                  "basis": "field is present but source confidence is unavailable",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:pink_sphere:bbox_2d"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "mask": {
+                "availability": "available",
+                "source": "sam3.1-real",
+                "units": "source_pixels",
+                "frame_range": [
+                  0,
+                  15
+                ],
+                "records": [
+                  {
+                    "frame_index": 0,
+                    "timestamp_sec": 0.0,
+                    "mask_ref": "pink_sphere_mask_t000",
+                    "bbox_2d": [
+                      355.0,
+                      16.0,
+                      391.0,
+                      53.0
+                    ],
+                    "area": 1138,
+                    "tracking_points": [
+                      {
+                        "point_id": "pink_sphere_p1",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          373.0,
+                          34.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p2",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          368.0,
+                          34.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p3",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          377.0,
+                          34.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 1,
+                    "timestamp_sec": 0.04,
+                    "mask_ref": "pink_sphere_mask_t001",
+                    "bbox_2d": [
+                      355.0,
+                      17.0,
+                      391.0,
+                      53.0
+                    ],
+                    "area": 1126,
+                    "tracking_points": [
+                      {
+                        "point_id": "pink_sphere_p1",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          373.0,
+                          34.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p2",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          368.0,
+                          34.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p3",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          377.0,
+                          34.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 2,
+                    "timestamp_sec": 0.08,
+                    "mask_ref": "pink_sphere_mask_t002",
+                    "bbox_2d": [
+                      355.0,
+                      17.0,
+                      391.0,
+                      53.0
+                    ],
+                    "area": 1117,
+                    "tracking_points": [
+                      {
+                        "point_id": "pink_sphere_p1",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          373.0,
+                          34.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p2",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          368.0,
+                          34.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p3",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          377.0,
+                          34.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 3,
+                    "timestamp_sec": 0.12,
+                    "mask_ref": "pink_sphere_mask_t003",
+                    "bbox_2d": [
+                      355.0,
+                      18.0,
+                      391.0,
+                      55.0
+                    ],
+                    "area": 1124,
+                    "tracking_points": [
+                      {
+                        "point_id": "pink_sphere_p1",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          373.0,
+                          35.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p2",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          368.0,
+                          35.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p3",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          377.0,
+                          35.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 4,
+                    "timestamp_sec": 0.16,
+                    "mask_ref": "pink_sphere_mask_t004",
+                    "bbox_2d": [
+                      355.0,
+                      19.0,
+                      391.0,
+                      56.0
+                    ],
+                    "area": 1115,
+                    "tracking_points": [
+                      {
+                        "point_id": "pink_sphere_p1",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          373.0,
+                          37.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p2",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          368.0,
+                          37.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p3",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          377.0,
+                          37.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 5,
+                    "timestamp_sec": 0.2,
+                    "mask_ref": "pink_sphere_mask_t005",
+                    "bbox_2d": [
+                      355.0,
+                      19.0,
+                      390.0,
+                      56.0
+                    ],
+                    "area": 1113,
+                    "tracking_points": [
+                      {
+                        "point_id": "pink_sphere_p1",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          373.0,
+                          37.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p2",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          368.0,
+                          37.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p3",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          377.0,
+                          37.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 6,
+                    "timestamp_sec": 0.24,
+                    "mask_ref": "pink_sphere_mask_t006",
+                    "bbox_2d": [
+                      355.0,
+                      22.0,
+                      390.0,
+                      57.0
+                    ],
+                    "area": 1076,
+                    "tracking_points": [
+                      {
+                        "point_id": "pink_sphere_p1",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          372.0,
+                          39.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p2",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          368.0,
+                          39.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p3",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          377.0,
+                          39.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 7,
+                    "timestamp_sec": 0.28,
+                    "mask_ref": "pink_sphere_mask_t007",
+                    "bbox_2d": [
+                      356.0,
+                      23.0,
+                      391.0,
+                      60.0
+                    ],
+                    "area": 1113,
+                    "tracking_points": [
+                      {
+                        "point_id": "pink_sphere_p1",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          373.0,
+                          40.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p2",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          368.0,
+                          40.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p3",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          377.0,
+                          40.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 8,
+                    "timestamp_sec": 0.34,
+                    "mask_ref": "pink_sphere_mask_t008",
+                    "bbox_2d": [
+                      355.0,
+                      25.0,
+                      391.0,
+                      62.0
+                    ],
+                    "area": 1133,
+                    "tracking_points": [
+                      {
+                        "point_id": "pink_sphere_p1",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          373.0,
+                          43.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p2",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          368.0,
+                          43.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p3",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          377.0,
+                          43.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 9,
+                    "timestamp_sec": 0.38,
+                    "mask_ref": "pink_sphere_mask_t009",
+                    "bbox_2d": [
+                      355.0,
+                      28.0,
+                      391.0,
+                      64.0
+                    ],
+                    "area": 1102,
+                    "tracking_points": [
+                      {
+                        "point_id": "pink_sphere_p1",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          373.0,
+                          46.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p2",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          368.0,
+                          45.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p3",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          377.0,
+                          45.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 10,
+                    "timestamp_sec": 0.42,
+                    "mask_ref": "pink_sphere_mask_t010",
+                    "bbox_2d": [
+                      354.0,
+                      30.0,
+                      391.0,
+                      68.0
+                    ],
+                    "area": 1133,
+                    "tracking_points": [
+                      {
+                        "point_id": "pink_sphere_p1",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          373.0,
+                          48.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p2",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          368.0,
+                          48.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p3",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          377.0,
+                          48.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 11,
+                    "timestamp_sec": 0.46,
+                    "mask_ref": "pink_sphere_mask_t011",
+                    "bbox_2d": [
+                      356.0,
+                      33.0,
+                      391.0,
+                      70.0
+                    ],
+                    "area": 1135,
+                    "tracking_points": [
+                      {
+                        "point_id": "pink_sphere_p1",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          373.0,
+                          51.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p2",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          368.0,
+                          51.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p3",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          377.0,
+                          51.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 12,
+                    "timestamp_sec": 0.5,
+                    "mask_ref": "pink_sphere_mask_t012",
+                    "bbox_2d": [
+                      356.0,
+                      36.0,
+                      390.0,
+                      73.0
+                    ],
+                    "area": 1102,
+                    "tracking_points": [
+                      {
+                        "point_id": "pink_sphere_p1",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          372.0,
+                          54.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p2",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          368.0,
+                          54.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p3",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          377.0,
+                          54.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 13,
+                    "timestamp_sec": 0.54,
+                    "mask_ref": "pink_sphere_mask_t013",
+                    "bbox_2d": [
+                      354.0,
+                      39.0,
+                      390.0,
+                      78.0
+                    ],
+                    "area": 1143,
+                    "tracking_points": [
+                      {
+                        "point_id": "pink_sphere_p1",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          372.0,
+                          58.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p2",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          368.0,
+                          58.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p3",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          377.0,
+                          58.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 14,
+                    "timestamp_sec": 0.58,
+                    "mask_ref": "pink_sphere_mask_t014",
+                    "bbox_2d": [
+                      355.0,
+                      44.0,
+                      391.0,
+                      80.0
+                    ],
+                    "area": 1101,
+                    "tracking_points": [
+                      {
+                        "point_id": "pink_sphere_p1",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          373.0,
+                          61.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p2",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          368.0,
+                          61.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p3",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          377.0,
+                          61.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 15,
+                    "timestamp_sec": 0.62,
+                    "mask_ref": "pink_sphere_mask_t015",
+                    "bbox_2d": [
+                      355.0,
+                      48.0,
+                      391.0,
+                      85.0
+                    ],
+                    "area": 1100,
+                    "tracking_points": [
+                      {
+                        "point_id": "pink_sphere_p1",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          373.0,
+                          65.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p2",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          368.0,
+                          65.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "pink_sphere_p3",
+                        "object_id": "pink_sphere",
+                        "uv": [
+                          377.0,
+                          65.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:pink_sphere:mask"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "uncalibrated",
+                  "basis": "field is present but source confidence is unavailable",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:pink_sphere:mask"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "point_tracks_2d": {
+                "availability": "available",
+                "source": "sam31_mask_owned_interior_points",
+                "units": "source_pixels",
+                "frame_range": null,
+                "records": [
+                  {
+                    "tracklet_id": "trk_pink_sphere_p1",
+                    "object_id": "pink_sphere",
+                    "point_id": "pink_sphere_p1",
+                    "uv_sequence": [
+                      [
+                        373.0,
+                        34.0
+                      ],
+                      [
+                        373.0,
+                        34.0
+                      ],
+                      [
+                        373.0,
+                        34.0
+                      ],
+                      [
+                        373.0,
+                        35.0
+                      ],
+                      [
+                        373.0,
+                        37.0
+                      ],
+                      [
+                        373.0,
+                        37.0
+                      ],
+                      [
+                        372.0,
+                        39.0
+                      ],
+                      [
+                        373.0,
+                        40.0
+                      ],
+                      [
+                        373.0,
+                        43.0
+                      ],
+                      [
+                        373.0,
+                        46.0
+                      ],
+                      [
+                        373.0,
+                        48.0
+                      ],
+                      [
+                        373.0,
+                        51.0
+                      ],
+                      [
+                        372.0,
+                        54.0
+                      ],
+                      [
+                        372.0,
+                        58.0
+                      ],
+                      [
+                        373.0,
+                        61.0
+                      ],
+                      [
+                        373.0,
+                        65.0
+                      ]
+                    ],
+                    "visibility": [
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "confidence": [
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0
+                    ],
+                    "source": "sam31_mask_owned_interior_points"
+                  },
+                  {
+                    "tracklet_id": "trk_pink_sphere_p2",
+                    "object_id": "pink_sphere",
+                    "point_id": "pink_sphere_p2",
+                    "uv_sequence": [
+                      [
+                        368.0,
+                        34.0
+                      ],
+                      [
+                        368.0,
+                        34.0
+                      ],
+                      [
+                        368.0,
+                        34.0
+                      ],
+                      [
+                        368.0,
+                        35.0
+                      ],
+                      [
+                        368.0,
+                        37.0
+                      ],
+                      [
+                        368.0,
+                        37.0
+                      ],
+                      [
+                        368.0,
+                        39.0
+                      ],
+                      [
+                        368.0,
+                        40.0
+                      ],
+                      [
+                        368.0,
+                        43.0
+                      ],
+                      [
+                        368.0,
+                        45.0
+                      ],
+                      [
+                        368.0,
+                        48.0
+                      ],
+                      [
+                        368.0,
+                        51.0
+                      ],
+                      [
+                        368.0,
+                        54.0
+                      ],
+                      [
+                        368.0,
+                        58.0
+                      ],
+                      [
+                        368.0,
+                        61.0
+                      ],
+                      [
+                        368.0,
+                        65.0
+                      ]
+                    ],
+                    "visibility": [
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "confidence": [
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0
+                    ],
+                    "source": "sam31_mask_owned_interior_points"
+                  },
+                  {
+                    "tracklet_id": "trk_pink_sphere_p3",
+                    "object_id": "pink_sphere",
+                    "point_id": "pink_sphere_p3",
+                    "uv_sequence": [
+                      [
+                        377.0,
+                        34.0
+                      ],
+                      [
+                        377.0,
+                        34.0
+                      ],
+                      [
+                        377.0,
+                        34.0
+                      ],
+                      [
+                        377.0,
+                        35.0
+                      ],
+                      [
+                        377.0,
+                        37.0
+                      ],
+                      [
+                        377.0,
+                        37.0
+                      ],
+                      [
+                        377.0,
+                        39.0
+                      ],
+                      [
+                        377.0,
+                        40.0
+                      ],
+                      [
+                        377.0,
+                        43.0
+                      ],
+                      [
+                        377.0,
+                        45.0
+                      ],
+                      [
+                        377.0,
+                        48.0
+                      ],
+                      [
+                        377.0,
+                        51.0
+                      ],
+                      [
+                        377.0,
+                        54.0
+                      ],
+                      [
+                        377.0,
+                        58.0
+                      ],
+                      [
+                        377.0,
+                        61.0
+                      ],
+                      [
+                        377.0,
+                        65.0
+                      ]
+                    ],
+                    "visibility": [
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "confidence": [
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0
+                    ],
+                    "source": "sam31_mask_owned_interior_points"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:pink_sphere:point_tracks_2d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "uncalibrated",
+                  "basis": "field is present but source confidence is unavailable",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:pink_sphere:point_tracks_2d"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "raw_tracklets": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units_and_source_pixels",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:pink_sphere:raw_tracklets"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:pink_sphere:raw_tracklets"
+                  ]
+                },
+                "unavailable_reason": "raw_tracklets was not produced for this scene/object"
+              },
+              "accepted_tracklets": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units_and_source_pixels",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:pink_sphere:accepted_tracklets"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:pink_sphere:accepted_tracklets"
+                  ]
+                },
+                "unavailable_reason": "accepted_tracklets was not produced for this scene/object"
+              }
+            },
+            "computed_fields": {
+              "center_2d": {
+                "availability": "available",
+                "source": "sam31_mask_centroid",
+                "units": "source_pixels",
+                "frame_range": [
+                  0,
+                  15
+                ],
+                "records": [
+                  {
+                    "frame_index": 0,
+                    "timestamp_sec": 0.0,
+                    "uv": [
+                      372.567663,
+                      34.13181
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 1,
+                    "timestamp_sec": 0.04,
+                    "uv": [
+                      372.718472,
+                      34.316163
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 2,
+                    "timestamp_sec": 0.08,
+                    "uv": [
+                      372.681289,
+                      34.330349
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 3,
+                    "timestamp_sec": 0.12,
+                    "uv": [
+                      372.533808,
+                      35.099644
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 4,
+                    "timestamp_sec": 0.16,
+                    "uv": [
+                      372.741704,
+                      36.591928
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 5,
+                    "timestamp_sec": 0.2,
+                    "uv": [
+                      372.513028,
+                      36.965858
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 6,
+                    "timestamp_sec": 0.24,
+                    "uv": [
+                      372.474907,
+                      38.605019
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 7,
+                    "timestamp_sec": 0.28,
+                    "uv": [
+                      372.579515,
+                      40.486074
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 8,
+                    "timestamp_sec": 0.34,
+                    "uv": [
+                      372.548102,
+                      42.882613
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 9,
+                    "timestamp_sec": 0.38,
+                    "uv": [
+                      372.676951,
+                      45.520871
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 10,
+                    "timestamp_sec": 0.42,
+                    "uv": [
+                      372.558694,
+                      47.891439
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 11,
+                    "timestamp_sec": 0.46,
+                    "uv": [
+                      372.577974,
+                      51.051101
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 12,
+                    "timestamp_sec": 0.5,
+                    "uv": [
+                      372.45735,
+                      54.038113
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 13,
+                    "timestamp_sec": 0.54,
+                    "uv": [
+                      372.177603,
+                      57.968504
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 14,
+                    "timestamp_sec": 0.58,
+                    "uv": [
+                      372.744777,
+                      61.22525
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 15,
+                    "timestamp_sec": 0.62,
+                    "uv": [
+                      372.579091,
+                      65.291818
+                    ],
+                    "source": "sam31_mask_centroid"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:pink_sphere:center_2d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "uncalibrated",
+                  "basis": "field is present but source confidence is unavailable",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:pink_sphere:center_2d"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "velocity_2d": {
+                "availability": "available",
+                "source": "finite_difference_center_2d",
+                "units": "source_pixels_per_second",
+                "frame_range": [
+                  1,
+                  15
+                ],
+                "records": [
+                  {
+                    "frame_index": 1,
+                    "duv_dt": [
+                      3.770225,
+                      4.608825
+                    ],
+                    "speed_px_per_sec": 5.954483,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 2,
+                    "duv_dt": [
+                      -0.929575,
+                      0.35465
+                    ],
+                    "speed_px_per_sec": 0.99493,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 3,
+                    "duv_dt": [
+                      -3.687025,
+                      19.232375
+                    ],
+                    "speed_px_per_sec": 19.582605,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 4,
+                    "duv_dt": [
+                      5.1974,
+                      37.3071
+                    ],
+                    "speed_px_per_sec": 37.667395,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 5,
+                    "duv_dt": [
+                      -5.7169,
+                      9.34825
+                    ],
+                    "speed_px_per_sec": 10.95777,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 6,
+                    "duv_dt": [
+                      -0.953025,
+                      40.979025
+                    ],
+                    "speed_px_per_sec": 40.990105,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 7,
+                    "duv_dt": [
+                      2.6152,
+                      47.026375
+                    ],
+                    "speed_px_per_sec": 47.099036,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 8,
+                    "duv_dt": [
+                      -0.52355,
+                      39.942317
+                    ],
+                    "speed_px_per_sec": 39.945748,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 9,
+                    "duv_dt": [
+                      3.221225,
+                      65.95645
+                    ],
+                    "speed_px_per_sec": 66.035063,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 10,
+                    "duv_dt": [
+                      -2.956425,
+                      59.2642
+                    ],
+                    "speed_px_per_sec": 59.337896,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 11,
+                    "duv_dt": [
+                      0.482,
+                      78.99155
+                    ],
+                    "speed_px_per_sec": 78.993021,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 12,
+                    "duv_dt": [
+                      -3.0156,
+                      74.6753
+                    ],
+                    "speed_px_per_sec": 74.736164,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 13,
+                    "duv_dt": [
+                      -6.993675,
+                      98.259775
+                    ],
+                    "speed_px_per_sec": 98.508349,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 14,
+                    "duv_dt": [
+                      14.17935,
+                      81.41865
+                    ],
+                    "speed_px_per_sec": 82.64412,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 15,
+                    "duv_dt": [
+                      -4.14215,
+                      101.6642
+                    ],
+                    "speed_px_per_sec": 101.748548,
+                    "source": "finite_difference_center_2d"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:pink_sphere:velocity_2d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "uncalibrated",
+                  "basis": "field is present but source confidence is unavailable",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:pink_sphere:velocity_2d"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "acceleration_2d": {
+                "availability": "available",
+                "source": "finite_difference_velocity_2d",
+                "units": "source_pixels_per_second_squared",
+                "frame_range": [
+                  2,
+                  15
+                ],
+                "records": [
+                  {
+                    "frame_index": 2,
+                    "duv_dt2": [
+                      -4.6998,
+                      -4.254175
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 3,
+                    "duv_dt2": [
+                      -2.75745,
+                      18.877725
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 4,
+                    "duv_dt2": [
+                      8.884425,
+                      18.074725
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 5,
+                    "duv_dt2": [
+                      -10.9143,
+                      -27.95885
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 6,
+                    "duv_dt2": [
+                      4.763875,
+                      31.630775
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 7,
+                    "duv_dt2": [
+                      3.568225,
+                      6.04735
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 8,
+                    "duv_dt2": [
+                      -3.13875,
+                      -7.084058
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 9,
+                    "duv_dt2": [
+                      3.744775,
+                      26.014133
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 10,
+                    "duv_dt2": [
+                      -6.17765,
+                      -6.69225
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 11,
+                    "duv_dt2": [
+                      3.438425,
+                      19.72735
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 12,
+                    "duv_dt2": [
+                      -3.4976,
+                      -4.31625
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 13,
+                    "duv_dt2": [
+                      -3.978075,
+                      23.584475
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 14,
+                    "duv_dt2": [
+                      21.173025,
+                      -16.841125
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 15,
+                    "duv_dt2": [
+                      -18.3215,
+                      20.24555
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:pink_sphere:acceleration_2d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "uncalibrated",
+                  "basis": "field is present but source confidence is unavailable",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:pink_sphere:acceleration_2d"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "visibility": {
+                "availability": "available",
+                "source": "sam31_mask_area",
+                "units": "probability",
+                "frame_range": [
+                  0,
+                  15
+                ],
+                "records": [
+                  {
+                    "frame_index": 0,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 1,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 2,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 3,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 4,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 5,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 6,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 7,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 8,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 9,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 10,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 11,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 12,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 13,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 14,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  },
+                  {
+                    "frame_index": 15,
+                    "score": 1.0,
+                    "source": "sam31_mask_area"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:pink_sphere:visibility"
+                ],
+                "confidence": {
+                  "score": 1.0,
+                  "status": "measured",
+                  "basis": "mean source-model confidence",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:pink_sphere:visibility"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "point_cloud": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:pink_sphere:point_cloud"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:pink_sphere:point_cloud"
+                  ]
+                },
+                "unavailable_reason": "point_cloud was not produced for this scene/object"
+              },
+              "center_3d": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:pink_sphere:center_3d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:pink_sphere:center_3d"
+                  ]
+                },
+                "unavailable_reason": "center_3d was not produced for this scene/object"
+              },
+              "velocity_3d": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units_per_second",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:pink_sphere:velocity_3d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:pink_sphere:velocity_3d"
+                  ]
+                },
+                "unavailable_reason": "velocity_3d was not produced for this scene/object"
+              },
+              "bbox_3d": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:pink_sphere:bbox_3d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:pink_sphere:bbox_3d"
+                  ]
+                },
+                "unavailable_reason": "bbox_3d was not produced for this scene/object"
+              },
+              "size_3d": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:pink_sphere:size_3d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:pink_sphere:size_3d"
+                  ]
+                },
+                "unavailable_reason": "size_3d was not produced for this scene/object"
+              },
+              "local_se3": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:pink_sphere:local_se3"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:pink_sphere:local_se3"
+                  ]
+                },
+                "unavailable_reason": "local_se3 was not produced for this scene/object"
+              },
+              "rigidity": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "normalized_residual",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7a259879c34986d87500:pink_sphere:rigidity"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7a259879c34986d87500:pink_sphere:rigidity"
+                  ]
+                },
+                "unavailable_reason": "rigidity was not produced for this scene/object"
+              }
+            }
+          }
+        ],
+        "scene_fields": {
+          "camera": {
+            "availability": "unavailable",
+            "source": null,
+            "units": "source_pixels_and_world_units",
+            "frame_range": null,
+            "records": [],
+            "evidence_ids": [
+              "scene_7a259879c34986d87500:camera"
+            ],
+            "confidence": {
+              "score": null,
+              "status": "unavailable",
+              "basis": "field is absent",
+              "evidence_ids": [
+                "scene_7a259879c34986d87500:camera"
+              ]
+            },
+            "unavailable_reason": "camera was not produced for this scene/object"
+          },
+          "depth": {
+            "availability": "unavailable",
+            "source": null,
+            "units": "world_units",
+            "frame_range": null,
+            "records": [],
+            "evidence_ids": [
+              "scene_7a259879c34986d87500:depth"
+            ],
+            "confidence": {
+              "score": null,
+              "status": "unavailable",
+              "basis": "field is absent",
+              "evidence_ids": [
+                "scene_7a259879c34986d87500:depth"
+              ]
+            },
+            "unavailable_reason": "depth was not produced for this scene/object"
+          },
+          "point_map": {
+            "availability": "unavailable",
+            "source": null,
+            "units": "world_units",
+            "frame_range": null,
+            "records": [],
+            "evidence_ids": [
+              "scene_7a259879c34986d87500:point_map"
+            ],
+            "confidence": {
+              "score": null,
+              "status": "unavailable",
+              "basis": "field is absent",
+              "evidence_ids": [
+                "scene_7a259879c34986d87500:point_map"
+              ]
+            },
+            "unavailable_reason": "point_map was not produced for this scene/object"
+          }
+        },
+        "relations": {
+          "availability": "available",
+          "source": "mixed:computed_from_sam31_2d_trajectories,computed_relations",
+          "units": null,
+          "frame_range": null,
+          "records": [
+            {
+              "subject": "gray_cannonball",
+              "object": "pink_sphere",
+              "relation": "approaching",
+              "evidence": {
+                "distance_start_px": 229.635784,
+                "distance_end_px": 88.707912,
+                "trend": "approaching",
+                "relative_velocity_projection": 140.927872
+              },
+              "source": "computed_from_sam31_2d_trajectories"
+            }
+          ],
+          "evidence_ids": [
+            "scene_7a259879c34986d87500:relations"
+          ],
+          "confidence": {
+            "score": null,
+            "status": "uncalibrated",
+            "basis": "field is present but has no calibrated confidence",
+            "evidence_ids": [
+              "scene_7a259879c34986d87500:relations"
+            ]
+          },
+          "unavailable_reason": null
+        },
+        "events": {
+          "availability": "available",
+          "source": "mixed:bass_trial_query_metadata,computed_events,computed_from_sam31_2d_trajectories",
+          "units": null,
+          "frame_range": null,
+          "records": [
+            {
+              "type": "approach_observed_in_clip",
+              "objects": [
+                "gray_cannonball",
+                "pink_sphere"
+              ],
+              "frame_index": null,
+              "timestamp_sec": null,
+              "source": "computed_from_sam31_2d_trajectories"
+            }
+          ],
+          "evidence_ids": [
+            "scene_7a259879c34986d87500:events"
+          ],
+          "confidence": {
+            "score": null,
+            "status": "uncalibrated",
+            "basis": "field is present but has no calibrated confidence",
+            "evidence_ids": [
+              "scene_7a259879c34986d87500:events"
+            ]
+          },
+          "unavailable_reason": null
+        }
+      }
+    ],
+    "provenance": {
+      "source_artifact_sha256": "5226cfc421b1ca61a4b96bdc34fe40d7b3aad014862f79e55a0ad9af3a480494",
+      "source_pipeline": "model_parsed",
+      "models": {
+        "semantic_prompt_source": "qwen2.5-vl-real",
+        "sam31": "sam3.1-real"
+      },
+      "migration_version": "physics-toolbox-eval-1"
+    },
+    "learned_fields": {
+      "status": "not_run",
+      "reason": "OCTC learned/refined fields were not run for the accepted Physics parses"
+    }
+  },
+  "viewer": {
+    "media_url": "media/code_7a259879c34986d87500/video.mp4",
+    "poster_url": "media/code_7a259879c34986d87500/poster.png",
+    "mask_root": "media/code_7a259879c34986d87500/masks",
+    "source_width": 512,
+    "source_height": 261,
+    "source_media_path": "C:\\Users\\ROG\\Desktop\\Dynamic_4D_Spatial_Code\\data\\physics_subset\\physics_subset\\Bass2022Partial\\exp1\\assets\\clip_8_5.mp4",
+    "playback_rate": 0.5,
+    "scene_behavior": "dynamic"
+  },
+  "selection": {
+    "qa_id": "qa_01db4f8f1f15ab2efcd9",
+    "selection_basis": "target_available_nearest_study_medians_then_tool_diversity"
+  },
+  "question": {
+    "qa_id": "qa_01db4f8f1f15ab2efcd9",
+    "prompt": "How likely is it that the cannonball will hit the pink sphere, and then the pink sphere will end up on the grass?",
+    "answer_type": "slider",
+    "options": [],
+    "slider": {
+      "minimum": 0.0,
+      "maximum": 100.0
+    },
+    "target": {
+      "availability": "available",
+      "source": "human",
+      "objective": null,
+      "human_mean": 38.166666666666664,
+      "human_values": [
+        70,
+        35,
+        65,
+        65,
+        51,
+        45,
+        100,
+        79,
+        15,
+        6,
+        0,
+        90,
+        83,
+        9,
+        10,
+        43,
+        57,
+        46,
+        36,
+        50,
+        5,
+        15,
+        65,
+        83,
+        37,
+        14,
+        40,
+        10,
+        39,
+        97,
+        20,
+        29,
+        50,
+        3,
+        65,
+        20,
+        9,
+        17,
+        100,
+        20,
+        2,
+        0,
+        23,
+        32,
+        19,
+        35,
+        5,
+        50,
+        27,
+        30,
+        31,
+        41,
+        12,
+        56,
+        68,
+        86,
+        18,
+        23,
+        29,
+        10
+      ],
+      "unavailable_reason": null
+    },
+    "ground_truth_display": "38.17",
+    "answer": {
+      "value": 30.0,
+      "raw_answer_confidence": 0.0006054108962416649,
+      "calibrated_answer_confidence": 0.032000661572971635,
+      "calibration_status": "out_of_fold_temperature_scaled"
+    },
+    "answer_display": "30",
+    "likelihood": {
+      "candidate_values": {
+        "count": 21,
+        "first": "0",
+        "last": "100"
+      },
+      "candidate_codes": {
+        "count": 21,
+        "first": "A",
+        "last": "U"
+      },
+      "logits": {
+        "count": 21,
+        "first": 18.25,
+        "last": 24.625
+      },
+      "probabilities": {
+        "count": 21,
+        "first": 1e-06,
+        "last": 0.000605
+      },
+      "method": "single_token_conditional_candidate_likelihood",
+      "prompt_token_count": 1797,
+      "bin_values": {
+        "count": 21,
+        "first": 0.0,
+        "last": 100.0
+      },
+      "selected_probability": 0.000605,
+      "selected_index": 6,
+      "calibrated_probabilities": {
+        "count": 21,
+        "first": 0.006501,
+        "last": 0.032001
+      }
+    },
+    "score": 0.9183333333333333,
+    "code_ids": [
+      "code_7a259879c34986d87500"
+    ],
+    "used_code_ids": [
+      "code_7a259879c34986d87500"
+    ],
+    "code_confidence": {
+      "qa_id": "qa_01db4f8f1f15ab2efcd9",
+      "score": 1.0,
+      "status": "measured",
+      "required_groups": [
+        "identity",
+        "trajectory",
+        "motion",
+        "events"
+      ],
+      "group_scores": {
+        "identity": 1.0,
+        "trajectory": 1.0,
+        "motion": 1.0,
+        "events": 1.0
+      },
+      "coverage": 1.0,
+      "evidence_code_ids": [
+        "code_7a259879c34986d87500"
+      ]
+    },
+    "code_quality": [
+      {
+        "code_id": "code_7a259879c34986d87500",
+        "scene_id": "scene_7a259879c34986d87500",
+        "study": "bass2022_partial",
+        "parse_mode": "dynamic_2d",
+        "metrics": [
+          {
+            "name": "identity_count_agreement",
+            "status": "measured",
+            "value": 1.0,
+            "units": "jaccard",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_7a259879c34986d87500:identity",
+              "eval:code_7a259879c34986d87500:expected_objects"
+            ],
+            "comparison_target": "README/manifest object contract",
+            "reason": null
+          },
+          {
+            "name": "temporal_mask_coverage",
+            "status": "measured",
+            "value": 1.0,
+            "units": "fraction",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_7a259879c34986d87500:objects:mask"
+            ],
+            "comparison_target": "sampled-frame coverage",
+            "reason": null
+          },
+          {
+            "name": "mean_sam_score",
+            "status": "unsupported",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_7a259879c34986d87500:sam_summary"
+            ],
+            "comparison_target": "SAM3.1 source confidence",
+            "reason": "accepted SAM summary has no calibrated per-object score"
+          },
+          {
+            "name": "duplicate_bbox_frame_pairs",
+            "status": "measured",
+            "value": 0,
+            "units": "count",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_7a259879c34986d87500:objects:bbox_2d"
+            ],
+            "comparison_target": "pairwise IoU <= 0.85 for distinct object IDs",
+            "reason": null
+          },
+          {
+            "name": "tracking_owner_mismatch_count",
+            "status": "measured",
+            "value": 0,
+            "units": "count",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_7a259879c34986d87500:objects:tracklets"
+            ],
+            "comparison_target": "tracklet/object ownership invariant",
+            "reason": null
+          },
+          {
+            "name": "primary_source_failure_count",
+            "status": "measured",
+            "value": 0,
+            "units": "count",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_7a259879c34986d87500:objects:provenance"
+            ],
+            "comparison_target": "mask and bbox source must be sam3.1-real",
+            "reason": null
+          },
+          {
+            "name": "symbolic_center_2d_error_px",
+            "status": "unsupported",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "eval:code_7a259879c34986d87500:symbolic_scene"
+            ],
+            "comparison_target": "frame-aligned symbolic center trajectory",
+            "reason": "source symbolic metadata does not expose frame-aligned 2D trajectories"
+          },
+          {
+            "name": "symbolic_relation_event_agreement",
+            "status": "unsupported",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "eval:code_7a259879c34986d87500:symbolic_scene"
+            ],
+            "comparison_target": "explicit symbolic relation/event labels",
+            "reason": "source symbolic metadata has no explicit relation/event labels"
+          },
+          {
+            "name": "mean_3d_reprojection_iou",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_7a259879c34986d87500"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "camera_roundtrip_error_px",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_7a259879c34986d87500"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "minimum_lifted_mask_point_support",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_7a259879c34986d87500"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "mean_kabsch_residual",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_7a259879c34986d87500"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "hamrick_sim3_center_error",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_7a259879c34986d87500"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "hamrick_sim3_size_error",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_7a259879c34986d87500"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "hamrick_sim3_orientation_error_deg",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_7a259879c34986d87500"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          }
+        ],
+        "gt_quality_score": 1.0,
+        "internal_consistency_score": 1.0,
+        "quality_coverage": 0.625,
+        "evidence_group_scores": {
+          "identity": 1.0,
+          "mask": 1.0,
+          "trajectory": 1.0,
+          "motion": 1.0,
+          "visibility": 1.0,
+          "relations": 1.0,
+          "events": 1.0,
+          "geometry_3d": 0.0,
+          "rigidity": 0.0,
+          "camera": 0.0
+        },
+        "unsupported_metrics": [
+          "mean_sam_score",
+          "symbolic_center_2d_error_px",
+          "symbolic_relation_event_agreement"
+        ]
+      }
+    ],
+    "evidence_path": [
+      {
+        "order": 1,
+        "tool": "get_distance_trend",
+        "arguments": {
+          "scene_id": "scene_7a259879c34986d87500",
+          "obj1": "gray_cannonball",
+          "obj2": "pink_sphere",
+          "frame_range": [
+            0,
+            15
+          ]
+        },
+        "duplicate": false,
+        "availability": "available",
+        "source": [
+          "sam31_mask_centroid"
+        ],
+        "units": "source_pixels",
+        "frame_range": [
+          0,
+          15
+        ],
+        "evidence_ids": [
+          "ev_3efc157eb79be8d4"
+        ],
+        "confidence": {
+          "score": null,
+          "status": "uncalibrated",
+          "basis": "required evidence is present but uncalibrated",
+          "evidence_ids": [
+            "ev_3efc157eb79be8d4"
+          ]
+        },
+        "data": {
+          "scene_id": "scene_7a259879c34986d87500",
+          "obj1": "gray_cannonball",
+          "obj2": "pink_sphere",
+          "trend": "decreasing",
+          "dimension": "2d",
+          "start_distance": 229.635784,
+          "end_distance": 88.707912,
+          "samples": {
+            "count": 10,
+            "first": {
+              "frame": 0,
+              "distance": 229.63578410517616
+            },
+            "last": {
+              "frame": 15,
+              "distance": 88.70791187540209
+            }
+          }
+        },
+        "unavailable_reason": null
+      },
+      {
+        "order": 2,
+        "tool": "get_relative_direction",
+        "arguments": {
+          "scene_id": "scene_7a259879c34986d87500",
+          "obj1": "gray_cannonball",
+          "obj2": "pink_sphere",
+          "frame": 15
+        },
+        "duplicate": false,
+        "availability": "available",
+        "source": [
+          "sam31_mask_centroid"
+        ],
+        "units": "source_pixels",
+        "frame_range": [
+          15,
+          15
+        ],
+        "evidence_ids": [
+          "ev_3efc157eb79be8d4"
+        ],
+        "confidence": {
+          "score": null,
+          "status": "uncalibrated",
+          "basis": "required evidence is present but uncalibrated",
+          "evidence_ids": [
+            "ev_3efc157eb79be8d4"
+          ]
+        },
+        "data": {
+          "scene_id": "scene_7a259879c34986d87500",
+          "frame": 15,
+          "direction": "left_of",
+          "subject": "gray_cannonball",
+          "reference": "pink_sphere",
+          "dimension": "2d",
+          "delta_subject_minus_reference": [
+            -66.007363,
+            59.263156
+          ]
+        },
+        "unavailable_reason": null
+      },
+      {
+        "order": 3,
+        "tool": "get_position",
+        "arguments": {
+          "scene_id": "scene_7a259879c34986d87500",
+          "obj": "pink_sphere",
+          "frame": 15
+        },
+        "duplicate": false,
+        "availability": "available",
+        "source": [
+          "sam31_mask_centroid"
+        ],
+        "units": "source_pixels",
+        "frame_range": [
+          15,
+          15
+        ],
+        "evidence_ids": [
+          "ev_b71b7dbcf5d2bcf7"
+        ],
+        "confidence": {
+          "score": null,
+          "status": "uncalibrated",
+          "basis": "required evidence is present but uncalibrated",
+          "evidence_ids": [
+            "ev_b71b7dbcf5d2bcf7"
+          ]
+        },
+        "data": {
+          "scene_id": "scene_7a259879c34986d87500",
+          "object_id": "pink_sphere",
+          "position": [
+            372.579091,
+            65.291818
+          ],
+          "requested_frame": 15,
+          "dimension": "2d",
+          "source_frame": 15
+        },
+        "unavailable_reason": null
+      },
+      {
+        "order": 4,
+        "tool": "get_trajectory",
+        "arguments": {
+          "scene_id": "scene_7a259879c34986d87500",
+          "obj": "pink_sphere",
+          "frame_range": [
+            0,
+            15
+          ]
+        },
+        "duplicate": false,
+        "availability": "available",
+        "source": [
+          "sam31_mask_centroid"
+        ],
+        "units": "source_pixels",
+        "frame_range": [
+          0,
+          15
+        ],
+        "evidence_ids": [
+          "ev_b71b7dbcf5d2bcf7"
+        ],
+        "confidence": {
+          "score": null,
+          "status": "uncalibrated",
+          "basis": "required evidence is present but uncalibrated",
+          "evidence_ids": [
+            "ev_b71b7dbcf5d2bcf7"
+          ]
+        },
+        "data": {
+          "scene_id": "scene_7a259879c34986d87500",
+          "object_id": "pink_sphere",
+          "start": [
+            372.567663,
+            34.13181
+          ],
+          "end": [
+            372.579091,
+            65.291818
+          ],
+          "dimension": "2d",
+          "point_count": 16,
+          "displacement": 31.16001,
+          "path_length": 31.406724,
+          "sampled_points": {
+            "count": 10,
+            "first": {
+              "frame": 0,
+              "position": "<list:2>"
+            },
+            "last": {
+              "frame": 15,
+              "position": "<list:2>"
+            }
+          }
+        },
+        "unavailable_reason": null
+      }
+    ],
+    "trace_audit": {
+      "duplicate_calls": 0,
+      "invalid_calls": 0,
+      "malformed_calls": 0
+    }
+  }
+}

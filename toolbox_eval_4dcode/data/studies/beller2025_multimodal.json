@@ -1,0 +1,277 @@
+{
+  "study": "beller2025_multimodal",
+  "title": "Beller2025Multimodal",
+  "description": "Plinko demonstrations expose a falling ball, obstacles, and landing regions to establish the physical behavior of the machine.",
+  "reasoning": "Plinko dynamics and multimodal instruction",
+  "summary": {
+    "study": "beller2025_multimodal",
+    "question_count": 0,
+    "scored_count": 0,
+    "answer_types": [],
+    "normalized_accuracy": null,
+    "mean_llm_confidence": null,
+    "mean_4d_confidence": null,
+    "mean_code_quality": 0.9857459,
+    "mean_gt_quality": 1.0,
+    "quality_coverage": 0.75,
+    "code_count": 10
+  },
+  "selected_sample": {
+    "code_id": "code_67ac8ea2633c14d2efce",
+    "qa_id": null,
+    "data_path": "data/samples/code_67ac8ea2633c14d2efce.json",
+    "selection_basis": "nearest_study_median_code_quality_no_answer_bearing_qa"
+  },
+  "selected_question": null,
+  "quality_statistics": {
+    "internal": {
+      "count": 10,
+      "mean": 0.9857459,
+      "min": 0.9832236,
+      "q1": 0.98554545,
+      "median": 0.9859966,
+      "q3": 0.9865190500000001,
+      "max": 0.9871284
+    },
+    "gt": {
+      "count": 10,
+      "mean": 1.0,
+      "min": 1.0,
+      "q1": 1.0,
+      "median": 1.0,
+      "q3": 1.0,
+      "max": 1.0
+    },
+    "coverage": {
+      "count": 10,
+      "mean": 0.75,
+      "min": 0.75,
+      "q1": 0.75,
+      "median": 0.75,
+      "q3": 0.75,
+      "max": 0.75
+    },
+    "source_failure_count": 0,
+    "metric_status": {
+      "camera_roundtrip_error_px": {
+        "not_applicable": 10
+      },
+      "duplicate_bbox_frame_pairs": {
+        "measured": 10
+      },
+      "hamrick_sim3_center_error": {
+        "not_applicable": 10
+      },
+      "hamrick_sim3_orientation_error_deg": {
+        "not_applicable": 10
+      },
+      "hamrick_sim3_size_error": {
+        "not_applicable": 10
+      },
+      "identity_count_agreement": {
+        "measured": 10
+      },
+      "mean_3d_reprojection_iou": {
+        "not_applicable": 10
+      },
+      "mean_kabsch_residual": {
+        "not_applicable": 10
+      },
+      "mean_sam_score": {
+        "measured": 10
+      },
+      "minimum_lifted_mask_point_support": {
+        "not_applicable": 10
+      },
+      "primary_source_failure_count": {
+        "measured": 10
+      },
+      "symbolic_center_2d_error_px": {
+        "unsupported": 10
+      },
+      "symbolic_relation_event_agreement": {
+        "unsupported": 10
+      },
+      "temporal_mask_coverage": {
+        "measured": 10
+      },
+      "tracking_owner_mismatch_count": {
+        "measured": 10
+      }
+    }
+  },
+  "confidence_statistics": {
+    "code": {
+      "count": 0,
+      "mean": null,
+      "min": null,
+      "q1": null,
+      "median": null,
+      "q3": null,
+      "max": null
+    },
+    "llm": {
+      "count": 0,
+      "mean": null,
+      "min": null,
+      "q1": null,
+      "median": null,
+      "q3": null,
+      "max": null
+    }
+  },
+  "tool_statistics": {
+    "total_calls": 0,
+    "duplicate_calls": 0,
+    "invalid_calls": 0,
+    "malformed_calls": 0,
+    "available_results": 0,
+    "unavailable_results": 0,
+    "unique_used_codes": 0,
+    "by_tool": [],
+    "evidence_groups": {}
+  },
+  "correlations": {
+    "code_confidence_vs_score": {
+      "status": "insufficient_variation",
+      "count": 0,
+      "pearson": null,
+      "spearman": null
+    },
+    "llm_confidence_vs_score": {
+      "status": "insufficient_variation",
+      "count": 0,
+      "pearson": null,
+      "spearman": null
+    },
+    "code_quality_vs_score": {
+      "status": "insufficient_variation",
+      "count": 0,
+      "pearson": null,
+      "spearman": null
+    },
+    "code_quality_vs_code_confidence": {
+      "status": "insufficient_variation",
+      "count": 0,
+      "pearson": null,
+      "spearman": null
+    }
+  },
+  "human_reference": {
+    "status": "not_available",
+    "noise_ceilings": [],
+    "human_target_question_count": 0,
+    "individual_response_count": 0,
+    "objective_human_task_score": null
+  },
+  "condition_metrics": [],
+  "calibration": [],
+  "bottleneck": null,
+  "formulas": [
+    {
+      "name": "Categorical task score",
+      "formula": "1[predicted = objective or human-modal target]",
+      "detail": "Exact agreement with an objective answer, or with the modal human answer when the target is a response distribution."
+    },
+    {
+      "name": "Slider task score",
+      "formula": "max(0, 1 - |prediction - target| / (maximum - minimum))",
+      "detail": "Range-normalized absolute-error score; raw MAE and RMSE remain available per study."
+    },
+    {
+      "name": "Multi-select task score",
+      "formula": "2 * precision * recall / (precision + recall)",
+      "detail": "Set F1 over selected option indices."
+    },
+    {
+      "name": "Identity quality",
+      "formula": "|predicted IDs intersection expected IDs| / |predicted IDs union expected IDs|",
+      "detail": "Jaccard agreement against the README and manifest object contract."
+    },
+    {
+      "name": "Temporal mask coverage",
+      "formula": "mean_objects(visible sampled frames / sampled frames)",
+      "detail": "Measures sustained mask support rather than frame-zero detection."
+    },
+    {
+      "name": "Symbolic center quality",
+      "formula": "1 / (1 + mean Euclidean pixel error / 10)",
+      "detail": "Applied only when independent, frame-aligned symbolic center trajectories exist."
+    },
+    {
+      "name": "Relation and event quality",
+      "formula": "|predicted labels intersection target labels| / |predicted labels union target labels|",
+      "detail": "Label-set Jaccard agreement, applied only when independent symbolic relation or event labels exist."
+    },
+    {
+      "name": "Camera quality",
+      "formula": "max(0, 1 - roundtrip error pixels / 1.5)",
+      "detail": "Projection and unprojection must agree within the 1.5-pixel acceptance scale."
+    },
+    {
+      "name": "Lifted point support",
+      "formula": "min(1, minimum valid mask points / 50)",
+      "detail": "Requires geometry to be supported by SAM-mask pixels lifted through VGGT-Omega."
+    },
+    {
+      "name": "Kabsch rigidity quality",
+      "formula": "max(0, 1 - normalized residual / 0.15)",
+      "detail": "Scores accepted local SE(3) estimates against the rigid-consistency residual threshold."
+    },
+    {
+      "name": "Hamrick Sim(3) center quality",
+      "formula": "max(0, 1 - aligned center error / 0.10)",
+      "detail": "Prediction geometry is aligned to hidden tower geometry for evaluation only; GT never repairs the code."
+    },
+    {
+      "name": "Hamrick Sim(3) size quality",
+      "formula": "max(0, 1 - aligned relative size error / 0.25)",
+      "detail": "Uses the accepted 0.25 relative-size error scale after diagnostic Sim(3) alignment."
+    },
+    {
+      "name": "Hamrick Sim(3) orientation quality",
+      "formula": "max(0, 1 - aligned orientation error degrees / 30)",
+      "detail": "Uses the accepted 30-degree orientation error scale after diagnostic Sim(3) alignment."
+    },
+    {
+      "name": "Internal 4D quality",
+      "formula": "mean(measured applicable internal normalized metrics)",
+      "detail": "GT-referenced metrics are excluded; unsupported or not-applicable metrics remain null."
+    },
+    {
+      "name": "GT quality",
+      "formula": "mean(measured applicable GT-referenced normalized metrics)",
+      "detail": "Reported separately from internal consistency and only where an independent comparison target exists."
+    },
+    {
+      "name": "Quality coverage",
+      "formula": "measured applicable metrics / applicable metrics",
+      "detail": "Prevents a high score over a small measurable subset from being mistaken for complete evaluation."
+    },
+    {
+      "name": "4D-code confidence",
+      "formula": "C_code(q) = min over required evidence-group scores",
+      "detail": "Each evidence group is also minimized across every code required by the question; missing evidence is zero."
+    },
+    {
+      "name": "LLM answer confidence",
+      "formula": "p_i = exp(z_i / T) / sum_j exp(z_j / T)",
+      "detail": "The selected answer likelihood uses five-fold out-of-fold temperature scaling when calibration is supported."
+    },
+    {
+      "name": "Human slider reliability",
+      "formula": "r_SB = 2r / (1 + r)",
+      "detail": "Spearman-Brown corrected split-half reliability over 200 deterministic response splits."
+    },
+    {
+      "name": "Human categorical reliability",
+      "formula": "mean(split-half modal agreement)",
+      "detail": "Agreement of modal categorical responses across 200 deterministic participant splits."
+    },
+    {
+      "name": "Routing gap",
+      "formula": "oracle-tool task score - native-tool task score",
+      "detail": "The 95% interval uses 1,000 grouped bootstrap resamples by experiment."
+    }
+  ]
+}

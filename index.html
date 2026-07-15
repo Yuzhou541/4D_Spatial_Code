@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Interactive object-centric 2D and 3D video parsing results from Dynamic 4D Spatial Code." />
+    <meta name="description" content="Interactive object-centric 2D and 3D video parsing, toolbox evaluation, and reasoning diagnostics from Dynamic 4D Spatial Code." />
     <meta name="theme-color" content="#0a0e13" />
     <title>Dynamic 4D Spatial Code | Interactive Research Showcase</title>
     <link rel="stylesheet" href="style.css" />
@@ -16,6 +16,7 @@
         <a class="brand" href="#project"><span class="brand-mark">4D</span><span>Dynamic 4D Spatial Code</span></a>
         <div class="nav-links">
           <a href="#method">Method</a>
+          <a href="#evaluation">Evaluation</a>
           <a href="#results">Results</a>
           <a class="source-link" href="https://github.com/Yuzhou541/4D_Spatial_Code">GitHub</a>
         </div>
@@ -27,8 +28,8 @@
           <p class="hero-tagline">From pixels to object-centric space-time.</p>
           <p class="hero-description">A unified representation for masks, motion, geometry, camera, and relations across dynamic 2D and 3D scenes.</p>
           <div class="hero-actions">
-            <a class="primary-action" href="#results">Explore results</a>
-            <a class="secondary-action" href="#method">View architecture</a>
+            <a class="primary-action" href="toolbox_eval_4dcode/index.html">Open evaluation dashboard</a>
+            <a class="secondary-action" href="#results">Explore parsing results</a>
           </div>
           <dl class="hero-stats">
             <div><dt>Studies</dt><dd>12</dd></div>
@@ -59,6 +60,29 @@
         <div class="geometry-paths">
           <article><span class="path-label">2D dynamics</span><p>Object masks, boxes, centers, velocities, visibility, trails, contacts, and events remain in image coordinates.</p></article>
           <article><span class="path-label">3D geometry</span><p>Mask pixels are lifted with VGGT-Omega, associated with SpatialTrackerV2 tracklets, and serialized as moving oriented cuboids and local SE(3).</p></article>
+        </div>
+      </section>
+      <section class="evaluation-section" id="evaluation">
+        <div class="evaluation-intro">
+          <div>
+            <p class="section-label">Toolbox evaluation</p>
+            <h2>Measure the code, the tools, and the reasoning.</h2>
+          </div>
+          <div class="evaluation-copy">
+            <p>Qwen3-4B answers Physics questions by selecting compact tools over prediction-only 4D Spatial Code. The dashboard separates representation quality, evidence confidence, routing behavior, calibrated answer confidence, and task score across twelve studies.</p>
+            <a class="evaluation-link" href="toolbox_eval_4dcode/index.html">Launch research dashboard</a>
+          </div>
+        </div>
+        <dl class="evaluation-metrics" aria-label="Accepted evaluation totals">
+          <div><dt>Canonical codes</dt><dd>532</dd></div>
+          <div><dt>Questions / scored</dt><dd>1,634 / 1,594</dd></div>
+          <div><dt>Question-weighted score</dt><dd>43.02%</dd></div>
+          <div><dt>Study-macro score</dt><dd>60.80%</dd></div>
+        </dl>
+        <div class="evaluation-footnotes">
+          <p><strong>Production condition</strong><span>Predicted code + Qwen-selected tools</span></p>
+          <p><strong>Controlled comparison</strong><span>Question-only, native tools, and oracle-selected tools</span></p>
+          <p><strong>Diagnostic boundary</strong><span>No causal code-bottleneck claim without oracle diagnostic coverage</span></p>
         </div>
       </section>
       <section class="results-section" id="results">

@@ -1,0 +1,2820 @@
+{
+  "code": {
+    "schema_name": "trajectory_grounded_4d_spatial_code",
+    "schema_version": "1.0.0",
+    "code_id": "code_83c97b566a24b499ec73",
+    "sample_id": "Wu2022That_exp2_Wu2022That_exp2_assets_trials_5_full",
+    "study": "wu2022_that",
+    "experiment": "exp2",
+    "scenes": [
+      {
+        "scene_id": "scene_83c97b566a24b499ec73",
+        "sample_id": "Wu2022That_exp2_Wu2022That_exp2_assets_trials_5_full",
+        "study": "wu2022_that",
+        "experiment": "exp2",
+        "parse_mode": "dynamic_2d",
+        "media_path": "Wu2022That/exp2/assets/trials/5/full.gif",
+        "timebase": {
+          "fps": 1.0,
+          "duration_sec": 19.0,
+          "source_frame_count": 19,
+          "sampled_frames": [
+            {
+              "sampled_index": 0,
+              "source_frame_index": 0,
+              "timestamp_sec": 0.0
+            },
+            {
+              "sampled_index": 1,
+              "source_frame_index": 1,
+              "timestamp_sec": 1.0
+            },
+            {
+              "sampled_index": 2,
+              "source_frame_index": 2,
+              "timestamp_sec": 2.0
+            },
+            {
+              "sampled_index": 3,
+              "source_frame_index": 4,
+              "timestamp_sec": 3.0
+            },
+            {
+              "sampled_index": 4,
+              "source_frame_index": 5,
+              "timestamp_sec": 4.0
+            },
+            {
+              "sampled_index": 5,
+              "source_frame_index": 6,
+              "timestamp_sec": 5.0
+            },
+            {
+              "sampled_index": 6,
+              "source_frame_index": 7,
+              "timestamp_sec": 6.0
+            },
+            {
+              "sampled_index": 7,
+              "source_frame_index": 8,
+              "timestamp_sec": 7.0
+            },
+            {
+              "sampled_index": 8,
+              "source_frame_index": 10,
+              "timestamp_sec": 8.0
+            },
+            {
+              "sampled_index": 9,
+              "source_frame_index": 11,
+              "timestamp_sec": 9.0
+            },
+            {
+              "sampled_index": 10,
+              "source_frame_index": 12,
+              "timestamp_sec": 10.0
+            },
+            {
+              "sampled_index": 11,
+              "source_frame_index": 13,
+              "timestamp_sec": 11.0
+            },
+            {
+              "sampled_index": 12,
+              "source_frame_index": 14,
+              "timestamp_sec": 12.0
+            },
+            {
+              "sampled_index": 13,
+              "source_frame_index": 16,
+              "timestamp_sec": 13.0
+            },
+            {
+              "sampled_index": 14,
+              "source_frame_index": 17,
+              "timestamp_sec": 14.0
+            },
+            {
+              "sampled_index": 15,
+              "source_frame_index": 18,
+              "timestamp_sec": 15.0
+            }
+          ]
+        },
+        "objects": [
+          {
+            "object_id": "agent",
+            "label": "agent",
+            "role": "decision_agent",
+            "identity_source": "qwen2.5-vl-real",
+            "identity_confidence": {
+              "score": 0.982048,
+              "status": "measured",
+              "basis": "qwen semantic identity confidence",
+              "evidence_ids": [
+                "scene_83c97b566a24b499ec73:agent:identity"
+              ]
+            },
+            "direct_fields": {
+              "bbox_2d": {
+                "availability": "available",
+                "source": "sam3.1-real",
+                "units": "source_pixels",
+                "frame_range": [
+                  0,
+                  15
+                ],
+                "records": [
+                  {
+                    "frame_index": 0,
+                    "timestamp_sec": 0.0,
+                    "bbox_2d": [
+                      11.0,
+                      61.0,
+                      40.0,
+                      91.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 1,
+                    "timestamp_sec": 1.0,
+                    "bbox_2d": [
+                      11.0,
+                      61.0,
+                      40.0,
+                      91.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 2,
+                    "timestamp_sec": 2.0,
+                    "bbox_2d": [
+                      11.0,
+                      61.0,
+                      40.0,
+                      91.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 3,
+                    "timestamp_sec": 3.0,
+                    "bbox_2d": [
+                      63.0,
+                      16.0,
+                      93.0,
+                      42.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 4,
+                    "timestamp_sec": 4.0,
+                    "bbox_2d": [
+                      114.0,
+                      12.0,
+                      144.0,
+                      42.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 5,
+                    "timestamp_sec": 5.0,
+                    "bbox_2d": [
+                      165.0,
+                      12.0,
+                      194.0,
+                      42.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 6,
+                    "timestamp_sec": 6.0,
+                    "bbox_2d": [
+                      216.0,
+                      12.0,
+                      245.0,
+                      42.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 7,
+                    "timestamp_sec": 7.0,
+                    "bbox_2d": [
+                      266.0,
+                      18.0,
+                      295.0,
+                      42.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 8,
+                    "timestamp_sec": 8.0,
+                    "bbox_2d": [
+                      266.0,
+                      18.0,
+                      295.0,
+                      42.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 9,
+                    "timestamp_sec": 9.0,
+                    "bbox_2d": [
+                      266.0,
+                      18.0,
+                      295.0,
+                      42.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 10,
+                    "timestamp_sec": 10.0,
+                    "bbox_2d": [
+                      266.0,
+                      18.0,
+                      295.0,
+                      42.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 11,
+                    "timestamp_sec": 11.0,
+                    "bbox_2d": [
+                      266.0,
+                      18.0,
+                      295.0,
+                      42.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 12,
+                    "timestamp_sec": 12.0,
+                    "bbox_2d": [
+                      266.0,
+                      18.0,
+                      295.0,
+                      42.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 13,
+                    "timestamp_sec": 13.0,
+                    "bbox_2d": [
+                      266.0,
+                      18.0,
+                      295.0,
+                      42.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 14,
+                    "timestamp_sec": 14.0,
+                    "bbox_2d": [
+                      266.0,
+                      18.0,
+                      295.0,
+                      42.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 15,
+                    "timestamp_sec": 15.0,
+                    "bbox_2d": [
+                      266.0,
+                      18.0,
+                      295.0,
+                      42.0
+                    ],
+                    "source": "sam3.1-real"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_83c97b566a24b499ec73:agent:bbox_2d"
+                ],
+                "confidence": {
+                  "score": 0.964096,
+                  "status": "measured",
+                  "basis": "mean source-model confidence",
+                  "evidence_ids": [
+                    "scene_83c97b566a24b499ec73:agent:bbox_2d"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "mask": {
+                "availability": "available",
+                "source": "sam3.1-real",
+                "units": "source_pixels",
+                "frame_range": [
+                  0,
+                  15
+                ],
+                "records": [
+                  {
+                    "frame_index": 0,
+                    "timestamp_sec": 0.0,
+                    "mask_ref": "agent_mask_t000",
+                    "bbox_2d": [
+                      11.0,
+                      61.0,
+                      40.0,
+                      91.0
+                    ],
+                    "area": 671,
+                    "tracking_points": [
+                      {
+                        "point_id": "agent_p1",
+                        "object_id": "agent",
+                        "uv": [
+                          25.0,
+                          76.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p2",
+                        "object_id": "agent",
+                        "uv": [
+                          21.0,
+                          76.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p3",
+                        "object_id": "agent",
+                        "uv": [
+                          28.0,
+                          76.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 1,
+                    "timestamp_sec": 1.0,
+                    "mask_ref": "agent_mask_t001",
+                    "bbox_2d": [
+                      11.0,
+                      61.0,
+                      40.0,
+                      91.0
+                    ],
+                    "area": 671,
+                    "tracking_points": [
+                      {
+                        "point_id": "agent_p1",
+                        "object_id": "agent",
+                        "uv": [
+                          25.0,
+                          76.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p2",
+                        "object_id": "agent",
+                        "uv": [
+                          21.0,
+                          76.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p3",
+                        "object_id": "agent",
+                        "uv": [
+                          28.0,
+                          76.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 2,
+                    "timestamp_sec": 2.0,
+                    "mask_ref": "agent_mask_t002",
+                    "bbox_2d": [
+                      11.0,
+                      61.0,
+                      40.0,
+                      91.0
+                    ],
+                    "area": 671,
+                    "tracking_points": [
+                      {
+                        "point_id": "agent_p1",
+                        "object_id": "agent",
+                        "uv": [
+                          25.0,
+                          76.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p2",
+                        "object_id": "agent",
+                        "uv": [
+                          21.0,
+                          76.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p3",
+                        "object_id": "agent",
+                        "uv": [
+                          28.0,
+                          76.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 3,
+                    "timestamp_sec": 3.0,
+                    "mask_ref": "agent_mask_t003",
+                    "bbox_2d": [
+                      63.0,
+                      16.0,
+                      93.0,
+                      42.0
+                    ],
+                    "area": 417,
+                    "tracking_points": [
+                      {
+                        "point_id": "agent_p1",
+                        "object_id": "agent",
+                        "uv": [
+                          77.0,
+                          31.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p2",
+                        "object_id": "agent",
+                        "uv": [
+                          72.0,
+                          32.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p3",
+                        "object_id": "agent",
+                        "uv": [
+                          81.0,
+                          32.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 4,
+                    "timestamp_sec": 4.0,
+                    "mask_ref": "agent_mask_t004",
+                    "bbox_2d": [
+                      114.0,
+                      12.0,
+                      144.0,
+                      42.0
+                    ],
+                    "area": 683,
+                    "tracking_points": [
+                      {
+                        "point_id": "agent_p1",
+                        "object_id": "agent",
+                        "uv": [
+                          128.0,
+                          27.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p2",
+                        "object_id": "agent",
+                        "uv": [
+                          125.0,
+                          27.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p3",
+                        "object_id": "agent",
+                        "uv": [
+                          132.0,
+                          27.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 5,
+                    "timestamp_sec": 5.0,
+                    "mask_ref": "agent_mask_t005",
+                    "bbox_2d": [
+                      165.0,
+                      12.0,
+                      194.0,
+                      42.0
+                    ],
+                    "area": 681,
+                    "tracking_points": [
+                      {
+                        "point_id": "agent_p1",
+                        "object_id": "agent",
+                        "uv": [
+                          179.0,
+                          27.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p2",
+                        "object_id": "agent",
+                        "uv": [
+                          176.0,
+                          27.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p3",
+                        "object_id": "agent",
+                        "uv": [
+                          182.0,
+                          27.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 6,
+                    "timestamp_sec": 6.0,
+                    "mask_ref": "agent_mask_t006",
+                    "bbox_2d": [
+                      216.0,
+                      12.0,
+                      245.0,
+                      42.0
+                    ],
+                    "area": 677,
+                    "tracking_points": [
+                      {
+                        "point_id": "agent_p1",
+                        "object_id": "agent",
+                        "uv": [
+                          230.0,
+                          27.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p2",
+                        "object_id": "agent",
+                        "uv": [
+                          226.0,
+                          27.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p3",
+                        "object_id": "agent",
+                        "uv": [
+                          233.0,
+                          27.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 7,
+                    "timestamp_sec": 7.0,
+                    "mask_ref": "agent_mask_t007",
+                    "bbox_2d": [
+                      266.0,
+                      18.0,
+                      295.0,
+                      42.0
+                    ],
+                    "area": 453,
+                    "tracking_points": [
+                      {
+                        "point_id": "agent_p1",
+                        "object_id": "agent",
+                        "uv": [
+                          280.0,
+                          30.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p2",
+                        "object_id": "agent",
+                        "uv": [
+                          276.0,
+                          31.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p3",
+                        "object_id": "agent",
+                        "uv": [
+                          283.0,
+                          31.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 8,
+                    "timestamp_sec": 8.0,
+                    "mask_ref": "agent_mask_t008",
+                    "bbox_2d": [
+                      266.0,
+                      18.0,
+                      295.0,
+                      42.0
+                    ],
+                    "area": 449,
+                    "tracking_points": [
+                      {
+                        "point_id": "agent_p1",
+                        "object_id": "agent",
+                        "uv": [
+                          280.0,
+                          30.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p2",
+                        "object_id": "agent",
+                        "uv": [
+                          276.0,
+                          31.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p3",
+                        "object_id": "agent",
+                        "uv": [
+                          283.0,
+                          31.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 9,
+                    "timestamp_sec": 9.0,
+                    "mask_ref": "agent_mask_t009",
+                    "bbox_2d": [
+                      266.0,
+                      18.0,
+                      295.0,
+                      42.0
+                    ],
+                    "area": 452,
+                    "tracking_points": [
+                      {
+                        "point_id": "agent_p1",
+                        "object_id": "agent",
+                        "uv": [
+                          280.0,
+                          30.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p2",
+                        "object_id": "agent",
+                        "uv": [
+                          276.0,
+                          31.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p3",
+                        "object_id": "agent",
+                        "uv": [
+                          283.0,
+                          31.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 10,
+                    "timestamp_sec": 10.0,
+                    "mask_ref": "agent_mask_t010",
+                    "bbox_2d": [
+                      266.0,
+                      18.0,
+                      295.0,
+                      42.0
+                    ],
+                    "area": 453,
+                    "tracking_points": [
+                      {
+                        "point_id": "agent_p1",
+                        "object_id": "agent",
+                        "uv": [
+                          280.0,
+                          30.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p2",
+                        "object_id": "agent",
+                        "uv": [
+                          276.0,
+                          31.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p3",
+                        "object_id": "agent",
+                        "uv": [
+                          283.0,
+                          31.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 11,
+                    "timestamp_sec": 11.0,
+                    "mask_ref": "agent_mask_t011",
+                    "bbox_2d": [
+                      266.0,
+                      18.0,
+                      295.0,
+                      42.0
+                    ],
+                    "area": 452,
+                    "tracking_points": [
+                      {
+                        "point_id": "agent_p1",
+                        "object_id": "agent",
+                        "uv": [
+                          280.0,
+                          30.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p2",
+                        "object_id": "agent",
+                        "uv": [
+                          276.0,
+                          31.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p3",
+                        "object_id": "agent",
+                        "uv": [
+                          283.0,
+                          31.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 12,
+                    "timestamp_sec": 12.0,
+                    "mask_ref": "agent_mask_t012",
+                    "bbox_2d": [
+                      266.0,
+                      18.0,
+                      295.0,
+                      42.0
+                    ],
+                    "area": 453,
+                    "tracking_points": [
+                      {
+                        "point_id": "agent_p1",
+                        "object_id": "agent",
+                        "uv": [
+                          280.0,
+                          30.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p2",
+                        "object_id": "agent",
+                        "uv": [
+                          276.0,
+                          31.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p3",
+                        "object_id": "agent",
+                        "uv": [
+                          283.0,
+                          31.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 13,
+                    "timestamp_sec": 13.0,
+                    "mask_ref": "agent_mask_t013",
+                    "bbox_2d": [
+                      266.0,
+                      18.0,
+                      295.0,
+                      42.0
+                    ],
+                    "area": 452,
+                    "tracking_points": [
+                      {
+                        "point_id": "agent_p1",
+                        "object_id": "agent",
+                        "uv": [
+                          280.0,
+                          30.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p2",
+                        "object_id": "agent",
+                        "uv": [
+                          276.0,
+                          31.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p3",
+                        "object_id": "agent",
+                        "uv": [
+                          283.0,
+                          31.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 14,
+                    "timestamp_sec": 14.0,
+                    "mask_ref": "agent_mask_t014",
+                    "bbox_2d": [
+                      266.0,
+                      18.0,
+                      295.0,
+                      42.0
+                    ],
+                    "area": 452,
+                    "tracking_points": [
+                      {
+                        "point_id": "agent_p1",
+                        "object_id": "agent",
+                        "uv": [
+                          280.0,
+                          30.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p2",
+                        "object_id": "agent",
+                        "uv": [
+                          276.0,
+                          31.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p3",
+                        "object_id": "agent",
+                        "uv": [
+                          283.0,
+                          31.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 15,
+                    "timestamp_sec": 15.0,
+                    "mask_ref": "agent_mask_t015",
+                    "bbox_2d": [
+                      266.0,
+                      18.0,
+                      295.0,
+                      42.0
+                    ],
+                    "area": 452,
+                    "tracking_points": [
+                      {
+                        "point_id": "agent_p1",
+                        "object_id": "agent",
+                        "uv": [
+                          280.0,
+                          30.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p2",
+                        "object_id": "agent",
+                        "uv": [
+                          276.0,
+                          31.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "agent_p3",
+                        "object_id": "agent",
+                        "uv": [
+                          283.0,
+                          31.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_83c97b566a24b499ec73:agent:mask"
+                ],
+                "confidence": {
+                  "score": 0.964096,
+                  "status": "measured",
+                  "basis": "mean source-model confidence",
+                  "evidence_ids": [
+                    "scene_83c97b566a24b499ec73:agent:mask"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "point_tracks_2d": {
+                "availability": "available",
+                "source": "sam31_mask_owned_interior_points",
+                "units": "source_pixels",
+                "frame_range": null,
+                "records": [
+                  {
+                    "tracklet_id": "trk_agent_p1",
+                    "object_id": "agent",
+                    "point_id": "agent_p1",
+                    "uv_sequence": [
+                      [
+                        25.0,
+                        76.0
+                      ],
+                      [
+                        25.0,
+                        76.0
+                      ],
+                      [
+                        25.0,
+                        76.0
+                      ],
+                      [
+                        77.0,
+                        31.0
+                      ],
+                      [
+                        128.0,
+                        27.0
+                      ],
+                      [
+                        179.0,
+                        27.0
+                      ],
+                      [
+                        230.0,
+                        27.0
+                      ],
+                      [
+                        280.0,
+                        30.0
+                      ],
+                      [
+                        280.0,
+                        30.0
+                      ],
+                      [
+                        280.0,
+                        30.0
+                      ],
+                      [
+                        280.0,
+                        30.0
+                      ],
+                      [
+                        280.0,
+                        30.0
+                      ],
+                      [
+                        280.0,
+                        30.0
+                      ],
+                      [
+                        280.0,
+                        30.0
+                      ],
+                      [
+                        280.0,
+                        30.0
+                      ],
+                      [
+                        280.0,
+                        30.0
+                      ]
+                    ],
+                    "visibility": [
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "confidence": [
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0
+                    ],
+                    "source": "sam31_mask_owned_interior_points"
+                  },
+                  {
+                    "tracklet_id": "trk_agent_p2",
+                    "object_id": "agent",
+                    "point_id": "agent_p2",
+                    "uv_sequence": [
+                      [
+                        21.0,
+                        76.0
+                      ],
+                      [
+                        21.0,
+                        76.0
+                      ],
+                      [
+                        21.0,
+                        76.0
+                      ],
+                      [
+                        72.0,
+                        32.0
+                      ],
+                      [
+                        125.0,
+                        27.0
+                      ],
+                      [
+                        176.0,
+                        27.0
+                      ],
+                      [
+                        226.0,
+                        27.0
+                      ],
+                      [
+                        276.0,
+                        31.0
+                      ],
+                      [
+                        276.0,
+                        31.0
+                      ],
+                      [
+                        276.0,
+                        31.0
+                      ],
+                      [
+                        276.0,
+                        31.0
+                      ],
+                      [
+                        276.0,
+                        31.0
+                      ],
+                      [
+                        276.0,
+                        31.0
+                      ],
+                      [
+                        276.0,
+                        31.0
+                      ],
+                      [
+                        276.0,
+                        31.0
+                      ],
+                      [
+                        276.0,
+                        31.0
+                      ]
+                    ],
+                    "visibility": [
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "confidence": [
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0
+                    ],
+                    "source": "sam31_mask_owned_interior_points"
+                  },
+                  {
+                    "tracklet_id": "trk_agent_p3",
+                    "object_id": "agent",
+                    "point_id": "agent_p3",
+                    "uv_sequence": [
+                      [
+                        28.0,
+                        76.0
+                      ],
+                      [
+                        28.0,
+                        76.0
+                      ],
+                      [
+                        28.0,
+                        76.0
+                      ],
+                      [
+                        81.0,
+                        32.0
+                      ],
+                      [
+                        132.0,
+                        27.0
+                      ],
+                      [
+                        182.0,
+                        27.0
+                      ],
+                      [
+                        233.0,
+                        27.0
+                      ],
+                      [
+                        283.0,
+                        31.0
+                      ],
+                      [
+                        283.0,
+                        31.0
+                      ],
+                      [
+                        283.0,
+                        31.0
+                      ],
+                      [
+                        283.0,
+                        31.0
+                      ],
+                      [
+                        283.0,
+                        31.0
+                      ],
+                      [
+                        283.0,
+                        31.0
+                      ],
+                      [
+                        283.0,
+                        31.0
+                      ],
+                      [
+                        283.0,
+                        31.0
+                      ],
+                      [
+                        283.0,
+                        31.0
+                      ]
+                    ],
+                    "visibility": [
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "confidence": [
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0
+                    ],
+                    "source": "sam31_mask_owned_interior_points"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_83c97b566a24b499ec73:agent:point_tracks_2d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "uncalibrated",
+                  "basis": "field is present but source confidence is unavailable",
+                  "evidence_ids": [
+                    "scene_83c97b566a24b499ec73:agent:point_tracks_2d"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "raw_tracklets": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units_and_source_pixels",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_83c97b566a24b499ec73:agent:raw_tracklets"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_83c97b566a24b499ec73:agent:raw_tracklets"
+                  ]
+                },
+                "unavailable_reason": "raw_tracklets was not produced for this scene/object"
+              },
+              "accepted_tracklets": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units_and_source_pixels",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_83c97b566a24b499ec73:agent:accepted_tracklets"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_83c97b566a24b499ec73:agent:accepted_tracklets"
+                  ]
+                },
+                "unavailable_reason": "accepted_tracklets was not produced for this scene/object"
+              }
+            },
+            "computed_fields": {
+              "center_2d": {
+                "availability": "available",
+                "source": "sam31_mask_centroid",
+                "units": "source_pixels",
+                "frame_range": [
+                  0,
+                  15
+                ],
+                "records": [
+                  {
+                    "frame_index": 0,
+                    "timestamp_sec": 0.0,
+                    "uv": [
+                      24.842027,
+                      75.742176
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 1,
+                    "timestamp_sec": 1.0,
+                    "uv": [
+                      24.842027,
+                      75.742176
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 2,
+                    "timestamp_sec": 2.0,
+                    "uv": [
+                      24.842027,
+                      75.742176
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 3,
+                    "timestamp_sec": 3.0,
+                    "uv": [
+                      76.841727,
+                      31.297362
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 4,
+                    "timestamp_sec": 4.0,
+                    "uv": [
+                      128.36164,
+                      26.654466
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 5,
+                    "timestamp_sec": 5.0,
+                    "uv": [
+                      179.004405,
+                      26.662261
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 6,
+                    "timestamp_sec": 6.0,
+                    "uv": [
+                      229.782866,
+                      26.747415
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 7,
+                    "timestamp_sec": 7.0,
+                    "uv": [
+                      279.818985,
+                      30.225166
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 8,
+                    "timestamp_sec": 8.0,
+                    "uv": [
+                      279.817372,
+                      30.285078
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 9,
+                    "timestamp_sec": 9.0,
+                    "uv": [
+                      279.825221,
+                      30.247788
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 10,
+                    "timestamp_sec": 10.0,
+                    "uv": [
+                      279.818985,
+                      30.225166
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 11,
+                    "timestamp_sec": 11.0,
+                    "uv": [
+                      279.825221,
+                      30.247788
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 12,
+                    "timestamp_sec": 12.0,
+                    "uv": [
+                      279.818985,
+                      30.225166
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 13,
+                    "timestamp_sec": 13.0,
+                    "uv": [
+                      279.825221,
+                      30.247788
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 14,
+                    "timestamp_sec": 14.0,
+                    "uv": [
+                      279.825221,
+                      30.247788
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 15,
+                    "timestamp_sec": 15.0,
+                    "uv": [
+                      279.825221,
+                      30.247788
+                    ],
+                    "source": "sam31_mask_centroid"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_83c97b566a24b499ec73:agent:center_2d"
+                ],
+                "confidence": {
+                  "score": 0.964096,
+                  "status": "measured",
+                  "basis": "mean source-model confidence",
+                  "evidence_ids": [
+                    "scene_83c97b566a24b499ec73:agent:center_2d"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "velocity_2d": {
+                "availability": "available",
+                "source": "finite_difference_center_2d",
+                "units": "source_pixels_per_second",
+                "frame_range": [
+                  1,
+                  15
+                ],
+                "records": [
+                  {
+                    "frame_index": 1,
+                    "duv_dt": [
+                      0.0,
+                      0.0
+                    ],
+                    "speed_px_per_sec": 0.0,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 2,
+                    "duv_dt": [
+                      0.0,
+                      0.0
+                    ],
+                    "speed_px_per_sec": 0.0,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 3,
+                    "duv_dt": [
+                      51.9997,
+                      -44.444814
+                    ],
+                    "speed_px_per_sec": 68.405484,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 4,
+                    "duv_dt": [
+                      51.519913,
+                      -4.642896
+                    ],
+                    "speed_px_per_sec": 51.728695,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 5,
+                    "duv_dt": [
+                      50.642765,
+                      0.007795
+                    ],
+                    "speed_px_per_sec": 50.642766,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 6,
+                    "duv_dt": [
+                      50.778461,
+                      0.085154
+                    ],
+                    "speed_px_per_sec": 50.778532,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 7,
+                    "duv_dt": [
+                      50.036119,
+                      3.477751
+                    ],
+                    "speed_px_per_sec": 50.156834,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 8,
+                    "duv_dt": [
+                      -0.001613,
+                      0.059912
+                    ],
+                    "speed_px_per_sec": 0.059934,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 9,
+                    "duv_dt": [
+                      0.007849,
+                      -0.03729
+                    ],
+                    "speed_px_per_sec": 0.038107,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 10,
+                    "duv_dt": [
+                      -0.006236,
+                      -0.022622
+                    ],
+                    "speed_px_per_sec": 0.023466,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 11,
+                    "duv_dt": [
+                      0.006236,
+                      0.022622
+                    ],
+                    "speed_px_per_sec": 0.023466,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 12,
+                    "duv_dt": [
+                      -0.006236,
+                      -0.022622
+                    ],
+                    "speed_px_per_sec": 0.023466,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 13,
+                    "duv_dt": [
+                      0.006236,
+                      0.022622
+                    ],
+                    "speed_px_per_sec": 0.023466,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 14,
+                    "duv_dt": [
+                      0.0,
+                      0.0
+                    ],
+                    "speed_px_per_sec": 0.0,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 15,
+                    "duv_dt": [
+                      0.0,
+                      0.0
+                    ],
+                    "speed_px_per_sec": 0.0,
+                    "source": "finite_difference_center_2d"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_83c97b566a24b499ec73:agent:velocity_2d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "uncalibrated",
+                  "basis": "field is present but source confidence is unavailable",
+                  "evidence_ids": [
+                    "scene_83c97b566a24b499ec73:agent:velocity_2d"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "acceleration_2d": {
+                "availability": "available",
+                "source": "finite_difference_velocity_2d",
+                "units": "source_pixels_per_second_squared",
+                "frame_range": [
+                  2,
+                  15
+                ],
+                "records": [
+                  {
+                    "frame_index": 2,
+                    "duv_dt2": [
+                      0.0,
+                      0.0
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 3,
+                    "duv_dt2": [
+                      51.9997,
+                      -44.444814
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 4,
+                    "duv_dt2": [
+                      -0.479787,
+                      39.801918
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 5,
+                    "duv_dt2": [
+                      -0.877148,
+                      4.650691
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 6,
+                    "duv_dt2": [
+                      0.135696,
+                      0.077359
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 7,
+                    "duv_dt2": [
+                      -0.742342,
+                      3.392597
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 8,
+                    "duv_dt2": [
+                      -50.037732,
+                      -3.417839
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 9,
+                    "duv_dt2": [
+                      0.009462,
+                      -0.097202
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 10,
+                    "duv_dt2": [
+                      -0.014085,
+                      0.014668
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 11,
+                    "duv_dt2": [
+                      0.012472,
+                      0.045244
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 12,
+                    "duv_dt2": [
+                      -0.012472,
+                      -0.045244
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 13,
+                    "duv_dt2": [
+                      0.012472,
+                      0.045244
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 14,
+                    "duv_dt2": [
+                      -0.006236,
+                      -0.022622
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 15,
+                    "duv_dt2": [
+                      0.0,
+                      0.0
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_83c97b566a24b499ec73:agent:acceleration_2d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "uncalibrated",
+                  "basis": "field is present but source confidence is unavailable",
+                  "evidence_ids": [
+                    "scene_83c97b566a24b499ec73:agent:acceleration_2d"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "visibility": {
+                "availability": "available",
+                "source": "sam31_mask_area",
+                "units": "probability",
+                "frame_range": [
+                  0,
+                  15
+                ],
+                "records": [
+                  {
+                    "frame_index": 0,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 1,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 2,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 3,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 4,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 5,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 6,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 7,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 8,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 9,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 10,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 11,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 12,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 13,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 14,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 15,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_83c97b566a24b499ec73:agent:visibility"
+                ],
+                "confidence": {
+                  "score": 1.0,
+                  "status": "measured",
+                  "basis": "mean source-model confidence",
+                  "evidence_ids": [
+                    "scene_83c97b566a24b499ec73:agent:visibility"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "point_cloud": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_83c97b566a24b499ec73:agent:point_cloud"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_83c97b566a24b499ec73:agent:point_cloud"
+                  ]
+                },
+                "unavailable_reason": "point_cloud was not produced for this scene/object"
+              },
+              "center_3d": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_83c97b566a24b499ec73:agent:center_3d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_83c97b566a24b499ec73:agent:center_3d"
+                  ]
+                },
+                "unavailable_reason": "center_3d was not produced for this scene/object"
+              },
+              "velocity_3d": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units_per_second",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_83c97b566a24b499ec73:agent:velocity_3d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_83c97b566a24b499ec73:agent:velocity_3d"
+                  ]
+                },
+                "unavailable_reason": "velocity_3d was not produced for this scene/object"
+              },
+              "bbox_3d": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_83c97b566a24b499ec73:agent:bbox_3d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_83c97b566a24b499ec73:agent:bbox_3d"
+                  ]
+                },
+                "unavailable_reason": "bbox_3d was not produced for this scene/object"
+              },
+              "size_3d": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_83c97b566a24b499ec73:agent:size_3d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_83c97b566a24b499ec73:agent:size_3d"
+                  ]
+                },
+                "unavailable_reason": "size_3d was not produced for this scene/object"
+              },
+              "local_se3": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_83c97b566a24b499ec73:agent:local_se3"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_83c97b566a24b499ec73:agent:local_se3"
+                  ]
+                },
+                "unavailable_reason": "local_se3 was not produced for this scene/object"
+              },
+              "rigidity": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "normalized_residual",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_83c97b566a24b499ec73:agent:rigidity"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_83c97b566a24b499ec73:agent:rigidity"
+                  ]
+                },
+                "unavailable_reason": "rigidity was not produced for this scene/object"
+              }
+            }
+          }
+        ],
+        "scene_fields": {
+          "camera": {
+            "availability": "unavailable",
+            "source": null,
+            "units": "source_pixels_and_world_units",
+            "frame_range": null,
+            "records": [],
+            "evidence_ids": [
+              "scene_83c97b566a24b499ec73:camera"
+            ],
+            "confidence": {
+              "score": null,
+              "status": "unavailable",
+              "basis": "field is absent",
+              "evidence_ids": [
+                "scene_83c97b566a24b499ec73:camera"
+              ]
+            },
+            "unavailable_reason": "camera was not produced for this scene/object"
+          },
+          "depth": {
+            "availability": "unavailable",
+            "source": null,
+            "units": "world_units",
+            "frame_range": null,
+            "records": [],
+            "evidence_ids": [
+              "scene_83c97b566a24b499ec73:depth"
+            ],
+            "confidence": {
+              "score": null,
+              "status": "unavailable",
+              "basis": "field is absent",
+              "evidence_ids": [
+                "scene_83c97b566a24b499ec73:depth"
+              ]
+            },
+            "unavailable_reason": "depth was not produced for this scene/object"
+          },
+          "point_map": {
+            "availability": "unavailable",
+            "source": null,
+            "units": "world_units",
+            "frame_range": null,
+            "records": [],
+            "evidence_ids": [
+              "scene_83c97b566a24b499ec73:point_map"
+            ],
+            "confidence": {
+              "score": null,
+              "status": "unavailable",
+              "basis": "field is absent",
+              "evidence_ids": [
+                "scene_83c97b566a24b499ec73:point_map"
+              ]
+            },
+            "unavailable_reason": "point_map was not produced for this scene/object"
+          }
+        },
+        "relations": {
+          "availability": "unavailable",
+          "source": "computed_relations",
+          "units": null,
+          "frame_range": null,
+          "records": [],
+          "evidence_ids": [
+            "scene_83c97b566a24b499ec73:relations"
+          ],
+          "confidence": {
+            "score": null,
+            "status": "unavailable",
+            "basis": "field is absent",
+            "evidence_ids": [
+              "scene_83c97b566a24b499ec73:relations"
+            ]
+          },
+          "unavailable_reason": "relations was not produced for this scene/object"
+        },
+        "events": {
+          "availability": "unavailable",
+          "source": "mixed:computed_events,trial_or_instruction_metadata",
+          "units": null,
+          "frame_range": null,
+          "records": [],
+          "evidence_ids": [
+            "scene_83c97b566a24b499ec73:events"
+          ],
+          "confidence": {
+            "score": null,
+            "status": "unavailable",
+            "basis": "field is absent",
+            "evidence_ids": [
+              "scene_83c97b566a24b499ec73:events"
+            ]
+          },
+          "unavailable_reason": "events was not produced for this scene/object"
+        }
+      }
+    ],
+    "provenance": {
+      "source_artifact_sha256": "c847529667109a11edef379f65be436308c213b74c8a806bd1bededd06871ff1",
+      "source_pipeline": "model_parsed",
+      "models": {
+        "semantic_prompt_source": "qwen2.5-vl-real",
+        "sam31": "sam3.1-real"
+      },
+      "migration_version": "physics-toolbox-eval-1"
+    },
+    "learned_fields": {
+      "status": "not_run",
+      "reason": "OCTC learned/refined fields were not run for the accepted Physics parses"
+    }
+  },
+  "viewer": {
+    "media_url": "media/code_83c97b566a24b499ec73/video.mp4",
+    "poster_url": "media/code_83c97b566a24b499ec73/poster.png",
+    "mask_root": "media/code_83c97b566a24b499ec73/masks",
+    "source_width": 512,
+    "source_height": 157,
+    "source_media_path": "C:\\Users\\ROG\\Desktop\\Dynamic_4D_Spatial_Code\\data\\physics_subset\\physics_subset\\Wu2022That\\exp2\\assets\\trials\\5\\full.gif",
+    "playback_rate": 0.5,
+    "scene_behavior": "dynamic"
+  },
+  "selection": {
+    "qa_id": "qa_712edd6d56bb04da7aad",
+    "selection_basis": "target_available_nearest_study_medians_then_tool_diversity"
+  },
+  "question": {
+    "qa_id": "qa_712edd6d56bb04da7aad",
+    "prompt": "To what extent do you agree with the following statement? If the player had taken the blue path this time, then they would have won.",
+    "answer_type": "slider",
+    "options": [],
+    "slider": {
+      "minimum": 0.0,
+      "maximum": 100.0
+    },
+    "target": {
+      "availability": "available",
+      "source": "human",
+      "objective": null,
+      "human_mean": 94.416667,
+      "human_values": [
+        73,
+        100,
+        98,
+        100,
+        94,
+        99,
+        100,
+        100,
+        100,
+        65,
+        90,
+        100,
+        99,
+        77,
+        38,
+        90,
+        99,
+        99,
+        100,
+        94,
+        100,
+        98,
+        100,
+        100,
+        98,
+        100,
+        98,
+        100,
+        100,
+        89,
+        100,
+        99,
+        100,
+        100,
+        100,
+        98,
+        99,
+        50,
+        100,
+        99,
+        100,
+        96,
+        100,
+        99,
+        99,
+        99,
+        96,
+        100
+      ],
+      "unavailable_reason": null
+    },
+    "ground_truth_display": "94.42",
+    "answer": {
+      "value": 30.0,
+      "raw_answer_confidence": 1.5016814359114505e-05,
+      "calibrated_answer_confidence": 0.014549558860618183,
+      "calibration_status": "out_of_fold_temperature_scaled"
+    },
+    "answer_display": "30",
+    "likelihood": {
+      "candidate_values": {
+        "count": 21,
+        "first": "0",
+        "last": "100"
+      },
+      "candidate_codes": {
+        "count": 21,
+        "first": "A",
+        "last": "U"
+      },
+      "logits": {
+        "count": 21,
+        "first": 19.625,
+        "last": 29.5
+      },
+      "probabilities": {
+        "count": 21,
+        "first": 0.0,
+        "last": 0.003674
+      },
+      "method": "single_token_conditional_candidate_likelihood",
+      "prompt_token_count": 1597,
+      "bin_values": {
+        "count": 21,
+        "first": 0.0,
+        "last": 100.0
+      },
+      "selected_probability": 1.5e-05,
+      "selected_index": 6,
+      "calibrated_probabilities": {
+        "count": 21,
+        "first": 0.004873,
+        "last": 0.057545
+      }
+    },
+    "score": 0.35583332999999995,
+    "code_ids": [
+      "code_83c97b566a24b499ec73"
+    ],
+    "used_code_ids": [
+      "code_83c97b566a24b499ec73"
+    ],
+    "code_confidence": {
+      "qa_id": "qa_712edd6d56bb04da7aad",
+      "score": 0.0,
+      "status": "partial",
+      "required_groups": [
+        "identity",
+        "trajectory",
+        "motion",
+        "relations"
+      ],
+      "group_scores": {
+        "identity": 1.0,
+        "trajectory": 0.964096,
+        "motion": 0.964096,
+        "relations": 0.0
+      },
+      "coverage": 0.75,
+      "evidence_code_ids": [
+        "code_83c97b566a24b499ec73"
+      ]
+    },
+    "code_quality": [
+      {
+        "code_id": "code_83c97b566a24b499ec73",
+        "scene_id": "scene_83c97b566a24b499ec73",
+        "study": "wu2022_that",
+        "parse_mode": "dynamic_2d",
+        "metrics": [
+          {
+            "name": "identity_count_agreement",
+            "status": "measured",
+            "value": 1.0,
+            "units": "jaccard",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_83c97b566a24b499ec73:identity",
+              "eval:code_83c97b566a24b499ec73:expected_objects"
+            ],
+            "comparison_target": "README/manifest object contract",
+            "reason": null
+          },
+          {
+            "name": "temporal_mask_coverage",
+            "status": "measured",
+            "value": 1.0,
+            "units": "fraction",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_83c97b566a24b499ec73:objects:mask"
+            ],
+            "comparison_target": "sampled-frame coverage",
+            "reason": null
+          },
+          {
+            "name": "mean_sam_score",
+            "status": "measured",
+            "value": 0.964096,
+            "units": "probability",
+            "normalized_quality": 0.964096,
+            "evidence_ids": [
+              "scene_83c97b566a24b499ec73:sam_summary"
+            ],
+            "comparison_target": "SAM3.1 source confidence",
+            "reason": null
+          },
+          {
+            "name": "duplicate_bbox_frame_pairs",
+            "status": "measured",
+            "value": 0,
+            "units": "count",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_83c97b566a24b499ec73:objects:bbox_2d"
+            ],
+            "comparison_target": "pairwise IoU <= 0.85 for distinct object IDs",
+            "reason": null
+          },
+          {
+            "name": "tracking_owner_mismatch_count",
+            "status": "measured",
+            "value": 0,
+            "units": "count",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_83c97b566a24b499ec73:objects:tracklets"
+            ],
+            "comparison_target": "tracklet/object ownership invariant",
+            "reason": null
+          },
+          {
+            "name": "primary_source_failure_count",
+            "status": "measured",
+            "value": 0,
+            "units": "count",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_83c97b566a24b499ec73:objects:provenance"
+            ],
+            "comparison_target": "mask and bbox source must be sam3.1-real",
+            "reason": null
+          },
+          {
+            "name": "symbolic_center_2d_error_px",
+            "status": "unsupported",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "eval:code_83c97b566a24b499ec73:symbolic_scene"
+            ],
+            "comparison_target": "frame-aligned symbolic center trajectory",
+            "reason": "source symbolic metadata does not expose frame-aligned 2D trajectories"
+          },
+          {
+            "name": "symbolic_relation_event_agreement",
+            "status": "unsupported",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "eval:code_83c97b566a24b499ec73:symbolic_scene"
+            ],
+            "comparison_target": "explicit symbolic relation/event labels",
+            "reason": "source symbolic metadata has no explicit relation/event labels"
+          },
+          {
+            "name": "mean_3d_reprojection_iou",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_83c97b566a24b499ec73"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "camera_roundtrip_error_px",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_83c97b566a24b499ec73"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "minimum_lifted_mask_point_support",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_83c97b566a24b499ec73"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "mean_kabsch_residual",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_83c97b566a24b499ec73"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "hamrick_sim3_center_error",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_83c97b566a24b499ec73"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "hamrick_sim3_size_error",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_83c97b566a24b499ec73"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "hamrick_sim3_orientation_error_deg",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_83c97b566a24b499ec73"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          }
+        ],
+        "gt_quality_score": 1.0,
+        "internal_consistency_score": 0.9928192,
+        "quality_coverage": 0.75,
+        "evidence_group_scores": {
+          "identity": 1.0,
+          "mask": 0.964096,
+          "trajectory": 0.964096,
+          "motion": 0.964096,
+          "visibility": 0.964096,
+          "relations": 0.0,
+          "events": 0.0,
+          "geometry_3d": 0.0,
+          "rigidity": 0.0,
+          "camera": 0.0
+        },
+        "unsupported_metrics": [
+          "symbolic_center_2d_error_px",
+          "symbolic_relation_event_agreement"
+        ]
+      }
+    ],
+    "evidence_path": [
+      {
+        "order": 1,
+        "tool": "get_objects",
+        "arguments": {
+          "scene_id": "scene_83c97b566a24b499ec73"
+        },
+        "duplicate": false,
+        "availability": "available",
+        "source": [
+          "qwen2.5-vl-real"
+        ],
+        "units": null,
+        "frame_range": null,
+        "evidence_ids": [
+          "ev_beeb16a3e1e029ec"
+        ],
+        "confidence": {
+          "score": 0.982048,
+          "status": "measured",
+          "basis": "minimum confidence across required evidence fields",
+          "evidence_ids": [
+            "ev_beeb16a3e1e029ec"
+          ]
+        },
+        "data": {
+          "scene_id": "scene_83c97b566a24b499ec73",
+          "object_count": 1,
+          "object_groups": [
+            {
+              "object_ids": "<list:1>",
+              "label": "agent",
+              "role": "decision_agent",
+              "confidence": 0.982048
+            }
+          ]
+        },
+        "unavailable_reason": null
+      },
+      {
+        "order": 2,
+        "tool": "get_position",
+        "arguments": {
+          "scene_id": "scene_83c97b566a24b499ec73",
+          "obj": "agent",
+          "frame": 15
+        },
+        "duplicate": false,
+        "availability": "available",
+        "source": [
+          "sam31_mask_centroid"
+        ],
+        "units": "source_pixels",
+        "frame_range": [
+          15,
+          15
+        ],
+        "evidence_ids": [
+          "ev_cabd46fcd520148c"
+        ],
+        "confidence": {
+          "score": 0.964096,
+          "status": "measured",
+          "basis": "minimum confidence across required evidence fields",
+          "evidence_ids": [
+            "ev_cabd46fcd520148c"
+          ]
+        },
+        "data": {
+          "scene_id": "scene_83c97b566a24b499ec73",
+          "object_id": "agent",
+          "position": [
+            279.825221,
+            30.247788
+          ],
+          "requested_frame": 15,
+          "dimension": "2d",
+          "source_frame": 15
+        },
+        "unavailable_reason": null
+      },
+      {
+        "order": 3,
+        "tool": "get_trajectory",
+        "arguments": {
+          "scene_id": "scene_83c97b566a24b499ec73",
+          "obj": "agent",
+          "frame_range": [
+            0,
+            15
+          ]
+        },
+        "duplicate": false,
+        "availability": "available",
+        "source": [
+          "sam31_mask_centroid"
+        ],
+        "units": "source_pixels",
+        "frame_range": [
+          0,
+          15
+        ],
+        "evidence_ids": [
+          "ev_cabd46fcd520148c"
+        ],
+        "confidence": {
+          "score": 0.964096,
+          "status": "measured",
+          "basis": "minimum confidence across required evidence fields",
+          "evidence_ids": [
+            "ev_cabd46fcd520148c"
+          ]
+        },
+        "data": {
+          "scene_id": "scene_83c97b566a24b499ec73",
+          "object_id": "agent",
+          "start": [
+            24.842027,
+            75.742176
+          ],
+          "end": [
+            279.825221,
+            30.247788
+          ],
+          "dimension": "2d",
+          "point_count": 16,
+          "displacement": 259.009978,
+          "path_length": 271.904215,
+          "sampled_points": {
+            "count": 10,
+            "first": {
+              "frame": 0,
+              "position": "<list:2>"
+            },
+            "last": {
+              "frame": 15,
+              "position": "<list:2>"
+            }
+          }
+        },
+        "unavailable_reason": null
+      },
+      {
+        "order": 4,
+        "tool": "get_motion_summary",
+        "arguments": {
+          "scene_id": "scene_83c97b566a24b499ec73",
+          "obj": "agent",
+          "frame_range": [
+            0,
+            15
+          ]
+        },
+        "duplicate": false,
+        "availability": "available",
+        "source": [
+          "finite_difference_center_2d",
+          "sam31_mask_centroid"
+        ],
+        "units": "source_pixels",
+        "frame_range": [
+          0,
+          15
+        ],
+        "evidence_ids": [
+          "ev_06c3f179988e1f81"
+        ],
+        "confidence": {
+          "score": 0.482048,
+          "status": "measured",
+          "basis": "minimum measured confidence multiplied by calibration coverage 0.500",
+          "evidence_ids": [
+            "ev_06c3f179988e1f81"
+          ]
+        },
+        "data": {
+          "scene_id": "scene_83c97b566a24b499ec73",
+          "object_id": "agent",
+          "dimension": "2d",
+          "displacement": 259.009978,
+          "direction_vector": [
+            -254.983194,
+            45.494388
+          ],
+          "path_length": 271.904215,
+          "speed": {
+            "minimum": 0.0,
+            "maximum": 68.405484,
+            "mean": 18.126948
+          },
+          "acceleration_record_count": 14
+        },
+        "unavailable_reason": null
+      }
+    ],
+    "trace_audit": {
+      "duplicate_calls": 0,
+      "invalid_calls": 0,
+      "malformed_calls": 0
+    }
+  }
+}

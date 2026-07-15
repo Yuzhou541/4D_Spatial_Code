@@ -1,0 +1,851 @@
+{
+  "study": "smith2019_modeling",
+  "title": "Smith2019Modeling",
+  "description": "Creation, disappearance, overturning, occlusion, and discontinuity events test expectations about physically plausible 3D behavior.",
+  "reasoning": "3D intuitive-physics surprise",
+  "summary": {
+    "study": "smith2019_modeling",
+    "question_count": 16,
+    "scored_count": 16,
+    "answer_types": [
+      "slider"
+    ],
+    "normalized_accuracy": 0.710279761875,
+    "mean_llm_confidence": 0.004525061383446882,
+    "mean_4d_confidence": 0.3886047494125664,
+    "mean_code_quality": 0.6797765822127011,
+    "mean_gt_quality": 0.9375,
+    "quality_coverage": 0.7692307692307693,
+    "code_count": 16
+  },
+  "selected_sample": {
+    "code_id": "code_b345a899479fa74b3e49",
+    "qa_id": "qa_296e69686beedd46196d",
+    "data_path": "data/samples/code_b345a899479fa74b3e49.json",
+    "selection_basis": "target_available_nearest_study_medians_then_tool_diversity"
+  },
+  "selected_question": {
+    "qa_id": "qa_296e69686beedd46196d",
+    "prompt": "How surprising was the event in this video?",
+    "answer_type": "slider",
+    "options": [],
+    "slider": {
+      "minimum": 0.0,
+      "maximum": 100.0
+    },
+    "target": {
+      "availability": "available",
+      "source": "human",
+      "objective": null,
+      "human_mean": 76.666667,
+      "human_values": [
+        54,
+        89,
+        51,
+        100,
+        85,
+        55,
+        56,
+        84,
+        72,
+        40,
+        95,
+        78,
+        100,
+        81,
+        89,
+        84,
+        97,
+        76,
+        77,
+        100,
+        30,
+        68,
+        100,
+        81,
+        10,
+        89,
+        83,
+        100,
+        76,
+        100
+      ],
+      "unavailable_reason": null
+    },
+    "ground_truth_display": "76.67",
+    "answer": {
+      "value": 85.0,
+      "raw_answer_confidence": 0.032421231269836426,
+      "calibrated_answer_confidence": 0.032421231269836426,
+      "calibration_status": "insufficient_data"
+    },
+    "answer_display": "85",
+    "likelihood": {
+      "candidate_values": {
+        "count": 21,
+        "first": "0",
+        "last": "100"
+      },
+      "candidate_codes": {
+        "count": 21,
+        "first": "A",
+        "last": "U"
+      },
+      "logits": {
+        "count": 21,
+        "first": 14.8125,
+        "last": 18.25
+      },
+      "probabilities": {
+        "count": 21,
+        "first": 4.6e-05,
+        "last": 0.001424
+      },
+      "method": "single_token_conditional_candidate_likelihood",
+      "prompt_token_count": 1041,
+      "bin_values": {
+        "count": 21,
+        "first": 0.0,
+        "last": 100.0
+      },
+      "selected_probability": 0.032421,
+      "selected_index": 17
+    },
+    "score": 0.91666667,
+    "code_ids": [
+      "code_b345a899479fa74b3e49"
+    ],
+    "used_code_ids": [
+      "code_b345a899479fa74b3e49"
+    ],
+    "code_confidence": {
+      "qa_id": "qa_296e69686beedd46196d",
+      "score": 0.35581375658512115,
+      "status": "measured",
+      "required_groups": [
+        "identity",
+        "trajectory",
+        "visibility",
+        "geometry_3d",
+        "rigidity"
+      ],
+      "group_scores": {
+        "identity": 1.0,
+        "trajectory": 0.35581375658512115,
+        "visibility": 0.35581375658512115,
+        "geometry_3d": 0.78331,
+        "rigidity": 0.872907619047619
+      },
+      "coverage": 1.0,
+      "evidence_code_ids": [
+        "code_b345a899479fa74b3e49"
+      ]
+    },
+    "code_quality": [
+      {
+        "code_id": "code_b345a899479fa74b3e49",
+        "scene_id": "scene_b345a899479fa74b3e49",
+        "study": "smith2019_modeling",
+        "parse_mode": "dynamic_3d_full",
+        "metrics": [
+          {
+            "name": "identity_count_agreement",
+            "status": "measured",
+            "value": 1.0,
+            "units": "jaccard",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_b345a899479fa74b3e49:identity",
+              "eval:code_b345a899479fa74b3e49:expected_objects"
+            ],
+            "comparison_target": "README/manifest object contract",
+            "reason": null
+          },
+          {
+            "name": "temporal_mask_coverage",
+            "status": "measured",
+            "value": 0.375,
+            "units": "fraction",
+            "normalized_quality": 0.375,
+            "evidence_ids": [
+              "scene_b345a899479fa74b3e49:objects:mask"
+            ],
+            "comparison_target": "sampled-frame coverage",
+            "reason": null
+          },
+          {
+            "name": "mean_sam_score",
+            "status": "measured",
+            "value": 0.35581375658512115,
+            "units": "probability",
+            "normalized_quality": 0.35581375658512115,
+            "evidence_ids": [
+              "scene_b345a899479fa74b3e49:sam_summary"
+            ],
+            "comparison_target": "SAM3.1 source confidence",
+            "reason": null
+          },
+          {
+            "name": "duplicate_bbox_frame_pairs",
+            "status": "measured",
+            "value": 0,
+            "units": "count",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_b345a899479fa74b3e49:objects:bbox_2d"
+            ],
+            "comparison_target": "pairwise IoU <= 0.85 for distinct object IDs",
+            "reason": null
+          },
+          {
+            "name": "tracking_owner_mismatch_count",
+            "status": "measured",
+            "value": 28,
+            "units": "count",
+            "normalized_quality": 0.0,
+            "evidence_ids": [
+              "scene_b345a899479fa74b3e49:objects:tracklets"
+            ],
+            "comparison_target": "tracklet/object ownership invariant",
+            "reason": null
+          },
+          {
+            "name": "primary_source_failure_count",
+            "status": "measured",
+            "value": 0,
+            "units": "count",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_b345a899479fa74b3e49:objects:provenance"
+            ],
+            "comparison_target": "mask and bbox source must be sam3.1-real",
+            "reason": null
+          },
+          {
+            "name": "symbolic_center_2d_error_px",
+            "status": "unsupported",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "eval:code_b345a899479fa74b3e49:symbolic_scene"
+            ],
+            "comparison_target": "frame-aligned symbolic center trajectory",
+            "reason": "source symbolic metadata does not expose frame-aligned 2D trajectories"
+          },
+          {
+            "name": "symbolic_relation_event_agreement",
+            "status": "unsupported",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "eval:code_b345a899479fa74b3e49:symbolic_scene"
+            ],
+            "comparison_target": "explicit symbolic relation/event labels",
+            "reason": "source symbolic metadata has no explicit relation/event labels"
+          },
+          {
+            "name": "mean_3d_reprojection_iou",
+            "status": "measured",
+            "value": 0.78331,
+            "units": "iou",
+            "normalized_quality": 0.78331,
+            "evidence_ids": [
+              "scene_b345a899479fa74b3e49:geometry_diagnostics:size_estimation"
+            ],
+            "comparison_target": "projected oriented bbox versus SAM region",
+            "reason": null
+          },
+          {
+            "name": "camera_roundtrip_error_px",
+            "status": "unsupported",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_b345a899479fa74b3e49:geometry_diagnostics"
+            ],
+            "comparison_target": "projection/unprojection error <= 1.5 px",
+            "reason": "camera round-trip value is absent from accepted diagnostics"
+          },
+          {
+            "name": "minimum_lifted_mask_point_support",
+            "status": "measured",
+            "value": 1473.0,
+            "units": "points",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_b345a899479fa74b3e49:objects:bbox_3d"
+            ],
+            "comparison_target": "at least 50 valid lifted SAM-mask pixels",
+            "reason": null
+          },
+          {
+            "name": "mean_kabsch_residual",
+            "status": "measured",
+            "value": 0.019063857142857143,
+            "units": "normalized_residual",
+            "normalized_quality": 0.872907619047619,
+            "evidence_ids": [
+              "scene_b345a899479fa74b3e49:objects:local_se3"
+            ],
+            "comparison_target": "normalized residual <= 0.15",
+            "reason": null
+          },
+          {
+            "name": "bbox3d_source_failure_count",
+            "status": "measured",
+            "value": 0,
+            "units": "count",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_b345a899479fa74b3e49:objects:bbox_3d"
+            ],
+            "comparison_target": "source exactly sam31_mask_pixels_plus_vggt_omega",
+            "reason": null
+          }
+        ],
+        "gt_quality_score": 1.0,
+        "internal_consistency_score": 0.6733789219540925,
+        "quality_coverage": 0.7692307692307693,
+        "evidence_group_scores": {
+          "identity": 1.0,
+          "mask": 0.35581375658512115,
+          "trajectory": 0.35581375658512115,
+          "motion": 0.35581375658512115,
+          "visibility": 0.35581375658512115,
+          "relations": 0.0,
+          "events": 1.0,
+          "geometry_3d": 0.78331,
+          "rigidity": 0.872907619047619,
+          "camera": 0.0
+        },
+        "unsupported_metrics": [
+          "symbolic_center_2d_error_px",
+          "symbolic_relation_event_agreement",
+          "camera_roundtrip_error_px"
+        ]
+      }
+    ],
+    "evidence_path": [
+      {
+        "order": 1,
+        "tool": "get_events",
+        "arguments": {
+          "scene_id": "scene_b345a899479fa74b3e49"
+        },
+        "duplicate": false,
+        "availability": "available",
+        "source": [
+          "mixed:computed_events,computed_from_sam31_vggt_spatialtracker,computed_from_sam31_visibility,dataset_metadata_not_predicted_geometry"
+        ],
+        "units": null,
+        "frame_range": [
+          0,
+          23
+        ],
+        "evidence_ids": [
+          "ev_8daf318c3d5dff4b"
+        ],
+        "confidence": {
+          "score": null,
+          "status": "uncalibrated",
+          "basis": "required evidence is present but uncalibrated",
+          "evidence_ids": [
+            "ev_8daf318c3d5dff4b"
+          ]
+        },
+        "data": {
+          "scene_id": "scene_b345a899479fa74b3e49",
+          "events": [
+            {
+              "type": "disappearance",
+              "objects": "<list:1>",
+              "frame_index": 9,
+              "source": "computed_from_sam31_visibility"
+            }
+          ]
+        },
+        "unavailable_reason": null
+      },
+      {
+        "order": 2,
+        "tool": "get_visibility",
+        "arguments": {
+          "scene_id": "scene_b345a899479fa74b3e49",
+          "obj": "target_object",
+          "frame_range": [
+            0,
+            23
+          ]
+        },
+        "duplicate": false,
+        "availability": "available",
+        "source": [
+          "sam31_mask_area"
+        ],
+        "units": "probability",
+        "frame_range": [
+          0,
+          23
+        ],
+        "evidence_ids": [
+          "ev_cc325d1238b85a2b"
+        ],
+        "confidence": {
+          "score": null,
+          "status": "uncalibrated",
+          "basis": "required evidence is present but uncalibrated",
+          "evidence_ids": [
+            "ev_cc325d1238b85a2b"
+          ]
+        },
+        "data": {
+          "scene_id": "scene_b345a899479fa74b3e49",
+          "object_id": "target_object",
+          "visible_count": 9,
+          "not_visible_count": 15,
+          "transitions": [
+            {
+              "frame": 9,
+              "from": "visible",
+              "to": "not_visible"
+            }
+          ],
+          "samples": {
+            "count": 12,
+            "first": {
+              "frame": 0,
+              "state": "visible"
+            },
+            "last": {
+              "frame": 23,
+              "state": "not_visible"
+            }
+          }
+        },
+        "unavailable_reason": null
+      },
+      {
+        "order": 3,
+        "tool": "get_events",
+        "arguments": {
+          "scene_id": "scene_b345a899479fa74b3e49"
+        },
+        "duplicate": true,
+        "availability": "unavailable",
+        "source": [],
+        "units": null,
+        "frame_range": null,
+        "evidence_ids": [],
+        "confidence": {
+          "score": null,
+          "status": "unavailable",
+          "basis": "Exact tool call already executed. Reuse its prior result; choose different evidence only if needed, otherwise return the final JSON answer.",
+          "evidence_ids": []
+        },
+        "data": {
+          "rejected_duplicate_arguments": {
+            "scene_id": "scene_b345a899479fa74b3e49"
+          }
+        },
+        "unavailable_reason": "Exact tool call already executed. Reuse its prior result; choose different evidence only if needed, otherwise return the final JSON answer."
+      }
+    ],
+    "trace_audit": {
+      "duplicate_calls": 1,
+      "invalid_calls": 0,
+      "malformed_calls": 0
+    }
+  },
+  "quality_statistics": {
+    "internal": {
+      "count": 16,
+      "mean": 0.6797765822127011,
+      "min": 0.5900115095340411,
+      "q1": 0.6464824911934833,
+      "median": 0.6740485026728894,
+      "q3": 0.712038493179594,
+      "max": 0.7739752681645155
+    },
+    "gt": {
+      "count": 16,
+      "mean": 0.9375,
+      "min": 0.5,
+      "q1": 1.0,
+      "median": 1.0,
+      "q3": 1.0,
+      "max": 1.0
+    },
+    "coverage": {
+      "count": 16,
+      "mean": 0.7692307692307693,
+      "min": 0.7692307692307693,
+      "q1": 0.7692307692307693,
+      "median": 0.7692307692307693,
+      "q3": 0.7692307692307693,
+      "max": 0.7692307692307693
+    },
+    "source_failure_count": 0,
+    "metric_status": {
+      "bbox3d_source_failure_count": {
+        "measured": 16
+      },
+      "camera_roundtrip_error_px": {
+        "unsupported": 16
+      },
+      "duplicate_bbox_frame_pairs": {
+        "measured": 16
+      },
+      "identity_count_agreement": {
+        "measured": 16
+      },
+      "mean_3d_reprojection_iou": {
+        "measured": 16
+      },
+      "mean_kabsch_residual": {
+        "measured": 16
+      },
+      "mean_sam_score": {
+        "measured": 16
+      },
+      "minimum_lifted_mask_point_support": {
+        "measured": 16
+      },
+      "primary_source_failure_count": {
+        "measured": 16
+      },
+      "symbolic_center_2d_error_px": {
+        "unsupported": 16
+      },
+      "symbolic_relation_event_agreement": {
+        "unsupported": 16
+      },
+      "temporal_mask_coverage": {
+        "measured": 16
+      },
+      "tracking_owner_mismatch_count": {
+        "measured": 16
+      }
+    }
+  },
+  "confidence_statistics": {
+    "code": {
+      "count": 16,
+      "mean": 0.3886047494125664,
+      "min": 0.125,
+      "q1": 0.3362116627395153,
+      "median": 0.35669173300266266,
+      "q3": 0.4705974167833725,
+      "max": 0.590077
+    },
+    "llm": {
+      "count": 16,
+      "mean": 0.004525061383446882,
+      "min": 4.932030424242839e-05,
+      "q1": 0.00010411310177005362,
+      "median": 0.00014348782133311033,
+      "q3": 0.000376529736968223,
+      "max": 0.032421231269836426
+    }
+  },
+  "tool_statistics": {
+    "total_calls": 42,
+    "duplicate_calls": 16,
+    "invalid_calls": 2,
+    "malformed_calls": 0,
+    "available_results": 24,
+    "unavailable_results": 18,
+    "unique_used_codes": 16,
+    "by_tool": [
+      {
+        "tool": "get_events",
+        "call_count": 31,
+        "question_count": 16,
+        "question_coverage": 1.0
+      },
+      {
+        "tool": "get_visibility",
+        "call_count": 8,
+        "question_count": 7,
+        "question_coverage": 0.4375
+      },
+      {
+        "tool": "get_mask_summary",
+        "call_count": 2,
+        "question_count": 1,
+        "question_coverage": 0.0625
+      },
+      {
+        "tool": "get_event_confidence",
+        "call_count": 1,
+        "question_count": 1,
+        "question_coverage": 0.0625
+      }
+    ],
+    "evidence_groups": {
+      "geometry_3d": 0.639389875,
+      "identity": 0.9375,
+      "rigidity": 0.7966431619917174,
+      "trajectory": 0.3967146867265304,
+      "visibility": 0.3967146867265304
+    }
+  },
+  "correlations": {
+    "code_confidence_vs_score": {
+      "status": "measured",
+      "count": 16,
+      "pearson": -0.16758879136991348,
+      "spearman": -0.2764705882352941
+    },
+    "llm_confidence_vs_score": {
+      "status": "measured",
+      "count": 16,
+      "pearson": 0.44021839712937494,
+      "spearman": 0.5852941176470587
+    },
+    "code_quality_vs_score": {
+      "status": "measured",
+      "count": 16,
+      "pearson": 0.09786936375180372,
+      "spearman": 0.06764705882352941
+    },
+    "code_quality_vs_code_confidence": {
+      "status": "measured",
+      "count": 16,
+      "pearson": 0.3490931863463815,
+      "spearman": 0.5323529411764706
+    }
+  },
+  "human_reference": {
+    "status": "measured_reliability",
+    "noise_ceilings": [
+      {
+        "study": "smith2019_modeling",
+        "answer_type": "slider",
+        "status": "measured",
+        "item_count": 16,
+        "noise_ceiling": 0.9646655110454997,
+        "method": "split_half_spearman_brown",
+        "repeats": 200
+      }
+    ],
+    "human_target_question_count": 16,
+    "individual_response_count": 356,
+    "objective_human_task_score": null
+  },
+  "condition_metrics": [
+    {
+      "study": "smith2019_modeling",
+      "condition": "predicted_code_oracle_tools",
+      "answer_type": "slider",
+      "qa_count": 16,
+      "slider_mae": 34.321428562499996,
+      "slider_rmse": 42.36274652040815,
+      "slider_pearson": -0.023179068962886927,
+      "slider_spearman": -0.14690234438626615,
+      "normalized_task_score": 0.656785714375,
+      "scored_count": 16
+    },
+    {
+      "study": "smith2019_modeling",
+      "condition": "predicted_code_qwen_tools",
+      "answer_type": "slider",
+      "qa_count": 16,
+      "slider_mae": 28.972023812499998,
+      "slider_rmse": 37.322810371170505,
+      "slider_pearson": 0.49411228614019875,
+      "slider_spearman": 0.6967786707383286,
+      "normalized_task_score": 0.710279761875,
+      "scored_count": 16
+    },
+    {
+      "study": "smith2019_modeling",
+      "condition": "question_only",
+      "answer_type": "slider",
+      "qa_count": 16,
+      "slider_mae": 30.7005953125,
+      "slider_rmse": 38.779380993671786,
+      "slider_pearson": 0.1813164451086675,
+      "slider_spearman": 0.06647029903343878,
+      "normalized_task_score": 0.692994046875,
+      "scored_count": 16
+    }
+  ],
+  "calibration": [
+    {
+      "study": "smith2019_modeling",
+      "condition": "predicted_code_oracle_tools",
+      "answer_type": "slider",
+      "status": "insufficient_data",
+      "eligible_count": 16,
+      "temperatures": {}
+    },
+    {
+      "study": "smith2019_modeling",
+      "condition": "predicted_code_qwen_tools",
+      "answer_type": "slider",
+      "status": "insufficient_data",
+      "eligible_count": 16,
+      "temperatures": {}
+    },
+    {
+      "study": "smith2019_modeling",
+      "condition": "question_only",
+      "answer_type": "slider",
+      "status": "insufficient_data",
+      "eligible_count": 16,
+      "temperatures": {}
+    }
+  ],
+  "bottleneck": {
+    "study": "smith2019_modeling",
+    "question_count": 16,
+    "condition_coverage": {
+      "question_only": 1.0,
+      "predicted_code_qwen_tools": 1.0,
+      "predicted_code_oracle_tools": 1.0,
+      "oracle_code_oracle_tools": 0.0
+    },
+    "condition_mean_task_score": {
+      "question_only": 0.692994046875,
+      "predicted_code_qwen_tools": 0.710279761875,
+      "predicted_code_oracle_tools": 0.656785714375,
+      "oracle_code_oracle_tools": null
+    },
+    "human_or_objective_ceiling": 0.9646655110454997,
+    "routing_tool_use_gap": {
+      "status": "measured",
+      "paired_count": 16,
+      "mean_gap": -0.0534940475,
+      "ci95": [
+        -0.0534940475,
+        -0.0534940475
+      ]
+    },
+    "code_quality_gap": {
+      "status": "insufficient_coverage",
+      "paired_count": 0,
+      "mean_gap": null,
+      "ci95": null
+    },
+    "reasoning_task_model_gap": {
+      "status": "insufficient_coverage",
+      "paired_count": 0,
+      "mean_gap": null,
+      "ci95": null
+    },
+    "attribution": {
+      "label": "insufficient_diagnostic_coverage",
+      "reason": "one or more controlled comparisons lack paired evidence"
+    }
+  },
+  "formulas": [
+    {
+      "name": "Categorical task score",
+      "formula": "1[predicted = objective or human-modal target]",
+      "detail": "Exact agreement with an objective answer, or with the modal human answer when the target is a response distribution."
+    },
+    {
+      "name": "Slider task score",
+      "formula": "max(0, 1 - |prediction - target| / (maximum - minimum))",
+      "detail": "Range-normalized absolute-error score; raw MAE and RMSE remain available per study."
+    },
+    {
+      "name": "Multi-select task score",
+      "formula": "2 * precision * recall / (precision + recall)",
+      "detail": "Set F1 over selected option indices."
+    },
+    {
+      "name": "Identity quality",
+      "formula": "|predicted IDs intersection expected IDs| / |predicted IDs union expected IDs|",
+      "detail": "Jaccard agreement against the README and manifest object contract."
+    },
+    {
+      "name": "Temporal mask coverage",
+      "formula": "mean_objects(visible sampled frames / sampled frames)",
+      "detail": "Measures sustained mask support rather than frame-zero detection."
+    },
+    {
+      "name": "Symbolic center quality",
+      "formula": "1 / (1 + mean Euclidean pixel error / 10)",
+      "detail": "Applied only when independent, frame-aligned symbolic center trajectories exist."
+    },
+    {
+      "name": "Relation and event quality",
+      "formula": "|predicted labels intersection target labels| / |predicted labels union target labels|",
+      "detail": "Label-set Jaccard agreement, applied only when independent symbolic relation or event labels exist."
+    },
+    {
+      "name": "Camera quality",
+      "formula": "max(0, 1 - roundtrip error pixels / 1.5)",
+      "detail": "Projection and unprojection must agree within the 1.5-pixel acceptance scale."
+    },
+    {
+      "name": "Lifted point support",
+      "formula": "min(1, minimum valid mask points / 50)",
+      "detail": "Requires geometry to be supported by SAM-mask pixels lifted through VGGT-Omega."
+    },
+    {
+      "name": "Kabsch rigidity quality",
+      "formula": "max(0, 1 - normalized residual / 0.15)",
+      "detail": "Scores accepted local SE(3) estimates against the rigid-consistency residual threshold."
+    },
+    {
+      "name": "Hamrick Sim(3) center quality",
+      "formula": "max(0, 1 - aligned center error / 0.10)",
+      "detail": "Prediction geometry is aligned to hidden tower geometry for evaluation only; GT never repairs the code."
+    },
+    {
+      "name": "Hamrick Sim(3) size quality",
+      "formula": "max(0, 1 - aligned relative size error / 0.25)",
+      "detail": "Uses the accepted 0.25 relative-size error scale after diagnostic Sim(3) alignment."
+    },
+    {
+      "name": "Hamrick Sim(3) orientation quality",
+      "formula": "max(0, 1 - aligned orientation error degrees / 30)",
+      "detail": "Uses the accepted 30-degree orientation error scale after diagnostic Sim(3) alignment."
+    },
+    {
+      "name": "Internal 4D quality",
+      "formula": "mean(measured applicable internal normalized metrics)",
+      "detail": "GT-referenced metrics are excluded; unsupported or not-applicable metrics remain null."
+    },
+    {
+      "name": "GT quality",
+      "formula": "mean(measured applicable GT-referenced normalized metrics)",
+      "detail": "Reported separately from internal consistency and only where an independent comparison target exists."
+    },
+    {
+      "name": "Quality coverage",
+      "formula": "measured applicable metrics / applicable metrics",
+      "detail": "Prevents a high score over a small measurable subset from being mistaken for complete evaluation."
+    },
+    {
+      "name": "4D-code confidence",
+      "formula": "C_code(q) = min over required evidence-group scores",
+      "detail": "Each evidence group is also minimized across every code required by the question; missing evidence is zero."
+    },
+    {
+      "name": "LLM answer confidence",
+      "formula": "p_i = exp(z_i / T) / sum_j exp(z_j / T)",
+      "detail": "The selected answer likelihood uses five-fold out-of-fold temperature scaling when calibration is supported."
+    },
+    {
+      "name": "Human slider reliability",
+      "formula": "r_SB = 2r / (1 + r)",
+      "detail": "Spearman-Brown corrected split-half reliability over 200 deterministic response splits."
+    },
+    {
+      "name": "Human categorical reliability",
+      "formula": "mean(split-half modal agreement)",
+      "detail": "Agreement of modal categorical responses across 200 deterministic participant splits."
+    },
+    {
+      "name": "Routing gap",
+      "formula": "oracle-tool task score - native-tool task score",
+      "detail": "The 95% interval uses 1,000 grouped bootstrap resamples by experiment."
+    }
+  ]
+}

@@ -1,0 +1,4408 @@
+{
+  "code": {
+    "schema_name": "trajectory_grounded_4d_spatial_code",
+    "schema_version": "1.0.0",
+    "code_id": "code_7d0c727e6a9b55fa4a8e",
+    "sample_id": "Stephan2021Counterfactual_exp1_Stephan2021Counterfactual_exp1_assets_TargetClip_WentThrough",
+    "study": "stephan2021_counterfactual",
+    "experiment": "exp1",
+    "scenes": [
+      {
+        "scene_id": "scene_7d0c727e6a9b55fa4a8e",
+        "sample_id": "Stephan2021Counterfactual_exp1_Stephan2021Counterfactual_exp1_assets_TargetClip_WentThrough",
+        "study": "stephan2021_counterfactual",
+        "experiment": "exp1",
+        "parse_mode": "dynamic_2d",
+        "media_path": "Stephan2021Counterfactual/exp1/assets/TargetClip_WentThrough.mp4",
+        "timebase": {
+          "fps": 60.0,
+          "duration_sec": 10.416666666666666,
+          "source_frame_count": 625,
+          "sampled_frames": [
+            {
+              "sampled_index": 0,
+              "source_frame_index": 0,
+              "timestamp_sec": 0.0
+            },
+            {
+              "sampled_index": 1,
+              "source_frame_index": 42,
+              "timestamp_sec": 0.7
+            },
+            {
+              "sampled_index": 2,
+              "source_frame_index": 83,
+              "timestamp_sec": 1.383333
+            },
+            {
+              "sampled_index": 3,
+              "source_frame_index": 125,
+              "timestamp_sec": 2.083333
+            },
+            {
+              "sampled_index": 4,
+              "source_frame_index": 166,
+              "timestamp_sec": 2.766667
+            },
+            {
+              "sampled_index": 5,
+              "source_frame_index": 208,
+              "timestamp_sec": 3.466667
+            },
+            {
+              "sampled_index": 6,
+              "source_frame_index": 250,
+              "timestamp_sec": 4.166667
+            },
+            {
+              "sampled_index": 7,
+              "source_frame_index": 291,
+              "timestamp_sec": 4.85
+            },
+            {
+              "sampled_index": 8,
+              "source_frame_index": 333,
+              "timestamp_sec": 5.55
+            },
+            {
+              "sampled_index": 9,
+              "source_frame_index": 374,
+              "timestamp_sec": 6.233333
+            },
+            {
+              "sampled_index": 10,
+              "source_frame_index": 416,
+              "timestamp_sec": 6.933333
+            },
+            {
+              "sampled_index": 11,
+              "source_frame_index": 458,
+              "timestamp_sec": 7.633333
+            },
+            {
+              "sampled_index": 12,
+              "source_frame_index": 499,
+              "timestamp_sec": 8.316667
+            },
+            {
+              "sampled_index": 13,
+              "source_frame_index": 541,
+              "timestamp_sec": 9.016667
+            },
+            {
+              "sampled_index": 14,
+              "source_frame_index": 582,
+              "timestamp_sec": 9.7
+            },
+            {
+              "sampled_index": 15,
+              "source_frame_index": 624,
+              "timestamp_sec": 10.4
+            }
+          ]
+        },
+        "objects": [
+          {
+            "object_id": "marble_A",
+            "label": "marble A",
+            "role": "omitted_cause",
+            "identity_source": "qwen2.5-vl-real",
+            "identity_confidence": {
+              "score": 0.941387,
+              "status": "measured",
+              "basis": "qwen semantic identity confidence",
+              "evidence_ids": [
+                "scene_7d0c727e6a9b55fa4a8e:marble_A:identity"
+              ]
+            },
+            "direct_fields": {
+              "bbox_2d": {
+                "availability": "available",
+                "source": "sam3.1-real",
+                "units": "source_pixels",
+                "frame_range": [
+                  0,
+                  15
+                ],
+                "records": [
+                  {
+                    "frame_index": 0,
+                    "timestamp_sec": 0.0,
+                    "bbox_2d": [
+                      490.0,
+                      311.0,
+                      508.0,
+                      330.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 1,
+                    "timestamp_sec": 0.7,
+                    "bbox_2d": [
+                      490.0,
+                      311.0,
+                      508.0,
+                      330.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 2,
+                    "timestamp_sec": 1.383333,
+                    "bbox_2d": [
+                      490.0,
+                      311.0,
+                      507.0,
+                      330.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 3,
+                    "timestamp_sec": 2.083333,
+                    "bbox_2d": [
+                      490.0,
+                      311.0,
+                      507.0,
+                      330.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 4,
+                    "timestamp_sec": 2.766667,
+                    "bbox_2d": [
+                      490.0,
+                      311.0,
+                      508.0,
+                      330.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 5,
+                    "timestamp_sec": 3.466667,
+                    "bbox_2d": [
+                      490.0,
+                      311.0,
+                      508.0,
+                      330.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 6,
+                    "timestamp_sec": 4.166667,
+                    "bbox_2d": [
+                      491.0,
+                      311.0,
+                      507.0,
+                      330.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 7,
+                    "timestamp_sec": 4.85,
+                    "bbox_2d": [
+                      491.0,
+                      311.0,
+                      507.0,
+                      330.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 8,
+                    "timestamp_sec": 5.55,
+                    "bbox_2d": [
+                      491.0,
+                      311.0,
+                      507.0,
+                      330.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 9,
+                    "timestamp_sec": 6.233333,
+                    "bbox_2d": [
+                      491.0,
+                      311.0,
+                      507.0,
+                      330.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 10,
+                    "timestamp_sec": 6.933333,
+                    "bbox_2d": [
+                      491.0,
+                      311.0,
+                      508.0,
+                      330.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 11,
+                    "timestamp_sec": 7.633333,
+                    "bbox_2d": [
+                      491.0,
+                      311.0,
+                      508.0,
+                      330.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 12,
+                    "timestamp_sec": 8.316667,
+                    "bbox_2d": [
+                      491.0,
+                      311.0,
+                      508.0,
+                      330.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 13,
+                    "timestamp_sec": 9.016667,
+                    "bbox_2d": [
+                      491.0,
+                      311.0,
+                      507.0,
+                      330.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 14,
+                    "timestamp_sec": 9.7,
+                    "bbox_2d": [
+                      491.0,
+                      311.0,
+                      507.0,
+                      330.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 15,
+                    "timestamp_sec": 10.4,
+                    "bbox_2d": [
+                      481.0,
+                      300.0,
+                      512.0,
+                      339.0
+                    ],
+                    "source": "sam3.1-real"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_A:bbox_2d"
+                ],
+                "confidence": {
+                  "score": 0.882774,
+                  "status": "measured",
+                  "basis": "mean source-model confidence",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_A:bbox_2d"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "mask": {
+                "availability": "available",
+                "source": "sam3.1-real",
+                "units": "source_pixels",
+                "frame_range": [
+                  0,
+                  15
+                ],
+                "records": [
+                  {
+                    "frame_index": 0,
+                    "timestamp_sec": 0.0,
+                    "mask_ref": "marble_A_mask_t000",
+                    "bbox_2d": [
+                      490.0,
+                      311.0,
+                      508.0,
+                      330.0
+                    ],
+                    "area": 224,
+                    "tracking_points": [
+                      {
+                        "point_id": "marble_A_p1",
+                        "object_id": "marble_A",
+                        "uv": [
+                          498.0,
+                          321.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p2",
+                        "object_id": "marble_A",
+                        "uv": [
+                          497.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p3",
+                        "object_id": "marble_A",
+                        "uv": [
+                          500.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 1,
+                    "timestamp_sec": 0.7,
+                    "mask_ref": "marble_A_mask_t001",
+                    "bbox_2d": [
+                      490.0,
+                      311.0,
+                      508.0,
+                      330.0
+                    ],
+                    "area": 232,
+                    "tracking_points": [
+                      {
+                        "point_id": "marble_A_p1",
+                        "object_id": "marble_A",
+                        "uv": [
+                          498.0,
+                          321.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p2",
+                        "object_id": "marble_A",
+                        "uv": [
+                          496.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p3",
+                        "object_id": "marble_A",
+                        "uv": [
+                          500.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 2,
+                    "timestamp_sec": 1.383333,
+                    "mask_ref": "marble_A_mask_t002",
+                    "bbox_2d": [
+                      490.0,
+                      311.0,
+                      507.0,
+                      330.0
+                    ],
+                    "area": 221,
+                    "tracking_points": [
+                      {
+                        "point_id": "marble_A_p1",
+                        "object_id": "marble_A",
+                        "uv": [
+                          498.0,
+                          321.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p2",
+                        "object_id": "marble_A",
+                        "uv": [
+                          496.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p3",
+                        "object_id": "marble_A",
+                        "uv": [
+                          500.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 3,
+                    "timestamp_sec": 2.083333,
+                    "mask_ref": "marble_A_mask_t003",
+                    "bbox_2d": [
+                      490.0,
+                      311.0,
+                      507.0,
+                      330.0
+                    ],
+                    "area": 219,
+                    "tracking_points": [
+                      {
+                        "point_id": "marble_A_p1",
+                        "object_id": "marble_A",
+                        "uv": [
+                          498.0,
+                          321.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p2",
+                        "object_id": "marble_A",
+                        "uv": [
+                          497.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p3",
+                        "object_id": "marble_A",
+                        "uv": [
+                          500.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 4,
+                    "timestamp_sec": 2.766667,
+                    "mask_ref": "marble_A_mask_t004",
+                    "bbox_2d": [
+                      490.0,
+                      311.0,
+                      508.0,
+                      330.0
+                    ],
+                    "area": 225,
+                    "tracking_points": [
+                      {
+                        "point_id": "marble_A_p1",
+                        "object_id": "marble_A",
+                        "uv": [
+                          498.0,
+                          321.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p2",
+                        "object_id": "marble_A",
+                        "uv": [
+                          497.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p3",
+                        "object_id": "marble_A",
+                        "uv": [
+                          500.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 5,
+                    "timestamp_sec": 3.466667,
+                    "mask_ref": "marble_A_mask_t005",
+                    "bbox_2d": [
+                      490.0,
+                      311.0,
+                      508.0,
+                      330.0
+                    ],
+                    "area": 220,
+                    "tracking_points": [
+                      {
+                        "point_id": "marble_A_p1",
+                        "object_id": "marble_A",
+                        "uv": [
+                          499.0,
+                          321.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p2",
+                        "object_id": "marble_A",
+                        "uv": [
+                          497.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p3",
+                        "object_id": "marble_A",
+                        "uv": [
+                          500.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 6,
+                    "timestamp_sec": 4.166667,
+                    "mask_ref": "marble_A_mask_t006",
+                    "bbox_2d": [
+                      491.0,
+                      311.0,
+                      507.0,
+                      330.0
+                    ],
+                    "area": 201,
+                    "tracking_points": [
+                      {
+                        "point_id": "marble_A_p1",
+                        "object_id": "marble_A",
+                        "uv": [
+                          499.0,
+                          321.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p2",
+                        "object_id": "marble_A",
+                        "uv": [
+                          497.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p3",
+                        "object_id": "marble_A",
+                        "uv": [
+                          501.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 7,
+                    "timestamp_sec": 4.85,
+                    "mask_ref": "marble_A_mask_t007",
+                    "bbox_2d": [
+                      491.0,
+                      311.0,
+                      507.0,
+                      330.0
+                    ],
+                    "area": 206,
+                    "tracking_points": [
+                      {
+                        "point_id": "marble_A_p1",
+                        "object_id": "marble_A",
+                        "uv": [
+                          499.0,
+                          321.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p2",
+                        "object_id": "marble_A",
+                        "uv": [
+                          497.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p3",
+                        "object_id": "marble_A",
+                        "uv": [
+                          501.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 8,
+                    "timestamp_sec": 5.55,
+                    "mask_ref": "marble_A_mask_t008",
+                    "bbox_2d": [
+                      491.0,
+                      311.0,
+                      507.0,
+                      330.0
+                    ],
+                    "area": 210,
+                    "tracking_points": [
+                      {
+                        "point_id": "marble_A_p1",
+                        "object_id": "marble_A",
+                        "uv": [
+                          499.0,
+                          321.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p2",
+                        "object_id": "marble_A",
+                        "uv": [
+                          497.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p3",
+                        "object_id": "marble_A",
+                        "uv": [
+                          500.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 9,
+                    "timestamp_sec": 6.233333,
+                    "mask_ref": "marble_A_mask_t009",
+                    "bbox_2d": [
+                      491.0,
+                      311.0,
+                      507.0,
+                      330.0
+                    ],
+                    "area": 208,
+                    "tracking_points": [
+                      {
+                        "point_id": "marble_A_p1",
+                        "object_id": "marble_A",
+                        "uv": [
+                          499.0,
+                          321.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p2",
+                        "object_id": "marble_A",
+                        "uv": [
+                          497.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p3",
+                        "object_id": "marble_A",
+                        "uv": [
+                          501.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 10,
+                    "timestamp_sec": 6.933333,
+                    "mask_ref": "marble_A_mask_t010",
+                    "bbox_2d": [
+                      491.0,
+                      311.0,
+                      508.0,
+                      330.0
+                    ],
+                    "area": 225,
+                    "tracking_points": [
+                      {
+                        "point_id": "marble_A_p1",
+                        "object_id": "marble_A",
+                        "uv": [
+                          499.0,
+                          321.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p2",
+                        "object_id": "marble_A",
+                        "uv": [
+                          497.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p3",
+                        "object_id": "marble_A",
+                        "uv": [
+                          501.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 11,
+                    "timestamp_sec": 7.633333,
+                    "mask_ref": "marble_A_mask_t011",
+                    "bbox_2d": [
+                      491.0,
+                      311.0,
+                      508.0,
+                      330.0
+                    ],
+                    "area": 225,
+                    "tracking_points": [
+                      {
+                        "point_id": "marble_A_p1",
+                        "object_id": "marble_A",
+                        "uv": [
+                          499.0,
+                          321.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p2",
+                        "object_id": "marble_A",
+                        "uv": [
+                          497.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p3",
+                        "object_id": "marble_A",
+                        "uv": [
+                          501.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 12,
+                    "timestamp_sec": 8.316667,
+                    "mask_ref": "marble_A_mask_t012",
+                    "bbox_2d": [
+                      491.0,
+                      311.0,
+                      508.0,
+                      330.0
+                    ],
+                    "area": 225,
+                    "tracking_points": [
+                      {
+                        "point_id": "marble_A_p1",
+                        "object_id": "marble_A",
+                        "uv": [
+                          499.0,
+                          321.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p2",
+                        "object_id": "marble_A",
+                        "uv": [
+                          497.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p3",
+                        "object_id": "marble_A",
+                        "uv": [
+                          501.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 13,
+                    "timestamp_sec": 9.016667,
+                    "mask_ref": "marble_A_mask_t013",
+                    "bbox_2d": [
+                      491.0,
+                      311.0,
+                      507.0,
+                      330.0
+                    ],
+                    "area": 217,
+                    "tracking_points": [
+                      {
+                        "point_id": "marble_A_p1",
+                        "object_id": "marble_A",
+                        "uv": [
+                          499.0,
+                          321.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p2",
+                        "object_id": "marble_A",
+                        "uv": [
+                          497.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p3",
+                        "object_id": "marble_A",
+                        "uv": [
+                          500.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 14,
+                    "timestamp_sec": 9.7,
+                    "mask_ref": "marble_A_mask_t014",
+                    "bbox_2d": [
+                      491.0,
+                      311.0,
+                      507.0,
+                      330.0
+                    ],
+                    "area": 217,
+                    "tracking_points": [
+                      {
+                        "point_id": "marble_A_p1",
+                        "object_id": "marble_A",
+                        "uv": [
+                          499.0,
+                          321.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p2",
+                        "object_id": "marble_A",
+                        "uv": [
+                          497.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p3",
+                        "object_id": "marble_A",
+                        "uv": [
+                          500.0,
+                          322.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 15,
+                    "timestamp_sec": 10.4,
+                    "mask_ref": "marble_A_mask_t015",
+                    "bbox_2d": [
+                      481.0,
+                      300.0,
+                      512.0,
+                      339.0
+                    ],
+                    "area": 1022,
+                    "tracking_points": [
+                      {
+                        "point_id": "marble_A_p1",
+                        "object_id": "marble_A",
+                        "uv": [
+                          497.0,
+                          319.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p2",
+                        "object_id": "marble_A",
+                        "uv": [
+                          493.0,
+                          319.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_A_p3",
+                        "object_id": "marble_A",
+                        "uv": [
+                          501.0,
+                          319.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_A:mask"
+                ],
+                "confidence": {
+                  "score": 0.882774,
+                  "status": "measured",
+                  "basis": "mean source-model confidence",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_A:mask"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "point_tracks_2d": {
+                "availability": "available",
+                "source": "sam31_mask_owned_interior_points",
+                "units": "source_pixels",
+                "frame_range": null,
+                "records": [
+                  {
+                    "tracklet_id": "trk_marble_A_p1",
+                    "object_id": "marble_A",
+                    "point_id": "marble_A_p1",
+                    "uv_sequence": [
+                      [
+                        498.0,
+                        321.0
+                      ],
+                      [
+                        498.0,
+                        321.0
+                      ],
+                      [
+                        498.0,
+                        321.0
+                      ],
+                      [
+                        498.0,
+                        321.0
+                      ],
+                      [
+                        498.0,
+                        321.0
+                      ],
+                      [
+                        499.0,
+                        321.0
+                      ],
+                      [
+                        499.0,
+                        321.0
+                      ],
+                      [
+                        499.0,
+                        321.0
+                      ],
+                      [
+                        499.0,
+                        321.0
+                      ],
+                      [
+                        499.0,
+                        321.0
+                      ],
+                      [
+                        499.0,
+                        321.0
+                      ],
+                      [
+                        499.0,
+                        321.0
+                      ],
+                      [
+                        499.0,
+                        321.0
+                      ],
+                      [
+                        499.0,
+                        321.0
+                      ],
+                      [
+                        499.0,
+                        321.0
+                      ],
+                      [
+                        497.0,
+                        319.0
+                      ]
+                    ],
+                    "visibility": [
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "confidence": [
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0
+                    ],
+                    "source": "sam31_mask_owned_interior_points"
+                  },
+                  {
+                    "tracklet_id": "trk_marble_A_p2",
+                    "object_id": "marble_A",
+                    "point_id": "marble_A_p2",
+                    "uv_sequence": [
+                      [
+                        497.0,
+                        322.0
+                      ],
+                      [
+                        496.0,
+                        322.0
+                      ],
+                      [
+                        496.0,
+                        322.0
+                      ],
+                      [
+                        497.0,
+                        322.0
+                      ],
+                      [
+                        497.0,
+                        322.0
+                      ],
+                      [
+                        497.0,
+                        322.0
+                      ],
+                      [
+                        497.0,
+                        322.0
+                      ],
+                      [
+                        497.0,
+                        322.0
+                      ],
+                      [
+                        497.0,
+                        322.0
+                      ],
+                      [
+                        497.0,
+                        322.0
+                      ],
+                      [
+                        497.0,
+                        322.0
+                      ],
+                      [
+                        497.0,
+                        322.0
+                      ],
+                      [
+                        497.0,
+                        322.0
+                      ],
+                      [
+                        497.0,
+                        322.0
+                      ],
+                      [
+                        497.0,
+                        322.0
+                      ],
+                      [
+                        493.0,
+                        319.0
+                      ]
+                    ],
+                    "visibility": [
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "confidence": [
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0
+                    ],
+                    "source": "sam31_mask_owned_interior_points"
+                  },
+                  {
+                    "tracklet_id": "trk_marble_A_p3",
+                    "object_id": "marble_A",
+                    "point_id": "marble_A_p3",
+                    "uv_sequence": [
+                      [
+                        500.0,
+                        322.0
+                      ],
+                      [
+                        500.0,
+                        322.0
+                      ],
+                      [
+                        500.0,
+                        322.0
+                      ],
+                      [
+                        500.0,
+                        322.0
+                      ],
+                      [
+                        500.0,
+                        322.0
+                      ],
+                      [
+                        500.0,
+                        322.0
+                      ],
+                      [
+                        501.0,
+                        322.0
+                      ],
+                      [
+                        501.0,
+                        322.0
+                      ],
+                      [
+                        500.0,
+                        322.0
+                      ],
+                      [
+                        501.0,
+                        322.0
+                      ],
+                      [
+                        501.0,
+                        322.0
+                      ],
+                      [
+                        501.0,
+                        322.0
+                      ],
+                      [
+                        501.0,
+                        322.0
+                      ],
+                      [
+                        500.0,
+                        322.0
+                      ],
+                      [
+                        500.0,
+                        322.0
+                      ],
+                      [
+                        501.0,
+                        319.0
+                      ]
+                    ],
+                    "visibility": [
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "confidence": [
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0
+                    ],
+                    "source": "sam31_mask_owned_interior_points"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_A:point_tracks_2d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "uncalibrated",
+                  "basis": "field is present but source confidence is unavailable",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_A:point_tracks_2d"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "raw_tracklets": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units_and_source_pixels",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_A:raw_tracklets"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_A:raw_tracklets"
+                  ]
+                },
+                "unavailable_reason": "raw_tracklets was not produced for this scene/object"
+              },
+              "accepted_tracklets": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units_and_source_pixels",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_A:accepted_tracklets"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_A:accepted_tracklets"
+                  ]
+                },
+                "unavailable_reason": "accepted_tracklets was not produced for this scene/object"
+              }
+            },
+            "computed_fields": {
+              "center_2d": {
+                "availability": "available",
+                "source": "sam31_mask_centroid",
+                "units": "source_pixels",
+                "frame_range": [
+                  0,
+                  15
+                ],
+                "records": [
+                  {
+                    "frame_index": 0,
+                    "timestamp_sec": 0.0,
+                    "uv": [
+                      498.375,
+                      321.330357
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 1,
+                    "timestamp_sec": 0.7,
+                    "uv": [
+                      498.232759,
+                      321.396552
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 2,
+                    "timestamp_sec": 1.383333,
+                    "uv": [
+                      498.271493,
+                      321.253394
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 3,
+                    "timestamp_sec": 2.083333,
+                    "uv": [
+                      498.347032,
+                      321.269406
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 4,
+                    "timestamp_sec": 2.766667,
+                    "uv": [
+                      498.422222,
+                      321.262222
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 5,
+                    "timestamp_sec": 3.466667,
+                    "uv": [
+                      498.586364,
+                      321.295455
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 6,
+                    "timestamp_sec": 4.166667,
+                    "uv": [
+                      498.860697,
+                      321.402985
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 7,
+                    "timestamp_sec": 4.85,
+                    "uv": [
+                      498.703883,
+                      321.446602
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 8,
+                    "timestamp_sec": 5.55,
+                    "uv": [
+                      498.633333,
+                      321.409524
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 9,
+                    "timestamp_sec": 6.233333,
+                    "uv": [
+                      498.639423,
+                      321.427885
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 10,
+                    "timestamp_sec": 6.933333,
+                    "uv": [
+                      498.653333,
+                      321.306667
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 11,
+                    "timestamp_sec": 7.633333,
+                    "uv": [
+                      498.653333,
+                      321.306667
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 12,
+                    "timestamp_sec": 8.316667,
+                    "uv": [
+                      498.653333,
+                      321.306667
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 13,
+                    "timestamp_sec": 9.016667,
+                    "uv": [
+                      498.62212,
+                      321.294931
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 14,
+                    "timestamp_sec": 9.7,
+                    "uv": [
+                      498.62212,
+                      321.294931
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 15,
+                    "timestamp_sec": 10.4,
+                    "uv": [
+                      496.996086,
+                      319.307241
+                    ],
+                    "source": "sam31_mask_centroid"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_A:center_2d"
+                ],
+                "confidence": {
+                  "score": 0.882774,
+                  "status": "measured",
+                  "basis": "mean source-model confidence",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_A:center_2d"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "velocity_2d": {
+                "availability": "available",
+                "source": "finite_difference_center_2d",
+                "units": "source_pixels_per_second",
+                "frame_range": [
+                  1,
+                  15
+                ],
+                "records": [
+                  {
+                    "frame_index": 1,
+                    "duv_dt": [
+                      -0.203201,
+                      0.094564
+                    ],
+                    "speed_px_per_sec": 0.224128,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 2,
+                    "duv_dt": [
+                      0.056684,
+                      -0.2095
+                    ],
+                    "speed_px_per_sec": 0.217033,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 3,
+                    "duv_dt": [
+                      0.107913,
+                      0.022874
+                    ],
+                    "speed_px_per_sec": 0.110311,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 4,
+                    "duv_dt": [
+                      0.110034,
+                      -0.010513
+                    ],
+                    "speed_px_per_sec": 0.110535,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 5,
+                    "duv_dt": [
+                      0.234489,
+                      0.047476
+                    ],
+                    "speed_px_per_sec": 0.239246,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 6,
+                    "duv_dt": [
+                      0.391904,
+                      0.153614
+                    ],
+                    "speed_px_per_sec": 0.420935,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 7,
+                    "duv_dt": [
+                      -0.229484,
+                      0.06383
+                    ],
+                    "speed_px_per_sec": 0.238196,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 8,
+                    "duv_dt": [
+                      -0.100786,
+                      -0.052969
+                    ],
+                    "speed_px_per_sec": 0.113857,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 9,
+                    "duv_dt": [
+                      0.008912,
+                      0.02687
+                    ],
+                    "speed_px_per_sec": 0.028309,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 10,
+                    "duv_dt": [
+                      0.019871,
+                      -0.173169
+                    ],
+                    "speed_px_per_sec": 0.174305,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 11,
+                    "duv_dt": [
+                      0.0,
+                      0.0
+                    ],
+                    "speed_px_per_sec": 0.0,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 12,
+                    "duv_dt": [
+                      0.0,
+                      0.0
+                    ],
+                    "speed_px_per_sec": 0.0,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 13,
+                    "duv_dt": [
+                      -0.04459,
+                      -0.016766
+                    ],
+                    "speed_px_per_sec": 0.047638,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 14,
+                    "duv_dt": [
+                      0.0,
+                      0.0
+                    ],
+                    "speed_px_per_sec": 0.0,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 15,
+                    "duv_dt": [
+                      -2.322906,
+                      -2.839557
+                    ],
+                    "speed_px_per_sec": 3.668648,
+                    "source": "finite_difference_center_2d"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_A:velocity_2d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "uncalibrated",
+                  "basis": "field is present but source confidence is unavailable",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_A:velocity_2d"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "acceleration_2d": {
+                "availability": "available",
+                "source": "finite_difference_velocity_2d",
+                "units": "source_pixels_per_second_squared",
+                "frame_range": [
+                  2,
+                  15
+                ],
+                "records": [
+                  {
+                    "frame_index": 2,
+                    "duv_dt2": [
+                      0.259885,
+                      -0.304064
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 3,
+                    "duv_dt2": [
+                      0.051229,
+                      0.232374
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 4,
+                    "duv_dt2": [
+                      0.002121,
+                      -0.033387
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 5,
+                    "duv_dt2": [
+                      0.124455,
+                      0.057989
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 6,
+                    "duv_dt2": [
+                      0.157415,
+                      0.106138
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 7,
+                    "duv_dt2": [
+                      -0.621388,
+                      -0.089784
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 8,
+                    "duv_dt2": [
+                      0.128698,
+                      -0.116799
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 9,
+                    "duv_dt2": [
+                      0.109698,
+                      0.079839
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 10,
+                    "duv_dt2": [
+                      0.010959,
+                      -0.200039
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 11,
+                    "duv_dt2": [
+                      -0.019871,
+                      0.173169
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 12,
+                    "duv_dt2": [
+                      0.0,
+                      0.0
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 13,
+                    "duv_dt2": [
+                      -0.04459,
+                      -0.016766
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 14,
+                    "duv_dt2": [
+                      0.04459,
+                      0.016766
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 15,
+                    "duv_dt2": [
+                      -2.322906,
+                      -2.839557
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_A:acceleration_2d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "uncalibrated",
+                  "basis": "field is present but source confidence is unavailable",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_A:acceleration_2d"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "visibility": {
+                "availability": "available",
+                "source": "sam31_mask_area",
+                "units": "probability",
+                "frame_range": [
+                  0,
+                  15
+                ],
+                "records": [
+                  {
+                    "frame_index": 0,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 1,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 2,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 3,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 4,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 5,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 6,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 7,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 8,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 9,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 10,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 11,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 12,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 13,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 14,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 15,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_A:visibility"
+                ],
+                "confidence": {
+                  "score": 1.0,
+                  "status": "measured",
+                  "basis": "mean source-model confidence",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_A:visibility"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "point_cloud": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_A:point_cloud"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_A:point_cloud"
+                  ]
+                },
+                "unavailable_reason": "point_cloud was not produced for this scene/object"
+              },
+              "center_3d": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_A:center_3d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_A:center_3d"
+                  ]
+                },
+                "unavailable_reason": "center_3d was not produced for this scene/object"
+              },
+              "velocity_3d": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units_per_second",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_A:velocity_3d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_A:velocity_3d"
+                  ]
+                },
+                "unavailable_reason": "velocity_3d was not produced for this scene/object"
+              },
+              "bbox_3d": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_A:bbox_3d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_A:bbox_3d"
+                  ]
+                },
+                "unavailable_reason": "bbox_3d was not produced for this scene/object"
+              },
+              "size_3d": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_A:size_3d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_A:size_3d"
+                  ]
+                },
+                "unavailable_reason": "size_3d was not produced for this scene/object"
+              },
+              "local_se3": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_A:local_se3"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_A:local_se3"
+                  ]
+                },
+                "unavailable_reason": "local_se3 was not produced for this scene/object"
+              },
+              "rigidity": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "normalized_residual",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_A:rigidity"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_A:rigidity"
+                  ]
+                },
+                "unavailable_reason": "rigidity was not produced for this scene/object"
+              }
+            }
+          },
+          {
+            "object_id": "marble_B",
+            "label": "marble B",
+            "role": "moving_marble",
+            "identity_source": "qwen2.5-vl-real",
+            "identity_confidence": {
+              "score": 0.785408,
+              "status": "measured",
+              "basis": "qwen semantic identity confidence",
+              "evidence_ids": [
+                "scene_7d0c727e6a9b55fa4a8e:marble_B:identity"
+              ]
+            },
+            "direct_fields": {
+              "bbox_2d": {
+                "availability": "available",
+                "source": "sam3.1-real",
+                "units": "source_pixels",
+                "frame_range": [
+                  0,
+                  15
+                ],
+                "records": [
+                  {
+                    "frame_index": 0,
+                    "timestamp_sec": 0.0,
+                    "bbox_2d": [
+                      474.0,
+                      75.0,
+                      512.0,
+                      116.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 1,
+                    "timestamp_sec": 0.7,
+                    "bbox_2d": [
+                      418.0,
+                      84.0,
+                      462.0,
+                      134.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 2,
+                    "timestamp_sec": 1.383333,
+                    "bbox_2d": [
+                      367.0,
+                      97.0,
+                      411.0,
+                      148.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 3,
+                    "timestamp_sec": 2.083333,
+                    "bbox_2d": [
+                      311.0,
+                      111.0,
+                      355.0,
+                      161.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 4,
+                    "timestamp_sec": 2.766667,
+                    "bbox_2d": [
+                      258.0,
+                      128.0,
+                      300.0,
+                      174.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 5,
+                    "timestamp_sec": 3.466667,
+                    "bbox_2d": [
+                      201.0,
+                      140.0,
+                      247.0,
+                      189.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 6,
+                    "timestamp_sec": 4.166667,
+                    "bbox_2d": [
+                      151.0,
+                      156.0,
+                      192.0,
+                      201.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 7,
+                    "timestamp_sec": 4.85,
+                    "bbox_2d": [
+                      99.0,
+                      168.0,
+                      141.0,
+                      213.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 8,
+                    "timestamp_sec": 5.55,
+                    "bbox_2d": [
+                      46.0,
+                      182.0,
+                      87.0,
+                      224.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 9,
+                    "timestamp_sec": 6.233333,
+                    "bbox_2d": [
+                      0.0,
+                      202.0,
+                      30.0,
+                      233.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 10,
+                    "timestamp_sec": 6.933333,
+                    "bbox_2d": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 11,
+                    "timestamp_sec": 7.633333,
+                    "bbox_2d": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 12,
+                    "timestamp_sec": 8.316667,
+                    "bbox_2d": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 13,
+                    "timestamp_sec": 9.016667,
+                    "bbox_2d": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 14,
+                    "timestamp_sec": 9.7,
+                    "bbox_2d": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "source": "sam3.1-real"
+                  },
+                  {
+                    "frame_index": 15,
+                    "timestamp_sec": 10.4,
+                    "bbox_2d": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "source": "sam3.1-real"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_B:bbox_2d"
+                ],
+                "confidence": {
+                  "score": 0.570816,
+                  "status": "measured",
+                  "basis": "mean source-model confidence",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_B:bbox_2d"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "mask": {
+                "availability": "available",
+                "source": "sam3.1-real",
+                "units": "source_pixels",
+                "frame_range": [
+                  0,
+                  15
+                ],
+                "records": [
+                  {
+                    "frame_index": 0,
+                    "timestamp_sec": 0.0,
+                    "mask_ref": "marble_B_mask_t000",
+                    "bbox_2d": [
+                      474.0,
+                      75.0,
+                      512.0,
+                      116.0
+                    ],
+                    "area": 1281,
+                    "tracking_points": [
+                      {
+                        "point_id": "marble_B_p1",
+                        "object_id": "marble_B",
+                        "uv": [
+                          493.0,
+                          96.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_B_p2",
+                        "object_id": "marble_B",
+                        "uv": [
+                          488.0,
+                          96.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_B_p3",
+                        "object_id": "marble_B",
+                        "uv": [
+                          498.0,
+                          96.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 1,
+                    "timestamp_sec": 0.7,
+                    "mask_ref": "marble_B_mask_t001",
+                    "bbox_2d": [
+                      418.0,
+                      84.0,
+                      462.0,
+                      134.0
+                    ],
+                    "area": 1816,
+                    "tracking_points": [
+                      {
+                        "point_id": "marble_B_p1",
+                        "object_id": "marble_B",
+                        "uv": [
+                          440.0,
+                          109.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_B_p2",
+                        "object_id": "marble_B",
+                        "uv": [
+                          434.0,
+                          109.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_B_p3",
+                        "object_id": "marble_B",
+                        "uv": [
+                          446.0,
+                          109.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 2,
+                    "timestamp_sec": 1.383333,
+                    "mask_ref": "marble_B_mask_t002",
+                    "bbox_2d": [
+                      367.0,
+                      97.0,
+                      411.0,
+                      148.0
+                    ],
+                    "area": 1929,
+                    "tracking_points": [
+                      {
+                        "point_id": "marble_B_p1",
+                        "object_id": "marble_B",
+                        "uv": [
+                          389.0,
+                          121.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_B_p2",
+                        "object_id": "marble_B",
+                        "uv": [
+                          384.0,
+                          121.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_B_p3",
+                        "object_id": "marble_B",
+                        "uv": [
+                          395.0,
+                          121.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 3,
+                    "timestamp_sec": 2.083333,
+                    "mask_ref": "marble_B_mask_t003",
+                    "bbox_2d": [
+                      311.0,
+                      111.0,
+                      355.0,
+                      161.0
+                    ],
+                    "area": 1826,
+                    "tracking_points": [
+                      {
+                        "point_id": "marble_B_p1",
+                        "object_id": "marble_B",
+                        "uv": [
+                          333.0,
+                          136.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_B_p2",
+                        "object_id": "marble_B",
+                        "uv": [
+                          327.0,
+                          136.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_B_p3",
+                        "object_id": "marble_B",
+                        "uv": [
+                          339.0,
+                          136.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 4,
+                    "timestamp_sec": 2.766667,
+                    "mask_ref": "marble_B_mask_t004",
+                    "bbox_2d": [
+                      258.0,
+                      128.0,
+                      300.0,
+                      174.0
+                    ],
+                    "area": 1634,
+                    "tracking_points": [
+                      {
+                        "point_id": "marble_B_p1",
+                        "object_id": "marble_B",
+                        "uv": [
+                          278.0,
+                          151.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_B_p2",
+                        "object_id": "marble_B",
+                        "uv": [
+                          273.0,
+                          151.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_B_p3",
+                        "object_id": "marble_B",
+                        "uv": [
+                          283.0,
+                          151.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 5,
+                    "timestamp_sec": 3.466667,
+                    "mask_ref": "marble_B_mask_t005",
+                    "bbox_2d": [
+                      201.0,
+                      140.0,
+                      247.0,
+                      189.0
+                    ],
+                    "area": 1918,
+                    "tracking_points": [
+                      {
+                        "point_id": "marble_B_p1",
+                        "object_id": "marble_B",
+                        "uv": [
+                          225.0,
+                          164.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_B_p2",
+                        "object_id": "marble_B",
+                        "uv": [
+                          219.0,
+                          164.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_B_p3",
+                        "object_id": "marble_B",
+                        "uv": [
+                          231.0,
+                          164.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 6,
+                    "timestamp_sec": 4.166667,
+                    "mask_ref": "marble_B_mask_t006",
+                    "bbox_2d": [
+                      151.0,
+                      156.0,
+                      192.0,
+                      201.0
+                    ],
+                    "area": 1527,
+                    "tracking_points": [
+                      {
+                        "point_id": "marble_B_p1",
+                        "object_id": "marble_B",
+                        "uv": [
+                          171.0,
+                          179.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_B_p2",
+                        "object_id": "marble_B",
+                        "uv": [
+                          165.0,
+                          179.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_B_p3",
+                        "object_id": "marble_B",
+                        "uv": [
+                          176.0,
+                          179.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 7,
+                    "timestamp_sec": 4.85,
+                    "mask_ref": "marble_B_mask_t007",
+                    "bbox_2d": [
+                      99.0,
+                      168.0,
+                      141.0,
+                      213.0
+                    ],
+                    "area": 1572,
+                    "tracking_points": [
+                      {
+                        "point_id": "marble_B_p1",
+                        "object_id": "marble_B",
+                        "uv": [
+                          119.0,
+                          190.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_B_p2",
+                        "object_id": "marble_B",
+                        "uv": [
+                          114.0,
+                          190.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_B_p3",
+                        "object_id": "marble_B",
+                        "uv": [
+                          125.0,
+                          190.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 8,
+                    "timestamp_sec": 5.55,
+                    "mask_ref": "marble_B_mask_t008",
+                    "bbox_2d": [
+                      46.0,
+                      182.0,
+                      87.0,
+                      224.0
+                    ],
+                    "area": 1396,
+                    "tracking_points": [
+                      {
+                        "point_id": "marble_B_p1",
+                        "object_id": "marble_B",
+                        "uv": [
+                          65.0,
+                          204.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_B_p2",
+                        "object_id": "marble_B",
+                        "uv": [
+                          60.0,
+                          204.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_B_p3",
+                        "object_id": "marble_B",
+                        "uv": [
+                          70.0,
+                          204.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 9,
+                    "timestamp_sec": 6.233333,
+                    "mask_ref": "marble_B_mask_t009",
+                    "bbox_2d": [
+                      0.0,
+                      202.0,
+                      30.0,
+                      233.0
+                    ],
+                    "area": 762,
+                    "tracking_points": [
+                      {
+                        "point_id": "marble_B_p1",
+                        "object_id": "marble_B",
+                        "uv": [
+                          13.0,
+                          217.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_B_p2",
+                        "object_id": "marble_B",
+                        "uv": [
+                          9.0,
+                          217.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      },
+                      {
+                        "point_id": "marble_B_p3",
+                        "object_id": "marble_B",
+                        "uv": [
+                          17.0,
+                          217.0
+                        ],
+                        "source": "sam31_mask_owned_interior_points"
+                      }
+                    ],
+                    "source": "sam3.1-real",
+                    "visibility_state": "visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 10,
+                    "timestamp_sec": 6.933333,
+                    "mask_ref": "marble_B_mask_t010",
+                    "bbox_2d": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "area": 0,
+                    "tracking_points": [],
+                    "source": "sam3.1-real",
+                    "visibility_state": "not_expected_visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 11,
+                    "timestamp_sec": 7.633333,
+                    "mask_ref": "marble_B_mask_t011",
+                    "bbox_2d": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "area": 0,
+                    "tracking_points": [],
+                    "source": "sam3.1-real",
+                    "visibility_state": "not_expected_visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 12,
+                    "timestamp_sec": 8.316667,
+                    "mask_ref": "marble_B_mask_t012",
+                    "bbox_2d": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "area": 0,
+                    "tracking_points": [],
+                    "source": "sam3.1-real",
+                    "visibility_state": "not_expected_visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 13,
+                    "timestamp_sec": 9.016667,
+                    "mask_ref": "marble_B_mask_t013",
+                    "bbox_2d": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "area": 0,
+                    "tracking_points": [],
+                    "source": "sam3.1-real",
+                    "visibility_state": "not_expected_visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 14,
+                    "timestamp_sec": 9.7,
+                    "mask_ref": "marble_B_mask_t014",
+                    "bbox_2d": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "area": 0,
+                    "tracking_points": [],
+                    "source": "sam3.1-real",
+                    "visibility_state": "not_expected_visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  },
+                  {
+                    "frame_index": 15,
+                    "timestamp_sec": 10.4,
+                    "mask_ref": "marble_B_mask_t015",
+                    "bbox_2d": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "area": 0,
+                    "tracking_points": [],
+                    "source": "sam3.1-real",
+                    "visibility_state": "not_expected_visible",
+                    "sam_prompt_source": "contract_per_frame_box"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_B:mask"
+                ],
+                "confidence": {
+                  "score": 0.570816,
+                  "status": "measured",
+                  "basis": "mean source-model confidence",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_B:mask"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "point_tracks_2d": {
+                "availability": "available",
+                "source": "sam31_mask_owned_interior_points",
+                "units": "source_pixels",
+                "frame_range": null,
+                "records": [
+                  {
+                    "tracklet_id": "trk_marble_B_p1",
+                    "object_id": "marble_B",
+                    "point_id": "marble_B_p1",
+                    "uv_sequence": [
+                      [
+                        493.0,
+                        96.0
+                      ],
+                      [
+                        440.0,
+                        109.0
+                      ],
+                      [
+                        389.0,
+                        121.0
+                      ],
+                      [
+                        333.0,
+                        136.0
+                      ],
+                      [
+                        278.0,
+                        151.0
+                      ],
+                      [
+                        225.0,
+                        164.0
+                      ],
+                      [
+                        171.0,
+                        179.0
+                      ],
+                      [
+                        119.0,
+                        190.0
+                      ],
+                      [
+                        65.0,
+                        204.0
+                      ],
+                      [
+                        13.0,
+                        217.0
+                      ]
+                    ],
+                    "visibility": [
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "confidence": [
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0
+                    ],
+                    "source": "sam31_mask_owned_interior_points"
+                  },
+                  {
+                    "tracklet_id": "trk_marble_B_p2",
+                    "object_id": "marble_B",
+                    "point_id": "marble_B_p2",
+                    "uv_sequence": [
+                      [
+                        488.0,
+                        96.0
+                      ],
+                      [
+                        434.0,
+                        109.0
+                      ],
+                      [
+                        384.0,
+                        121.0
+                      ],
+                      [
+                        327.0,
+                        136.0
+                      ],
+                      [
+                        273.0,
+                        151.0
+                      ],
+                      [
+                        219.0,
+                        164.0
+                      ],
+                      [
+                        165.0,
+                        179.0
+                      ],
+                      [
+                        114.0,
+                        190.0
+                      ],
+                      [
+                        60.0,
+                        204.0
+                      ],
+                      [
+                        9.0,
+                        217.0
+                      ]
+                    ],
+                    "visibility": [
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "confidence": [
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0
+                    ],
+                    "source": "sam31_mask_owned_interior_points"
+                  },
+                  {
+                    "tracklet_id": "trk_marble_B_p3",
+                    "object_id": "marble_B",
+                    "point_id": "marble_B_p3",
+                    "uv_sequence": [
+                      [
+                        498.0,
+                        96.0
+                      ],
+                      [
+                        446.0,
+                        109.0
+                      ],
+                      [
+                        395.0,
+                        121.0
+                      ],
+                      [
+                        339.0,
+                        136.0
+                      ],
+                      [
+                        283.0,
+                        151.0
+                      ],
+                      [
+                        231.0,
+                        164.0
+                      ],
+                      [
+                        176.0,
+                        179.0
+                      ],
+                      [
+                        125.0,
+                        190.0
+                      ],
+                      [
+                        70.0,
+                        204.0
+                      ],
+                      [
+                        17.0,
+                        217.0
+                      ]
+                    ],
+                    "visibility": [
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "confidence": [
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0
+                    ],
+                    "source": "sam31_mask_owned_interior_points"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_B:point_tracks_2d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "uncalibrated",
+                  "basis": "field is present but source confidence is unavailable",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_B:point_tracks_2d"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "raw_tracklets": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units_and_source_pixels",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_B:raw_tracklets"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_B:raw_tracklets"
+                  ]
+                },
+                "unavailable_reason": "raw_tracklets was not produced for this scene/object"
+              },
+              "accepted_tracklets": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units_and_source_pixels",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_B:accepted_tracklets"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_B:accepted_tracklets"
+                  ]
+                },
+                "unavailable_reason": "accepted_tracklets was not produced for this scene/object"
+              }
+            },
+            "computed_fields": {
+              "center_2d": {
+                "availability": "available",
+                "source": "sam31_mask_centroid",
+                "units": "source_pixels",
+                "frame_range": [
+                  0,
+                  9
+                ],
+                "records": [
+                  {
+                    "frame_index": 0,
+                    "timestamp_sec": 0.0,
+                    "uv": [
+                      493.093677,
+                      95.724434
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 1,
+                    "timestamp_sec": 0.7,
+                    "uv": [
+                      439.821586,
+                      109.080947
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 2,
+                    "timestamp_sec": 1.383333,
+                    "uv": [
+                      389.353033,
+                      120.92535
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 3,
+                    "timestamp_sec": 2.083333,
+                    "uv": [
+                      332.814896,
+                      135.82092
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 4,
+                    "timestamp_sec": 2.766667,
+                    "uv": [
+                      278.094247,
+                      151.299266
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 5,
+                    "timestamp_sec": 3.466667,
+                    "uv": [
+                      224.606361,
+                      164.052138
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 6,
+                    "timestamp_sec": 4.166667,
+                    "uv": [
+                      170.656843,
+                      178.59594
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 7,
+                    "timestamp_sec": 4.85,
+                    "uv": [
+                      119.185751,
+                      189.962468
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 8,
+                    "timestamp_sec": 5.55,
+                    "uv": [
+                      65.403295,
+                      203.515759
+                    ],
+                    "source": "sam31_mask_centroid"
+                  },
+                  {
+                    "frame_index": 9,
+                    "timestamp_sec": 6.233333,
+                    "uv": [
+                      13.087927,
+                      216.67979
+                    ],
+                    "source": "sam31_mask_centroid"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_B:center_2d"
+                ],
+                "confidence": {
+                  "score": 0.570816,
+                  "status": "measured",
+                  "basis": "mean source-model confidence",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_B:center_2d"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "velocity_2d": {
+                "availability": "available",
+                "source": "finite_difference_center_2d",
+                "units": "source_pixels_per_second",
+                "frame_range": [
+                  1,
+                  9
+                ],
+                "records": [
+                  {
+                    "frame_index": 1,
+                    "duv_dt": [
+                      -76.102987,
+                      19.080733
+                    ],
+                    "speed_px_per_sec": 78.458518,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 2,
+                    "duv_dt": [
+                      -73.856455,
+                      17.333281
+                    ],
+                    "speed_px_per_sec": 75.863157,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 3,
+                    "duv_dt": [
+                      -80.768767,
+                      21.279386
+                    ],
+                    "speed_px_per_sec": 83.524883,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 4,
+                    "duv_dt": [
+                      -80.07892,
+                      22.651216
+                    ],
+                    "speed_px_per_sec": 83.220857,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 5,
+                    "duv_dt": [
+                      -76.411266,
+                      18.218389
+                    ],
+                    "speed_px_per_sec": 78.553111,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 6,
+                    "duv_dt": [
+                      -77.07074,
+                      20.77686
+                    ],
+                    "speed_px_per_sec": 79.822158,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 7,
+                    "duv_dt": [
+                      -75.323586,
+                      16.633952
+                    ],
+                    "speed_px_per_sec": 77.138388,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 8,
+                    "duv_dt": [
+                      -76.83208,
+                      19.361844
+                    ],
+                    "speed_px_per_sec": 79.234144,
+                    "source": "finite_difference_center_2d"
+                  },
+                  {
+                    "frame_index": 9,
+                    "duv_dt": [
+                      -76.559112,
+                      19.264445
+                    ],
+                    "speed_px_per_sec": 78.945656,
+                    "source": "finite_difference_center_2d"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_B:velocity_2d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "uncalibrated",
+                  "basis": "field is present but source confidence is unavailable",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_B:velocity_2d"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "acceleration_2d": {
+                "availability": "available",
+                "source": "finite_difference_velocity_2d",
+                "units": "source_pixels_per_second_squared",
+                "frame_range": [
+                  2,
+                  9
+                ],
+                "records": [
+                  {
+                    "frame_index": 2,
+                    "duv_dt2": [
+                      2.246532,
+                      -1.747452
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 3,
+                    "duv_dt2": [
+                      -6.912312,
+                      3.946105
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 4,
+                    "duv_dt2": [
+                      0.689847,
+                      1.37183
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 5,
+                    "duv_dt2": [
+                      3.667654,
+                      -4.432827
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 6,
+                    "duv_dt2": [
+                      -0.659474,
+                      2.558471
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 7,
+                    "duv_dt2": [
+                      1.747154,
+                      -4.142908
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 8,
+                    "duv_dt2": [
+                      -1.508494,
+                      2.727892
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  },
+                  {
+                    "frame_index": 9,
+                    "duv_dt2": [
+                      0.272968,
+                      -0.097399
+                    ],
+                    "source": "finite_difference_velocity_2d"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_B:acceleration_2d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "uncalibrated",
+                  "basis": "field is present but source confidence is unavailable",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_B:acceleration_2d"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "visibility": {
+                "availability": "available",
+                "source": "sam31_mask_area",
+                "units": "probability",
+                "frame_range": [
+                  0,
+                  15
+                ],
+                "records": [
+                  {
+                    "frame_index": 0,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 1,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 2,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 3,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 4,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 5,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 6,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 7,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 8,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 9,
+                    "score": 1.0,
+                    "source": "sam31_mask_area",
+                    "state": "visible"
+                  },
+                  {
+                    "frame_index": 10,
+                    "score": 0.0,
+                    "source": "sam31_mask_area",
+                    "state": "not_expected_visible"
+                  },
+                  {
+                    "frame_index": 11,
+                    "score": 0.0,
+                    "source": "sam31_mask_area",
+                    "state": "not_expected_visible"
+                  },
+                  {
+                    "frame_index": 12,
+                    "score": 0.0,
+                    "source": "sam31_mask_area",
+                    "state": "not_expected_visible"
+                  },
+                  {
+                    "frame_index": 13,
+                    "score": 0.0,
+                    "source": "sam31_mask_area",
+                    "state": "not_expected_visible"
+                  },
+                  {
+                    "frame_index": 14,
+                    "score": 0.0,
+                    "source": "sam31_mask_area",
+                    "state": "not_expected_visible"
+                  },
+                  {
+                    "frame_index": 15,
+                    "score": 0.0,
+                    "source": "sam31_mask_area",
+                    "state": "not_expected_visible"
+                  }
+                ],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_B:visibility"
+                ],
+                "confidence": {
+                  "score": 0.625,
+                  "status": "measured",
+                  "basis": "mean source-model confidence",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_B:visibility"
+                  ]
+                },
+                "unavailable_reason": null
+              },
+              "point_cloud": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_B:point_cloud"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_B:point_cloud"
+                  ]
+                },
+                "unavailable_reason": "point_cloud was not produced for this scene/object"
+              },
+              "center_3d": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_B:center_3d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_B:center_3d"
+                  ]
+                },
+                "unavailable_reason": "center_3d was not produced for this scene/object"
+              },
+              "velocity_3d": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units_per_second",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_B:velocity_3d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_B:velocity_3d"
+                  ]
+                },
+                "unavailable_reason": "velocity_3d was not produced for this scene/object"
+              },
+              "bbox_3d": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_B:bbox_3d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_B:bbox_3d"
+                  ]
+                },
+                "unavailable_reason": "bbox_3d was not produced for this scene/object"
+              },
+              "size_3d": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_B:size_3d"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_B:size_3d"
+                  ]
+                },
+                "unavailable_reason": "size_3d was not produced for this scene/object"
+              },
+              "local_se3": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "world_units",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_B:local_se3"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_B:local_se3"
+                  ]
+                },
+                "unavailable_reason": "local_se3 was not produced for this scene/object"
+              },
+              "rigidity": {
+                "availability": "unavailable",
+                "source": null,
+                "units": "normalized_residual",
+                "frame_range": null,
+                "records": [],
+                "evidence_ids": [
+                  "scene_7d0c727e6a9b55fa4a8e:marble_B:rigidity"
+                ],
+                "confidence": {
+                  "score": null,
+                  "status": "unavailable",
+                  "basis": "field is absent",
+                  "evidence_ids": [
+                    "scene_7d0c727e6a9b55fa4a8e:marble_B:rigidity"
+                  ]
+                },
+                "unavailable_reason": "rigidity was not produced for this scene/object"
+              }
+            }
+          }
+        ],
+        "scene_fields": {
+          "camera": {
+            "availability": "unavailable",
+            "source": null,
+            "units": "source_pixels_and_world_units",
+            "frame_range": null,
+            "records": [],
+            "evidence_ids": [
+              "scene_7d0c727e6a9b55fa4a8e:camera"
+            ],
+            "confidence": {
+              "score": null,
+              "status": "unavailable",
+              "basis": "field is absent",
+              "evidence_ids": [
+                "scene_7d0c727e6a9b55fa4a8e:camera"
+              ]
+            },
+            "unavailable_reason": "camera was not produced for this scene/object"
+          },
+          "depth": {
+            "availability": "unavailable",
+            "source": null,
+            "units": "world_units",
+            "frame_range": null,
+            "records": [],
+            "evidence_ids": [
+              "scene_7d0c727e6a9b55fa4a8e:depth"
+            ],
+            "confidence": {
+              "score": null,
+              "status": "unavailable",
+              "basis": "field is absent",
+              "evidence_ids": [
+                "scene_7d0c727e6a9b55fa4a8e:depth"
+              ]
+            },
+            "unavailable_reason": "depth was not produced for this scene/object"
+          },
+          "point_map": {
+            "availability": "unavailable",
+            "source": null,
+            "units": "world_units",
+            "frame_range": null,
+            "records": [],
+            "evidence_ids": [
+              "scene_7d0c727e6a9b55fa4a8e:point_map"
+            ],
+            "confidence": {
+              "score": null,
+              "status": "unavailable",
+              "basis": "field is absent",
+              "evidence_ids": [
+                "scene_7d0c727e6a9b55fa4a8e:point_map"
+              ]
+            },
+            "unavailable_reason": "point_map was not produced for this scene/object"
+          }
+        },
+        "relations": {
+          "availability": "available",
+          "source": "mixed:computed_from_sam31_2d_trajectories,computed_relations",
+          "units": null,
+          "frame_range": null,
+          "records": [
+            {
+              "subject": "marble_A",
+              "object": "marble_B",
+              "relation": "separating",
+              "evidence": {
+                "distance_start_px": 225.667731,
+                "distance_end_px": 496.721671,
+                "trend": "separating",
+                "relative_velocity_projection": -271.05394
+              },
+              "source": "computed_from_sam31_2d_trajectories"
+            }
+          ],
+          "evidence_ids": [
+            "scene_7d0c727e6a9b55fa4a8e:relations"
+          ],
+          "confidence": {
+            "score": null,
+            "status": "uncalibrated",
+            "basis": "field is present but has no calibrated confidence",
+            "evidence_ids": [
+              "scene_7d0c727e6a9b55fa4a8e:relations"
+            ]
+          },
+          "unavailable_reason": null
+        },
+        "events": {
+          "availability": "unavailable",
+          "source": "mixed:computed_events,trial_or_instruction_metadata",
+          "units": null,
+          "frame_range": null,
+          "records": [],
+          "evidence_ids": [
+            "scene_7d0c727e6a9b55fa4a8e:events"
+          ],
+          "confidence": {
+            "score": null,
+            "status": "unavailable",
+            "basis": "field is absent",
+            "evidence_ids": [
+              "scene_7d0c727e6a9b55fa4a8e:events"
+            ]
+          },
+          "unavailable_reason": "events was not produced for this scene/object"
+        }
+      }
+    ],
+    "provenance": {
+      "source_artifact_sha256": "1f2a610dba7a5d9244779a58ff60dc1bbbdc4221e51e4eaefbaa4df33412d0d8",
+      "source_pipeline": "model_parsed",
+      "models": {
+        "semantic_prompt_source": "qwen2.5-vl-real",
+        "sam31": "sam3.1-real"
+      },
+      "migration_version": "physics-toolbox-eval-1"
+    },
+    "learned_fields": {
+      "status": "not_run",
+      "reason": "OCTC learned/refined fields were not run for the accepted Physics parses"
+    }
+  },
+  "viewer": {
+    "media_url": "media/code_7d0c727e6a9b55fa4a8e/video.mp4",
+    "poster_url": "media/code_7d0c727e6a9b55fa4a8e/poster.png",
+    "mask_root": "media/code_7d0c727e6a9b55fa4a8e/masks",
+    "source_width": 512,
+    "source_height": 384,
+    "source_media_path": "C:\\Users\\ROG\\Desktop\\Dynamic_4D_Spatial_Code\\data\\physics_subset\\physics_subset\\Stephan2021Counterfactual\\exp1\\assets\\TargetClip_WentThrough.mp4",
+    "playback_rate": 0.5,
+    "scene_behavior": "dynamic"
+  },
+  "selection": {
+    "qa_id": "qa_ac3a3656cac5925fd3ef",
+    "selection_basis": "target_available_nearest_study_medians_then_tool_diversity"
+  },
+  "question": {
+    "qa_id": "qa_ac3a3656cac5925fd3ef",
+    "prompt": "What do you think are the chances that Marble B would have missed the gate if Marble A had hit it?",
+    "answer_type": "slider",
+    "options": [],
+    "slider": {
+      "minimum": 0.0,
+      "maximum": 100.0
+    },
+    "target": {
+      "availability": "available",
+      "source": "human",
+      "objective": null,
+      "human_mean": 59.175,
+      "human_values": [
+        85.0,
+        74.0,
+        68.0,
+        71.0,
+        78.0,
+        69.0,
+        29.0,
+        95.0,
+        64.0,
+        43.0,
+        69.0,
+        60.0,
+        100.0,
+        93.0,
+        64.0,
+        53.0,
+        50.0,
+        75.0,
+        91.0,
+        95.0,
+        49.0,
+        12.0,
+        79.0,
+        99.0,
+        39.0,
+        61.0,
+        62.0,
+        18.0,
+        71.0,
+        35.0,
+        2.0,
+        1.0,
+        46.0,
+        32.0,
+        88.0,
+        0.0,
+        92.0,
+        17.0,
+        88.0,
+        50.0
+      ],
+      "unavailable_reason": null
+    },
+    "ground_truth_display": "59.17",
+    "answer": {
+      "value": 50.0,
+      "raw_answer_confidence": 0.003358311951160431,
+      "calibrated_answer_confidence": 0.06129140514516917,
+      "calibration_status": "out_of_fold_temperature_scaled"
+    },
+    "answer_display": "50",
+    "likelihood": {
+      "candidate_values": {
+        "count": 21,
+        "first": "0",
+        "last": "100"
+      },
+      "candidate_codes": {
+        "count": 21,
+        "first": "A",
+        "last": "U"
+      },
+      "logits": {
+        "count": 21,
+        "first": 17.75,
+        "last": 24.875
+      },
+      "probabilities": {
+        "count": 21,
+        "first": 0.0,
+        "last": 0.000276
+      },
+      "method": "single_token_conditional_candidate_likelihood",
+      "prompt_token_count": 1240,
+      "bin_values": {
+        "count": 21,
+        "first": 0.0,
+        "last": 100.0
+      },
+      "selected_probability": 0.003358,
+      "selected_index": 10,
+      "calibrated_probabilities": {
+        "count": 21,
+        "first": 0.005526,
+        "last": 0.032807
+      }
+    },
+    "score": 0.90825,
+    "code_ids": [
+      "code_7d0c727e6a9b55fa4a8e"
+    ],
+    "used_code_ids": [
+      "code_7d0c727e6a9b55fa4a8e"
+    ],
+    "code_confidence": {
+      "qa_id": "qa_ac3a3656cac5925fd3ef",
+      "score": 0.570816,
+      "status": "measured",
+      "required_groups": [
+        "identity",
+        "trajectory",
+        "motion",
+        "relations"
+      ],
+      "group_scores": {
+        "identity": 1.0,
+        "trajectory": 0.570816,
+        "motion": 0.625,
+        "relations": 1.0
+      },
+      "coverage": 1.0,
+      "evidence_code_ids": [
+        "code_7d0c727e6a9b55fa4a8e"
+      ]
+    },
+    "code_quality": [
+      {
+        "code_id": "code_7d0c727e6a9b55fa4a8e",
+        "scene_id": "scene_7d0c727e6a9b55fa4a8e",
+        "study": "stephan2021_counterfactual",
+        "parse_mode": "dynamic_2d",
+        "metrics": [
+          {
+            "name": "identity_count_agreement",
+            "status": "measured",
+            "value": 1.0,
+            "units": "jaccard",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_7d0c727e6a9b55fa4a8e:identity",
+              "eval:code_7d0c727e6a9b55fa4a8e:expected_objects"
+            ],
+            "comparison_target": "README/manifest object contract",
+            "reason": null
+          },
+          {
+            "name": "temporal_mask_coverage",
+            "status": "measured",
+            "value": 0.8125,
+            "units": "fraction",
+            "normalized_quality": 0.8125,
+            "evidence_ids": [
+              "scene_7d0c727e6a9b55fa4a8e:objects:mask"
+            ],
+            "comparison_target": "sampled-frame coverage",
+            "reason": null
+          },
+          {
+            "name": "mean_sam_score",
+            "status": "measured",
+            "value": 0.726795,
+            "units": "probability",
+            "normalized_quality": 0.726795,
+            "evidence_ids": [
+              "scene_7d0c727e6a9b55fa4a8e:sam_summary"
+            ],
+            "comparison_target": "SAM3.1 source confidence",
+            "reason": null
+          },
+          {
+            "name": "duplicate_bbox_frame_pairs",
+            "status": "measured",
+            "value": 0,
+            "units": "count",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_7d0c727e6a9b55fa4a8e:objects:bbox_2d"
+            ],
+            "comparison_target": "pairwise IoU <= 0.85 for distinct object IDs",
+            "reason": null
+          },
+          {
+            "name": "tracking_owner_mismatch_count",
+            "status": "measured",
+            "value": 0,
+            "units": "count",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_7d0c727e6a9b55fa4a8e:objects:tracklets"
+            ],
+            "comparison_target": "tracklet/object ownership invariant",
+            "reason": null
+          },
+          {
+            "name": "primary_source_failure_count",
+            "status": "measured",
+            "value": 0,
+            "units": "count",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_7d0c727e6a9b55fa4a8e:objects:provenance"
+            ],
+            "comparison_target": "mask and bbox source must be sam3.1-real",
+            "reason": null
+          },
+          {
+            "name": "symbolic_center_2d_error_px",
+            "status": "unsupported",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "eval:code_7d0c727e6a9b55fa4a8e:symbolic_scene"
+            ],
+            "comparison_target": "frame-aligned symbolic center trajectory",
+            "reason": "source symbolic metadata does not expose frame-aligned 2D trajectories"
+          },
+          {
+            "name": "symbolic_relation_event_agreement",
+            "status": "unsupported",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "eval:code_7d0c727e6a9b55fa4a8e:symbolic_scene"
+            ],
+            "comparison_target": "explicit symbolic relation/event labels",
+            "reason": "source symbolic metadata has no explicit relation/event labels"
+          },
+          {
+            "name": "mean_3d_reprojection_iou",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_7d0c727e6a9b55fa4a8e"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "camera_roundtrip_error_px",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_7d0c727e6a9b55fa4a8e"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "minimum_lifted_mask_point_support",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_7d0c727e6a9b55fa4a8e"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "mean_kabsch_residual",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_7d0c727e6a9b55fa4a8e"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "hamrick_sim3_center_error",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_7d0c727e6a9b55fa4a8e"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "hamrick_sim3_size_error",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_7d0c727e6a9b55fa4a8e"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "hamrick_sim3_orientation_error_deg",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_7d0c727e6a9b55fa4a8e"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          }
+        ],
+        "gt_quality_score": 1.0,
+        "internal_consistency_score": 0.907859,
+        "quality_coverage": 0.75,
+        "evidence_group_scores": {
+          "identity": 1.0,
+          "mask": 0.726795,
+          "trajectory": 0.570816,
+          "motion": 0.625,
+          "visibility": 0.625,
+          "relations": 1.0,
+          "events": 0.0,
+          "geometry_3d": 0.0,
+          "rigidity": 0.0,
+          "camera": 0.0
+        },
+        "unsupported_metrics": [
+          "symbolic_center_2d_error_px",
+          "symbolic_relation_event_agreement"
+        ]
+      }
+    ],
+    "evidence_path": [
+      {
+        "order": 1,
+        "tool": "get_objects",
+        "arguments": {
+          "scene_id": "scene_7d0c727e6a9b55fa4a8e"
+        },
+        "duplicate": false,
+        "availability": "available",
+        "source": [
+          "qwen2.5-vl-real"
+        ],
+        "units": null,
+        "frame_range": null,
+        "evidence_ids": [
+          "ev_96c7f4eb4f396f72"
+        ],
+        "confidence": {
+          "score": 0.785408,
+          "status": "measured",
+          "basis": "minimum confidence across required evidence fields",
+          "evidence_ids": [
+            "ev_96c7f4eb4f396f72"
+          ]
+        },
+        "data": {
+          "scene_id": "scene_7d0c727e6a9b55fa4a8e",
+          "object_count": 2,
+          "object_groups": [
+            {
+              "object_ids": "<list:1>",
+              "label": "marble A",
+              "role": "omitted_cause",
+              "confidence": 0.941387
+            },
+            {
+              "object_ids": "<list:1>",
+              "label": "marble B",
+              "role": "moving_marble",
+              "confidence": 0.785408
+            }
+          ]
+        },
+        "unavailable_reason": null
+      },
+      {
+        "order": 2,
+        "tool": "get_distance",
+        "arguments": {
+          "scene_id": "scene_7d0c727e6a9b55fa4a8e",
+          "obj1": "marble_A",
+          "obj2": "marble_B",
+          "frame": 15
+        },
+        "duplicate": false,
+        "availability": "available",
+        "source": [
+          "sam31_mask_centroid"
+        ],
+        "units": "source_pixels",
+        "frame_range": [
+          15,
+          15
+        ],
+        "evidence_ids": [
+          "ev_59f19ff88a53964a"
+        ],
+        "confidence": {
+          "score": 0.570816,
+          "status": "measured",
+          "basis": "minimum confidence across required evidence fields",
+          "evidence_ids": [
+            "ev_59f19ff88a53964a"
+          ]
+        },
+        "data": {
+          "scene_id": "scene_7d0c727e6a9b55fa4a8e",
+          "obj1": "marble_A",
+          "obj2": "marble_B",
+          "frame": 15,
+          "distance": 494.671103,
+          "dimension": "2d"
+        },
+        "unavailable_reason": null
+      },
+      {
+        "order": 3,
+        "tool": "get_relative_direction",
+        "arguments": {
+          "scene_id": "scene_7d0c727e6a9b55fa4a8e",
+          "obj1": "marble_A",
+          "obj2": "marble_B",
+          "frame": 15
+        },
+        "duplicate": false,
+        "availability": "available",
+        "source": [
+          "sam31_mask_centroid"
+        ],
+        "units": "source_pixels",
+        "frame_range": [
+          15,
+          15
+        ],
+        "evidence_ids": [
+          "ev_59f19ff88a53964a"
+        ],
+        "confidence": {
+          "score": 0.570816,
+          "status": "measured",
+          "basis": "minimum confidence across required evidence fields",
+          "evidence_ids": [
+            "ev_59f19ff88a53964a"
+          ]
+        },
+        "data": {
+          "scene_id": "scene_7d0c727e6a9b55fa4a8e",
+          "frame": 15,
+          "direction": "right_of",
+          "subject": "marble_A",
+          "reference": "marble_B",
+          "dimension": "2d",
+          "delta_subject_minus_reference": [
+            483.908159,
+            102.627451
+          ]
+        },
+        "unavailable_reason": null
+      },
+      {
+        "order": 4,
+        "tool": "get_position",
+        "arguments": {
+          "scene_id": "scene_7d0c727e6a9b55fa4a8e",
+          "obj": "marble_A",
+          "frame": 15
+        },
+        "duplicate": false,
+        "availability": "available",
+        "source": [
+          "sam31_mask_centroid"
+        ],
+        "units": "source_pixels",
+        "frame_range": [
+          15,
+          15
+        ],
+        "evidence_ids": [
+          "ev_8935c3117f6f6166"
+        ],
+        "confidence": {
+          "score": 0.882774,
+          "status": "measured",
+          "basis": "minimum confidence across required evidence fields",
+          "evidence_ids": [
+            "ev_8935c3117f6f6166"
+          ]
+        },
+        "data": {
+          "scene_id": "scene_7d0c727e6a9b55fa4a8e",
+          "object_id": "marble_A",
+          "position": [
+            496.996086,
+            319.307241
+          ],
+          "requested_frame": 15,
+          "dimension": "2d",
+          "source_frame": 15
+        },
+        "unavailable_reason": null
+      }
+    ],
+    "trace_audit": {
+      "duplicate_calls": 0,
+      "invalid_calls": 0,
+      "malformed_calls": 0
+    }
+  }
+}

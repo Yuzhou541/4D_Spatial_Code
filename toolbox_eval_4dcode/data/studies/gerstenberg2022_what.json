@@ -1,0 +1,996 @@
+{
+  "study": "gerstenberg2022_what",
+  "title": "Gerstenberg2022What",
+  "description": "Ball and gate interactions compare observed trajectories with hypothetical alternatives to assess causal contribution.",
+  "reasoning": "Counterfactual causal judgment",
+  "summary": {
+    "study": "gerstenberg2022_what",
+    "question_count": 30,
+    "scored_count": 24,
+    "answer_types": [
+      "slider"
+    ],
+    "normalized_accuracy": 0.6989072842191089,
+    "mean_llm_confidence": 0.08981107078640477,
+    "mean_4d_confidence": 0.6420747333333333,
+    "mean_code_quality": 0.8967883275,
+    "mean_gt_quality": 1.0,
+    "quality_coverage": 0.75,
+    "code_count": 40
+  },
+  "selected_sample": {
+    "code_id": "code_98132fb005b551806ab6",
+    "qa_id": "qa_f1c7c879c3669db36fad",
+    "data_path": "data/samples/code_98132fb005b551806ab6.json",
+    "selection_basis": "target_available_nearest_study_medians_then_tool_diversity"
+  },
+  "selected_question": {
+    "qa_id": "qa_f1c7c879c3669db36fad",
+    "prompt": "B would have gone through the gate if A had not been there.",
+    "answer_type": "slider",
+    "options": [],
+    "slider": {
+      "minimum": 0.0,
+      "maximum": 100.0
+    },
+    "target": {
+      "availability": "available",
+      "source": "human",
+      "objective": null,
+      "human_mean": 21.08,
+      "human_values": [
+        0,
+        12,
+        1,
+        8,
+        0,
+        0,
+        0,
+        2,
+        2,
+        11,
+        7,
+        5,
+        16,
+        1,
+        0,
+        0,
+        80,
+        27,
+        9,
+        90,
+        12,
+        1,
+        10,
+        51,
+        6,
+        0,
+        36,
+        95,
+        0,
+        0,
+        1,
+        0,
+        7,
+        1,
+        3,
+        1,
+        6,
+        0,
+        2,
+        42,
+        47,
+        71,
+        8,
+        19,
+        1,
+        97,
+        20,
+        4,
+        63,
+        0,
+        33,
+        0,
+        86,
+        100,
+        9,
+        100,
+        49,
+        13,
+        0,
+        0
+      ],
+      "unavailable_reason": null
+    },
+    "ground_truth_display": "21.08",
+    "answer": {
+      "value": 75.0,
+      "raw_answer_confidence": 0.0005383595125749707,
+      "calibrated_answer_confidence": 0.032025241627622165,
+      "calibration_status": "out_of_fold_temperature_scaled"
+    },
+    "answer_display": "75",
+    "likelihood": {
+      "candidate_values": {
+        "count": 21,
+        "first": "0",
+        "last": "100"
+      },
+      "candidate_codes": {
+        "count": 21,
+        "first": "A",
+        "last": "U"
+      },
+      "logits": {
+        "count": 21,
+        "first": 15.3125,
+        "last": 19.75
+      },
+      "probabilities": {
+        "count": 21,
+        "first": 1.7e-05,
+        "last": 0.001463
+      },
+      "method": "single_token_conditional_candidate_likelihood",
+      "prompt_token_count": 1335,
+      "bin_values": {
+        "count": 21,
+        "first": 0.0,
+        "last": 100.0
+      },
+      "selected_probability": 0.000538,
+      "selected_index": 15,
+      "calibrated_probabilities": {
+        "count": 21,
+        "first": 0.01356,
+        "last": 0.041121
+      }
+    },
+    "score": 0.4608,
+    "code_ids": [
+      "code_98132fb005b551806ab6"
+    ],
+    "used_code_ids": [
+      "code_98132fb005b551806ab6"
+    ],
+    "code_confidence": {
+      "qa_id": "qa_f1c7c879c3669db36fad",
+      "score": 0.614497,
+      "status": "measured",
+      "required_groups": [
+        "identity",
+        "trajectory",
+        "motion",
+        "relations"
+      ],
+      "group_scores": {
+        "identity": 1.0,
+        "trajectory": 0.614497,
+        "motion": 0.6875,
+        "relations": 1.0
+      },
+      "coverage": 1.0,
+      "evidence_code_ids": [
+        "code_98132fb005b551806ab6"
+      ]
+    },
+    "code_quality": [
+      {
+        "code_id": "code_98132fb005b551806ab6",
+        "scene_id": "scene_98132fb005b551806ab6",
+        "study": "gerstenberg2022_what",
+        "parse_mode": "dynamic_2d",
+        "metrics": [
+          {
+            "name": "identity_count_agreement",
+            "status": "measured",
+            "value": 1.0,
+            "units": "jaccard",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_98132fb005b551806ab6:identity",
+              "eval:code_98132fb005b551806ab6:expected_objects"
+            ],
+            "comparison_target": "README/manifest object contract",
+            "reason": null
+          },
+          {
+            "name": "temporal_mask_coverage",
+            "status": "measured",
+            "value": 0.78125,
+            "units": "fraction",
+            "normalized_quality": 0.78125,
+            "evidence_ids": [
+              "scene_98132fb005b551806ab6:objects:mask"
+            ],
+            "comparison_target": "sampled-frame coverage",
+            "reason": null
+          },
+          {
+            "name": "mean_sam_score",
+            "status": "measured",
+            "value": 0.6998534999999999,
+            "units": "probability",
+            "normalized_quality": 0.6998534999999999,
+            "evidence_ids": [
+              "scene_98132fb005b551806ab6:sam_summary"
+            ],
+            "comparison_target": "SAM3.1 source confidence",
+            "reason": null
+          },
+          {
+            "name": "duplicate_bbox_frame_pairs",
+            "status": "measured",
+            "value": 0,
+            "units": "count",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_98132fb005b551806ab6:objects:bbox_2d"
+            ],
+            "comparison_target": "pairwise IoU <= 0.85 for distinct object IDs",
+            "reason": null
+          },
+          {
+            "name": "tracking_owner_mismatch_count",
+            "status": "measured",
+            "value": 0,
+            "units": "count",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_98132fb005b551806ab6:objects:tracklets"
+            ],
+            "comparison_target": "tracklet/object ownership invariant",
+            "reason": null
+          },
+          {
+            "name": "primary_source_failure_count",
+            "status": "measured",
+            "value": 0,
+            "units": "count",
+            "normalized_quality": 1.0,
+            "evidence_ids": [
+              "scene_98132fb005b551806ab6:objects:provenance"
+            ],
+            "comparison_target": "mask and bbox source must be sam3.1-real",
+            "reason": null
+          },
+          {
+            "name": "symbolic_center_2d_error_px",
+            "status": "unsupported",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "eval:code_98132fb005b551806ab6:symbolic_scene"
+            ],
+            "comparison_target": "frame-aligned symbolic center trajectory",
+            "reason": "source symbolic metadata does not expose frame-aligned 2D trajectories"
+          },
+          {
+            "name": "symbolic_relation_event_agreement",
+            "status": "unsupported",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "eval:code_98132fb005b551806ab6:symbolic_scene"
+            ],
+            "comparison_target": "explicit symbolic relation/event labels",
+            "reason": "source symbolic metadata has no explicit relation/event labels"
+          },
+          {
+            "name": "mean_3d_reprojection_iou",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_98132fb005b551806ab6"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "camera_roundtrip_error_px",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_98132fb005b551806ab6"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "minimum_lifted_mask_point_support",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_98132fb005b551806ab6"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "mean_kabsch_residual",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_98132fb005b551806ab6"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "hamrick_sim3_center_error",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_98132fb005b551806ab6"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "hamrick_sim3_size_error",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_98132fb005b551806ab6"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          },
+          {
+            "name": "hamrick_sim3_orientation_error_deg",
+            "status": "not_applicable",
+            "value": null,
+            "units": null,
+            "normalized_quality": null,
+            "evidence_ids": [
+              "scene_98132fb005b551806ab6"
+            ],
+            "comparison_target": "3D-only metric",
+            "reason": "scene parse mode is dynamic_2d"
+          }
+        ],
+        "gt_quality_score": 1.0,
+        "internal_consistency_score": 0.8962207,
+        "quality_coverage": 0.75,
+        "evidence_group_scores": {
+          "identity": 1.0,
+          "mask": 0.6998534999999999,
+          "trajectory": 0.614497,
+          "motion": 0.6875,
+          "visibility": 0.6875,
+          "relations": 1.0,
+          "events": 0.0,
+          "geometry_3d": 0.0,
+          "rigidity": 0.0,
+          "camera": 0.0
+        },
+        "unsupported_metrics": [
+          "symbolic_center_2d_error_px",
+          "symbolic_relation_event_agreement"
+        ]
+      }
+    ],
+    "evidence_path": [
+      {
+        "order": 1,
+        "tool": "get_objects",
+        "arguments": {
+          "scene_id": "scene_98132fb005b551806ab6"
+        },
+        "duplicate": false,
+        "availability": "available",
+        "source": [
+          "qwen2.5-vl-real"
+        ],
+        "units": null,
+        "frame_range": null,
+        "evidence_ids": [
+          "ev_bd3c2ddaffab6279"
+        ],
+        "confidence": {
+          "score": 0.807249,
+          "status": "measured",
+          "basis": "minimum confidence across required evidence fields",
+          "evidence_ids": [
+            "ev_bd3c2ddaffab6279"
+          ]
+        },
+        "data": {
+          "scene_id": "scene_98132fb005b551806ab6",
+          "object_count": 2,
+          "object_groups": [
+            {
+              "object_ids": "<list:1>",
+              "label": "ball A",
+              "role": "candidate_cause",
+              "confidence": 0.892605
+            },
+            {
+              "object_ids": "<list:1>",
+              "label": "ball B",
+              "role": "effect_ball",
+              "confidence": 0.807249
+            }
+          ]
+        },
+        "unavailable_reason": null
+      },
+      {
+        "order": 2,
+        "tool": "get_distance",
+        "arguments": {
+          "scene_id": "scene_98132fb005b551806ab6",
+          "obj1": "ball_A",
+          "obj2": "ball_B",
+          "frame": 14
+        },
+        "duplicate": false,
+        "availability": "available",
+        "source": [
+          "sam31_mask_centroid"
+        ],
+        "units": "source_pixels",
+        "frame_range": [
+          14,
+          14
+        ],
+        "evidence_ids": [
+          "ev_1026b886ddb6bb7a"
+        ],
+        "confidence": {
+          "score": 0.614497,
+          "status": "measured",
+          "basis": "minimum confidence across required evidence fields",
+          "evidence_ids": [
+            "ev_1026b886ddb6bb7a"
+          ]
+        },
+        "data": {
+          "scene_id": "scene_98132fb005b551806ab6",
+          "obj1": "ball_A",
+          "obj2": "ball_B",
+          "frame": 14,
+          "distance": 295.49576,
+          "dimension": "2d"
+        },
+        "unavailable_reason": null
+      },
+      {
+        "order": 3,
+        "tool": "get_distance_trend",
+        "arguments": {
+          "scene_id": "scene_98132fb005b551806ab6",
+          "obj1": "ball_A",
+          "obj2": "ball_B",
+          "frame_range": [
+            10,
+            14
+          ]
+        },
+        "duplicate": false,
+        "availability": "available",
+        "source": [
+          "sam31_mask_centroid"
+        ],
+        "units": "source_pixels",
+        "frame_range": [
+          10,
+          14
+        ],
+        "evidence_ids": [
+          "ev_1026b886ddb6bb7a"
+        ],
+        "confidence": {
+          "score": 0.614497,
+          "status": "measured",
+          "basis": "minimum confidence across required evidence fields",
+          "evidence_ids": [
+            "ev_1026b886ddb6bb7a"
+          ]
+        },
+        "data": {
+          "scene_id": "scene_98132fb005b551806ab6",
+          "obj1": "ball_A",
+          "obj2": "ball_B",
+          "trend": "increasing",
+          "dimension": "2d",
+          "start_distance": 164.560456,
+          "end_distance": 295.49576,
+          "samples": {
+            "count": 5,
+            "first": {
+              "frame": 10,
+              "distance": 164.5604560902103
+            },
+            "last": {
+              "frame": 14,
+              "distance": 295.49576012284484
+            }
+          }
+        },
+        "unavailable_reason": null
+      },
+      {
+        "order": 4,
+        "tool": "get_relative_direction",
+        "arguments": {
+          "scene_id": "scene_98132fb005b551806ab6",
+          "obj1": "ball_A",
+          "obj2": "ball_B",
+          "frame": 14
+        },
+        "duplicate": false,
+        "availability": "available",
+        "source": [
+          "sam31_mask_centroid"
+        ],
+        "units": "source_pixels",
+        "frame_range": [
+          14,
+          14
+        ],
+        "evidence_ids": [
+          "ev_1026b886ddb6bb7a"
+        ],
+        "confidence": {
+          "score": 0.614497,
+          "status": "measured",
+          "basis": "minimum confidence across required evidence fields",
+          "evidence_ids": [
+            "ev_1026b886ddb6bb7a"
+          ]
+        },
+        "data": {
+          "scene_id": "scene_98132fb005b551806ab6",
+          "frame": 14,
+          "direction": "right_of",
+          "subject": "ball_A",
+          "reference": "ball_B",
+          "dimension": "2d",
+          "delta_subject_minus_reference": [
+            231.416585,
+            -183.750125
+          ]
+        },
+        "unavailable_reason": null
+      }
+    ],
+    "trace_audit": {
+      "duplicate_calls": 0,
+      "invalid_calls": 0,
+      "malformed_calls": 0
+    }
+  },
+  "quality_statistics": {
+    "internal": {
+      "count": 40,
+      "mean": 0.8967883275,
+      "min": 0.8013472,
+      "q1": 0.8729022,
+      "median": 0.8962207,
+      "q3": 0.9312692,
+      "max": 0.9442747
+    },
+    "gt": {
+      "count": 40,
+      "mean": 1.0,
+      "min": 1.0,
+      "q1": 1.0,
+      "median": 1.0,
+      "q3": 1.0,
+      "max": 1.0
+    },
+    "coverage": {
+      "count": 40,
+      "mean": 0.75,
+      "min": 0.75,
+      "q1": 0.75,
+      "median": 0.75,
+      "q3": 0.75,
+      "max": 0.75
+    },
+    "source_failure_count": 0,
+    "metric_status": {
+      "camera_roundtrip_error_px": {
+        "not_applicable": 40
+      },
+      "duplicate_bbox_frame_pairs": {
+        "measured": 40
+      },
+      "hamrick_sim3_center_error": {
+        "not_applicable": 40
+      },
+      "hamrick_sim3_orientation_error_deg": {
+        "not_applicable": 40
+      },
+      "hamrick_sim3_size_error": {
+        "not_applicable": 40
+      },
+      "identity_count_agreement": {
+        "measured": 40
+      },
+      "mean_3d_reprojection_iou": {
+        "not_applicable": 40
+      },
+      "mean_kabsch_residual": {
+        "not_applicable": 40
+      },
+      "mean_sam_score": {
+        "measured": 40
+      },
+      "minimum_lifted_mask_point_support": {
+        "not_applicable": 40
+      },
+      "primary_source_failure_count": {
+        "measured": 40
+      },
+      "symbolic_center_2d_error_px": {
+        "unsupported": 40
+      },
+      "symbolic_relation_event_agreement": {
+        "unsupported": 40
+      },
+      "temporal_mask_coverage": {
+        "measured": 40
+      },
+      "tracking_owner_mismatch_count": {
+        "measured": 40
+      }
+    }
+  },
+  "confidence_statistics": {
+    "code": {
+      "count": 30,
+      "mean": 0.6420747333333333,
+      "min": 0.401879,
+      "q1": 0.6064025,
+      "median": 0.614497,
+      "q3": 0.73124425,
+      "max": 0.795747
+    },
+    "llm": {
+      "count": 30,
+      "mean": 0.08981107078640477,
+      "min": 0.00040675062336958945,
+      "q1": 0.027961669330420005,
+      "median": 0.03829764765185162,
+      "q3": 0.04312401861491578,
+      "max": 0.9378408789634705
+    }
+  },
+  "tool_statistics": {
+    "total_calls": 120,
+    "duplicate_calls": 0,
+    "invalid_calls": 0,
+    "malformed_calls": 0,
+    "available_results": 120,
+    "unavailable_results": 0,
+    "unique_used_codes": 30,
+    "by_tool": [
+      {
+        "tool": "get_objects",
+        "call_count": 30,
+        "question_count": 30,
+        "question_coverage": 1.0
+      },
+      {
+        "tool": "get_distance",
+        "call_count": 30,
+        "question_count": 30,
+        "question_coverage": 1.0
+      },
+      {
+        "tool": "get_position",
+        "call_count": 29,
+        "question_count": 16,
+        "question_coverage": 0.5333333333333333
+      },
+      {
+        "tool": "get_relative_direction",
+        "call_count": 17,
+        "question_count": 17,
+        "question_coverage": 0.5666666666666667
+      },
+      {
+        "tool": "get_distance_trend",
+        "call_count": 14,
+        "question_count": 14,
+        "question_coverage": 0.4666666666666667
+      }
+    ],
+    "evidence_groups": {
+      "identity": 1.0,
+      "motion": 0.686598,
+      "relations": 1.0,
+      "trajectory": 0.6420747333333333
+    }
+  },
+  "correlations": {
+    "code_confidence_vs_score": {
+      "status": "measured",
+      "count": 24,
+      "pearson": -0.36372782198732273,
+      "spearman": -0.29636171434944236
+    },
+    "llm_confidence_vs_score": {
+      "status": "measured",
+      "count": 24,
+      "pearson": 0.05213221454545014,
+      "spearman": -0.17565217391304347
+    },
+    "code_quality_vs_score": {
+      "status": "measured",
+      "count": 24,
+      "pearson": -0.3011702356006345,
+      "spearman": -0.27195545552066475
+    },
+    "code_quality_vs_code_confidence": {
+      "status": "measured",
+      "count": 24,
+      "pearson": 0.9711290389929554,
+      "spearman": 0.9790301441677588
+    }
+  },
+  "human_reference": {
+    "status": "measured_reliability",
+    "noise_ceilings": [
+      {
+        "study": "gerstenberg2022_what",
+        "answer_type": "slider",
+        "status": "measured",
+        "item_count": 24,
+        "noise_ceiling": 0.9735705904505905,
+        "method": "split_half_spearman_brown",
+        "repeats": 200
+      }
+    ],
+    "human_target_question_count": 24,
+    "individual_response_count": 1416,
+    "objective_human_task_score": null
+  },
+  "condition_metrics": [
+    {
+      "study": "gerstenberg2022_what",
+      "condition": "predicted_code_oracle_tools",
+      "answer_type": "slider",
+      "qa_count": 30,
+      "slider_mae": 30.388290420833336,
+      "slider_rmse": 37.721536063103954,
+      "slider_pearson": -0.03920680721666644,
+      "slider_spearman": -0.1615503726852124,
+      "normalized_task_score": 0.6961170957916667,
+      "scored_count": 24
+    },
+    {
+      "study": "gerstenberg2022_what",
+      "condition": "predicted_code_qwen_tools",
+      "answer_type": "slider",
+      "qa_count": 30,
+      "slider_mae": 30.109271578089118,
+      "slider_rmse": 37.143600397181665,
+      "slider_pearson": -0.012240374385690117,
+      "slider_spearman": -0.022996921051058758,
+      "normalized_task_score": 0.6989072842191089,
+      "scored_count": 24
+    },
+    {
+      "study": "gerstenberg2022_what",
+      "condition": "question_only",
+      "answer_type": "slider",
+      "qa_count": 30,
+      "slider_mae": 19.590416666666666,
+      "slider_rmse": 22.247035289374328,
+      "slider_pearson": 0.39708681044871347,
+      "slider_spearman": 0.47196943623652027,
+      "normalized_task_score": 0.8040958333333333,
+      "scored_count": 24
+    }
+  ],
+  "calibration": [
+    {
+      "study": "gerstenberg2022_what",
+      "condition": "predicted_code_oracle_tools",
+      "answer_type": "slider",
+      "status": "calibrated",
+      "eligible_count": 24,
+      "temperatures": {
+        "0": 4.0,
+        "1": 4.0,
+        "2": 4.0,
+        "3": 4.0,
+        "4": 4.0
+      }
+    },
+    {
+      "study": "gerstenberg2022_what",
+      "condition": "predicted_code_qwen_tools",
+      "answer_type": "slider",
+      "status": "calibrated",
+      "eligible_count": 24,
+      "temperatures": {
+        "0": 4.0,
+        "1": 4.0,
+        "2": 4.0,
+        "3": 4.0,
+        "4": 4.0
+      }
+    },
+    {
+      "study": "gerstenberg2022_what",
+      "condition": "question_only",
+      "answer_type": "slider",
+      "status": "calibrated",
+      "eligible_count": 24,
+      "temperatures": {
+        "0": 4.0,
+        "1": 4.0,
+        "2": 4.0,
+        "3": 4.0,
+        "4": 4.0
+      }
+    }
+  ],
+  "bottleneck": {
+    "study": "gerstenberg2022_what",
+    "question_count": 24,
+    "condition_coverage": {
+      "question_only": 1.0,
+      "predicted_code_qwen_tools": 1.0,
+      "predicted_code_oracle_tools": 1.0,
+      "oracle_code_oracle_tools": 0.0
+    },
+    "condition_mean_task_score": {
+      "question_only": 0.8040958333333333,
+      "predicted_code_qwen_tools": 0.6989072842191089,
+      "predicted_code_oracle_tools": 0.6961170957916667,
+      "oracle_code_oracle_tools": null
+    },
+    "human_or_objective_ceiling": 0.9735705904505905,
+    "routing_tool_use_gap": {
+      "status": "measured",
+      "paired_count": 24,
+      "mean_gap": -0.0027901884274421826,
+      "ci95": [
+        -0.12072783403232651,
+        0.09909214375
+      ]
+    },
+    "code_quality_gap": {
+      "status": "insufficient_coverage",
+      "paired_count": 0,
+      "mean_gap": null,
+      "ci95": null
+    },
+    "reasoning_task_model_gap": {
+      "status": "insufficient_coverage",
+      "paired_count": 0,
+      "mean_gap": null,
+      "ci95": null
+    },
+    "attribution": {
+      "label": "insufficient_diagnostic_coverage",
+      "reason": "one or more controlled comparisons lack paired evidence"
+    }
+  },
+  "formulas": [
+    {
+      "name": "Categorical task score",
+      "formula": "1[predicted = objective or human-modal target]",
+      "detail": "Exact agreement with an objective answer, or with the modal human answer when the target is a response distribution."
+    },
+    {
+      "name": "Slider task score",
+      "formula": "max(0, 1 - |prediction - target| / (maximum - minimum))",
+      "detail": "Range-normalized absolute-error score; raw MAE and RMSE remain available per study."
+    },
+    {
+      "name": "Multi-select task score",
+      "formula": "2 * precision * recall / (precision + recall)",
+      "detail": "Set F1 over selected option indices."
+    },
+    {
+      "name": "Identity quality",
+      "formula": "|predicted IDs intersection expected IDs| / |predicted IDs union expected IDs|",
+      "detail": "Jaccard agreement against the README and manifest object contract."
+    },
+    {
+      "name": "Temporal mask coverage",
+      "formula": "mean_objects(visible sampled frames / sampled frames)",
+      "detail": "Measures sustained mask support rather than frame-zero detection."
+    },
+    {
+      "name": "Symbolic center quality",
+      "formula": "1 / (1 + mean Euclidean pixel error / 10)",
+      "detail": "Applied only when independent, frame-aligned symbolic center trajectories exist."
+    },
+    {
+      "name": "Relation and event quality",
+      "formula": "|predicted labels intersection target labels| / |predicted labels union target labels|",
+      "detail": "Label-set Jaccard agreement, applied only when independent symbolic relation or event labels exist."
+    },
+    {
+      "name": "Camera quality",
+      "formula": "max(0, 1 - roundtrip error pixels / 1.5)",
+      "detail": "Projection and unprojection must agree within the 1.5-pixel acceptance scale."
+    },
+    {
+      "name": "Lifted point support",
+      "formula": "min(1, minimum valid mask points / 50)",
+      "detail": "Requires geometry to be supported by SAM-mask pixels lifted through VGGT-Omega."
+    },
+    {
+      "name": "Kabsch rigidity quality",
+      "formula": "max(0, 1 - normalized residual / 0.15)",
+      "detail": "Scores accepted local SE(3) estimates against the rigid-consistency residual threshold."
+    },
+    {
+      "name": "Hamrick Sim(3) center quality",
+      "formula": "max(0, 1 - aligned center error / 0.10)",
+      "detail": "Prediction geometry is aligned to hidden tower geometry for evaluation only; GT never repairs the code."
+    },
+    {
+      "name": "Hamrick Sim(3) size quality",
+      "formula": "max(0, 1 - aligned relative size error / 0.25)",
+      "detail": "Uses the accepted 0.25 relative-size error scale after diagnostic Sim(3) alignment."
+    },
+    {
+      "name": "Hamrick Sim(3) orientation quality",
+      "formula": "max(0, 1 - aligned orientation error degrees / 30)",
+      "detail": "Uses the accepted 30-degree orientation error scale after diagnostic Sim(3) alignment."
+    },
+    {
+      "name": "Internal 4D quality",
+      "formula": "mean(measured applicable internal normalized metrics)",
+      "detail": "GT-referenced metrics are excluded; unsupported or not-applicable metrics remain null."
+    },
+    {
+      "name": "GT quality",
+      "formula": "mean(measured applicable GT-referenced normalized metrics)",
+      "detail": "Reported separately from internal consistency and only where an independent comparison target exists."
+    },
+    {
+      "name": "Quality coverage",
+      "formula": "measured applicable metrics / applicable metrics",
+      "detail": "Prevents a high score over a small measurable subset from being mistaken for complete evaluation."
+    },
+    {
+      "name": "4D-code confidence",
+      "formula": "C_code(q) = min over required evidence-group scores",
+      "detail": "Each evidence group is also minimized across every code required by the question; missing evidence is zero."
+    },
+    {
+      "name": "LLM answer confidence",
+      "formula": "p_i = exp(z_i / T) / sum_j exp(z_j / T)",
+      "detail": "The selected answer likelihood uses five-fold out-of-fold temperature scaling when calibration is supported."
+    },
+    {
+      "name": "Human slider reliability",
+      "formula": "r_SB = 2r / (1 + r)",
+      "detail": "Spearman-Brown corrected split-half reliability over 200 deterministic response splits."
+    },
+    {
+      "name": "Human categorical reliability",
+      "formula": "mean(split-half modal agreement)",
+      "detail": "Agreement of modal categorical responses across 200 deterministic participant splits."
+    },
+    {
+      "name": "Routing gap",
+      "formula": "oracle-tool task score - native-tool task score",
+      "detail": "The 95% interval uses 1,000 grouped bootstrap resamples by experiment."
+    }
+  ]
+}
