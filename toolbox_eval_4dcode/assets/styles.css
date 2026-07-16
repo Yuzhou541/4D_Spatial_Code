@@ -280,6 +280,223 @@ main {
   font-size: 11px;
 }
 
+.section-kicker {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--teal);
+  font-size: 10px;
+  font-weight: 720;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.vlm-ablation {
+  margin: 18px 0;
+}
+
+.vlm-ablation-heading {
+  align-items: flex-end;
+}
+
+.vlm-ablation-heading h2 {
+  font-size: 17px;
+}
+
+.vlm-takeaway {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 10px 12px;
+  border: 1px solid #a9d8d2;
+  border-bottom: 0;
+  background: var(--teal-soft);
+  color: #24514c;
+  font-size: 12px;
+}
+
+.vlm-takeaway strong {
+  color: #08756c;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.vlm-ablation-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.22fr) minmax(340px, 0.78fr);
+  border: 1px solid var(--line);
+}
+
+.vlm-condition-panel,
+.vlm-effects-panel {
+  min-width: 0;
+  padding: 14px;
+}
+
+.vlm-effects-panel {
+  border-left: 1px solid var(--line);
+}
+
+.subsection-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.subsection-heading h3 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.subsection-heading span {
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.vlm-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+}
+
+.vlm-table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+
+.vlm-table th,
+.vlm-table td {
+  padding: 8px 9px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  text-align: right;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.vlm-table th:first-child,
+.vlm-table td:first-child {
+  width: 56%;
+  text-align: left;
+  white-space: normal;
+}
+
+.vlm-table th:last-child,
+.vlm-table td:last-child {
+  border-right: 0;
+}
+
+.vlm-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.vlm-table thead th {
+  background: #f8fafc;
+  color: #475467;
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+.vlm-table td strong,
+.vlm-table td span {
+  display: block;
+}
+
+.vlm-table td strong {
+  color: #252b36;
+  font-size: 11px;
+}
+
+.vlm-table td span {
+  margin-top: 2px;
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+.vlm-score-bars {
+  display: grid;
+  gap: 7px;
+  margin-top: 13px;
+}
+
+.vlm-score-row {
+  display: grid;
+  grid-template-columns: 150px minmax(80px, 1fr) 46px;
+  align-items: center;
+  gap: 9px;
+  color: #344054;
+  font-size: 10px;
+}
+
+.vlm-score-row strong {
+  font-family: var(--font-mono);
+  text-align: right;
+}
+
+.vlm-score-track {
+  height: 8px;
+  background: #edf0f5;
+}
+
+.vlm-score-track span {
+  display: block;
+  height: 100%;
+  background: var(--cobalt);
+}
+
+.vlm-score-row.emphasis .vlm-score-track span {
+  background: var(--teal);
+}
+
+.effect-list {
+  display: grid;
+  gap: 9px;
+}
+
+.effect-row {
+  padding: 11px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.effect-row-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.effect-row h4 {
+  margin: 0;
+  font-size: 12px;
+}
+
+.effect-row p {
+  margin: 5px 0 0;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.effect-value {
+  color: #9a6700;
+  font-family: var(--font-mono);
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.effect-value.positive {
+  color: var(--teal);
+}
+
+.vlm-method-line {
+  margin: 11px 0 0;
+  color: var(--muted);
+  font-size: 10px;
+}
+
 .analysis-grid {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
@@ -1238,9 +1455,24 @@ main {
   }
 
   .analysis-grid,
+  .vlm-ablation-grid,
   .representation-layout,
   .diagnostics-grid {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .vlm-effects-panel {
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  .vlm-takeaway {
+    display: block;
+  }
+
+  .vlm-takeaway span {
+    display: block;
+    margin-top: 3px;
   }
 
   .analysis-panel + .analysis-panel,
@@ -1386,6 +1618,21 @@ main {
 
   .viewer-controls {
     grid-template-columns: 32px 32px minmax(60px, 1fr);
+  }
+
+  .vlm-ablation-heading,
+  .subsection-heading {
+    display: block;
+  }
+
+  .vlm-ablation-heading p,
+  .subsection-heading span {
+    display: block;
+    margin-top: 4px;
+  }
+
+  .vlm-score-row {
+    grid-template-columns: 112px minmax(60px, 1fr) 42px;
   }
 
   .time-readout {

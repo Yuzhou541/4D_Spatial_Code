@@ -13867,5 +13867,119 @@
       "scored_count": 1594
     }
   ],
+  "bass_vlm_comparison": {
+    "study": "bass2022_partial",
+    "title": "Does direct video improve 4D-code reasoning?",
+    "question_count": 81,
+    "scored_question_count": 78,
+    "unique_video_count": 36,
+    "conditions": [
+      {
+        "condition": "qwen3_4b_native_tools",
+        "qa_count": 81,
+        "scored_count": 78,
+        "normalized_task_score": 0.7306888888888889,
+        "mean_llm_confidence": 0.08409856752685985,
+        "mean_generation_time_sec": 19.726421213579513,
+        "answer_correction_count": 0,
+        "label": "Qwen3-4B + tools",
+        "description": "Text-only toolbox agent with Qwen-selected 4D-code calls."
+      },
+      {
+        "condition": "qwen25vl_7b_4d_evidence_only",
+        "qa_count": 81,
+        "scored_count": 78,
+        "normalized_task_score": 0.7235087878506237,
+        "mean_llm_confidence": 0.06247645614430627,
+        "mean_generation_time_sec": 2.015944181481335,
+        "answer_correction_count": 0,
+        "label": "Qwen2.5-VL + 4D",
+        "description": "Text reasoning over the same compact prediction-only 4D evidence."
+      },
+      {
+        "condition": "qwen25vl_7b_video_only",
+        "qa_count": 81,
+        "scored_count": 78,
+        "normalized_task_score": 0.535474358974359,
+        "mean_llm_confidence": 0.07258688922080471,
+        "mean_generation_time_sec": 2.1320276814814503,
+        "answer_correction_count": 0,
+        "label": "Qwen2.5-VL + video",
+        "description": "Original Bass stimulus video and question, without 4D-code evidence."
+      },
+      {
+        "condition": "qwen25vl_7b_video_plus_4d",
+        "qa_count": 81,
+        "scored_count": 78,
+        "normalized_task_score": 0.6663376068376069,
+        "mean_llm_confidence": 0.0837776104223422,
+        "mean_generation_time_sec": 2.4342679185184903,
+        "answer_correction_count": 0,
+        "label": "Qwen2.5-VL + video + 4D",
+        "description": "Original video plus matched compact prediction-only 4D evidence."
+      }
+    ],
+    "comparisons": [
+      {
+        "name": "video_gain_within_vlm",
+        "left": "qwen25vl_7b_video_plus_4d",
+        "right": "qwen25vl_7b_4d_evidence_only",
+        "paired_count": 78,
+        "group_count": 33,
+        "mean_difference": -0.057171181013016825,
+        "ci95": [
+          -0.1455846952810576,
+          0.03802019974555856
+        ],
+        "wins": 31,
+        "ties": 3,
+        "losses": 44,
+        "verdict": "inconclusive",
+        "bootstrap_repeats": 1000,
+        "grouping": "code_id/video",
+        "label": "Added video evidence"
+      },
+      {
+        "name": "code_gain_within_vlm",
+        "left": "qwen25vl_7b_video_plus_4d",
+        "right": "qwen25vl_7b_video_only",
+        "paired_count": 78,
+        "group_count": 33,
+        "mean_difference": 0.13086324786324788,
+        "ci95": [
+          0.06894497766736926,
+          0.19909612390350873
+        ],
+        "wins": 47,
+        "ties": 5,
+        "losses": 26,
+        "verdict": "positive",
+        "bootstrap_repeats": 1000,
+        "grouping": "code_id/video",
+        "label": "Added 4D evidence"
+      },
+      {
+        "name": "end_to_end_gain_over_qwen3",
+        "left": "qwen25vl_7b_video_plus_4d",
+        "right": "qwen3_4b_native_tools",
+        "paired_count": 78,
+        "group_count": 33,
+        "mean_difference": -0.06435128205128204,
+        "ci95": [
+          -0.14561593631329114,
+          0.01507108652382626
+        ],
+        "wins": 34,
+        "ties": 3,
+        "losses": 41,
+        "verdict": "inconclusive",
+        "bootstrap_repeats": 1000,
+        "grouping": "code_id/video",
+        "label": "VLM system vs Qwen3 tools"
+      }
+    ],
+    "human_noise_ceiling": 0.9834754611304548,
+    "bootstrap_repeats": 1000
+  },
   "diagnostic_note": "Oracle diagnostic code is unavailable in the accepted run, so a 4D-code bottleneck cannot be causally attributed from the current controlled comparisons."
 }

@@ -100,6 +100,7 @@
           </div>
         </div>
         ${metricsStrip(dashboard.totals)}
+        ${bassVlmComparison(dashboard.bass_vlm_comparison)}
         <section class="analysis-grid" aria-label="Controlled-condition and confidence diagnostics">
           <div class="analysis-panel">
             <span class="panel-label">Question-only, native-tool, and oracle-tool task score</span>
@@ -651,6 +652,78 @@
     </div>`;
   }
 
+  function bassVlmComparison(comparison) {
+    if (!comparison) return "";
+    const codeEffect = comparison.comparisons.find((item) => item.name === "code_gain_within_vlm");
+    const videoEffect = comparison.comparisons.find((item) => item.name === "video_gain_within_vlm");
+    return `<section class="section-band vlm-ablation" aria-labelledby="vlm-ablation-title">
+      <div class="section-heading vlm-ablation-heading">
+        <div>
+          <span class="section-kicker">Bass2022Partial · multimodal ablation</span>
+          <h2 id="vlm-ablation-title">${escapeHtml(comparison.title)}</h2>
+        </div>
+        <p>${formatInteger(comparison.question_count)} questions · ${formatInteger(comparison.unique_video_count)} videos · ${formatInteger(comparison.bootstrap_repeats)} grouped bootstrap resamples</p>
+      </div>
+      <div class="vlm-takeaway">
+        <strong>Structured 4D evidence adds ${formatPercentagePoints(codeEffect?.mean_difference)}.</strong>
+        <span>Its 95% interval is ${formatPercentagePointInterval(codeEffect?.ci95)}; direct video evidence is ${escapeHtml(videoEffect?.verdict || "unavailable")} at ${formatPercentagePoints(videoEffect?.mean_difference)}.</span>
+      </div>
+      <div class="vlm-ablation-grid">
+        <div class="vlm-condition-panel">
+          <div class="subsection-heading"><h3>Condition results</h3><span>Question-weighted</span></div>
+          ${vlmConditionTable(comparison.conditions)}
+          ${vlmScoreBars(comparison.conditions)}
+        </div>
+        <div class="vlm-effects-panel">
+          <div class="subsection-heading"><h3>Paired effects</h3><span>95% video-group bootstrap</span></div>
+          <div class="effect-list">
+            ${comparison.comparisons.map(vlmEffectRow).join("")}
+          </div>
+          <p class="vlm-method-line">LLM confidence is answer-option likelihood after out-of-fold calibration. Human split-half reliability: ${formatPercent(comparison.human_noise_ceiling)}.</p>
+        </div>
+      </div>
+    </section>`;
+  }
+
+  function vlmConditionTable(rows) {
+    return `<div class="vlm-table-wrap"><table class="vlm-table">
+      <thead><tr><th>Condition</th><th>Score</th><th>LLM conf.</th><th>Latency</th><th>Scored</th></tr></thead>
+      <tbody>${rows.map((row) => `<tr>
+        <td><strong>${escapeHtml(row.label)}</strong><span>${escapeHtml(row.description)}</span></td>
+        <td>${formatPercent(row.normalized_task_score)}</td>
+        <td>${formatPercent(row.mean_llm_confidence)}</td>
+        <td>${formatSeconds(row.mean_generation_time_sec)}</td>
+        <td>${formatInteger(row.scored_count)}/${formatInteger(row.qa_count)}</td>
+      </tr>`).join("")}</tbody>
+    </table></div>`;
+  }
+
+  function vlmScoreBars(rows) {
+    return `<div class="vlm-score-bars" aria-label="Condition score comparison">
+      ${rows.map((row) => {
+        const value = Number(row.normalized_task_score || 0);
+        const emphasis = row.condition === "qwen25vl_7b_video_plus_4d" ? " emphasis" : "";
+        return `<div class="vlm-score-row${emphasis}">
+          <span>${escapeHtml(row.label)}</span>
+          <div class="vlm-score-track"><span style="width:${Math.max(0, Math.min(1, value)) * 100}%"></span></div>
+          <strong>${formatPercentOne(value)}</strong>
+        </div>`;
+      }).join("")}
+    </div>`;
+  }
+
+  function vlmEffectRow(item) {
+    const positive = Number(item.mean_difference) > 0 && item.verdict === "positive";
+    return `<article class="effect-row" data-verdict="${escapeAttribute(item.verdict)}">
+      <div class="effect-row-heading">
+        <h4>${escapeHtml(item.label)}</h4>
+        <strong class="effect-value${positive ? " positive" : ""}">${formatPercentagePoints(item.mean_difference)}</strong>
+      </div>
+      <p>95% CI ${formatPercentagePointInterval(item.ci95)} · ${formatInteger(item.wins)} wins / ${formatInteger(item.ties)} ties / ${formatInteger(item.losses)} losses</p>
+      <p>${formatInteger(item.paired_count)} scored questions across ${formatInteger(item.group_count)} source videos · ${escapeHtml(item.verdict)}</p>
+    </article>`;
+  }
+
   function conditionComparisonChart(rows) {
     if (!rows.length) return `<div class="empty-state">No controlled-condition data.</div>`;
     const width = 560;
@@ -807,6 +880,26 @@
 
   function formatPercent(value) {
     return Number.isFinite(Number(value)) ? `${(Number(value) * 100).toFixed(2)}%` : "N/A";
+  }
+
+  function formatPercentOne(value) {
+    return Number.isFinite(Number(value)) ? `${(Number(value) * 100).toFixed(1)}%` : "N/A";
+  }
+
+  function formatPercentagePoints(value) {
+    if (!Number.isFinite(Number(value))) return "N/A";
+    const points = Number(value) * 100;
+    return `${points >= 0 ? "+" : ""}${points.toFixed(1)} pp`;
+  }
+
+  function formatPercentagePointInterval(interval) {
+    return Array.isArray(interval) && interval.length === 2
+      ? `[${formatPercentagePoints(interval[0])}, ${formatPercentagePoints(interval[1])}]`
+      : "N/A";
+  }
+
+  function formatSeconds(value) {
+    return Number.isFinite(Number(value)) ? `${Number(value).toFixed(1)} s` : "N/A";
   }
 
   function na() {
