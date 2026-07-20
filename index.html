@@ -32,8 +32,8 @@
             <a class="secondary-action" href="#results">Explore parsing results</a>
           </div>
           <dl class="hero-stats">
-            <div><dt>Studies</dt><dd>12</dd></div>
-            <div><dt>Examples</dt><dd>36</dd></div>
+            <div><dt>Studies</dt><dd>14</dd></div>
+            <div><dt>Examples</dt><dd>42</dd></div>
             <div><dt>Geometry</dt><dd>2D + 3D</dd></div>
             <div><dt>Outputs</dt><dd>Interactive</dd></div>
           </dl>
@@ -94,11 +94,11 @@
           </div>
           <div class="result-tabs" role="group" aria-label="Filter examples">
             <button class="is-active" type="button" data-result-filter="all" aria-pressed="true">All</button>
-            <button type="button" data-result-filter="2d" aria-pressed="false">2D dynamics</button>
+            <button type="button" data-result-filter="2d" aria-pressed="false">2D scenes</button>
             <button type="button" data-result-filter="3d" aria-pressed="false">3D geometry</button>
           </div>
         </div>
-        <p class="result-count" id="visibleResultCount">36 interactive results</p>
+        <p class="result-count" id="visibleResultCount">42 interactive results</p>
         <div class="results-grid">
           <article class="sample-card" data-dimension="2d">
             <a class="sample-media" href="examples/Bass2022Partial_exp1_ex1_full.html" aria-label="Open Cannonball Dynamics">
@@ -134,6 +134,42 @@
               <h3>Off-Screen Motion</h3>
               <p class="card-summary">Preserve object identity and trail history as bodies leave the visible frame.</p>
               <a class="card-link" href="examples/Bass2022Partial_exp1_ex3_full.html">Inspect 4D code</a>
+            </div>
+          </article>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="bates_zhou_4dcode/example.html?code=code_a734e9c6e21f3ee352b8" aria-label="Open Liquid Containment: Water">
+              <img src="bates_zhou_4dcode/media/code_a734e9c6e21f3ee352b8.png" alt="Liquid Containment: Water" loading="lazy" />
+              <span class="dimension-badge">2D observation</span>
+            </a>
+            <div class="card-body">
+              <div class="card-meta"><span>Bates et al. 2019</span><span>Intuitive fluid physics</span></div>
+              <h3>Liquid Containment: Water</h3>
+              <p class="card-summary">Segment the visible liquid and receiving cup in a static containment scene.</p>
+              <a class="card-link" href="bates_zhou_4dcode/example.html?code=code_a734e9c6e21f3ee352b8">Inspect 4D code</a>
+            </div>
+          </article>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="bates_zhou_4dcode/example.html?code=code_94386e4580f3bae73487" aria-label="Open Viscosity Contrast: Honey">
+              <img src="bates_zhou_4dcode/media/code_94386e4580f3bae73487.png" alt="Viscosity Contrast: Honey" loading="lazy" />
+              <span class="dimension-badge">2D observation</span>
+            </a>
+            <div class="card-body">
+              <div class="card-meta"><span>Bates et al. 2019</span><span>Intuitive fluid physics</span></div>
+              <h3>Viscosity Contrast: Honey</h3>
+              <p class="card-summary">Compare object-centric liquid evidence under higher viscosity.</p>
+              <a class="card-link" href="bates_zhou_4dcode/example.html?code=code_94386e4580f3bae73487">Inspect 4D code</a>
+            </div>
+          </article>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="bates_zhou_4dcode/example.html?code=code_3e6ba8dc460cc7bca887" aria-label="Open Container Geometry: Offset Pour">
+              <img src="bates_zhou_4dcode/media/code_3e6ba8dc460cc7bca887.png" alt="Container Geometry: Offset Pour" loading="lazy" />
+              <span class="dimension-badge">2D observation</span>
+            </a>
+            <div class="card-body">
+              <div class="card-meta"><span>Bates et al. 2019</span><span>Intuitive fluid physics</span></div>
+              <h3>Container Geometry: Offset Pour</h3>
+              <p class="card-summary">Parse liquid and cup geometry after changing their horizontal arrangement.</p>
+              <a class="card-link" href="bates_zhou_4dcode/example.html?code=code_3e6ba8dc460cc7bca887">Inspect 4D code</a>
             </div>
           </article>
           <article class="sample-card" data-dimension="2d">
@@ -458,6 +494,42 @@
               <h3>Gridworld Dynamics Tutorial</h3>
               <p class="card-summary">Parse legal moves, walls, and goal-directed motion in the instruction scene.</p>
               <a class="card-link" href="examples/Wu2022That_exp1_Wu2022That_exp1_assets_instruction_instructions_full.html">Inspect 4D code</a>
+            </div>
+          </article>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="bates_zhou_4dcode/example.html?code=code_bcf7bab48a44ffe38987" aria-label="Open Counterfactual Brick Support: Tower 01">
+              <img src="bates_zhou_4dcode/media/code_bcf7bab48a44ffe38987.png" alt="Counterfactual Brick Support: Tower 01" loading="lazy" />
+              <span class="dimension-badge">2D observation</span>
+            </a>
+            <div class="card-body">
+              <div class="card-meta"><span>Zhou et al. 2023</span><span>Counterfactual stability</span></div>
+              <h3>Counterfactual Brick Support: Tower 01</h3>
+              <p class="card-summary">Localize numbered bricks for support and removal reasoning.</p>
+              <a class="card-link" href="bates_zhou_4dcode/example.html?code=code_bcf7bab48a44ffe38987">Inspect 4D code</a>
+            </div>
+          </article>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="bates_zhou_4dcode/example.html?code=code_264ae057d3b1b5742227" aria-label="Open Counterfactual Brick Support: Tower 02">
+              <img src="bates_zhou_4dcode/media/code_264ae057d3b1b5742227.png" alt="Counterfactual Brick Support: Tower 02" loading="lazy" />
+              <span class="dimension-badge">2D observation</span>
+            </a>
+            <div class="card-body">
+              <div class="card-meta"><span>Zhou et al. 2023</span><span>Counterfactual stability</span></div>
+              <h3>Counterfactual Brick Support: Tower 02</h3>
+              <p class="card-summary">Inspect a second stable pile with prediction-derived brick identities.</p>
+              <a class="card-link" href="bates_zhou_4dcode/example.html?code=code_264ae057d3b1b5742227">Inspect 4D code</a>
+            </div>
+          </article>
+          <article class="sample-card" data-dimension="2d">
+            <a class="sample-media" href="bates_zhou_4dcode/example.html?code=code_65c60f8aaa76a0c5d76d" aria-label="Open Counterfactual Brick Support: Tower 04">
+              <img src="bates_zhou_4dcode/media/code_65c60f8aaa76a0c5d76d.png" alt="Counterfactual Brick Support: Tower 04" loading="lazy" />
+              <span class="dimension-badge">2D observation</span>
+            </a>
+            <div class="card-body">
+              <div class="card-meta"><span>Zhou et al. 2023</span><span>Counterfactual stability</span></div>
+              <h3>Counterfactual Brick Support: Tower 04</h3>
+              <p class="card-summary">Expose masks and identity evidence in a denser support structure.</p>
+              <a class="card-link" href="bates_zhou_4dcode/example.html?code=code_65c60f8aaa76a0c5d76d">Inspect 4D code</a>
             </div>
           </article>
           <article class="sample-card" data-dimension="3d">
